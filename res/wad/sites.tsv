@@ -1,0 +1,2494 @@
+id	name	code	country_code	coordinates	municipality	province
+1	Planina Cave Pivka Channel	PIVKACAV	SI		PLANINA	POSTOJNA
+2	Rak Channel, Planina Cave, Planina, Si	PLANINS2	SI		PLANINA	POSTOJNA
+3	Hagieni Surface Sulfurous Spring. Limestone Plateau Of Southern Dobrogoea	HAGIENIS	RO		HAGIENI	CONSTANTA
+4	Movile Cave. Limestone Plateau Of Southern Dobrogoea	MOVILECA	RO		MANGALIA	CONSTANTA
+5	Avram Iancy 24	AIARCU24	RO		MANGALIA	CONSTANTA
+6	Well F4. Dobrogoea. Mangalia. Limestone Plateau Of Southern Dobrogoea	DOBROWF4	RO		MANGALIA	CONSTANTA
+7	Well F8. Dobrogoea. Limestone Plateau Of Southern Dobrogoea	DOBROWF8	RO		ARSA	CONSTANTA
+11	Aleea Cetatii 1	CETATII1	RO		MANGALIA	CONSTANTA
+12	Trebiciano Cave	TREBICGR	IT		TRIESTE	TRIESTE
+13	Trebiciano Cave, Trieste, It Trebici1 Italy	TREBICI1	IT		TREBICIANO	TRIESTE
+15	Grotta Meravigliosa Di Lazzaro Jerko Opicina Italy	MERAVIGL	IT		OPICINA	TRIESTE
+18	Vodna Jama V Lozi	VODNAJAM	SI		RAKULIK	POSTOJNA
+20	Cueva A Sul	CUEVASUL	ES		EL MAZUCO	ASTURIA
+21	Spring Debajo De Las Cuevas De Debodes	DEBODESP	ES		DEBODES	ASTURIA
+22	Cueva De La Marniosa	MARNIOSA	ES		TRESVISO	CANTABRIA
+23	Nacimiento. Cueva Del	NACIMICA	ES		TRESVISO	CANTABRIA
+24	Cueva Del Agua Pres De Tresviso	TRESVISO	ES		TRESVISO	CANTABRIA
+25	Spring E. De La Carretera Trubia-Puerto De Ventana (Sp)	ENTRAGSP	ES		ENTRAGO	ASTURIA
+26	Carretera Local A Caleao 1km Coballes	COBALLE2	ES		CASO	OVIEDO
+27	Rio Nalon Pendones	PENDONES	ES		CASO	OVIEDO
+28	Rio Caleao	COBALLE1	ES		CASO	OVIEDO
+30	Puente Carretera A Tarna La Foz	LAFOZ	ES		CASO	OVIEDO
+32	Concha De Artedo Artedo	CONCHA	ES		CUDILLERO	ASTURIAS
+33	Rio Sella Fries	FRIES	ES		CANGAS DE ONIS	OVIEDO
+34	Cueva Calderon	CALDERSP	ES		VELILLA DEL RIO CARRION	PALENCIA
+35	Sella River (Amieva 929 M)	SELLARAM	ES		AMIEVA	ASTURIA
+36	Cueva Del Oso	DELOSOCA	ES		PUENTE VIESGO	CANTABRIA
+37	Cova Del Infierno	INFIERNO	ES		COVADONGA	ASTURIA
+38	Captated Resurgence Al Lado O. De La Carretera Local A Caleao 0.5 Km S. De Coballes	CALEAOS1	ES		COBALLES	ASTURIA
+39	Small Resurgence Al Lado O. De La Carretera Local A Caleao 1 Km S. De Coballes	CALEAOS2	ES		COBALLES	ASTURIA
+40	Spring O. Del Puente Carretera A Tarna	CASOSP	ES		CASO	ASTURIA
+41	Rio De Aller	RDEALLER	ES		CASOMERA	ASTURIA
+42	Rio De Nueva	RDENUEVA	ES		NUEVA	ASTURIA
+43	Rio Fuente Santa	RFUSANTA	ES		NAVA	ASTURIA
+44	Rio Nalon Pendones	RNALONPE	ES		PENDONES	ASTURIA
+45	Rio Sella Fries	RSELLAFR	ES		FRIES	ASTURIA
+46	Rio Sella Ribota	RSELLAR	ES		RIBOTA	LEON
+47	Rio Sella Tornin	RSELLATO	ES		TORNIN	ASTURIA
+48	Gouffre Torca Castil 15	TORCASTI	ES		SOTRES	ASTURIA
+49	Rio Cares Camarmena	RCARESCA	ES		PREGUELES	ASTURIA
+50	Region De Coimbra	RCOIMBRA	PT		COIMBRA	COIMBRA
+51	Rio Yuso Barniedo De La Reina	YUSOREIN	ES		PORTILLA DE LA REINA	LEON
+53	Rio Curueno	RCURUENO	ES		VALDEPIELAGO	LEON
+54	Rio Esla	RIOESLA	ES		LAS SALAS	LEON
+55	Rio Torio Felmin	RIOTORIO	ES		FELMIN	LEON
+56	Rio Yuso Portilla De La Reina	RIOYUSO	ES		PORTILLA DE LA REINA	LEON
+57	Rio Vez Aboim Das Chocas	ABOIM	PT		ABOIM DAS CHOCAS	NORTE
+58	Puits De Ponte Da Barca	PTEBARCA	PT		PONTE DA BARCA	VIANA DO CASTELLO
+59	Station 5 Puits Villa Do Conde	W05CONDE	PT		VILLA DO CONDE	PORTO
+60	Station 6 Puits Villa Do Conde	W06CONDE	PT		VILLA DO CONDE	PORTO
+61	Deux Puits Tres Proches A Reigada	REIGADAW	PT		REIGADA	GUARDA
+62	Tunnel Dels Sumidors Vallada	SUMIDORS	ES		VALLADA	VALENCIA
+63	Rio Cabriel Cofrentes	CABRIEL	ES		COFRENTES	VALENCIA
+64	Rio Cautaban Tejares Abarca Jarafuel	CAUTAB	ES		JARAFUEL	VALENCIA
+65	Rio Tajo Trillo	TRILLO	ES		TRLLO	GUADALAJARA
+66	Rio Argongena Teresa De Cofrentes	ARGONGE	ES		TERESA DE COFRENTES	VALENCIA
+67	Rio De Albentosa Albentosa	ALBENTOS	ES		ALBENTOSA	TERUEL
+68	Fuente El Meremillo Gestalgar	MEREMIL	ES		GESTALGAR	VALENCIA
+69	Rio Cascante Del Rio 2	CASCAN2	ES		CASCANTE DEL RIO	TERUEL
+76	Rio Jucar	RIOJUCAR	ES		HUELAMO	CUENCA
+77	Rio Tejacillos	RTEJACIL	ES		CANETE	CUENCA
+78	Turia River	TURIARIV	ES		VILAMARXANT	VALENCIA
+79	Villalpardo, Iniesta, Cuenca, Castille La Manche	VILLALPA	ES		VILLALPARDO	CUENCA
+80	Cueva Del Becerro	BECERRO	ES		CARRASCOSA	CUENCA
+81	Cave Tunnel Dels Sumidors	SUMIDOCA	ES		VALLADA	VALENCIA
+82	Riviere Souterraine De La Cueva Del Tornero	TORNERO	ES		CHECA	GUADALAJARA
+84	Rio Guadalaviar	GUADALAV	ES		ALBARACIN	TERUEL
+85	Rio De La Sierra De La Mantanza	RMANTANZ	ES		CASCANTE DEL RIO	TERUEL
+87	Well Entre La Carretera N 420 Teruel-Cuenca Y Rio Cabriel	CABRIELW	ES		PAJARONCILLO	CUENCA
+88	Manantial Carcamas	CARCAMAS	ES		EL RECUENCO	GUADALAJARA
+89	Nacimineto Del Rio Cuervo	CUERVOSP	ES		TRAGACETE	CUENCA
+90	Rio Escabas	ESCABASR	ES		PRIEGO	CUENCA
+91	Spring Cerca Del Puente Alto	GESTALGA	ES		GESTALGAR	VALENCIA
+92	Well Al Lado O.de Las Cuevas Labradas	LABRADAW	ES		CUEVAS LABRADAS	TERUEL
+93	Rio Cabriel Cofrentes	RCABRICO	ES		CASAS DE ALCANCE	VALENCIA
+94	Rio Cabriel Requena	RCABRIRE	ES		VILLATOYA	ALBACETE
+95	Well About 100 M No Del Rio Canoles	RCANOLEW	ES		VALLADA	VALENCIA
+96	Well 0.2 Km No Del Rio Canoles	RICANOLE	ES		VALLADA	VALENCIA
+97	Rio Tajo	RIOTAJO	ES		TRILLO	GUADALAJARA
+98	Cueva Del Royo Malo	ROYOMALO	ES		POYATOS	CUENCA
+100	Well So. De La Carretera Tragacete-Huelamo	TRAGACEW	ES		TRAGACETE	CUENCA
+101	Fuente De Marfil Valdenoceda	MARFIL	ES		MERINDAD DE VALDEVIELSO	BURGOS
+102	Source Rio Rudron Molino Rasgabragas	RUDRON	ES		BASCONCILLOS DEL TOZO	CASTILLA Y LEON
+103	Rio Gaya Santes Creus	CREUS	ES		SANTES CREUS	TARRAGONA
+104	Rio Gaya Santa Perpetua De Gaya	PERPETUA	ES		SANTA PERPETUA DE GAYA	TARRAGONA
+105	La Alfranca	LAALFRAN	ES		LA ALFRANCA	ARAGON
+107	Rio Avion	RIOAVION	ES		EL BURGO DE OSMA	SORIA
+108	Rio Gaya	RIOGAYA	ES		SANTES CREUS	TARRAGONA
+109	Rio Ucero	RIOUCERO	ES		BARCEBALEJO	SORIA
+110	Source Du Rio Lobos	RLOBOSSP	ES		EL BURGO DE OSMA	SORIA
+111	Well Along The Railway Berlanga De Duero	BERLANGW	ES		BERLANGA DE DUERO	SORIA
+112	Hyporheic Zone Molino Del Diablo	DIABLOHY	ES		LA RIBA DE VALDELUCIO	BURGOS
+113	Rio Matarrana La Fresneda	MATARRAN	ES		LA FRESNEDA	TERUEL
+114	Riu Montsant	MONTSANT	ES		MARGALEF	TARRAGONA
+115	Rio Cerneja	RCERNEJA	ES		EL RIBERO	BURGOS
+116	Rio Algas	RIOALGAS	ES		ARNES	TARRAGONA
+117	Rio Cinca	RIOCINCA	ES		MONZON	HUESCA
+118	Rio Lucio O De Hoz	RIOLUCIO	ES		QUINTANAS DE VALDELUCIO	BURGOS
+119	Rio Pisuerga	RPISUERG	ES		REINOSO DE CERRATO	PALENCIA
+120	Rio Tastavins Valderrobres	RTASTAVI	ES		VALDERROBRES	TERUEL
+121	Spring Borde N. Del Rio Rudron	RUDRONSP	ES		BASCONCILLOS DEL TOZO	BURGOS
+122	Fuente Sagrero	SAGREROF	ES		CERECEDA	BURGOS
+123	Rio Deva 3.5 Km S. De Panes	RDEVADPA	ES		PANES	ASTURIA
+124	Rio Deva Las Ilces	RDEVAILC	ES		LAS ILCES	CANTABRIA
+125	Rio Deva Penamellera Baja	RDEVAPEN	ES		NARGANES	ASTURIA
+126	Rio Deva Puente De Quintana	RDEVAPUE	ES		CAMALENO	CANTABRIA
+127	Cueva De Valporquero Valporqueiro De Torio	VALPORQU	ES		VEGACERVERA	CASTILLA Y LEON
+130	Cueva De Valporquero	VALPORCA	ES		VEGACERVERA	LEON
+132	Well Along The Road To Xavina 1 Km Ne Of Camarifias	CAMARIFW	ES		CAMARINAS	LA CORUNA
+133	Idanha A Nova. Well	IDANHAWE	PT		IDANHA A NOVA	CASTELO BRANCO
+134	Rio Deva Panes	DEVAPANE	ES		PENAMELLERA BAJA	OVIEDO
+135	Rio Deva Panes	RDEVAPAN	ES		PANES	ASTURIA
+136	Captated Resurgence Al Lado O. De La Carretera N 621 Panes-Potes. Al Lado S. De La Hermida	HERMIDSP	ES		LA HERMIDA	CANTABRIA
+137	Rio Buyon Pesaguero	RBUYONPE	ES		PESAGUERO	CANTABRIA
+140	Plusierus Puits A Leca Da Palmeira	LECPALMS	PT		LECA DA PALMEIRA	PORTO
+141	Puits A Matozinhos	MATOZINH	PT		MATOZINHOS	PORTO
+142	Leca Da Palmeira. Well (90m)	PALMEIRA	PT		LECA DA PALMEIRA	PORTO
+143	Afluente Del Rio Yuso	AFLRYUSO	ES		PORTILLA DE LA REINA	LEON
+144	Cueva De Las. Bolugas	BOLUGASC	ES		MIER	ASTURIA
+145	Cueva De La Foz	FOZCAVE	ES		PALOMAR	ASTURIA
+146	Well At Junco La Isal	JUNCOLAW	ES		RIBADESELLA	ASTURIA
+147	Cueva De Rales	RALESCAV	ES		RALES	ASTURIA
+148	Rio Deva	RIODEVA	ES		BUELLES	ASTURIA
+149	Rio Sella Upstream Of Fries	RSELLAUF	ES		FRIES	ASTURIA
+150	Spring O. De La Carretera N 632 Santander-Burgos	TUBILLSP	ES		TUBILLA DEL AGUA	BURGOS
+151	Spring E. De La Carretera Trubia-Puerto De Ventana (Sc)	TUNONSP	ES		TUNON	ASTURIA
+152	Manantial Al Lado N. De San Martin De Ubierna	UBIERNAS	ES		SAN MARTIN DE UBIERNA	BURGOS
+156	Small River 250 M From The Sea At Concha De Artedo	RIARTEDO	ES		ARTEDO	ASTURIA
+157	Pesio Santa Anna	ANNA	IT		CHIUSA DI PESIO	CUNEO
+158	Pesio Pain Delle Gorre	CHIUPESI	IT		CHIUSA DI PESIO	CUNEO
+159	La Fontaine Au Roi Audouin	FONTROI	FR		LA JARRIE AUDOUIN	CHARENTE MARITIME
+160	Source De La Fontaine Des Veuves Saint Pierre De L Ile	FONTVEUV	FR		SAINT PIERRE DE L ILE	CHARENTE MARITIME
+162	Puits D205	PUITD	FR		LE THOU	CHARENTE MARITIME
+163	Resurgence De Sompt Sompt	SOMPT	FR		SOMPT	DEUX SEVRES
+164	Source Massonee D Andille	ANDILLE1	FR		ROCHES PREMARIE ANDILLE	VIENNE
+165	Fontaine Lavoir D Andille Griffon D Andille	ANDILLE2	FR		ROCHES PREMARIE ANDILLE	VIENNE
+166	Anglin Resurgence De Merigny	MERIGNY	FR		MERIGNY	INDRE
+168	Fontaine De Pipou	FONPIPOU	FR		SOUSMOULINS	CHARENTE MARITIME
+169	Fontaine Du Pinquet	FPINQUET	FR		DOUCHAPT	DORDOGNE
+170	Font Michaud Nb Site 77	FTMICHAU	FR		MORNAC	CHARENTE
+171	Nappe De La Grotte Pampin	PAMPINGR	FR		NIEUL LES SAINTES	CHARENTE MARITIME
+172	Source De La Grotte De La Vauzelle Nb Site 72	VAUZELLE	FR		SAINT PORCHAIRE	CHARENTE MARITIME
+173	Source Du Poue Qui Bouille Nb Site 90	SCBOUILL	FR		BOUILLE COURDAULT	VENDEE
+174	Puits De La Rue Des Assises	ASSISESP	FR		MARANS	CHARENTE MARITIME
+175	Fontaine De Tusson Nb Site 75	SCTUSSON	FR		TUSSON	CHARENTE
+176	Puits Sureau	PTSUREAU	FR		SAUZE VAUSSAIS	DEUX SEVRES
+177	Fontaine Souterraine D Airvault Nb Site 52	FTAIRVAU	FR		AIRVAULT	DEUX SEVRES
+178	Souterrain De La Fontaine Saint Hilaire Nb Site 55	FTHILAIR	FR		LEUGNY	VIENNE
+179	Grotte Du Chateau De Curzay	CHCURZAY	FR		CURZAY SUR VONNE	VIENNE
+180	Fontaine Des Aquariums	FTAQUARI	FR		ROCHES PREMARIE ANDILLE	VIENNE
+181	Puits De La Soule	PTSSOULE	FR		VOUILLE	VIENNE
+182	Fontaine Du Clos Des Roches Nb Site 31	CLOSROCH	FR		ROCHES PREMARIE ANDILLE	VIENNE
+183	Source De Font Mart	FONTMART	FR		ASLONNES	VIENNE
+184	Grotte De Gabouret	GABOURET	FR		CLOUE	VIENNE
+185	Riviere Souterraine De Bataille	BATAILLE	FR		GOURNAY LOIZE	DEUX SEVRES
+186	Source De Puy Rabier	PUYRABIE	FR		MAGNE	VIENNE
+187	Riviere Souterraine De Grosbot	GROSBOTG	FR		CHAMPAGNE MOUTON	CHARENTE
+190	Riviere Souterraine Des Basses Plantes	BASSEPLA	FR		CHAUVIGNY	VIENNE
+192	Source Les Collineaux	COLLINEA	FR		LIZANT	VIENNE
+194	Spring Of La Glane Dordogne France	GLANESPR	FR		SAINT JORY LAS BLOUX	DORDOGNE
+195	Captage De Las Fons Dordogne France	LASFONSP	FR		LA CHAPELLE FAUCHER	DORDOGNE
+196	Cave Of La Varenne	VARENNCA	FR		SAINT FRONT LA RIVIERE	DORDOGNE
+198	Puits Garenne Au Nord De L'ile D'oleron	GARENNE	FR		SAINT DENIS D OLERON	ILE OLERON
+199	Sources De La Touvre	SPTOUVRE	FR		TOUVRE	CHARENTE
+201	Cave Oxo Latsidi Sitanos Lasithi	CALATSID	GR		SITANOS	CRETE
+202	Risorgive Alveo Fiume Calore Riva Destra 100 M A Monte Risorgenza Grotta Di Castelcivita	CALORESP	IT		CASTELCIVITA	SALERNO
+203	Spring Of Meskla	MESKLASP	GR		MESKLA	CRETE
+204	Spring Of Stylos Nb 2	STYLOSS2	GR		STYLOS	CRETE
+205	F. Fiora	CKMAP049	IT		SOVANA	TOSCANA
+206	F. Fiora (Iporreico)	CKMAP050	IT		SOVANA	TOSCANA
+207	Fiume Albegna Au Gue De Marsiliana (Grosseto)	CKMAP072	IT		MARSILIANA	TOSCANA
+208	Fiume Farfa	CKMAP077	IT		PONTE SFONDATO	LATIUM
+209	Fonte Acquavivola. Monte Strega (Sopra Il Cimitero). Isola D Elba	CKMAP113	IT		RIO NELL ELBA	TOSCANA
+211	Fossato Presso Pizzeria 2001. Porticciolo Di S. Giovanni. Isola D Elba	CKMAP120	IT		PORTOFERRAIO	TOSCANA
+212	Fosso Di S. Martino. A W Della Villa Di Napoleone. Isola D Elba	CKMAP121	IT		PORTOFERRAIO	TOSCANA
+213	Pozzo I (Inferiore) Di Acquaviva. (Nei Campi). Isola D Elba	CKMAP249	IT		PORTOFERRAIO	TOSCANA
+214	Pozzo I (Se) Strada Marina Di Campo La Pila. Isola D Elba	CKMAP250	IT		CAMPO NELL ELBA	TOSCANA
+215	Pozzo I Di Schiopparello. Nel Casolare Di Fronte All Azienda Vinicola. Isola D Elba	CKMAP251	IT		PORTOFERRAIO	TOSCANA
+216	Pozzo I Strada Portoferraio Porto Azzurro. Tra Campo Ai Peri E Bivio Per Lacona. Isola D Elba	CKMAP252	IT		PORTOFERRAIO	TOSCANA
+217	Pozzo Ii (Nw) Strada Marina Di Campo La Pila. Isola D Elba	CKMAP253	IT		CAMPO NELL ELBA	TOSCANA
+218	Pozzo Ii Di Bonalaccia. (Nei Campi. A S Del Paese). Isola D Elba	CKMAP254	IT		CAMPO NELL ELBA	TOSCANA
+219	Pozzo Ii Di Scotto. Nei Campi A E Del Bivio Per S. Martino. Isola D Elba	CKMAP255	IT		PORTOFERRAIO	TOSCANA
+220	Pozzo Iii Di Bonalaccia. (Nei Campi. 50 M A W Del Pozzo Ii). Isola D Elba	CKMAP257	IT		CAMPO NELL ELBA	TOSCANA
+221	Pozzo Iv Strada Portoferraio P. Azzurro. Presso Bivio Per Bagnaia. Isola D Elba	CKMAP264	IT		BAGNAIA	TOSCANA
+222	Sorgente Dei Canali. A Monte Del Lavatoio Di Rio Nell Elba. Isola D Elba	CKMAP365	IT		RIO NELL ELBA	TOSCANA
+223	Sorgente Mazzoccolo	CKMAP388	IT		FORMIA	LATIUM
+224	Fiume Fiora Ansa Parafluviale 350 M A S Del Ponte Della S P Sovana	FIORARIV	IT		SORANO	GROSSETO
+226	Fiume Farfa Pres De Farfa (Rieti)	FARFAFIU	IT		FARFA	LATIUM
+227	Pozzi A Macerata. Via Acquaviva. Via Santa	CKMAP188	IT		MACERATA	MARCHE
+228	Pozzi A Marina Di Altidona. Valdaso	CKMAP189	IT		ALTIDONA	MARCHE
+229	Pozzi A Porto S. Elpidio. Via Gabbie	CKMAP190	IT		PORTO SANT ELPIDIO	MARCHE
+230	Un Pozzo D Acqua Dolce Pedaso (Ascoli Piceno Marche)	CKMAP195	IT		PEDASO	MARCHE
+231	Pozzo A Valdaso	CKMAP234	IT		MONTEFIORE DELL ASO	MARCHE
+233	Rio Guadalimar Cotillas	COTILLAS	ES		VILLAVERDE DE GUADALIMAR	ALBACETE
+234	Rio Guadalquivir Jesus Iznatoraf	JESUS	ES		IZNATORAF	JAEN
+236	Rio Aquamalas Pontones	AQUALA	ES		PONTONES	JAEN
+237	Fuente Del Baillo	BAILLOFO	ES		TISCAR	JAEN
+239	Rio Guadalbull0n	GUADALBU	ES		CARCHELEJO	JAEN
+240	Rio Guadalquivir Coto R├Ìos	GUADALQ1	ES		COTO R├ìOS	JAEN
+241	Rio Guadalquivir Tranco	GUADALQ2	ES		TRANCO	JAEN
+242	Rio Guadalquivir Cazorla	GUADALQ3	ES		CAZORLA	JAEN
+243	Rio Guadalquivir Mogon	MOGON	ES		MOGON	JAEN
+244	Barrio San Pedro Lope	PEDROLOP	ES		MOG0N	JAEN
+245	Fuente Del Peral Sorbas	PERAL	ES		SORBAS	ALMERIA
+247	Cueva Los Apas	LOSAPASC	ES		SORBAS	ALMERIA
+248	Rio De Aguas	AGUASRIO	ES		MIRADOR URRA	ALMERIA
+249	Well At El Badil	ELDADILW	ES		CANTORIA	ALMERIA
+250	Well La Noria	NORIAWEL	ES		LOS GILES	ALMERIA
+252	Well Sw Of The Viaduct In The Road 340 At Sorbas	SORBASWE	ES		SORBAS	ALMERIA
+253	Well E Of The Road To Lucar	TIJOLAWE	ES		TIJOLA	ALMERIA
+254	Hyporheic Zone Of Cardona River At Cardona	CARDONA	ES		CARDONA	BARCELONA
+255	Rio Aiguadora Cardoner	AIGUADOR	ES		CARDONA	BARCELONA
+256	Rio Muga Albanya	ALBANYA	ES		ALBANYA	GIRONA
+257	Rio Burro (Bassin Du Rio Fluvia)	BURRORI1	ES		BESALU	GIRONA
+258	Rio Burro (Bassin Du Rio Fluvia)	BURRORI2	ES		BESALU	GIRONA
+259	Rio Cardona Bassin Du Rio Llobregat	CARDONA1	ES		CARDONA	BARCELONA
+260	Rio Cardona Pres De Solsona	CARDONA2	ES		SOLSONA	LERIDA
+261	Rio Cardoner Llobregat	CARDONER	ES		CASTELLGAL├ì	BARCELONA
+262	Captated Spring North East Of The Arkadi Monastery	ARKADICA	GR		ARKADI	CRETE
+263	Isola Di Creta Sorgente Di Moni Arkadiou	ARKADIOU	GR		ARKADI	CRETE
+264	Cueva De La Nacidero De Zarpia. Same As Code Zarpiarca	ZARPIAGR	ES		SALVATIERRA	ALAVA
+265	Cueva De Nacidero De Zarpia	ZARPIACA	ES		LARRAONA	NAVARRA
+266	El Ventorro	VENTORRO	ES		EGUILAZ EGILATZ	ALAVA
+267	Ruisseau De La Tabournie La Fourestole	FOUSTER	FR		CAMBON	TARN
+268	Lezert Pont De La Lauzie	LAUZIE	FR		CAMBON	TARN
+271	Source Drain De Rayssaguet Cambon	RAYSSAGU	FR		CAMBON	TARN
+272	Ruisseau De Caussels	CAUSSELS	FR		ALBI	TARN
+273	Source De Malsang	MALSANGS	FR		ALBI	TARN
+274	Sbr Ruisseau Du Lezert. Pont De La Lauzie	LEZERTLA	FR		CAMBON	TARN
+275	Sbr Tarn. La Maurinie	MAURINIE	FR		MARSAL	TARN
+276	Puits De Mazicou	MAZICOUW	FR		ALBI	TARN
+278	Puits Vaysse. Campblanc	VAYSSEWE	FR		CAMBON	TARN
+280	Source De La Mouline Du Go	MOULINGO	FR		ALBI	TARN
+281	Epirus, Igoumenitza, Along The Araxtos River	ARAXTOSR	GR		IGOUMENITZA	EPIRUS
+282	Puits D Eau Douce Autour De Glikorizo. Arta (Ambracie Epire) A 2 Km Du Littoral Du Golfe	GLIKORIZ	GR		GLIKORIZO	EPIRE
+285	Epirus, Igoumenitza, Main Road Arta-Kommenon	IGOUMENI	GR		ARTA	EPIRUS
+286	Locg11gr Epirus, Main Road Arta Kommenon, Along The Arachtos River (10m Asl) Freshwater Well	LOCG11GR	GR		KOMMENO	EPIRUS
+287	Log14g18 Epirus, Glikorizo, Arta	LOG14G18	GR		ARTA	EPIRUS
+288	Pozzo Alla Stazione Ferroviaria Di Sassa	CKMAP242	IT		SASSA	ABRUZZO
+289	Pozzo Artificiale	CKMAP243	IT		SASSA	ABRUZZO
+290	Tenuta Di Castelporziano Fontanile Del Malpasso F4	MALPASSO	IT		ROMA	ROMA
+292	Source De Ljuta A La Sortie Du Village De Ljuta	LJUTASPR	HR		LJUTA	DUBROVNIK
+293	Source Bregave De La Riviere Bregave Au Lieu Dit Do	BREGAVE	BA		DO	STOLAC
+294	Tunel Orlovac 1	ORLOVAC	HR		RUDA	OTOK
+295	Source Captee De Ljuta A Plat	PLATSPRI	HR		PLAT	DUBROVNIK
+296	Source De Dobropolska Vrela Sur Le Dobro Polje	DOBRO	ME		ZAGORAK	DANILOVGRAD
+297	Source De Milojevicka	MALENIC2	ME		MILOJEVICI	DANILOVGRAD
+298	Source De Spuz A 100m A L Aval Du Pont Principale Sur La Riviere Zeta	SPUZSPRI	ME		SPUZ	DANILOVGRAD
+299	Source Du Monastere Moraca Le Long De La Route Entre Podgorica Et Berane	MORAICA	ME		DJURDJEVINA	KOLASIN
+300	Source Captee Du Monastere De Berane Alimente En Eau La Ville De Berane	BERANE2	ME		BERANE	BERANE
+301	Source De Gojakovici Au Bord De La Route Entre Mojkovac Et Dobrilovina	GOJAKOVI	ME		GOJAKOVICI	MOJKOVAC
+302	Annexe De La Source Krka A 50 M A L Amont Du Pont	KRKASPRI	HR		KNIN	DALMATIE
+303	Source De Miljacka	MILJACKA	HR		PULJANE	KISTANJE
+304	Source De Krenica	KRENICA	HR		GALA	DALMATIE
+305	Source De Smokovac A La Sortie De Podgorica A L Entree Des Gorges De Moraca	SMOKOVAC	ME		PODGORICA	PODGORICA
+306	Source A 20 De La Route Allant De Daljam A Mareza Sur La Droite Dans Une Petite Foret En Bordure De Prairie	SPUZBOGI	ME		DLAJAM	DANILOVGRAD
+307	Code Station Bosher04	BOSHER04	BA		INCONNU	INCONNU
+308	Code Station Bosher05	BOSHER05	BA		INCONNU	INCONNU
+309	Code Station Monten05	MONTEN05	ME		INCONNU	INCONNU
+310	Sisovacka Pecina (Biosp 1150), Sisovac, Paracin	SISOVACK	RS		BULJANE	PARACIN
+311	Datlo Cave	DATLO	BA		KORITA BILECA	BILECA
+314	Cave Vakuf	STUDENCI	BA		STUDENCI	LJUBUSKI
+315	Izvori Ribnice	RIBNICE	ME		PODGORICA	PODGORICA
+316	Izvir Graba Pritok Cetine Z414	GRABASCE	HR		GRAB	SPLIT DALMATIE
+317	Manita Pec Paklenica	MANITPEC	HR		STARIGRAD	DALMATIE
+321	Grotte De Mociljska	MOCILJSK	HR		DUBROVNIK	SOUTH DALMACIJA
+322	Source De Pisciculture A Podgorica	PODGOSP	ME		PODGORICA	PODGORICA
+323	Source De Ombla Sur La Commune De Rozat	ROZAT	HR		ROZAT	DUBROVNIK
+324	Gromaca Spilja Za Gromackom Vlakom	GROMACA	HR		ORASAC	SOUTH DALMACIJA
+327	Banc De Graviers Dans Le Ruisseau Sturba Pres De Livno	STURBARU	BA		LIVNO	LIVNO
+328	Neretva Gravel Bar Downstream Ulog Depth 60 90 Cm	NERETHY3	BA		ULOG	KALINOVIK
+329	Spring In Gravel Right Bank Of Neretva River	NERETVSP	BA		GLAVATICEVO	KONJIC
+330	Dojcilova Jama	DOJCILCA	BA		KORITA	GACKO
+331	Izvir Na Poti Do Grabovice Proti Slivnici	GRABOVSP	BA		GREBCI	GREBCI
+332	Jasenovik Spring	JASENOSP	BA		MILOVICI LJUTI DO	POTKOM
+333	Lusac Izvir V Trebinju	LUSACTSP	BA		GORNJE POLICE	TREBINJE
+334	Mrcine Cave	MRCINECA	BA		GREBCI	GREBCI
+335	Neretva Gravel Bar Downstream Confluence Krupac Neretva	NERETHY1	BA		ULOG	KALINOVIK
+336	Neretva Gravel Bar Downstream Ulog Depth 30 60 Cm	NERETHY2	BA		ULOG	KALINOVIK
+338	Neretva Gravel Bar At Cerova	NERETHY4	BA		CEROVA	KONJIC
+339	Plitica Cave	PLITICCA	BA		DRACEVO	POPOVO POLJE
+340	Pokrivenik Izvor	POKRIVSP	BA		MUHAREVA LJUT	ZAVALA
+341	Jama U Tijaninom Dolu	TIJANICA	BA		KORITA	BRESTICE
+342	Code Station Macedo01	MACEDO01	MK		INCONNU	INCONNU
+343	Quelle An Der Popova Sapka (Sarplanina)	SARPLANI	MK		POPOVA SHAPKA	TETOVO
+344	Grotte De Zira Sur La Commune De Dobri Do A 3 Km De Turkovici	ZIRA	BA		DOBRI DO	RAVNO
+345	Code Station Croati04	CROATI04	HR		INCONNU	INCONNU
+349	Cave Crnulja. Popovo Polje	CRNULJAC	BA		TURKOVICI	RAVNO
+350	Quelle Bei Zegar. Dalmatien	ZEGARSP	HR		ZEGAR	ZADAR
+351	Quellen Der Krka Bei Knin	KRKAMASP	HR		KOVACIC	KNIN
+353	Code Station Croati06	CROATI06	HR		INCONNU	INCONNU
+354	Code Station Croati07	CROATI07	HR		INCONNU	INCONNU
+355	Code Station Croati08	CROATI08	HR		INCONNU	INCONNU
+356	Code Station Monten04	MONTEN04	ME		INCONNU	INCONNU
+357	Quelle Bei Ulcinj	ULCINJSP	ME		ULCINJ	ULCINJ
+358	Karstic Spring Berane	BERANESP	ME		BERANE	BERANE
+359	Quellen Bei Andrijevica	ANDRIJEV	ME		ANDRIJEVICA	ANDRIJEVICA
+360	Code Station Monten01	MONTEN01	ME		INCONNU	INCONNU
+361	Code Station Monten02	MONTEN02	ME		INCONNU	INCONNU
+362	Code Station Monten03	MONTEN03	ME		INCONNU	INCONNU
+363	Grosse Quelle Des Bijeli Drim Bei Pec	PECSP	ME		POTPECE	PLJEVLJA
+364	Quelle Der Ribnica Bei Titograd (Podgorica)	RIBNICA	ME		PODGORICA	PODGORICA
+365	Code Station Serbia01	SERBIA01	RS		INCONNU	INCONNU
+366	Code Station Bosher06	BOSHER06	BA		INCONNU	INCONNU
+367	Nortonbrunnen In Drvar	DRVARWEL	BA		DRVAR	DRVAR
+369	Code Station Croati02	CROATI02	HR		INCONNU	INCONNU
+370	Code Station Croati03	CROATI03	HR		INCONNU	INCONNU
+372	Poganjaca Cave A 500 M A L Est De Grebci A 15 M A Droite Du Sentier Qui Unit Cette Localite A Vlaka. Zahumska Opstina (Srez De Trebinje)	POGANJAG	BA		GREBCI	RAVNO
+373	Cave Durkovina Bei Grepci	DURKOVIN	HR		OSOJNIK	DUBROVNIK
+377	Grotte De Provalidja Sur La Commune De Pluzine A 12 Km A L Est De Nevesinje	PROVALID	BA		PLUZINE	NEVESINJSKO JEZERO
+378	Grotte De Snjetica Sur Le Bord De La Route A Proximite De Rijeka Et De Pluzine A 12 Km A L Est De Nevesinje	SNJETICA	BA		PLUZINE	NEVESINJSKO JEZERO
+380	Code Station Bosher03	BOSHER03	BA		INCONNU	INCONNU
+381	Code Station Bosher01	BOSHER01	BA		INCONNU	INCONNU
+382	Code Station Bosher02	BOSHER02	BA		INCONNU	INCONNU
+383	Source De La Trebisnjica Au Pied D Une Falaise A 2 Km Au S Du Centre De Bileca (Opstina Et Srez)	TREBISSP	BA		BILECA	FEDERATION OF BOSNIA AND HERZEGOVINA
+388	Quelle 8 Km S Von Bileca	BILECASP	BA		PANIK	BILECA
+389	Dejanova Cave	DEJANOVA	BA		BILECA	SERB REPUBLIC
+392	Code Station Macedo02	MACEDO02	MK		INCONNU	INCONNU
+393	Kleinen Quelle Der Radika-Schlucht (Gorges Du Fleuve Radika) (Klisura Radike)	RADIKASP	MK		JIROVNITSA	MAVROVO ROSTOUCHA
+394	Grotte De Sopocani Dans La Reculee A 250 M Du Monastere De Sopocani Source De La Riviere Raska	SOPOCANI	RS		CRNOCA	NOVI PAZAR
+395	Une Petite Source Du Systeme Des Sources De La Riviere Raska Devant La Grotte Raska Pecina	RASKASP	RS		CRNOCA	NOVI PAZAR
+396	La Source Du Ruisseau Burdeljski Potok A 13 Km A L Est Du Village De Strmosten Pres De Despotovac	BURDELJS	RS		STRMOSTEN	DESPOTOVAC
+398	Code Station Croati05	CROATI05	HR		INCONNU	INCONNU
+400	Brunnen Und Kleine Quellen Im Moravatal Beim Kloster Ravanica	RAVANICA	RS		SENJE	CUPRIJA
+401	Code Station Serbia02	SERBIA02	RS		INCONNU	INCONNU
+402	Code Station Serbia03	SERBIA03	RS		INCONNU	INCONNU
+403	Cave Pecina Na Vrelu Grze Izvor	VRELUGRZ	RS		IZVOR	PARACIN
+404	Nortonbrunnen (Puits Tube) In Valjevo	VALJEVOW	RS		VALJEVO	VALJEVO
+405	Grande Grotte Des Eaux Chaudes	GEAUXCH	FR		EAUX BONNES	PYRENNEES ATLANTIQUES
+406	Petite Grotte Des Eaux Chaudes	PEAUXCH	FR		EAUX BONNES	PYRENNEES ATLANTIQUES
+407	Resurgence De L Oueil De Neez Rebenacq	OUEILNEE	FR		REBENACQ	PYRENNEES ATLANTIQUES
+408	Riviere Le Saison Hyporheic Zone	SAISONRI	FR		IDAUX MENDY	PYRENEES ATLANTIQUES
+409	Grotte De La Verna	VERNARIV	FR		SAINTE ENGRACE	PYRENEES ATLANTIQUES
+411	Source A Lescun Sur Le Flanc Oriental Du Pic D Anie  Echantillon A	LESCUNSP	FR		LESCUN	PYRENEES ATLANTIQUES
+414	Grotte De La Pie	DELAPICA	FR		BIELLE	PYRENEES ATLANTIQUES
+415	Cavite Du Massif Du Pic Orhy	PICORHYC	FR		LARRAU	PYRENEES ATLANTIQUES
+417	Cueva Del Rebeco	REBECOCA	ES		VILLANUA	HUESCA
+421	Ermita De San Juan	SAJUANSP	ES		IGANTZI	NAVARRA
+422	N. De La Carretera Urroz Villava	URROZWEL	ES		USTARROZ	NAVARRA
+424	Rio Esca Carretera C 137 Burgui Salvatierra De Esca	BURGUI	ES		BURGUI	NAVARRA
+425	Rio Arga Puente De Aquerreta	AQUERRET	ES		ESTERIBAR	NAVARRA
+431	Spring E. De La Carretera C 137 Burgui-Salvatierra De Esca	BURGUISP	ES		BURGUI	NAVARRA
+432	Al Lado O De Villareal De La Canal	VILLAREW	ES		VILLAREAL DE LA CANAL	HUESCA
+433	Legacao Cave Legacao	LEGACAO	PT		RABAAL	CENTRE
+435	Well Arganil	ARGANILW	PT		ARGANIL	COIMBRA
+436	Well Gois	GOISWELL	PT		GOIS	COIMBRA
+438	Assafora Cave Siintra	ASSAFORA	PT		ASSAFORA	LISBOA
+441	Affluents Superieurs De La Riviere Prahovei. Busteni	BUSTENIP	RO		BUSTENI	PRAHOVA
+442	Affluents Superieurs De La Riviere Prahovei. Valea Cerbului	CERBULUI	RO		BUSTENI	PRAHOVA
+443	Interstices Des Allvuvions De La Vallee De Doftana (Doftanei)	DOFTANA	RO		DOFTANA	PRAHOVA
+444	Interstices Des Allvuvions De La Vallee De Gilau (Reg. Cluz)	GILAUVAL	RO		GILAU	CLUJ
+445	Puits A Moroeni (Reg. Ploiesti)	MOROENI	RO		MOROENI	DAMBOVITA
+446	Puits A Ponor (Reg. Hunedoara)	PONORWEL	RO		PONOR	HUNEDOARA
+447	Affluents Superieurs De La Riviere Prahovei. Valea Rea (Sibiu County)	SIBIUREA	RO		SIBIU	SIBIU
+448	Affluents Superieurs De La Riviere Prahovei. Sinaia	SINAIAPR	RO		SINAIA	PRAHOVA
+449	Affluents Superieurs De La Riviere Prahovei. Valea Tufei	TUFEIVAL	RO		SINAIA	PRAHOVA
+450	Source Captee Sous Le Pont De Chemin De Fer Traversant La Clinceanea Entre Les Stations Crivina Et Prahova (Voie Ferree Bucarest-Ploiesti)	MANECISP	RO		MANECIU	PRAHOVA
+451	Rio Turon El Burgo	TURON	ES		EL BURGO	MALAGA
+453	Rio Guadalhorce En Amont D'alora	GUADALH1	ES		ALORA	MALAGA
+454	Rio Guadalhorce En Aval D'alora	GUADALH2	ES		ALORA	MALAGA
+456	Las Mallanas	MALLANAS	ES		TOLOX	MALAGA
+457	Rio Turon	TURONRIO	ES		EL BURGO	MALAGA
+458	Lagany Bernacciolo	BERNACCI	FR		CASTIFAO	HAUTE CORSE
+459	Orta Minesteghiu	ORTAMIN	FR		CORTE	HAUTE CORSE
+460	Golo Asinaia	ASINAIA	FR		PONTE NOVU	HAUTE CORSE
+461	Casaluna Pont De Lano	CASALUNA	FR		LANO	HAUTE CORSE
+462	Golo Pont De Casamozza	CASAMOZA	FR		LUCCIANA	HAUTE CORSE
+463	Grotte De Sabara Pres De Castiglione A Environ 16 Km Au Nnw De Corte	SABARACA	FR		CASTIGLIONE	CORSE
+464	Ruisseau Casaluna Sous Le Pont De Lano	CASALANO	FR		LANO	CORSE
+465	Ruisseau Casaluna Sous Le Pont De La D39 A 4 Km De La Rn 193	CASALD39	FR		GAVIGNANO	CORSE
+466	Riviere Casaluna Aval C6 Station 13 Angelier	CASALU13	FR		SALICETO	CORSE
+467	Riviere Casaluna A 500 M Environ En Amont Du Pont De Lano	CASALUHY	FR		ERONE	CORSE
+468	Riviere Golo Au Pont De Casanozza	GOLOCASA	FR		LUCCIANA	CORSE
+469	Riviere Golo Usine Edf De Castirla	GOLOCAST	FR		CASTIRLA	CORSE
+470	Riviere Golo En Aval De Ponte Leccia (Piedigriggio)	GOLOLECC	FR		PONTE LECCIA	CORSE
+471	Ruisseau De Lagani En Bordure De La Route A 1.5 Km Du Croisement De Pietralba	LAGANIPI	FR		CASTIFAO	CORSE
+472	Riviere Lagani En Amont De Ponte Rosso. Region Cina De Pristaldo	LAGANIPO	FR		CASTIFAO	CORSE
+473	Source Lavoir	SOLAVOLP	FR		VOLPAJOLA	CORSE
+478	Cueva Del Agua (Complejo Motillas-Ramblazo)	MOTILLAS	ES		CORTES DE LA FRONTERA	CADIZ
+483	Saladar Mm Canal, Calle Levante, Marjal Dels Moros, El Port De Sagunt	CALLELEV	ES		EL GRAU VELL	VALENCE
+484	Tamarix, Calle Levante, Marjal Dels Moros, El Port De Sagunt	TAMARIX	ES		EL GRAU VELL	VALENCE
+485	La Vall D Alcala, La Marina Alta, Alicante, Communaute Valencienne, 03788	VALLALCA	ES		ALCALA DE LA JOVADA	ALICANTE
+486	La Vall D Ebo, La Marina Alta, Alicante, Communaute Valencienne, 03786	VALLELBO	ES		LA VALL D EBO	ALICANTE
+487	Cueva Del Agua (Complejo Motillas-Ramblazo)	AGUACORT	ES		CORTES DE LA FRONTERA	MALAGA
+488	Font Des Asmiraors	ASMIRAOR	ES		BENIMAURELL	ALICANTE
+489	En La Pendiente S. Del Rio Girena	GIRENASP	ES		FLEIX	ALICANTE
+490	Calle Huerta	HUERTAWE	ES		ALBOCACER	CASTELL0N
+494	Galerie Souterraine Karstique De Sauve	SAUVEGAR	FR		SAUVE	GARD
+495	Hyporheic Zone Of The River Galeizon In Saint Paul La Coste	STPCOSTE	FR		SAINT PAUL LA COSTE	GARD
+496	Hyporheic Zone Of The River Gardon D Ales In Saint Privat De Vallongue	STPRIVAT	FR		SAINT PRIVAT DE VALLONGUE	ARDECHE
+497	Hyporheic Zone Of The Gardon D Ales	HBUGUEIR	FR		SAINT HILAIRE DE BRETHMAS	GARD
+498	Hyporheic Zone Of The Gard River	HCOLLIAS	FR		COLLIAS	GARD
+499	Hyporheic Zone Of The Gardon D Ales	LAVABREI	FR		SAINT MARTIN DE VALGALGUES	GARD
+501	Hyporheic Zone Of The Gardon De Mialet Falgiere	FALGIERE	FR		SAINT JEAN DU GARD	GARD
+502	Moulin Du Duc	MOULINDU	FR		SAINTE CROIX VALLEE FRANCAISE	GARD
+506	Puits Tube 1 Saint Hilaire De Brethmas	BRETHMA1	FR		SAINT HILAIRE DE BRETHMAS	GARD
+507	Puits Tube 2 Saint Hilaire De Brethmas	BRETHMA2	FR		SAINT HILAIRE DE BRETHMAS	GARD
+508	Sondage Bou Rouch Dans Le Gardon	GARDONHY	FR		SAINT HILAIRE DE BRETHMAS	GARD
+509	Puits Tube Michon. Route De Gravesou	MICHONWE	FR		CHATEAURENARD	BOUCHES DU RHONE
+510	Puits Tube Aux Tavernes	TAVERNES	FR		RIBAUTE LES TAVERNES	GARD
+511	Puits De La Propriete Tricou	TRICOUWE	FR		POUSSAN	HERAULT
+512	Puits Tube Mr Sarrazin. Route De Gravesou	GRAVESOU	FR		CHATEAURENARD	BOUCHES DU RHONE
+513	Pt 63 (Bord Du Gardon Pompe De Monsieur Jeune)	PT63GARD	FR		SAINT HILAIRE DE BRETHMAS	GARD
+514	Spring Of Pichegru Ardeche France	PICHESP	FR		SAINT ANDRE DE CRUZIERES	ARDECHE
+515	Puits F1 Bassin Du Lez	TRIADOU	FR		LE TRIADOU	HERAULT
+518	Arroyo De Prado Negro Parque Natural Sierra De Huetor Granada. Same As Code Fardesaf	RIONEGRO	ES		EL MOLINILLO	GRANADA
+519	Affluent De La Rive Gauche Du  Rio Fardes	FARDESAF	ES		HUETOR SANTILLAN	GRANADA
+521	Riviere Souterraine De Beze Grotte De La Cretanne	BEZE	FR		BEZE	COTE D OR
+524	Spring Of La Bime Orleans France	LABIMESP	FR		ORLEANS	LOIRET
+525	Source Du Loiret	LOIRETSP	FR		ORLEANS	LOIRET
+527	Source De Cubio Arredondo	CUBIO	ES		ARREDONDO	CANTABRIA
+528	Manantial El Rescano Fuente Del Pozo Cotirio Mirones	RESCANO	ES		MIERA	SANTANDER
+529	Cueva De La Becerral La Gandara	BECERRAL	ES		SOBA	CANTABRIA
+530	Cueva Del Chico La Gandara	CHICO	ES		SOBA	CANTABRIA
+531	Nacimiento Del Gandara La Gandara	NACGANDA	ES		SOBA	CANTABRIA
+532	Cueva De Cuvera	CUVERA	ES		ARREDONDO	SANATANDER
+536	Cueva Del Lobo	LOBOCAVE	ES		SOBA	CANTABRIA
+538	Cueva Canuela	CANUELA	ES		ARREDONDO	CANTABRIA
+539	Surgencia Cueva La Cubera	CUBERASP	ES		ARREDONDO	CANTABRIA
+541	La Cueva De Cullalvera	CULLALVE	ES		RAMALES DE LA VICTORIA	CANTABRIA
+542	La Cueva Fria	FRIACAVE	ES		ASON	CANTABRIA
+543	Resurgence De Molino Val De Bustablado	MOLINO	ES		ARREDONDO	CANTABRIA
+544	Cueva Canales	CANALESC	ES		ARREBA	BURGOS
+545	Cueva La Coventosa	COVENTOS	ES		ARREDONDO	CANTABRIA
+547	Can022: Surgencia Del Rio Bustablado	BUSTABLA	ES		INCONNU	CANTABRIA
+548	Can023: Fuente Del Cocino	COCINOSP	ES		INCONNU	CANTABRIA
+549	Can170: Rio Deva Venta Rumenes (Point 2)	DEVAHY2	ES		INCONNU	CANTABRIA
+550	Can002: Cueva De Los Santos	LOSSANTO	ES		INCONNU	CANTABRIA
+551	Nacimiento Del Ason Soba	NACASON	ES		SOBA	CANTABRIA
+552	Puente Nuevo	NUEVOPUE	ES		MIERA	SANTANDER
+556	Cueva De La Carretera O Fuente Encalada	ENCALADA	ES		MORTESANTE	SANTANDER
+557	Cueva De Fuente Fria O Fuente Rebolla	FRIAFONT	ES		MIRONES	CANTABRIA
+558	Two Cuevas En La Pendiente E. De Rio Miera	MIERACA	ES		MIRONES	SANTANDER
+559	Cueva Cubio De La Renada	RENADACA	ES		MATIENZO	SANTANDER
+561	Cueva La Torcona	TORCONCA	ES		HORNILLAYUSO	BURGOS
+563	Well 3 Al Lado S. De Barrio San Juan	VIESGOW3	ES		PUENTE VIESGO	SANTANDER
+564	Verenne Mas D Arbousse	ARBOUSSE	FR		CEILHES ET ROCOZELS	HERAULT
+565	Grotte De Jallifiers Choranche	JALLIFIE	FR		CHORANCHE	ISERE
+566	Source Badroeid Unterseen	BADROEID	CH		INTERLAKEN	BERNE
+567	Moulin De Cramans Leyssard	CRAMANS	FR		CHALLES LA MONTAGNE	AIN
+568	Grotte Du Crochet Superieur Torcieu	CROCHET	FR		TORCIEU	AIN
+569	Grotte Roche Rencruel	ROCHE	FR		RENCRUEL	ISERE
+570	Source Kr Krautlandergraben	ROSSFELD	FR		ROSSFELD	BAS RHIN
+572	Grotte De Thais	THAISGR	FR		SAINT NAZAIRE EN ROYAN	DROME
+573	Ausserer Weissenbach Weissenbach Am Attersee	WEISSEN1	AT		MONDSEE	VOCKLABRUCK
+574	Galerie Communale Du Neblon	NEBLONCO	BE		JENNERET	SPRIMONT
+575	Source Waldegg Waldegg	WALDEGG	CH		INTERLAKEN	BERNE
+576	Kaiserbrunnen Unterach Am Attersee	UNTERACH	AT		MONDSEE	VOCKLABRUCK
+577	Galerie Drainante De Crupet	CRUPET	BE		ASSESSE	NAMUR
+578	Grotte De La Sainte Reine Pierre La Treiche	STEREINE	FR		PIERRE LA TREICHE	MEURTHE ET MOSELLE
+579	Loue Pont De Belmont	BELMONT	FR		BELMONT	JURA
+580	Source Vers La Cabordes	CABORDES	FR		BEURE	DOUBS
+581	Source Du Pre Joliot	JOLIOT	FR		ARGUEL	DOUBS
+582	Source De L Adouin	ADOUIN	FR		SAINT MARTIN EN VERCORS	DROME
+583	Source A Cote De La Grotte De Baume Les Messieurs Source Du Dard	BAUMEMES	FR		BAUME LES MESSIEURS	JURA
+584	A Environ 50m A L Amont Du Reservoir Marque Sur La Carte Ign Pas Loin De La Source De La Seille	BAUMERES	FR		BAUME LES MESSIEURS	JURA
+585	A Environ 200m En Aval De La Source De La Seille Sur Un Affluent De Meme Debit En Rive Droite	BAUMESEI	FR		BAUME LES MESSIEURS	JURA
+586	La Borne Aux Cassot A Nevy Sur Seille	BORCASSO	FR		NEVY SUR SEILLE	JURA
+588	Source Des Cent Fonts Causse De La Selle	CENTFONT	FR		CAUSSE DE LA SELLE	HERAULT
+590	Source Cernon	CERNONSP	FR		SAINTE EULALIE DE CERNON	AVEYRON
+593	A Environ 100m En Amont De La Fontaine Du Maine Griffon Qui Se Jette Dans La Loue	FONTMAIN	FR		SCEY MAISIERES	DOUBS
+594	Baume La Fraite Thoiria	FRAITE	FR		THOIRIA	JURA
+599	Grotte De Goule Noire	GOULENOI	FR		RENCRUEL	ISERE
+600	Resurgence De La Grande Baume Dans Les Paturages A L Entree Indique  Entree Interdite Presence De Bovins	GRANBAUM	FR		LODS	DOUBS
+601	En Rive Gauche De La Cuisance, Pas Loin De La Grande Source, Sous Forme De Griffons, Griffons 1 2 Et 3	GRANCUIS	FR		LA CHATELAINE	JURA
+602	Source Pres Des Grottes De La Doye Correspond Au Ruisseau Le Plus A Droite Griffon 2	GROTDOYE	FR		LES NANS	JURA
+603	Au Lieu Dit La Gypserie Source Captee Au Niveau Du Reservoir	GYPSERIE	FR		FONCINE LE BAS	JURA
+604	Source Homede	HOMEDE	FR		MILAU	AVEYRON
+605	A Gauche Apres Le Pont E L Est De Ladoye A Quelques Metres Du Ruisseau	LADOLIOU	FR		LADOYE SUR SEILLE	JURA
+606	A L Amont Du Captage	LAFRACAP	FR		LA FRASNEE	JURA
+607	Nerbier Jeurre	NERBIER	FR		JEURRE	JURA
+608	Grotte Du Piley Clairvaux Les Lacs	PILEY	FR		CLAIRVAUX LES LACS	JURA
+609	Source De Plainmont Resurgence Anciennement Captee Echantillonnage Realise Sur Un Griffon En Rive Droite Sous Une Dalle Du Captage	PLAINMON	FR		LA SOMMETTE	DOUBS
+610	Source Captee Au Croisement Des Routes Entre Deux Monts Et Les Planches En Montagne	PLANMONT	FR		LES PLANCHES EN MONTAGNE	JURA
+611	Sources Des Pucelles 3 Emergences Les 2 Plus A L Amont Echantillonnees La 1e Sous Eboulis La 2e Sous Un Porche Profondeur D Eau 2m Griffons 1 Et 2	PUCELLES	FR		LAVAL LE PRIEURE	DOUBS
+612	Resurgence Du Gyps Griffons En Rive Gauche Griffons 1 2 Et 3	RESUGYPS	FR		NANS SOUS SAINTE ANNE	DOUBS
+614	Source De Douay Argis	SCEDOUAY	FR		ARGIS	AIN
+615	Source Captee De Schlumberger	SCHLUMBE	FR		MALBUISSON	DOUBS
+616	Grotte De La Scie Soucia	SCIE	FR		SOUCIA	JURA
+617	Sur Le Site De La Source De La Loue Correspond En Fait A La Source Carree En Aval De La Source De La Loue	SOURLOUE	FR		OUHANS	DOUBS
+618	Source Du Verneau En Dessous De La Grotte Yves	SOURYVES	FR		NANS SOUS SAINTE ANNE	DOUBS
+619	Resurgence De La Vis	VIS	FR		VISSEC	GARD
+622	Grotte De Corveissiat	CORVEISS	FR		CORVEISSIAT	AIN
+624	Klutertquelle	KLUTERTQ	DE		SCHWELM	NORDRHEIN WESTFALEN
+625	Kuckelshauser Klutert (A Cave Below A Sport Resort)	KUCKELSH	DE		WEHRINGHAUSEN	NORDRHEIN WESFALEN
+626	Rothobornpader	ROTHOBOR	DE		PADERBORN	NORDRHEIN-WESTFALEN
+627	Ruppkaule	RUPPKAUL	DE		KONIGSWINTER	NORDRHEIN WESTFALEN
+628	Schonachquellen	SCHONACH	DE		SCHWABSOIEN	BAVIERE
+629	Spitzberger Suchstollen	SPITZIGE	DE		BAD GRUND	NIEDERSACHSEN
+630	Steinbeekestollen	STEINBEE	DE		BRENBECK	NIEDERSACHSEN
+631	Kneipp Anlage Blaubeuren (Close May Be The Same To Site Code Blaubeur)	BLAUBEU1	DE		BLAUBEUREN	BADEN WURTTEMBERG
+632	Rammelplatz Quelle	RAMMELSP	DE		DETTINGEN AN DER ERMS	BADEN WURTTEMBERG
+633	Zillas Keller (Probably A Spring)	ZILLASKE	DE		NUNKIRCHEN	SARRE
+634	Dielenpader	DIELENPA	DE		PADERBORN	NORDRHEIN WESTFALEN
+635	Quelle Im Gailsbach	GAILSBSP	DE		MANUBACH	RHEINLAND PFALZ
+636	Gipsminn Bei Girsterklaus	GIRSTERK	LU		GIRSTERKLAUS	ECHTERNACH
+638	Lowenspring	LOEWENSP	DE		ENNEPETAL	NORDRHEIN WESTFALEN
+639	Miniere Doihl	MINDOIHL	LU		RODANGE	ESCH SUR ALZETTE
+640	Bergwerk Oberachern (170402-19)	OBERACHE	DE		OBERACHERN	BADEN WURTTEMBERG
+641	Interstitial Pfadchensgraben	PFADCHHY	DE		RHEINBOLLEN	RHEINLAND PFALZ
+642	Untere Schonachquellen	SCHONASP	DE		SCHWABSOIEN	BAVIERE
+643	Quelle Am Zuckerberg	QUELZUCK	DE		BERNINGHAUSEN	NORDRHEIN WESTFALEN
+644	Buer Vu Fellerich Wash House Fed By A Spring	FELLERIC	DE		FELLERICH	RHEINLAND PFALZ
+645	Fontaine Des Noeuds 1 (170423-13)	FTNOEUDS	FR		CHATEAU CHALON	JURA
+646	Interstitial 4 Guldenbach	GULDENHY	DE		RHEINBOLLEN	RHEINLAND PFALZ
+647	Hirtenbach Quelle	HIRTENSP	DE		KRICKENBACH	RHEINLAND PFALZ
+648	La Mine Du Bout Du Monde	BOUDUMON	FR		LE PERREON	RHONE
+650	Source De Lasfons	LASFONS2	FR		MOLIERES CAVAILLAC	GARD
+651	Riviere De La Grotte D Aze	GROTTAZE	FR		AZE	SAONE ET LOIRE
+652	Source De Saint Materne	STMATERN	FR		SAND	BAS RHIN
+653	Loue Pont De Montbarrey	MONTBAR	FR		MONTBARREY	JURA
+666	Nappe Sous Fluviale De L Albarine	ALBARIHY	FR		TORCIEU	AIN
+667	Puits Pres D Aschaffenburg Dans La Vallee Du Main (Trois Puits)	ASCHAFFE	DE		ASCHAFFENBURG	BAVIERE
+668	Nappe Phreatique A Bad Langensalza	BADLANGE	DE		BAD LANGENSALZA	THURINGE
+669	Mare D Eau Dans Un Souterrain Militaire	BAMBIDER	FR		BAMBIDERSTROFF	MOSELLE
+670	Bath Stone Mines, Corsham	BATHSTON	GB		DITTERIDGE	NORTH WILTSHIRE
+671	Beatushohle	BEATUSHO	CH		BEATENBERG	BERN
+673	Belmont Nappes Alluviale Et Sous Alluviale De La Loue	BELMONAL	FR		BELMONT	JURA
+675	Puits A Bienne	BIENNEWE	CH		BIENNE	BERN
+676	Conduites D Eau De Nancy. Reservoir De Boudonville	BOUDONVI	FR		NANCY	MEURTHE ET MOSELLE
+677	Grotte De Bournillon	BOURNILL	FR		CHATELUS	ISERE
+678	Grotte De Vers Chez Le Brandt	BRANDTCA	CH		LES VERRIERES	NEUCHATEL
+680	Puits A Lauterbach (Bregenz Vorarlberg)	BREGENZW	AT		BREGENZ	VORARLBERG
+681	Lac Des Quatre Cantons (Dragage Effectue A 200 M De Profondeur)	CANTONLA	CH		STANS	UNTERWALDEN
+683	Sbr Cernon. 2km Amont De Nouzet	CERNONHY	FR		SAINT ROME DE CERNON	AVEYRON
+684	Loue Pont De Chamblay	CHAMBLAY	FR		CHAMBLAY	JURA
+685	Chappeli Hohle	CHAPPELI	CH		WARTAU	SAINT GALL
+686	Grotte Corbel A La Frontiere Franco Belge	CORBELCA	BE		VAUCELLES	NAMUR
+687	Grotte Du Cormoran	CORMORAN	FR		TORCIEU	AIN
+690	Grotte De La Fontaine De Creuse	CREUSECA	FR		BLAMONT	DOUBS
+691	Dan Yr Ogof	DANYROGO	GB		CRAIG Y NOS	BRECONSHIRE
+693	Dartford, 1.5 Miles Sw Of Wilmington	DARTFORI	GB		SWANLEY	WEST KENT
+694	Nappe Sous Fluviale Du Dourdou	DOURDOAL	FR		SAINT IZAIRE	AVEYRON
+695	Nappe Alluviale De La Durance	DURANCAL	FR		SENAS	BOUCHES DU RHONE
+696	Source De L Enrage	ENRAGESP	FR		MOLINGES	JURA
+697	Etretat. Resurgences D Eau Douce Dans La Zone Interdidale	ETRETATP	FR		ETRETAT	SEINE MARITIME
+698	Puits Tube A Eysden (Limbourg)	EYSDENWE	NL		EIJSDEN	LIMBOURG
+699	Mine De Faulx	FAULXMIN	FR		MARON	MEURTHE ET MOSELLE
+700	Grotte De Faustloch	FAUSTLOC	CH		HABKERN	BERNE
+701	Source Font Fiole Au Mont Ventoux	FONTFIOL	FR		SAINT LEGER DU VENTOUX	VAUCLUSE
+702	La Foux De Pompignan	FOPOMPIG	FR		POMPIGNAN	GARD
+703	Grotte Resurgences Des Forges	FORGESSP	FR		MOIRANS EN MONTAGNE	JURA
+704	Gitziloch (Grotte) Flaques Permanentes	GITZILOC	CH		COURT	BERNE
+705	Source A Gorze	GORZESOU	FR		GORZE	MOSELLE
+707	Sbr Graviere Du Tarn	GRATARNH	FR		SAINT ROME DE TARN	AVEYRON
+709	Mines Dans Le Massif Schisteux Du Harz	HARZMINE	DE		LERBACH	BASSE SAXE
+710	Hilgenhauser Hole (Hessen Nassau)	HILGENHA	DE		INCONNU	HESSE
+711	Grotte Du Holloch	HOLLOCHC	CH		MUOTALTHAL	SCHWYZ
+714	Grotte De Hotton	HOTTONCA	BE		HOTTON	LUXEMBOURG
+715	Grotte De Gournier	IGOURNIE	FR		CHORANCHE	ISERE
+716	Nappe Alluviale De La Jeeker (Maastricht Limbourg)	JEEKERAL	NL		MAASTRICHT	LIMBOURG
+717	Fontaine De Jouvence	JOUVENCE	FR		MESSIGNY ET VANTOUX	COTE D OR
+718	Grotte Julio	JULIOCA	FR		OLARGUES	HERAULT
+719	Kleinhohle	KLEINHOH	CH		BURGDORF	BERN
+720	Kluterthohle	KLUTERTH	DE		SCHWELM	NORDRHEIN WESTFALEN
+721	Kristallhohle	KRISTALL	CH		OBERRIET	SAINT GALL
+723	Lauiloch Cave	LAUILOCH	CH		MUOTATHAL	SCHWYZ
+726	Six Puits Tubes Dans La Nappe Alluviale De La Leine Et Source	LEINEWEL	DE		GRONAU	BASSE SAXE
+727	Lac Leman (Dragage Devant Morges Entre 100 Et 200 M De Profondeur)	LEMANLA	CH		MORGES	VAUD
+728	Mine De Moutiers	MOUTIEMI	FR		MOYEUVRE GRANDE	MOSELLE
+729	Ogof Ffynnon Ddu Glyntawe	OGOF	GB		GLYNTAWE	BRECONSHIRE
+731	Ogof Rhyd Sych, Vaynor	OGOFVAYN	GB		PONTSARN	BRECONSHIRE
+732	Puits Maconnes Dans Les Alluvions De La Rivi├Êre Oker	OKERWELL	DE		BRUNSWICK	BASSE SAXE
+733	Nappe Sous Fluviale De L Orb	ORBNAPPE	FR		CEILHES ET ROCOZELS	HERAULT
+734	Mine Orne Pauline	ORNEPAUL	FR		MONTOIS LA MONTAGNE	MOSELLE
+735	Otter Hole, Near Chepstow	OTTERHOC	GB		ST ARVANS	MONMOUTHSHIRE
+736	Mine De Plomb Du Perreon	PERREOMI	FR		LE PERREON	RHONE
+737	Grotte De Pertuis	PERTUISC	FR		LHUIS	AIN
+738	Grotte Du Pissoir	PISSOIRC	FR		TORCIEU	AIN
+739	Gouffre De Pourpevelle	POURPEVE	FR		SOYE	DOUBS
+740	Ptd7: Puits Tube Au Bord De La Durance	PTD7SENA	FR		SENAS	BOUCHES DU RHONE
+741	Puits Blanc	PTSBLANC	FR		VILLARDS D HERIA	JURA
+742	Mine De Pulventeux	PULVENTE	FR		MONT SAINT MARTIN	MEURTHE ET MOSELLE
+743	Sous Ecoulement Au Bief Ravinet	RAVINETB	FR		TORCIEU	AIN
+744	Grotte De Remouchamps	REMOUCHA	BE		REMOUCHAMPS	LIEGE
+746	Nappe Alluviale Du Rhin	RHINNAPP	FR		STRASBOURG	BAS RHIN
+747	Nappe Alluviale Du Rhin Et De Son Allfuent La Sieg	RHINSIE1	DE		BONN	WESTPHALIE
+748	Nappe Alluviale Du Rhin Et De Son Allfuent La Sieg	RHINSIE2	DE		SIEGBURG	WESTPHALIE
+749	Roke Farm, Bere Regis	ROKEFARM	GB		BERE REGIS	DORSET
+750	Carriere De Welferding Sarreguemines	SARREGUE	FR		SARREGUEMINES	MOSELLE
+752	Schichtfugenhohle	SCHICHTF	AT		SCHNECKENLOCH	VORARLBERG
+753	Sources Dans Le Massif De La Bruche Pres De Schirmeck	SCHIRMEC	FR		SCHIRMECK	BAS RHIN
+754	Seefeldhohle	SEEFELDH	CH		HABKERN	BERN
+755	Grottes Des Siebengebirge	SIEBENGE	DE		ITTENBACH	WESTPHALIE
+756	Source Du Solnan	SOLNANSP	FR		VERJON	JURA
+757	Grotte De Sainte Anne	STANNECA	BE		BRIALMONT	LIEGE
+759	Mine Sainte Anne	STANNEMI	FR		SEXEY AUX FORGES	MEURTHE ET MOSELLE
+760	Grotte De Sainte Catherine	STCATHER	FR		LAVAL LA PRIEURE	DOUBS
+762	Mine St Paul	STPAULMI	FR		MOYEUVRE GRANDE	MOSELLE
+763	Puits Tube A Strucht (Limbourg)	STRUCHTW	NL		STRUCHT	LIMBOURG
+764	Source Du Suran	SURANSP	FR		LOISIA	JURA
+765	Grotte Du Ta (Plus)	TAPLUSCA	FR		SAINT NAZAIRE EN ROYANS	DROME
+766	Town Well, Ringwood	TOWELLRW	GB		FERNDOWN	SOUTH HAMPSHIRE
+768	Tropflochhohle	TROPFLOC	CH		HABKERN	BERN
+769	Tschamberhohle	TSCHAMBE	CH		RUEGGISBERG	BERN
+770	Tunnel De Drom	TUNNDROM	FR		DROM	AIN
+771	Ueberhohle	UEBERHCA	CH		RIED	SCHWYZ
+772	Plusieurs Sources Au Sud Du Massif Des Vosges Pres Du Val D Ajol	VALDAJOL	FR		LE VAL D AJOL	VOSGES
+773	Mine Du Val De Fer	VALFERMI	FR		MARON	MEURTHE ET MOSELLE
+774	Source Du Valsin	VALSINSP	FR		FETIGNY	JURA
+775	Resurgences D Eau Douce Dans La Zone Interdidale. Plage De Vasterival	VASTERIV	FR		SAINTE MARGUERITE SUR MER	SEINE MARITIME
+776	Grotte De La Vezelle	VEZELLCA	FR		OLARGUES	HERAULT
+777	Waterston Cress Beds	WACRESSB	GB		WATERSTON	DORSET
+778	Walophohle	WALOPHOH	CH		BOLTIGEN	BERN
+779	Six Tubes Norton Et Skc Dans Nappe Alluviale De La Weser	WESERWE	DE		HOLZMINDEN	BASSE SAXE
+780	Wildenmannlislochli	WILDENMA	CH		ALT SANKT JOHANN	SAINT GALL
+781	Puits A Zurich	ZURICHWE	CH		ZURICH	ZURICH
+782	Felsstrassenstollen 6710 910 Rhineland Palatinate Germany	DELLFELD	DE		DELLFELD	RHENANIE PALATINAT
+786	Echenburg	ECHENBUR	DE		ECHENBURG	HESSE
+787	River Dourdou Saint Izaire	IZAIRE	FR		SAINT IZAIRE	AVEYRON
+788	Mondsee	MONDSEE	AT		MONDSEE	VOCKLABRUCK
+789	Gouffre De L'avenir	AVENIRCA	FR		SAVONNIERES EN PERTHOIS	MEUSE
+790	Puits A Biberach	BIBERAWE	DE		BIBERACH	BADE WURTEMBERG
+791	Puits A Breisach	BREISAWE	DE		BREISACH AM RHEIN	BADE WURTEMBERG
+792	Fontaine 50 Rue Principale	COUMEFON	FR		COUME	MOSELLE
+793	Falkensteiner Hohle	FALKENCA	DE		URACH	BADE WURTEMBERG
+794	Puits A Fribourg En Brisgau	FRIBOUWE	DE		FREIBURG IM BREISGAU	BADE WURTEMBERG
+795	Puits Tube Des Iscles A Senas. A Cote De La Durance	ISCLESWE	FR		SENAS	BOUCHES DU RHONE
+797	Puits A Munich	MUNICHWE	DE		MUNICH	BAVIERE
+798	Sbr Dans L Orb A Ceilhes	ORBCEILH	FR		CEILHES ET ROCOZELS	HERAULT
+799	Ounans Nappes Sous Fluviale Et Alluviale De La Loue (Entre Belmont Et Chamblay)	OUNANSLO	FR		OUNANS	JURA
+800	Puits Tube A Tubingen	TUBINGWE	DE		TUBINGEN	BADE WURTEMBERG
+801	Schneckenloch. Vorarlberg	VORARLBE	AT		VORARLBERG	BLUDENZ
+804	Grosse Baschghohle 1112 1 Ubersaxen	BASCHGGR	AT		UBERSAXEN	VORARLBERG
+805	Burkheimer See 3	BURKH3	DE		BURKHEIM	BADE WURTEMBERG
+806	Tiefensstollen St Marie Aux Mines	CATIEFEN	FR		SAINTE MARIE AUX MINES	HAUT RHIN
+808	Well 701a_006	MITTENA	DE		MINTTENWALD	GARMISCH PARTENKIRCHEN
+809	Well 701b_006	MITTENB	DE		MINTTENWALD	GARMISCH PARTENKIRCHEN
+810	Muhlbachquellgrotte East And Main Passage	MUHLBAGR	DE		MUHLBACH	OBERPFALZ
+812	Swildon S Hole Priddy	SWILDON	GB		PRIDDY	SOMERSET
+813	Tyning S Barrow Swallet Great Elm	TYNINGS	GB		GREAT ELM	NORTH SOMERSET
+814	Binghohle Near Streiberg C15	BINGHOHL	DE		STREIBERG	BAVARIA
+815	Grotte De L Ascension	GRASCENS	FR		OLARGUES	HERAULT
+816	Source D Isis Aveze	ISIS	FR		AVEZE	GARD
+817	Well Mit 006_701	MITTENW	DE		MINTTENWALD	GARMISCH PARTENKIRCHEN
+818	Elm Hole Clydach	ELM	GB		CLYDACH	MONMOUTHSHIRE
+821	Grotte De Milandre	MILANDRE	CH		BONCOURT	PORRENTRUY
+825	Grotte De La Touviere	TOUVIEGR	FR		COYRON	JURA
+826	Niederrimsinger See 13_020_0	NIEDERR1	DE		NIEDERRIMSINGEN	BADE WURTEMBERG
+827	Site Abern140 In Abern Bei Jeging	ABERN140	AT		ABERN BEI JEGING	SALZBURGER
+828	Acotts Barn Borehole, Near Cirencester	ACOTTSBA	GB		STRATTON	EAST GLOUCESTERSHIRE
+829	Agen Allwedd, Crickhowell	AGENALLW	GB		CRICKHOWELL	BRECONSHIRE
+842	Site Aigen081 In Aigen	AIGEN081	AT		AIGEN	SALZBURGER
+843	Site Anif016 In Anif	ANIF016	AT		ANIF	SALZBURGER
+844	Site Anthe044 In Anthering	ANTHE044	AT		ANTHERING	SALZBURGER
+845	Site Aspac119 In Aspach	ASPAC119	AT		ASPACH	SALZBURGER
+846	August Hole (Now Longwood Swallet)	AUGUSTHO	GB		CHARTERHOUSE	NORTH SOMERSET
+847	Barcombe Farm	BARCOMBE	GB		ALTON PANCRAS	DORSET
+848	Barlands Sink Hole, Bishopton Valley	BARLANDS	GB		BISHOPSTON	GLAMORGAN
+849	Barnsley Farm, Borehole No 3	BARNSLEY	GB		LOWER BARNSLEY	DORSET
+850	Grotte Du Brudour	BRUDOURC	FR		BOUVANTE	DROME
+851	Site Burgk177 In Burgkirchen	BURGK177	AT		BURGKIRCHEN	SALZBURGER
+852	Charterhouse Cave	CHARTECA	GB		CHARTERHOUSE	NORTH SOMERSET
+854	Clydach South Resurgence	CLYDASSP	GB		CLYDACH	BRECONSHIRE
+855	Clydach South Resurgence 2	CLYDSSP2	GB		CLYDACH	BRECONSHIRE
+856	Crane Bridge Borehole, Near Cirencester	CRANEBRI	GB		SOUTH CERNEY	EAST GLOUCESTERSHIRE
+857	Cuckoo Cleeves	CUCKOOCL	GB		GREEN ORE	NORTH SOMERSET
+859	Cwm Dwr Quarry Cave, Penwyllt (Part Of Ofd)	CWMDWRCA	GB		PENWYLLT	BRECONSHIRE
+861	Cwn Alun Ford Borehole	CWNALUNF	GB		LLAMPHA	GLAMORGAN
+871	Sbr Dourdou (Riviere) Pont Du Village	DOURDOHY	FR		SAINT IZAIRE	AVEYRON
+872	Eastwater Cavern	EASTWACA	GB		PRIDDY	NORTH SOMERSET
+879	Friar Waddon, Observation Borehole 1	FRIARWA1	GB		FRIAR WADDON	DORSET
+880	Friar Waddon, Observation Borehole 3	FRIARWA3	GB		FRIAR WADDON	DORSET
+881	Site Fried132 In Friedburg	FRIED132	AT		FRIEDBURG	SALZBURGER
+882	Site Fried133 In Friedburg	FRIED133	AT		FRIEDBURG	SALZBURGER
+883	Frilsham B	FRILSHAM	GB		FRILSHAM	BERKSHIRE
+884	Garth Iron Mine, Garth Wood.	GARTHIRO	GB		PENTYRCH	GLAMORGAN
+885	Gb Cave	GBCAVEUK	GB		CHARTERHOUSE	NORTH SOMERSET
+888	Goatchurch Cavern, Burrington Coombe	GOATCHUR	GB		BURRINGTON	NORTH SOMERSET
+889	Gough S Cave, Cheddar Gorge	GOUGHSCA	GB		CHEDDAR	NORTH SOMERSET
+892	Site Haide172 In Haiden Bei Braunau	HAIDE172	AT		HAIDEN BEI BRAUNAU	SALZBURGER
+893	Hirnant River, Trib Of Wye	HIRNANTR	GB		NEWBRIDGE ON WYE	BRECONSHIRE
+894	Site Kuchl216 In Kuchl	KUCHL216	AT		KUCHL	SALZBURGER
+895	Site Kuchl217 In Kuchl	KUCHL217	AT		KUCHL	SALZBURGER
+896	Site Lach173 In Lach	LACH173	AT		LACH	SALZBURGER
+897	Lesser Garth Cave	LESSERGA	GB		PENTYRCH	GLAMORGAN
+900	Site Licht110 In Lichteneck	LICHT110	AT		LICHTENECK	SALZBURGER
+901	Spring Head Of Little Stour River	LITSTOU1	GB		BEKESBOURNE	EAST KENT
+902	Little Stour River, Between Littlebourne & Wickhambreaux	LITSTOUR	GB		WICKHAMBREAUX	EAST KENT
+904	Llewellyns Ea Borehole, Nr Llanllowell	LLEWELLY	GB		LLANLLYWEL	MONMOUTHSHIRE
+905	Longwood Swallet	LONGWOOD	GB		CHARTERHOUSE	NORTH SOMERSET
+907	Deux Puits A Maastricht Nappe Alluviale De La Jeeker	MAASTRIC	NL		MAASTRICHT	LIMBOURG
+908	Mace Farm	MACEFARM	GB		HAZELWOOD	WEST KENT
+909	Manor Farm Swallet	MANORFAS	GB		CHARTERHOUSE	NORTH SOMERSET
+910	Site Matti060 In Mattighofen	MATTI060	AT		MATTIGHOFEN	SALZBURGER
+911	Site Matti129 In Mattighofen	MATTI129	AT		MATTIGHOFEN	SALZBURGER
+912	Site Mauer179 In Mauerkirchen	MAUER179	AT		MAUERKIRCHEN	SALZBURGER
+913	Nant Esgair Garn	NANTESGA	GB		CWM IRFON	BRECONSHIRE
+914	Nant Gwenlais Spring	NANTGWEN	GB		CARMEL	CARMARTHENSHIRE
+915	Puits A La Ferme Nekum	NEKUMWEL	NL		MAASTRICHT	LIMBOURG
+916	Site Niede034 In Niederalm	NIEDE034	AT		NIEDERALM	SALZBURGER
+917	Northmoor	NORTHMOO	GB		HAREFIELD	BUCKINGHAMSHIRE
+918	North Of Pontypool	NPONTYPO	GB		CWMAVON	MONMOUTHSHIRE
+928	Ogof Capel	OGOFCAPE	GB		BLACKROCK	BRECONSHIRE
+929	Ogof Clogwyn, Brynmawr	OGOFCLOG	GB		BLACKROCK	BRECONSHIRE
+930	Ogof Cwm Dyar	OGOFCWMD	GB		CLYDACH	BRECONSHIRE
+931	Ogof Cynnes, Mynydd Llangyndr	OGOFCYNN	GB		WERN	BRECONSHIRE
+933	Ogof Dan Y Lleuad Wen	OGOFDANY	GB		GWYNFE	CARMARTHENSHIRE
+936	Ogof Ffynnon Ddu I	OGOFDDU1	GB		PENWYLLT	BRECONSHIRE
+937	Ogof Ffynnon Dhu Ii	OGOFDDU2	GB		PENWYLLT	BRECONSHIRE
+939	Ogof Ffynnon Ddu Ii	OGOFDDU4	GB		PENWYLLT	BRECONSHIRE
+940	Ogof Draenen	OGOFDRAE	GB		CLYDACH	BRECONSHIRE
+952	Ogof Ffynnon Ddu Pant Mawr Sssi	OGOFFFYN	GB		PENWYLLT	BRECONSHIRE
+954	Ogof Pant Canol (Part Of Ofd)	OGOFPANT	GB		PENWYLLT	BRECONSHIRE
+957	Ogof Tardiadd Rhymney	OGOFTARD	GB		TREFIL	BRECONSHIRE
+958	Ogof Triachwech, Ystradfellte	OGOFTRIA	GB		PENWYLLT	BRECONSHIRE
+961	Ogof Y Ci, Vaynor	OGOFYCIV	GB		PONTSARN	BRECONSHIRE
+964	Puits A Oost Maarland	OOSTMAAR	NL		EYSDEN	LIMBOURG
+967	Site Pfaff152 In Pfaffstatt	PFAFF152	AT		PFAFFSTATT	SALZBURGER
+968	Site Pisch186 In Pischelsdorf	PISCH186	AT		PISCHELSDORF	SALZBURGER
+969	Site Pisch187 In Pischelsdorf	PISCH187	AT		PISCHELSDORF	SALZBURGER
+970	Overflow From Pontnewynydd Rising	PONTNEWY	GB		PONTYPOOL	BRECONSHIRE
+971	Porth Yr Ogof	PORTHYRO	GB		YSTRADFELLTE	BRECONSHIRE
+975	River Alun Resurgence	RIALUNSP	GB		EWENNY	GLAMORGAN
+976	River Piddle, Manor Farm	RIVPIDDL	GB		WATERSTON	DORSET
+980	Site Salzb002 In Salzburg	SALZB002	AT		SALZBURG	SALZBURGER
+981	Site Salzb015 In Salzburg	SALZB015	AT		SALZBURG	SALZBURGER
+982	Site Salzb053 In Salzburg	SALZB053	AT		SALZBURG	SALZBURGER
+983	Site Salzb058 In Salzburg	SALZB058	AT		SALZBURG	SALZBURGER
+984	Site Salzb064 In Salzburg	SALZB064	AT		SALZBURG	SALZBURGER
+985	Site Salzb074 In Salzburg	SALZB074	AT		SALZBURG	SALZBURGER
+986	Site Salzb075 In Salzburg	SALZB075	AT		SALZBURG	SALZBURGER
+987	Site Salzb084 In Salzburg	SALZB084	AT		SALZBURG	SALZBURGER
+988	Site Salzb085 In Salzburg	SALZB085	AT		SALZBURG	SALZBURGER
+989	Site Schal127 In Schalchen	SCHAL127	AT		SCHALCHEN	SALZBURGER
+990	Schandtauberhoehle 2 (Schrozberg)	SCHANDTA	DE		BETTENFELD	BAVIERE
+991	Schwyll Borehole	SCHWYLLP	GB		EWENNY	GLAMORGAN
+992	Schwyll Springs Outflow	SCHWYLLS	GB		EWENNY	GLAMORGAN
+995	St Cuthbert S Swallet	SCUTHBER	GB		PRIDDY	NORTH SOMERSET
+1002	Shepherd S Cottage, Crowmarsh Gifford	SHEPHERC	GB		PRESTON CROWMARSH	OXFORDSHIRE
+1003	Site Solle149 In Sollern	SOLLE149	AT		SOLLERN	SALZBURGER
+1004	Spratts Barn Mine, Stonesfield	SPRATTSB	GB		STONESFIELD	OXFORDSHIRE
+1005	St David S Well, Porthcawl	STDAVIDW	GB		NOTTAGE	GLAMORGAN
+1006	Site Stras099 In Strasswalchen	STRAS099	AT		STRASSWALCHEN	SALZBURGER
+1007	Site Stras100 In Strasswalchen	STRAS100	AT		STRASSWALCHEN	SALZBURGER
+1008	Puits A Strucht Vallee De La Gulp Nappe Phreatique A 9 M	STRUCHTP	NL		STRUCHT	LIMBOURG
+1033	Site Thalg224 In Thalgau	THALG224	AT		THALGAU	SALZBURGER
+1034	Ulwell	ULWELLPT	GB		ULWELL	DORSET
+1038	Waterwheel Swallet	WATWHEEL	GB		CHARTERHOUSE	NORTH SOMERSET
+1039	Kellerbrunnen Hausen Baviere Germany	HAUSENWE	DE		HAUSEN	BAVIERE
+1044	Burkheimer See 42 019 5	BURKH4	DE		BURKHEIM	BADE WURTEMBERG
+1049	Opfinger See 732_069_8	OPFING3	DE		OPFINGEN	BADE WURTEMBERG
+1051	Raisse Spring Saint Sulpice Canton Vaud Switzerland	RAISSESP	CH		SAINT SULPICE	VAUD
+1052	Source De La Cascade De Bellegarde Jaun	BELLEGAR	CH		JAUN	FRIBOURG
+1053	Source De La Quinquenouille Chatonnay	QUINQUE	FR		CHATONNAY	JURA
+1058	Ogof Ffynnon Dhu I	OGOFDDU3	GB		PENWYLLT	BRECONSHIRE
+1061	Source Des Fontanilles Puechabon	FONTANIL	FR		PUECHABON	HERAULT
+1062	Valfin Sur Valouse	VALFIN	FR		VALFIN SUR VALOUSE	JURA
+1063	Pisciculture - Anchay	ANCHAYSP	FR		ANCHAY	JURA
+1064	Soucre Du Moulin D Arinthod	ARINTHSP	FR		ARINTHOD	JURA
+1065	Source Captee - Chalea	CHALEASP	FR		CHALEA	JURA
+1066	Source Sur Les Routes - Charix	CHARIXSP	FR		CHARIX	AIN
+1067	Source De Charvieux 3 - Charvieux	CHARVIE3	FR		CHARVIEUX	AIN
+1068	Sources Combe Bernay - Fetigny	COBERNAY	FR		FETIGNY	JURA
+1069	Source De Condes (Amont Bassin)	CONDESSP	FR		CONDES	JURA
+1070	Source De Courllou (Valfin)	COURLLOU	FR		VALFIN SUR VALOUSE	JURA
+1074	Source De La Douay - Argis	DOUAYASP	FR		ARGIS	AIN
+1075	Source De Drevel - Chamberia	DREVELSP	FR		CHAMBERIA	JURA
+1076	Source Fontaine Rey - Neuville Sur Ain	FONTAREY	FR		FROMENTE	AIN
+1077	Source De La Foule - Merlia	FOULEMSP	FR		MERLIA	JURA
+1078	Source De Genin	GENINSPR	FR		APREMONT	AIN
+1079	Baume De Marangea(Grotte De La)	MARANGEA	FR		MARANGEA	JURA
+1080	Source De Moulin Neuf - Merlia - Griffons	MERLIAMO	FR		MERLIA	JURA
+1081	Source Captee - Montrevel	MONTREVE	FR		MONTREVEL	JURA
+1082	Source Noire - Germagnat	NOIRESPG	FR		GERMAGNAT	AIN
+1083	Pompe Jardin - Serrieres	SERRIERE	FR		SERRIERES	AIN
+1084	Source N2 - Volognat	SPVOLOGN	FR		VOLOGNAT	AIN
+1085	Source Du Suran - Loisia	SURANLSP	FR		LOISIA	JURA
+1086	Source - Captage De Valfin	VALFINSP	FR		VALFIN SUR VALOUSE	JURA
+1087	Fontaine De Durand Volognat 433	FTVOLOGN	FR		NURIEUX VOLOGNAT	AIN
+1088	Pont Du Lez Aval Montjoux Montjoux	MONTJOU1	FR		MONTJOUX	DROME
+1089	Source De L Adoux Herault	ADOUXSP	FR		PEGAIROLLES DE L ESCALETTE	HERAULT
+1090	Small Stream In Angerlloch Cave Near Walchensee Lake Germany Estergebirge Alps Baviere	ANGERLCA	DE		KRUN	BAVIERE
+1091	Grotte Du Bousquet Herault	BOUSQUCA	FR		PEGAIROLLES DE L ESCALETTE	HERAULT
+1092	Phreatic Water Well Dettingen Unter Teck Germany	DETTINWE	DE		DETTINGEN UNTER TECK	BADEN WURTTEMBERG
+1094	Source De Payrol Herault	PAYROLSP	FR		LAUROUX	HERAULT
+1095	Phreatic Water Well Sussen Germany	SUSSENWE	DE		SUSSEN	BADEN WURTTEMBERG
+1096	Quelle Near Waldbronn Germany	WALDBRSP	DE		WALDBRONN	BADEN WURTTEMBERG
+1097	Artzegi Ko Goba Sierra De Gorbea	ARTZEGI	ES		CIGOITIA	ALAVA
+1098	Cueva Mairuelegorreta	MAIRUELE	ES		CIGOITIA	ALAVA
+1103	Grotte Haytzalde Saint Etienne De Baigorry	HAYTZA	FR		SAINT ETIENNE DE BAIGORRY	PYRENNEES ATLANTIQUES
+1104	Grotte D Oyanbeltza Saint Michel	OYANBELT	FR		SAINT MICHEL	PYRENNEES ATLANTIQUES
+1106	Grotte Zahasta	ZAHASTAC	FR		LECUMBERRY	PYRENEES ATLANTIQUES
+1111	Source Ruisseau De Bondoire Saint Vincent Rive D Orl	VINCENT	FR		SAINT VINCENT RIVE D ORL	LOT
+1113	Resurgence De Navaillan Navaillan	NAVAILLO	FR		NAVAILLAN	PYRENNEES ATLANTIQUES
+1114	Source Pourrut Du Maa Moliets Et Maa	POURRUT	FR		DAX	LANDES
+1115	Pont De Peyre Cauneille	PPEYRE	FR		CAUNEILLE	PYRENNEES ATLANTIQUES
+1116	Le Luy De Bearn A Larreule Site 127	LARREURI	FR		LARREULE	PYRENEES ATLANTIQUES
+1122	Exsurgence De La Grotte De Souerces 10 M En Aval De La Grotte Castelnau Tursan Landes France	SOUERCSP	FR		CASTELNAU TURSAN	LANDES
+1124	Ruisseau Souterrain De La Grotte De Sare	SARERUCA	FR		SARE	PYRENEES ATLANTIQUES
+1125	La Grotte A Lulu	GROTLULU	FR		SAINT PIERRE D IRUBE	PYRENNEES ATLANTIQUES
+1126	Grotte Arrimblar	ARRIMBLA	FR		DONZACQ	LANDES
+1127	Grotte De Menjot	MENJOTCA	FR		LAHOSSE	LANDES
+1129	Grotte De Souercs	SOUERCCA	FR		CASTELNAU TURSAN	LANDES
+1130	Affluent De La Leyre Juste Avant La Confluence	MIOSLEY	FR		MIOS	GIRONDE
+1131	Stream Arotzarena Erreka	AROTZARE	ES		ZUGARRAMURDI	NAVARRE
+1132	Estrigon River Cere Village Amont Pont Lieu Dit Pebarthe	ESTRIGON	FR		CERE	LANDES
+1133	Riviere Grande Leyre Sabres: D44. Pont De Rotgee	LEYRERIV	FR		SABRES	LANDES
+1134	Fuente Aizpara	AIZPARA	ES		ZUGARRAMURDI	NAVARRA
+1135	Fuente Aizpara	AIZPARAF	ES		ZUGARRAMURDI	NAVARRA
+1137	Rio Velez Vinuela	VELEZ	ES		VINUELA	MALAGA
+1138	Rio De Mecina Mecina Bombaron	MECINA	ES		MECINA BOMBARON	GRANADA
+1139	Hyporheic Zone Of Rio Alcolea At Cherin	HALCOLEA	ES		CHERIN	ALMERIA
+1140	Rio Guadalmedina Aval De Casabermeja	GUADALME	ES		CASABERMEJA	MALAGA
+1141	Rio Salia	RIOSALIA	ES		LA VINUELA	MALAGA
+1142	Rio De Alcolea	ALCOLEA	ES		CHERIN	ALMERIA
+1143	Rio Cadiar O Guadalfeo	CADIARRI	ES		BERCHULES	GRANADA
+1144	Arroyo De Cuchillar	CUCHILLA	ES		PERIANA	MALAGA
+1145	Rio De Lentegi Lentegi	LENTIGI	ES		LENTEGI	GRANADA
+1147	Rio De Miel	MIELRIO	ES		NERJA	MALAGA
+1148	Rio De Moro	MORORIO	ES		NERJA	MALAGA
+1149	Rio Trevelez	TREVELEZ	ES		TREVELEZ	GRANADA
+1151	Puits D Eau Douce A Neriantza	NERIANTZ	GR		INCONNU	CRETE
+1152	Springs And Wells Along Belareca River Between Mehadia And Toplet Cities	BELARECA	RO		PECINISCA	CARAS SEVERIN
+1153	Brunnen Der Gemeinde Girlita (Dobrogea)	GARITAWE	RO		GARLITA	CONSTANTA
+1154	Drava River 2 Malecnik	MALECNI2	SI		MARIBOR	MARIBOR
+1155	Drava River Rosnja	ROSNJA	SI		PTUJE	DUPLEK
+1156	Sava River Podgrad	PODGRAD	SI		LUBJANA	LJUBLJANA
+1157	Sava River At Catez Ob Savi	CATEZSAV	SI		CATEZ OB SAVI	BREZICE
+1158	Sava River At Obrezje	OBREZJE	SI		OBREZJE	BREZICE
+1159	Phreatic Water Along The Sava River Near Srednje Gameljne	SREDNJE	SI		SREDNJE GAMELJNE	LJUBLJANA
+1160	Hyporheic Zone And Phreatic Water Along The Sava River Near Kresnice	KRESNICE	SI		KRESNICE	LITIJA
+1161	Nortonbrunnen Am Dovjet Bei Ljubljana (Sava-Uter Bei Ljubljana)	DOVJETWE	SI		LJUBLJANA	LJUBLJANA
+1162	Code Station Croati01	CROATI01	HR		INCONNU	INCONNU
+1163	Code Station Croati10	CROATI10	HR		INCONNU	INCONNU
+1164	Dovjez	DOVJEZLJ	SI		SPODNJE GAMELJNE	LJUBLJANA
+1165	Nortonbrunnen In Slovenj Gradec	GRADECSL	SI		SLOVENJ GRADEC	SLOVENJ GRADEC
+1166	Ljubljana	LJUBLJA2	SI		LJUBLJANA	LJUBLJANA
+1167	Ljubljansko Polje	LJUPOLJE	SI		HRASTJE PRI GROSUPLJEM	GROSUPLJE
+1168	Brunnen In Petrovce Bei Celje	PETROVCE	SI		PETROVCE	SALEC
+1169	Code Station Sloven53	SLOVEN53	SI		INCONNU	INCONNU
+1170	Code Station Sloven54	SLOVEN54	SI		INCONNU	INCONNU
+1171	Code Station Sloven55	SLOVEN55	SI		INCONNU	INCONNU
+1172	Code Station Sloven61	SLOVEN61	SI		INCONNU	INCONNU
+1173	Code Station Sloven62	SLOVEN62	SI		INCONNU	INCONNU
+1174	Code Station Sloven63	SLOVEN63	SI		INCONNU	INCONNU
+1175	Code Station Sloven64	SLOVEN64	SI		INCONNU	INCONNU
+1176	Code Station Sloven65	SLOVEN65	SI		INCONNU	INCONNU
+1177	Code Station Sloven66	SLOVEN66	SI		INCONNU	INCONNU
+1178	Nortonbrunnen Bei Stozice Bei Ljubljana	STOZICE	SI		LJUBLJANA	LJUBLJANA
+1179	Tomacevo	TOMACEVO	SI		LJUBLJANA	LJUBLJANA
+1180	Nortonbrunnen In Trgovisce Bei Ptuj	TRGOVISC	SI		TRGOVISCE	ORMOZ
+1181	Brunnen In Zagreb (Nach Mestrov)	ZAGREBW1	HR		ZAGREB	ZAGREB
+1182	Zagreb	ZAGREBWE	HR		ZAGREB	ZAGREB
+1183	Zalosce	ZALOSC1	SI		ZALOSCE	NOVA GORICA
+1184	Prodisce Na Desnem Bregu Drave Sv Od Rosnje	ROSNJE	SI		ROSNJA	DUPLEK
+1185	Sava River Dovjez	DOVJEZ	SI		DOVJEZ	LJUBLJANA
+1188	Sava River In Dolsko (Phreatic Site)	SAVADOLK	SI		DOLSKO	DOLSKO
+1192	Fonti Di Clitunno Camtello Sul Clitunno	CLITUNNO	IT		CAMTELLO SUL CLITUNNO	PERUGIA
+1193	Pozzo Di Acqua Dolce (N.u. 10) Lungo La S.p. Spoleto-Bastardo	CKMAP226	IT		SAN NICOLO	UMBRIA
+1194	Pozzo A San Venanzo	CKMAP227	IT		SAN VENANZO	UMBRIA
+1195	Pozzo A San Venanzo. S.p. Marscianese	CKMAP228	IT		MARSCIANO	UMBRIA
+1196	Pozzo (Nu 44) Casa Cantoniera In Montecastelli Umbro. Umbertide	CKMAP245	IT		MONTECASTELLI	UMBRIA
+1201	Fuente Sagrero Cereceda	CERECEDA	ES		CERECEDA	BURGOS
+1211	Arroyo Del Salar Salar	SALAR	ES		SALAR	GRANADA
+1213	Source De Deifontes Deifontes	DEIFONTE	ES		DEIFONTES	GRANADA
+1219	Manantial De Alomartes	ALOMARTE	ES		ALOMARTES	GRANADA
+1220	Rio De Aquas Blancas	AQUASBLA	ES		AGUAS BLANCAS	GRANADA
+1221	Rio Darro	DARRORIO	ES		GRANADA	GRANADA
+1223	Nacimiento Del Rio Frio	FRIOSPRI	ES		FUENTE CAMACHO	GRANADA
+1224	Rio Genil	GENILRIO	ES		CENES DE LA VEGA	GRANADA
+1225	Rio De Las Jantas	JANTASRI	ES		VENTA DE ANDAR	GRANADA
+1227	Arroyo De Alcazar Jerez Del Marquesado	ALCAZAR	ES		JEREZ DEL MARQUESADO	GRANADA
+1229	Puits Proche De La Source De L'affluent Ceira	CEIRAWEL	PT		GANDARA DE ESPARIZ	COIMBRA
+1230	Funtana Ezza	FUNTEZZA	IT		SENNARIOLO	ORISTANO
+1233	Mugnone Pian Di Mugnone	MUGNONE	IT		PIAN DI MUGNONA	FIRENZE
+1234	Fonte Di S. Cassiano	CKMAP115	IT		FABRIANO	MARCHE
+1235	Torrente Mugnone	CKMAP461	IT		PIAN DI MUGNONE	TOSCANA
+1236	River Mugnone Caldine	MUGNONCA	IT		CALDINE	TOSCANA
+1237	River Mugnone Fabbrica	MUGNONFA	IT		CALDINE	TOSCANA
+1238	River Mugnone Querciola	MUGNONQU	IT		QUERCIOLA	TOSCANA
+1239	River Mugnone Querciola. Fosso Delle Scalacce	MUGNONSC	IT		QUERCIOLA	TOSCANA
+1241	Grotta Di Bossea Bossea	BOSSEA	IT		BOSSEA	CUNEO
+1242	Grotta Dell Orso Ponte Di Nava	ORSO	IT		PONTE DI NAVA	CUNEO
+1243	River Stura At Lanzo Torinese Sturia 2	LANZOTOR	IT		LANZO TORINESE	PIEMONT
+1244	Grotta Dell Orso (118 Pi/Cn)	CKMAP126	IT		PONTE DI NAVA	CUNEO
+1246	Grotta Di Bossea (108 Pi/Cn)	CKMAP127	IT		BOSSEA	PIEMONTE
+1248	Grotta Di Rio Dei Corvi (884 Pi/Cn). Bric Del Fieno	CKMAP130	IT		LISIO	PIEMONTE
+1249	Sorgente Refonderato. Savignone	CKMAP398	IT		SAVIGNONE	LIGURIA
+1250	Sorgenti Sotto La Grotta Di Bossea (108 Pi/Cn)	CKMAP419	IT		BOSSEA	PIEMONTE
+1251	Tana De L Orpe (248 Li/Sv)	CKMAP457	IT		MILLESIMO	LIGURIA
+1252	Grotta Del Camoscere (105 Pi/Cn)	CKMAP125	IT		CHIUSA DI PESIO	PIEMONTE
+1255	Gours Concretionnes De La Grotta Occidentale Del Bandito 1003 Pi Cn	BANDITO	IT		ROASCHIA	CUNEO
+1262	Cueva Del Valle Rasines	CUEVAVAL	ES		RASINES	SANTANDER
+1263	Source Cueva Del Valle Rasines	SOURVALL	ES		RASINES	SANTANDER
+1265	La Fuentona (Surgencia Grande)	FUENTONA	ES		RUENTE	SANTANDER
+1266	Cueva Del Portillo	PORTILLO	ES		COMILLAS	SANTANDER
+1269	Cueva De Tijeras	TIJERACA	ES		CONCHA	SANTANDER
+1270	Well 1 Al Lado S. De Barrio San Juan	VIESGOW1	ES		PUENTE VIESGO	SANTANDER
+1271	Rio Yera	YERARIO	ES		VEGA DE PAS	SANTANDER
+1272	Fuente Pilas De Dedil Alhama De Granada	PILAS	ES		ALHAMA DE GRANADA	GRANADA
+1276	Manantial De Ubao2 Ubao	UBAO	ES		ONATE	GUIPUZCOA
+1277	Cueva De Porraipi	PORRAIPI	ES		ILARDUIA	ALAVA
+1278	Casa Echachocoa	ECHACHOC	ES		OGNATE	GUIPUZCOA
+1279	Enfrente De La Iglesia	OGNATEWE	ES		OGNATE	GUIPUZCOA
+1281	Cave Bjelusica	BJELUSNI	BA		ZAVALA	POPOVO POLJE
+1282	Code Station Bosher07	BOSHER07	BA		INCONNU	INCONNU
+1283	Code Station Bosher08	BOSHER08	BA		INCONNU	INCONNU
+1284	Code Station Croati09	CROATI09	HR		INCONNU	INCONNU
+1285	Code Station Monten07	MONTEN07	ME		INCONNU	INCONNU
+1286	Cave Vjetrenica, Zavala, Popovo Polje	VJETRENI	BA		ZAVALA	FEDERATION OF BOSNIA AND HERZEGOVINA
+1287	Cave Zaploce (245b), Grebci (Ravno)	ZAPLOCE	BA		GREBCI	RAVNO
+1291	Cave Ledenjaca	LEDENJA	BA		BUDANJ	FOCA
+1298	Reznica Cave A 10 Minutes Au S.e. De Grebci A 30 M Droite Du Chemin Qui Unit Cette Localite A Slavogostici. Zahumska Opstina (Chef Lieu Poljice) Srez De Trebinje	REZNICAV	BA		GREBCI	RAVNO
+1303	Captage De Champalle P4	CHAMPP	BE		YVOIR	NAMUR
+1305	Puits De La Lunette	LUNETTE	BE		WAVREILLE	WALLONIE
+1306	Puits Du Milieux Du Monde I Chapelle	MILMONDI	BE		ASSESSE	NAMUR
+1307	Galerie Principale Du Neblon	NEBLONPR	BE		JENNERET	SPRIMONT
+1308	Puits Du Chateau De Houx	CHATHOUX	BE		YVOIR	NAMUR
+1309	Galerie Drainante Tinkou Neblon	TINKOU	BE		JENNERET	SPRIMONT
+1311	Puits Ii A Hermalle  Sous Argenteau	HERMALL2	BE		HERMALLE SOUS ARGENTEAU	WALLONIE
+1312	Source A Waha Pres De Marche En Famenne	WAHASP	BE		WAHA	WALLONIE
+1313	Sources C1 S2 S3 S4	C1S234SP	BE		WAHA	WALLONIE
+1314	Grotte De Han	GRODEHAN	BE		HAN SUR LESSE	WALLONIE
+1315	Nappe Phreatique De Hermalle Sous Argenteau	HERMALLE	BE		HERMALLE SOUS ARGENTEAU	WALLONIE
+1316	Puits A Heugum	HEUGUMWE	NL		HEUGEM	LIMBOURG
+1318	Puits De La Ferme Du Chateau Wittem	WITTEMWE	NL		GULPEN	LIMBOURG
+1319	Puits Nb1 De L' Abbaye St Remy	ABREMYWE	BE		HAVRENNE	WALLONIE
+1320	Trou Balza	BALZATRO	BE		IVOY	WALLONIE
+1321	Grotte Du Chalet	CHALEGRO	BE		AYWAILLE	WALLONIE
+1322	Captage De Champalle P2	CHAMPAL2	BE		ANHEE	WALLONIE
+1323	Captage De Champalle P4	CHAMPAL4	BE		ANHEE	WALLONIE
+1324	Puits D Eprave	EPRAVEWE	BE		EPRAVE	WALLONIE
+1326	Source De La Machine	MACHINSP	BE		CRUPET	WALLONIE
+1327	Puits De La Maison Communale (Captage)	MAISCOWE	BE		HAN SUR LESSE	WALLONIE
+1331	Captage Nb1 De L' Abbaye Notre Dame De Rochefort	ROCHEFO1	BE		ROCHEFORT	WALLONIE
+1333	Citerne De La Place De Wavreille	WAVREILL	BE		WAVREILLE	WALLONIE
+1334	Fiume Piave A Belluno Aval Du Pont	BELLUNO	IT		BELLUNO	VENETIE
+1335	Ponte Di Nimis Hyporheic Zone Of The Val Torre Torrent	NIMIS	IT		NIMIS	UDINE
+1336	Vipava River Zalosce	ZALOSCE	SI		ZALOSCE	DORNBERK
+1337	Fiume Tagliamento. A Monte Del Ponte Di Pinzano	CKMAP087	IT		RAGOGNA	FRIULI VENEZIA GIULIA
+1338	Grotta Presso Caneca Di Tolmezzo (Fr 322)	CKMAP139	IT		CANEVA DI TOLMEZZO	FRIULI VENEZIA GIULIA
+1339	Sorgente 1.1 Km Dal Confine Di Stato. Val Natisone. A Monte Di Stupizza	CKMAP357	IT		PULFERO	FRIULI VENEZIA GIULIA
+1340	Sorgente A Tarpezzo (Valle Del T. Alberone)	CKMAP361	IT		SAN PIETRO AL NATISONE	FRIULI VENEZIA GIULIA
+1341	Grotta Di Comarie (Vg 4221)	CKMAP128	IT		IAMIANO	FRIULI VENEZIA GIULIA
+1342	Lago Di Pietrarossa. Sorgenti	CKMAP153	IT		MONFALCONE	FRIULI VENEZIA GIULIA
+1343	Pozzo Presso Jamiano (Vg 360)	CKMAP270	IT		IAMIANO	FRIULI VENEZIA GIULIA
+1344	Riva Del F. Piave (Iporreico)	CKMAP331	IT		INCONNU	VENETO
+1346	Code Station Sloven52	SLOVEN52	SI		INCONNU	INCONNU
+1347	Code Station Sloven67	SLOVEN67	SI		INCONNU	INCONNU
+1348	Code Station Sloven68	SLOVEN68	SI		INCONNU	INCONNU
+1349	Hohle Ukovnik Bei Idrija	UKOVNIK	SI		SPODNJA IDRIJA	IDRIJA
+1351	Grotta Della Foos Fr 229 Campone	GROTFOOS	IT		TRAMONTI DI SOTTO	PORDENONE
+1352	Vogrscek Babja Jama Ks 3903	BABJAJAM	SI		GORENJI LOG AVCE	NOVA GORICA
+1353	R Idrijca Intertitial	IDREIJCA	SI		TREBUSA	TOLMIN
+1354	Intersticij Baca Pred Izlivom V Idrijca Interst River Baca At Confluence With Idrijca	IDRIJA	SI		BACA PRI MODREJU	TOLMIN
+1355	Baret Vodna Crpalka K St O	JAMIANO	IT		JAMIANO	LAGO DI DOBERDO
+1356	Sorgente Riva Destra Fiume Isonzo Tra I Due Ponti Della Ferrovia Presso Papariano	ISONZO	IT		FIUMICELLO	GORIZIA
+1357	Grotta Di Comarie 4221 Ve	COMARIE	IT		DOBERDO DEL LAGO	GORIZIA
+1359	Cave Hudournik	HUDOURNI	SI		ZELIMLJE	LJUBLJANA
+1360	Grotta Di Papipano (Fr 296). Canal Di Griv	CKMAP129	IT		FAEDIS	FRIULI VENEZIA GIULIA
+1368	Schotterbank Der Vipava Bei Dornberk	DORNBER1	SI		DORNBERK	NOVA GORICA
+1370	Sorgenti Di Moschenizze	MOSCHENI	IT		SABLICI	FRIULI VENEZIA GIULIA
+1371	Rio Jalon Benichembla	JALON	ES		BENICHEMBLA	ALICANTE
+1373	Rio Jalon 200m Aval Pont Benichembla	JALAVAL	ES		BENICHEMBLA	ALICANTE
+1375	Rio Jalon Fuente Del Pueblo Lavoir Benichembla	JALLAVO	ES		BENICHEMBLA	ALICANTE
+1376	Rio Jalon Pont Benichembla	JALPONT	ES		BENICHEMBLA	ALICANTE
+1377	Rio Jalon Fuente Del Pueblo Benichembla La Source	JALSOUR	ES		BENICHEMBLA	ALICANTE
+1382	Source Dans Le Canyon Fuente Del Modo	MODOFUEN	ES		CALLOSA D EN SARRIA	ALICANTE
+1383	Rio Argos Caravaca De La Cruz	CRUZ	ES		CARAVACA DE LA CRUZ	MURCIA
+1386	Arroyo Del Membrillo	MENBRILL	ES		COTO R├ìOS	JAEN
+1387	Fontaine Rio Guatizalema Puente Cerca Sipan	SIPANFON	ES		SIPAN	HUESCA
+1388	Rio Cinca Puente A Barbastro	MONZON	ES		MONZON	HUESCA
+1389	Rio Guatizalema Puente Cerca Sipan	SIPAN	ES		SIPAN	HUESCA
+1390	Rio Bergantes Villores	BERGANT	ES		VILLORES	CASTELLON
+1391	Rio Mijares Espadilla	MIJARES	ES		ESPADILLA	CASTELLON
+1392	Rio Pequeno Espadilla	PEQUENO	ES		ESPADILLA	CASTELLON
+1393	Rio Areta Puente A Lumbier Ripodas	LUMBIER	ES		URRAUL BAJO	NAVARRA
+1395	Rio Tastavins 1 Valderrobres	TASTAV1	ES		VALDERROBRES	TERUEL
+1396	Rio D'algas Arnes	ALGAS	ES		ARNES	TARRAGONA
+1397	Rio Matarrana Torre Del Compte	MATARRA	ES		TORRE DEL COMPTE	TERUEL
+1400	Ancienne Graviere Du Rio Cinca En Amont D'estada	CINCARI1	ES		ESTADA	HUESCA
+1401	Rio Alcanadre Au Pied Du Barrage De Bierge	ALCANAB1	ES		BIERGE	HUESCA
+1402	Rio Alcanadre Sous Le Pont De Bierge	ALCANAB2	ES		BIERGE	HUESCA
+1403	Rio Alcanadre Dans Le Canyon De Rodellar	ALCANARO	ES		RODELLAR	HUESCA
+1404	Rio Aragon	ARAGONR1	ES		SANTA CILIA	HUESCA
+1405	Rio Asabon Callego	ASABONR1	ES		BAILO	HUESCA
+1406	Rio Asabon	ASABONR2	ES		SANTA MARIA	HUESCA
+1407	Rio Vero A Barbastro	BARBAST1	ES		BARBASTRO	HUESCA
+1408	Rio Vero En Amont De Barbastro Sous Le Pont	BARBAST2	ES		BARBASTRO	HUESCA
+1409	Rio Bergantes Entre Ortells Et Zorita Del Maestrazgo	BERGANT1	ES		ORTELIS	CASTELLON
+1410	Rio Bergantes Forcall	BERGANT3	ES		FORCALL	CASTELLON
+1411	Rio Cinca Sous Le Pont En Aval D'estada	CINCARI2	ES		ESTADA	HUESCA
+1412	Rio Guadalope Mas De Las Matas	GUADALO2	ES		MAS DE LAS MATAS	TERUEL
+1413	Rio Guarga Gallego	GUARGAG	ES		JAVIERRELATRE	HUESCA
+1414	Rio Isuala	ISUALARI	ES		ABIEGO	HUESCA
+1415	Rio Bergantes Aguaviva 1	BERGANT2	ES		AGUAVIVA	TERUEL
+1416	Rio Guadalope Villaroya De Los Pinares	GUADALO1	ES		VILLAROYA DE LOS PINARES	TERUEL
+1417	Rio Alcanadre	ALCANADR	ES		ANGUES	HUESCA
+1420	Rio Arag0n	ARAGONR2	ES		ASCARA	HUESCA
+1421	Rambla Del Barruezo	BARRUEZO	ES		SAN AUGUSTIN	TERUEL
+1423	Rio Bergantes Aguaviva 2	BERGANT4	ES		AGUAVIVA	CASTELLON
+1424	Rio Erro	ERRORIO	ES		URROZ VILLA	NAVARRA
+1425	Rio Gallego	GALLEGO	ES		ANZANIGO	HUESCA
+1426	Rio Guadelope	GUADELOP	ES		ALCANIZ	TERUEL
+1427	Rio Guarga	GUARGARI	ES		LANAVE	HUESCA
+1428	E De La Carretera C 136 Huesca Sabinanigo	LANAVEWE	ES		LANAVE	HUESCA
+1430	Rio De Majones	MAJONESR	ES		VILLAREAL DE LA CANAL	HUESCA
+1432	Rio Mijares	MIJARES1	ES		ARANUEL	CASTELL0N
+1434	Rio Pequeno Puente A Onda	PEQUENO1	ES		ESPADILLA	CASTELL0N
+1436	Rio Veral	VERALRIO	ES		BINIES	HUESCA
+1437	Risorgenza Del Rio Sorba Sotto Montelungo	SORBA	IT		MONAGLIA	GENOVA
+1438	Madiranasca Ferriere Carrodano	MADIRA	IT		CARRODANO	SPEZIA
+1439	Risorgenza Del Rio Sorba. Sotto Montelungo	CKMAP315	IT		MONEGLIA	LIGURIA
+1440	Risorgiva Nell Alveo Del Rio Figoi. Burlo. Fegino	CKMAP319	IT		GENOVA	LIGURIA
+1441	Risorgiva Nell Alveo Del T. Scrivia. A Monte Confluenza T. Brevenna	CKMAP320	IT		CASELLA	LIGURIA
+1442	Risorgiva Riva Destra Fiume Magra. 50 M A Valle Viadotto Ferroviario Presso Romito	CKMAP321	IT		ARCOLA	LIGURIA
+1443	Risorgive Nell Alveo Del F. Magra. Pozza 800 M A W Di S. Stefano Di Magra	CKMAP323	IT		SANTO STEFANO DI MAGRA	LIGURIA
+1444	Risorgive Nell Alveo Del T. Scrivia. 400 M A Valle Confluenza T. Brevenna	CKMAP324	IT		CASELLA	LIGURIA
+1445	Risorgive Nell Alveo Del T. Sterza. Al Centro. 300 M A Valle Del P. Gio Rosso	CKMAP325	IT		CHIANNI	TOSCANA
+1446	Risorgive Nell Alveo Del T. Sterza. Riva Destra. 300 M A Valle C. Al Bosco	CKMAP326	IT		LAIATICO	TOSCANA
+1447	Risorgive Nell Alveo Del T. Sterza. Riva Sinistra. 200 M A Valle Del P.gio Rosso	CKMAP327	IT		CHIANNI	TOSCANA
+1448	Risorgive Riva Sinistra F. Era. 100 M A Valle Confluenza T. Sterza	CKMAP328	IT		TERRICCIOLA	TOSCANA
+1449	Risorgive Riva Sinistra T. Secca. Sotto La Ii Briglia. Case Fava	CKMAP330	IT		SERRA RICCO	LIGURIA
+1450	Sorgente Ca Nei N. 1. Fumeri	CKMAP362	IT		MIGNANEGO	LIGURIA
+1451	Sorgente Ciapun. Apparizione	CKMAP363	IT		GENOVA	LIGURIA
+1452	Sorgente Del Rio Bocchin. Premanico	CKMAP371	IT		GENOVA	LIGURIA
+1453	Sorgente Di Serra Di Passo Dei Barabini. Val Polcevera	CKMAP381	IT		GENOVA	LIGURIA
+1454	Sorgente Lago Figoi. Fegino	CKMAP384	IT		GENOVA	LIGURIA
+1455	Sorgente Madonnette. Poma	CKMAP387	IT		GENOVA	LIGURIA
+1456	Sorgente Nell Alveo Di Rio Tannego. Presso Ponte Della Vittoria	CKMAP393	IT		RAPALLO	LIGURIA
+1458	Sorgente Riva Destra T. Recco. Sotto Il Ponticello Sotto La Chiesa Di Avegno	CKMAP399	IT		AVEGNO	LIGURIA
+1459	Sorgente Sereie Sul Rio Fossetto. Sereie. S. Siro Foce	CKMAP404	IT		MEZZANEGO	LIGURIA
+1460	Sorgente Nell Alveo Del Rio Di Tonnego Presso Il Ponte Della Vittoria Rapallo (Ge)	CKMAP406	IT		RAPALLO	LIGURIA
+1461	Sorgente Sul Rivo Al Passo Del Gnacco. Stallo. Sella Di Bavari	CKMAP407	IT		GENOVA	LIGURIA
+1462	Sorgenti Basse Dell Acquedotto Di Poma. Poma. S. Desiderio	CKMAP414	IT		GENOVA	LIGURIA
+1463	Vivagna Do Fontanin (60 Li/Ge)	CKMAP480	IT		GENOVA	LIGURIA
+1465	Aqueduc D Alviela Drainant Les Resurgences Des Calcaires Jurassiques De Olhos. Ota Et Alenquer	ALVIELAQ	PT		ALENQUER	ALENQUER
+1466	Aqueduc D'alviela	ALVIELOA	PT		LISBOA	LISBOA
+1467	Well Tondela	TONDELAW	PT		TONDELA	VISEU
+1468	Alviela Spring Alcacena	ALVIELA	PT		ALCACENA	SANTAREM
+1469	Gruta Da Contenda	CONTENDA	PT		MIRA DE AIRE	LEIRIA
+1470	Gruta Talima	TALIMA	PT		CHAO DE OURIQUE	COIMBRA
+1473	Mindhinu Cave	MINDHINU	PT		VALE DA SERRA	LEIRIA
+1474	Moinhos Velhos	MOINHOS	PT		VALE DA SERRA	LEIRIA
+1475	O De La Carretera C 341 Ronda-Jimena De La Frontera	GAUCINWE	ES		GAUCIN	MALAGA
+1482	Rio Ebron Cuesta Del Rato Castielfabib	EBRON	ES		CASTIELFABIB	VALENCIA
+1488	Rio Turia	TURIAVIL	ES		VILAMARXANT	VALENCIA
+1490	El Bancal0n	BANCALON	ES		PERALEJOS	TERUEL
+1491	La Covatilla	COVATILL	ES		AHIN	CASTELL0N
+1494	Rio Turia Puente A Liria	TURIALIR	ES		VILAMARXANT	VALENCIA
+1496	Rio Turia Puente A Pedralba	TURIAPED	ES		PEDRALBA	VALENCIA
+1497	Rio De Arcos Cerca Rio Turia	ARCOSRIO	ES		SANTA CRUZ DE MOYA	CUENCA
+1498	Trois Puits Proches Les Uns Des Autres Vendas Novas Zone Marconi Route N4 Km 5	VENDASNO	PT		VENDAS NOVAS	EVORA
+1499	Rio Mundo Riopar	MUNDO	ES		RIOPAR	ALBACETE
+1501	La Busta Alfoz De Lloredo	2BUSTA	ES		ALFOZ DE LLOREDO	CANTABRIA
+1502	La Busta Alfoz De Lloredo	BUSTA	ES		ALFOZ DE LLOREDO	SANTANDER
+1503	Rio Trueba Quintilla De Pieza	PIEZA	ES		QUINTILLA DE PIEZA	BURGOS
+1505	Cueva De Argatxa Arginene	ARGATXA	ES		ZELAIETA	BIZKAIA
+1511	Source Dans La Riviere	POGLISPA	IT		POGLIASCA	LA SPEZIA
+1512	Margherita Sesta Godano	MARGHE	IT		SESTA GODANO	SPEZIA
+1514	Fontana Vecchia	CKMAP098	IT		PULICA	TOSCANA
+1515	Sorgente A E Del Cimitero Di Pogliasca	CKMAP358	IT		BORGHETTO DI VARA	LIGURIA
+1516	Sorgente Del Fosso Di Travigio. Travigio. M. Gottero	CKMAP366	IT		SESTA GODANO	LIGURIA
+1517	Sorgente Meisoli. Costa Di Sotto	CKMAP389	IT		CARRO	LIGURIA
+1519	Kpm28 Small Spring West Of Axos Just Above The Reservoir Located Along The Road	KPM28	GR		AXOS	CRETE
+1520	Freshwater Well East Of Axos	AXOSPT1	GR		AXOS	CRETE
+1521	Isola Di Creta Fontana Di Axos	FTANAXOS	GR		AXOS	CRETE
+1524	G244 Creta, Agios Varvara	G244	GR		AGIA VARVARA	CRETE
+1525	Puits D Eau Douce Autour De Ag. Ioannes (Ag Ioannis 740 54)	IOANNESA	GR		AG IOANNIS	CRETE
+1526	Pond Near Kokkini	KOKKINI	GR		KOKKINI	CORFU
+1527	Epiro Episkopiko Stagno 3	EPISKOPI	GR		NEO MPIZANI	IOANNINA
+1528	Grecia Occidentale Palude Limni Lamia	LLAMIA	GR		LOUTRA IMENIS	ACHAIE PELOPONESE
+1529	Spring At Lake Trichonida	TRICHONI	GR		PADANASSA	AGRINIO
+1531	Gr10trip Puits Captage Du Col Km 96 Sur La Route Argos - Tripoli	GR10TRIP	GR		TRIPOLI	ARCADIE
+1532	Katarrakti. Quelle (Livadia) Am Fusse Des Kataphigi. Epirus	LIVADIAS	GR		KATARRAKTIS	PELOPONNESE
+1533	Puis Captage Du Col Km 96 Sur La Route Argos Tripoli (Arcadie)	SITEGR10	GR		MILIA	ARCADIE
+1534	Quelle Beim Dorfe Blatec Unweit Von Kocane	BLATECSP	MK		BLATETS	VINITSA
+1535	Code Station Macedo03	MACEDO03	MK		INCONNU	INCONNU
+1536	Spring At Kloster Duboko Potok. Along Road Kosovsko Mitrovica - Pridvorica. Ibar River Basin	KLOSTESP	ME		BAC	ROZAJE
+1537	Berane (Ivangrad)	BERANE	ME		BERANE	BERANE
+1538	Code Station Monten06	MONTEN06	ME		INCONNU	INCONNU
+1539	Pridvorica	PRIDVORI	ME		BAC	ROZAJE
+1540	Code Station Serbia04	SERBIA04	RS		INCONNU	INCONNU
+1541	Cueva Nacedero De Larraun Baraibar	NACEDERO	ES		LARRAUN	NAVARRA
+1542	Cueva De Alli Alli	ALLI	ES		LARRAUN	NAVARRA
+1543	Cueva Ariz	ARIZCAVE	ES		IRIBAS	NAVARRA
+1544	Cueva Nacedero De Larraun	LARRAUN	ES		BARAIBAR	NAVARRA
+1547	Schachtbrunnen In Tacen Bei Ljubljana	TACEN	SI		TACEN	LJUBLJANA
+1549	Hrastje	HRASTJE2	SI		HRASTJE PRI GROSUPLJEM	GROSUPLJE
+1551	Code Station Sloven49	SLOVEN49	SI		INCONNU	INCONNU
+1552	Code Station Sloven69	SLOVEN69	SI		INCONNU	INCONNU
+1553	Code Station Sloven70	SLOVEN70	SI		INCONNU	INCONNU
+1555	Jivero2 Ozana	JIVERO2	ES		OZANA	SANTANDER
+1562	Cueva Del Agua (Nacimiento Del Rio Jerea)	AGUAJUNT	ES		QUINCOCES DE YUSO	BURGOS
+1563	Cueva Cubio De Berelucho	BERELUCH	ES		ESPINOSA DE LOS MONTEROS	BURGOS
+1564	Fuente Cornejo	CORNEJO	ES		ESPINOSA DE LOS MONTERAS	BURGOS
+1565	Fuente Cornejo	CORNEJOF	ES		ESPINOSA DE LOS MONTERAS	BURGOS
+1566	Cueva De La Cuevona	CUEVONA	ES		QUIJAS	SANTANDER
+1567	Cueva De La Cuevona 83-11/4	CUEVONAC	ES		QUIJAS	CANTABRIA
+1568	Cueva De Ojo Guarena	GUARENCA	ES		CUEVA	BURGOS
+1569	Cueva Del Agua (Nacimiento Del Rio Jerea)	JEREACA	ES		QUINCOCES DE YUSO	BURGOS
+1571	Cave Jivero 2	JIVERO2C	ES		MATIENZO	CANTABRIA
+1573	Nacimiento Del Rio Gandara	NGANDARA	ES		SOBA	CANTABRIA
+1574	Cueva Del Orill0n	ORILLOCA	ES		MATIENZO	SANTANDER
+1575	Cueva Del Orillon	ORILLONC	ES		MATIENZO	CANTABRIA
+1576	Cueva La Torcona Codes	TORCONA	ES		HORNILLAYUSO	BURGOS
+1580	Trueba	TRUEBASP	ES		ESPINOSA DE LOS MONTERAS	BURGOS
+1581	Manantial De Quintanilla De Valdebodres	VALDEBOD	ES		MERINDAD DE SOTOSCUEVA	BURGOS
+1582	Manantial De Quintanilla De Valdebodres	VALDEBSP	ES		QUINTANILLA VALDEBODRES	BURGOS
+1583	Cueva De La Fuente De Quintana La Pereda	QUINTANA	ES		LLANES	OVIEDO
+1586	Stobe Jama Rozanec	STOBE	SI		CRNOMELJ	CRNOMELJ
+1587	Source Otovec Otovec	OTOVEC	SI		CRNOMELJ	CRNOMELJ
+1590	Code Station Sloven56	SLOVEN56	SI		INCONNU	INCONNU
+1591	Code Station Sloven73	SLOVEN73	SI		INCONNU	INCONNU
+1596	Grotta Su Coloru. Nei Calcari Miocenici A Laerru	CKMAP123	IT		CASTELSARDO	SARDEGNA
+1597	Sorgente Presso La Grotta Su Coloru	GRCOLORU	IT		LAERRU	SASSARI
+1600	Caja Val Mala	CVALMALA	IT		MARCHENO	BRESCIA
+1601	Puits Sterpo Sterpo	STERPO	IT		BERTIOLO	UDINE
+1604	Caya De Valmala (141 Lo Bs)	CKMAP016	IT		MARCHENO	LOMBARDIA
+1606	Tavernole	TAVERNO	IT		TAVERNOLE	VERONA
+1610	Confluence Riviere El Ritort Et Torrent De L Avalleneda	HCAMPROD	ES		CAMPRODON	GIRONA
+1612	Tributary Of The River Ter (Riera De Vallfogona)	VALLFOGO	ES		VALLFOGONA DE RIPOLLES	GIRONA
+1613	Source De Bernatas Arbas	BERNATAS	FR		ARBAS	HAUTE GARONNE
+1616	Sous Ecoulement De L Arbas (Aval Resurgence Grotte Du Goueil Di Her)	ARBASHYP	FR		ARBAS	HAUTE GARONNE
+1617	Sous Ecoulement De L Escalette	ESCALETT	FR		ARBAS	HAUTE GARONNE
+1618	Grotte Du Goueil Di Her Arbas	GOUEILDI	FR		ARBAS	HAUTE GARONNE
+1621	Grotte De Gourgue	GOURGUCA	FR		ARBAS	GARD
+1624	Gouel Di Her Arbas	GOUELDI	FR		ARBAS	HAUTE GARONNE
+1625	Puits Montemor Novo Montemor O Novo	MONTEMOR	PT		MONTEMOR O NOVO	ALENTEJO
+1626	Montemor O Novo (Ruinha N31)	MONTEMOW	PT		MONTEMOR O NOVO	EVORA
+1627	Puits Evora Evora	EVORA	PT		EVORA	ALENTEJO
+1629	Evora Horta Dos Minhos	HOMINHOS	PT		EVORA	EVORA
+1630	Evora Quinta De Mursejana	MURSEJAN	PT		EVORA	EVORA
+1631	Tinee Pont De La Mescla	MESCLA	FR		VILLARS SUR VAR	ALPES MARITIMES
+1632	Sous Ecoulement Du Var Au Pont De La Mescla	VAMESCLA	FR		VILLARS SUR VAR	ALPES MARITIMES
+1633	Sorgente Fruncu E Oche San Giuseppe Monte Albo	FRUNCU	IT		SINISCOLA	NUORO
+1634	Well ?S?Ala De Mengianu Giara Di Gesturi	MENGIANU	IT		GENONI	ORISTANO
+1635	Fonte Su Paradisu	PARADISU	IT		VILLANOVA MONTELEONE	SARDEGNA
+1636	Sorgente Temporanea Nella Necropoli Pottu Codinu	POCODINU	IT		VILLANOVA MONTELEONE	SASSARI
+1637	Cave ?Sa Ucca E Su Peltusu	PELTUSU	IT		SASSARI	SASSARI
+1638	Small Ephemeral Spring In Villanova Monteleone (Ss) In The Archaeological Area Of Domus De Janas Of Potu Codinu	MONTELSP	IT		VILLANOVA MONTELEONE	SARDEGNA
+1642	Sous Ecoulement Du Ladon (Arcadie).	SITEGR40	GR		TRANI LAKKA	ARCADIE
+1643	Isola Di Eubea (Evia). Pozzo Dell Ex-Fornace Di Mantoudi	MANTOUDI	GR		KIREAS	EUBOEA
+1644	Sous Ecoulement De La Riviere Kirefs A Mantoudi (Eubee).	SITEGR20	GR		MANTOUDI	EUBEE
+1645	Puits Du Four A Chaux De Mantoudi (Eubee)	SITEGR21	GR		MANTOUDI	EUBEE
+1646	Puits 47 Dans La Plaine Alluviale De La Riviere Isar	MITTEN47	DE		MINTTENWALD	GARMISCH PARTENKIRCHEN
+1647	Puits 36 Dans La Plaine Alluviale De La Riviere Isar	MITTEN36	DE		MINTTENWALD	GARMISCH PARTENKIRCHEN
+1648	Puits 37 Dans La Plaine Alluviale De La Riviere Isar	MITTEN37	DE		MINTTENWALD	GARMISCH PARTENKIRCHEN
+1649	Wien Vienne	WIEN	AT		VIENNE	VIENNE
+1651	Source Lutter	LUTTER	FR		HUTTENHEIM	BAS RHIN
+1652	Puits Drobtinci Drobtinci	DROBTINC	SI		APACE	BASSE STYRIE
+1653	Puits Prvomajska Ulica Verzej	PRVOVERZ	SI		VERZEJ	VERZEJ
+1654	Drava River 1 Malecnik	MALECNI1	SI		MARIBOR	MARIBOR
+1655	Interstitial Agger In Troisdorf	INTEAGGE	DE		TROISDORF	NORDRHEIN WESTFALEN
+1658	Interstitial Dunnbach	DUNNBAHY	DE		ZILSHAUSEN	RHEINLAND PFALZ
+1659	Interstitial Siesbach	SIESBAHY	DE		ALGENRODT	RHEINLAND PFALZ
+1660	Schwabische Alb	BW31	DE		INCONNU	SWABIAN JURA
+1662	Donau Iller Lech Platte	BW7	DE		INCONNU	DONAU ILLER LECH PLATTE
+1667	Ruisseau Lutter Median	LUTTERME	FR		HUTTENHEIM	BAS RHIN
+1669	Phreatic Water Along The Sava River Near Brezice	BREZICE	SI		BREZICE	BREZICE
+1670	Klingenberg In Main River Valley	KLINGENB	DE		KLINGENBERG AM MAIN	BAVIERE
+1672	Source De La Quellgraben	QUELGRA	FR		BINDERNHEIM	BAS RHIN
+1673	River Drava Confluence Mura	DRAVAMUR	HR		LEGRAD	KOPRIVNICA KRIZEVICI
+1674	Kritzendorf Vienna Austria	KRITZENWE	AT		KRITZENDORF	VIENNA
+1676	Lobau Wetland Vienna Austria	LOBAUWET	AT		LOBAU	VIENNA
+1678	Bialy Dunajec	BIALYDUN	PL		BIALY DUNAJEC	PETITE POLOGNE
+1679	Bukowiny Tatrzanskiej	BUKOWINY	PL		BUKOWINY TATRZANSKIEJ	PETITE POLOGNE
+1680	Czarna Orawa	CZARNAOR	PL		JAB?ONKA	PETITE POLOGNE
+1681	Code Station Danube01	DANUBE01	AT		INCONNU	INCONNU
+1682	Code Station Danube02	DANUBE02	AT		INCONNU	INCONNU
+1683	Code Station Danube03	DANUBE03	AT		INCONNU	INCONNU
+1684	Danube In Ebersdorf Km 2041 (L)	DANUBEBE	AT		EBERSDORF	MELK
+1685	Danube In Jagerhaussiedlung March 7 Km 1880.2 (L)	DANUBJAG	AT		JAGERHAUSSIEDLUNG	BRUCK AN DER LEITHA
+1686	Puits A Jablonce	JABLONCE	PL		JAB?ONKA	PETITE POLOGNE
+1687	Lunz	LUNZ	AT		LUNZ	SCHEIBBS
+1688	Melk 1	MELK1	AT		EBERSDORF	MELK
+1689	Melk 2	MELK2	AT		MELK	MELK
+1690	Piesting	PIESTING	AT		REISENBERG	BADEN
+1691	Puits De Rajec Nad Rajeankou	RAJECWEL	SK		RAJEC	ZILINA
+1692	Vienne 1	VIENNE1	AT		VIENNE	VIENNE
+1693	Vienne 2	VIENNE2	AT		VIENNE	VIENNE
+1694	Vienne 3	VIENNE3	AT		VIENNE	VIENNE
+1695	Vienne 4	VIENNE4	AT		VIENNE	VIENNE
+1696	Vienne 5	VIENNE5	AT		VIENNE	VIENNE
+1698	Interstitiel Du Ruisseau Quellgraben	RUGRABEN	FR		BINDERNHEIM	BAS RHIN
+1699	Puits (Ponor 1121) A Ohaba Ponor	OHABAPON	RO		OHABA PONOR	HUNEDOARA
+1700	Code Station Sloven59	SLOVEN59	SI		INCONNU	INCONNU
+1701	Code Station Sloven60	SLOVEN60	SI		INCONNU	INCONNU
+1702	Code Station Sloven78	SLOVEN78	SI		INCONNU	INCONNU
+1703	Code Station Sloven79	SLOVEN79	SI		INCONNU	INCONNU
+1704	Code Station Sloven80	SLOVEN80	SI		INCONNU	INCONNU
+1705	Gornji Podgrad	PODGRADG	SI		PODGRAD	GORNJA RADGONA
+1706	Code Station Poland01	POLAND01	PL		INCONNU	INCONNU
+1707	Code Station Poland02	POLAND02	PL		INCONNU	INCONNU
+1708	Code Station Poland03	POLAND03	PL		INCONNU	INCONNU
+1709	Ptuj	PTUJ1	SI		PTUJ	PTUJ
+1710	Gornja Radgona	RADGONAG	SI		GORNJA RADGONA	GORNJA RADGONA
+1712	Povodie Horneho Vahu	VAHBASIN	SK		DEMANOVSKA DOLINA	ZILINA
+1713	Burkheimer See 1	BURKH1	DE		BURKHEIM	BADE WURTEMBERG
+1714	Opfinger See 1	OPFING1	DE		OPFINGEN	BADE WURTEMBERG
+1715	Opfinger See 2	OPFING2	DE		OPFINGEN	BADE WURTEMBERG
+1719	Lahau - Vienne Ou Lobau  A_89	LAHAU	AT		VIENNE	VIENNE
+1721	Puits W2 Dans La Plaine Alluviale De La Riviere Isar	MUNICHB	DE		MUNICH	BAVIERE
+1722	Puits W4 Dans La Plaine Alluviale De La Riviere Isar	MUNICHC	DE		MUNICH	BAVIERE
+1723	Landau	NEVESIN	DE		LANDAU	RHENANIE PALATINAT
+1724	Well 508a_8518	SWABIANA	DE		SONTHEIM AN DER BRENZ	SWABIAN JURA
+1725	Interstitial Toess River Helvetia Ra199 Depth 60 Cm	TOESSRI1	CH		KOLLBRUNN	WINTHERTUR
+1726	Puits W5 Dans La Plaine Alluviale De La Riviere Isar	MUNICHA	DE		MUNICH	BAVIERE
+1728	Vodnjak Ob Hisi Cven 1c	CVEN	SI		CVEN	MARIBOR
+1729	Vodnjak Ob Hisi Markovci 71	PTUJ	SI		MARKOVCI	PTUJ
+1730	Vodnjak Pri Hisi Sikole 2	RACE	SI		SIKOLE	MARIBOR
+1731	Vodnjak Pri Hisi Starse 31	STARSE	SI		STARSE	MARIBOR
+1732	Vodnjak Pri Nogometnem Igriscu Zlatolicje	ZLATOLI2	SI		ZLATOLICJE	MARIBOR
+1733	Burkheimer See 2	BURKH2	DE		BURKHEIM	BADE WURTEMBERG
+1736	Niederrimsinger See 11_020_0	NIEDERR2	DE		NIEDERRIMSINGEN	BADE WURTEMBERG
+1738	Vodnjak Ob Hisi Ciglenska C 6 Sp Duplek	SPDUPLEK	SI		SPODNJI DUPLEK	MARIBOR
+1739	Interstitial Toess River Helvetia Ra200 Depth 90 Cm	TOESSRI2	CH		KOLLBRUNN	WINTHERTUR
+1740	Interstitial Toess River Helvetia Ra201 Depth 60 Cm	TOESSRI3	CH		KOLLBRUNN	WINTHERTUR
+1741	Interstitial Toess River Helvetia Ra202 Depth 90 Cm	TOESSRI4	CH		KOLLBRUNN	WINTHERTUR
+1742	Vodnjak Pri Nogometnem Igriscu Zlatolicje	ZLATOLI1	SI		ZLATOLICJE	MARIBOR
+1745	Puits A96 Dans Le Lobau	LOBAUA96	AT		VIENNE	VIENNE
+1747	Phreatic Water Well Messkirch Germany	MESSKIWE	DE		MESSKIRCH	BADEN WURTTEMBERG
+1749	Phreatic Water Well Zienken A 221016-28 Germany	ZIENKAWE	DE		ZIENKEN	BADEN WURTTEMBERG
+1750	Phreatic Water Well Zienken B 221017-06 Germany	ZIENKBWE	DE		ZIENKEN	BADEN WURTTEMBERG
+1751	Phreatic Water Well Zienken C 221017-13 Germany	ZIENKCWE	DE		ZIENKEN	BADEN WURTTEMBERG
+1752	Puits 2 Cepki	CEPKI	SI		CEPKI	KOPER
+1753	Antro Delle Sorgenti Di Bagnoli (105 Vg)	CKMAP002	IT		BAGNOLI DELLA ROSANDRA	FRIULI VENEZIA GIULIA
+1754	Antro Delle Sorgenti Di Bagnoli (Vg 105). Bagnoli Della Rosandra	CKMAP481	IT		SAN DORLIGO DELLA VALLE	FRIULI VENEZIA GIULIA
+1755	Code Station Sloven81	SLOVEN81	SI		INCONNU	INCONNU
+1756	Cepki	CEPKI2	SI		CEPKI	KOPER
+1757	Dragonja	DRAGONJ1	SI		DRAGONJA	PIRAN
+1758	Spring K Luza San Dorligo Della Valle	KLUZA	IT		TRIESTE	TRIESTE
+1759	Cepki Ob Rizani Karst Spring Risano River Basin	CEPKISP	SI		RIZANA	KOPER
+1761	Glanbach River Salzburg	GLANBACH	AT		SALZBURG	SALZBURG
+1762	Source Golling Golling	GOLLING	AT		SALZBURG	SALZBURG
+1763	Lach 8	LACH8	AT		BRAUNAU AM INN	BRAUNAU AM INN
+1764	Salzburg	SALZBUR1	AT		SALZBURG	SALZBURG
+1765	Site Lehen042 In Lehen Bei Anthering	LEHEN042	AT		LEHEN BEI ANTHERING	SALZBURGER
+1766	Site Salzb040 In Salzburg	SALZB040	AT		SALZBURG	SALZBURGER
+1768	Site Salzb076 In Salzburg	SALZB076	AT		SALZBURG	SALZBURGER
+1769	Site Salzb080 In Salzburg	SALZB080	AT		SALZBURG	SALZBURGER
+1770	Vratna	VRATNA	RS		VRATNA	JABUKOVAC
+1772	Desni Breg Drave Pri Ptuju	DRAVEPTU	SI		PTUJ	PTUJ
+1773	Trgovisce Ob Dravi	TRGODRAV	SI		TRGOVISCE	PTUJ
+1774	Vienne 6	VIENNE6	AT		VIENNE	VIENNE
+1775	Mala Pecina Ududoj. Jabukovac	MALAPECA	RS		JABUKOVAC	JABUKOVAC
+1777	Cave Jama Pod Gradom Luknja	JAMAPOD	SI		PRECNA	NOVO MESTO
+1778	Krska Jama An Der Krka Quelle	KRSKAJAM	SI		TREBNJA GORICA	IVANCNA GORICA
+1779	Potiskavc (Dobrepolje)	POTISKAV	SI		POTISKAVEC	GROSUPLJE
+1780	Krska Cave , Krska Vas, Ivancna Gorica, Si	KRSKA	SI		TREBNJA GORICA	IVANCNA GORICA
+1781	Lucka Jama	LUCKAJAM	SI		LUCE NA SOLI	GROSUPLJE
+1782	Potiskavska Jama	POTISKA1	SI		CETEZ PRI STRUGAH	GROSUPLJE
+1784	Code Station Sloven57	SLOVEN57	SI		INCONNU	INCONNU
+1785	Code Station Sloven58	SLOVEN58	SI		INCONNU	INCONNU
+1786	Code Station Sloven74	SLOVEN74	SI		INCONNU	INCONNU
+1787	Code Station Sloven75	SLOVEN75	SI		INCONNU	INCONNU
+1788	Code Station Sloven76	SLOVEN76	SI		INCONNU	INCONNU
+1789	Code Station Sloven77	SLOVEN77	SI		INCONNU	INCONNU
+1790	Quelle Tomincev Studenec Bei Dvor An Der Krka	TOSTUDEN	SI		GORNJI KOT	NOVO MESTO
+1792	Mobisaht Cave	MOBISAHT	SI		LIPOVEC	RIBNICA
+1793	Ebental Cave Z604 K St 6842	EBENTAL	SI		POLOM KOCEVJE	KOCEVJE
+1797	Luska Jama Bei Luce	LUSKAJAM	SI		LUCE	GROSUPLJE
+1798	Jama Pod Gradom Luknja, Precna (Novo Mesto)	PRECNACA	SI		PRECNA	NOVO MESTO
+1802	Cueva Del Gato Benaojan	GATO	ES		BENAOJAN	MALAGA
+1807	Well Along The Railway	BERLANGA	ES		BERLANGA DE DUERO	SORIA
+1808	Hyporheic Zone Of The River Ain Site Ainr16av In Chatillon La Palud	AINR16AV	FR		CHATILLON LA PALUD	AIN
+1809	Hyporheic Zone Of The River Ain Site Ainr26av In Chazey Sur Ain	AINR26AV	FR		CHAZEY SUR AIN	AIN
+1810	Hyporheic Zone Of The River Ain Site Ainr28am In Chazey Sur Ain	AINR28AM	FR		CHAZEY SUR AIN	AIN
+1811	Hyporheic Zone Of The River Ain Site Ainr30av In Chazey Sur Ain	AINR30AV	FR		CHAZEY SUR AIN	AIN
+1812	Hyporheic Zone Of The River Ain Site Ainr33am In Saint Jean De Niost	AINR33AM	FR		SAINT JEAN DE NIOST	AIN
+1813	Riviere Le Verdon	ALLOS	FR		ALLOS	ALPES DE HAUTE PROVENCE
+1814	Source De La Baume Archee	AMOARCHE	FR		MOUTHIER HAUTE PIERRE	DOUBS
+1815	Riviere Azergue Ternand	AZERGUES	FR		SAINT LAURENT D OINGT	RHONE
+1816	Emergence Perenne Sous Eboulis Une Centaine De Metres A L Amont De La Grotte De La Baume Archee Griffons 1 Et 2	BAUMARCH	FR		MOUTHIER HAUTE PIERRE	DOUBS
+1818	Eygues Amont Downwelling	EYGUAM1	FR		VERCLAUSE	DROME
+1819	Eygues Amont Upwelling	EYGUAM7	FR		VERCLAUSE	DROME
+1820	Source Des Froidieres	FROIDIER	FR		CHALEY	AIN
+1821	Source Gloriette	GLORIETT	FR		CORNUS	AVEYRON
+1822	Source De La Seille Griffons 2 3 Et 4	LADOSEIL	FR		LADOYE SUR SEILLE	JURA
+1823	Source Sur L Affluent En Rive Gauche De La Source Captee	LAFRAGAU	FR		LA FRASNEE	JURA
+1824	Amont Camping Rioclar Le Bourget Site 2	LEBOURG2	FR		MEOLANS	ALPES DE HAUTE PROVENCE
+1826	Source Captee De L Arce A L Air Libre Exterieur Et A L Interieur Du Captage	MOREARCE	FR		MOREZ	JURA
+1827	Petite Source De La Cuisance En Forme De Vasque Retenue D Eau Alimentee Par Quelques Griffons	PETICUIS	FR		ARBOIS	JURA
+1829	Source Sanguiniere Sed 69	SANGUINI	FR		ENTRAUNES	ALPES MARITIMES
+1831	Grotte Sarrazine	SARRAZIN	FR		NANS SOUS SAINTE ANNE	DOUBS
+1832	Pas Loin De Saugeot Sur Une Source Captee	SAUGCAPT	FR		SAUGEOT	JURA
+1833	Source La Plus A L Amont Echantillonnee Au Fond De La Reculee Du Bois De Sautelard	SAUTELAR	FR		LADOYE SUR SEILLE	JURA
+1834	Source Pres Des Grottes De La Doye Apres La Confluence Entre Les Deux Premiers Griffons Griffon 3	SOURNANS	FR		LES NANS	JURA
+1835	Buech River Aval A Sisteron Amont De Plaine Downwelling	BUECHAVD	FR		SISTERON	HAUTES ALPES
+1836	Albarine Pont De La Violette	VIOLETTE	FR		TENAY	AIN
+1837	Hyporheic Zone Of The River Rhone In Grigny	GRIGNYHY	FR		GRIGNY	RHONE
+1839	Source Maglia Sed 72	MAGLIA	FR		BREIL SUR ROYA	ALPES MARITIMES
+1842	Contre Canal Du Rhin A Artolsheim	ARTOLSHE	FR		ARTOLSHEIM	BAS RHIN
+1843	Ile De Rhinau Le Schaftheu	ILERHIN1	FR		RHINAU	BAS RHIN
+1844	Ile De Rhinau Le Schaftheu	ILERHIN2	FR		RHINAU	BAS RHIN
+1845	Contre Canal Du Rhin A Mackenheim	MACKENHE	FR		MACKENHEIM	BAS RHIN
+1847	Rhin A Rhinau	RHINAURH	FR		RHINAU	BAS RHIN
+1850	Le Gave D Aspe Hyporheic Zone	GAVEASPE	FR		EYSUS	PYRENEES ATLANTIQUES
+1851	River Ain A L Aval Du Pont De Pont D Ain	AINR01AM	FR		PONT D AIN	AIN
+1852	Riviere L Albarine A Saint Rambert En Bugey Passerelle Amont Du Village	STRAMB2	FR		SAINT RAMBERT EN BUGEY	AIN
+1853	Station 9. Secteur Ain	AINSTA09	FR		SAINT MAURICE DE REMENS	AIN
+1854	Station 10. Secteur Ain	AINSTA10	FR		CHATILLON LA PALUD	AIN
+1855	Phreatic Site Along The Vipava Near Dornberk	DORNBERK	SI		DORNBERK	NOVA GORICA
+1856	Station 10. Interstitiel De L Herbasse	HERBAS10	FR		SAINT DONAT SUR L HERBASSE	DROME
+1857	Spring In Knin	KNINSP	HR		KNIN	SIBENIK KNIN
+1858	Rio Noguera Ribagorzana Pont De Suert	NOGUERA1	ES		PONT DE SUERT	LERIDA
+1859	Rio Noguera Pallaresa	NOGUERA3	ES		COLLEGATS	LERIDA
+1860	Well, Socerga	SOCERGPT	SI		SOCERGA	KOPER
+1861	Toss River Upstream Of Winterthur	TOSSRIV	CH		WINTERTHUR	ZURICH
+1862	Fontana Tosi	CKMAP097	IT		MOMO	PIEMONTE
+1863	Fontanile A Cacciana	CKMAP107	IT		FONTANETO D AGOGNA	PIEMONTE
+1864	Fontanile A Centale	CKMAP108	IT		FONTANETO D AGOGNA	PIEMONTE
+1865	In Un Pozzo Pozzuolo Del Friuli	CKMAP142	IT		POZZUOLO DEL FRIULI	FRIULI VENEZIA GIULIA
+1866	Risorgenza Della Giacheira (838 Li/Im)	CKMAP316	IT		PIGNA	LIGURIA
+1867	Risorgenza Di Creppo (390 Li/Im). Creppo	CKMAP317	IT		TRIORA	LIGURIA
+1868	Sorgente Del Molino. Frazione Noci	CKMAP369	IT		REZZOAGLIO	LIGURIA
+1869	Sorgente Inferiore Del Rio Dei Rughi (651 Li/Im). Buggio	CKMAP383	IT		PIGNA	LIGURIA
+1870	Sorgente Superiore Del Rio Dei Rughi (652 Li/Im). Buggio	CKMAP410	IT		PIGNA	LIGURIA
+1871	Grotta Mara	CKMAP136	IT		PALAZZO MINERVA	SARDEGNA
+1872	Grotta Molafa	CKMAP137	IT		CAFFE ROMA	SARDEGNA
+1873	Grotta Romana	CKMAP140	IT		INCONNU	SARDEGNA
+1874	Sorgente Su Cologone. S. Giovanni	CKMAP405	IT		OLIENA	SARDEGNA
+1877	Risorgente Del T. Maremola. 1 Km A Monte Di Magliolo	CKMAP314	IT		MAGLIOLO	LIGURIA
+1878	Risorgiva Del Rio Di Fronte Al Molino Della Chianella. 20 M A Valle Cascatella	CKMAP318	IT		CARTOSIO	PIEMONTE
+1879	Risorgiva Riva Sinistra Rio Miseria. A Monte Fondoferle	CKMAP322	IT		PONZONE	PIEMONTE
+1880	Drava River	DRAVAPTU	SI		PTUJ	PTUJ
+1881	Stream Near Kamenscah	LJUTOMER	SI		ZGORNJI KAMENSCAH	LJUTOMER
+1882	Cave Megara Maldenovica (Stapari 1701, Biosp 1162), Stapari, Ulzice	MALDENCA	RS		STAPARI	UZICE
+1883	Cave Obajdinova	OBAJIDIN	HR		LIKA SENJ	JEZERANE
+1885	Grotta Dei Rugli	CKMAP124	IT		PIGNA	LIGURIA
+1886	Grotta Dei Rugli (19 Li/Im)	CKMAP482	IT		BUGGIO	LIGURIA
+1888	Source Bakovac Dans Le Lit D Un Torrent Sur Le Hameau De Persici	BAKOVAC	HR		GRACAC	LIKA
+1889	Izkopan Vodnjak, Karavla (Bela Crkva)	BELACRK2	RS		BELA CRKVA	VOIVODINE
+1890	Riviere Avies	BRAZESTI	RO		BRAZESTI	ALBA
+1891	Vrelo Brestovnik, Bjeljani - Vrijeka (Dabarsko Polje)	BRESTOVN	BA		BJELJANI	SERB REPUBLIC
+1892	Cave Gluha Bukovica	BUKOVICA	BA		GLUHA BUKOVICA	FEDERATION OF BOSNIA AND HERZEGOVINA
+1893	Spring Cavline	CAVLINE	HR		OBROVAC	ZADAR
+1894	Puits, Cerevic, Beocin	CEREVIC	RS		CEREVIC	VOIVODINE
+1895	Cave Daca, Ljubogosta, Sarajevo	DACACAVE	BA		LJUBOGOSTA	SARAJEVO
+1897	Cave Dobreljska, Dobrelje, Gatacko Polje	DOBRELJS	BA		DOBRELJE	SERB REPUBLIC
+1898	Dom R.o. (Ljubljana)	DOMLJUBJ	SI		LJUBLJANA	LJUBLJANA
+1899	Dovjez	DOVJEINC	SI		DOVJEZ	LJUBLJANA
+1900	Tomincev Studenec (-190) Dvor (Zuzemberk)	DVOR	SI		DVOR	ZUZEMBERK
+1901	Cave Gaspinova	GASPINOV	SI		LOGATEC	LOGATEC
+1902	Well 1 At Hrastje 4	HRASTJE1	SI		HRASTJE	LJUBLJANA
+1903	Well 4 At Hrastje 4	HRASTJE4	SI		HRASTJE	LJUBLJANA
+1904	Spring Izice	IZICESP	SI		LJUBLJANA	LJUBLJANA
+1906	Cave Jezero (Udbina), Zovi Do, Nevesinje	JEZEROJA	BA		ZOVI DO	SERB REPUBLIC
+1907	Spring Near Knezovi (Brioni Jagnjenica) Radece	KNEZOVI	SI		JAGNJENICA	RADECE
+1908	Cave Kobiljaca	KOBILJAC	SI		SPEHARJI	CRNOMELJ
+1910	Izvir P. Kocevskih Poljanah, Kocevske Poljane	KOCEVJE	SI		KOCEVJE	KOCEVJE
+1911	Well In Krasinec 10	KRASIN10	SI		KRASINEC	CRNOMELJ
+1912	Well In Krasinec 20	KRASIN20	SI		KRASINEC	CRNOMELJ
+1913	Kukaca (Source Sous La Route) Tounj (Ogulin)	KUKACASP	HR		STANICA KUKACA	KARLOVAC
+1914	Kuruzovica Pecina	KURUZOVI	HR		VAGANAC	RAKOVICA
+1915	Puits, Kusic, Bela Crkva	KUSICFON	RS		KUSIC	BELA CRKVA
+1916	Riviere La Cause Sur Le Versant Nord De La Montagne Sainte Victoire	LACAUSE	FR		VAUVENARGUES	BOUCHES DU RHONE
+1917	Spring Lukavac, Zavala, Popovo Polje	LUKAVAC	BA		ZAVALA	FEDERATION OF BOSNIA AND HERZEGOVINA
+1918	Modro Oko	MODROOKO	HR		KOMIN	METKOVIC
+1919	Well At Rakican (Nr 117), Murska Sobota	MURSKAPT	SI		RAKICAN	MURSKA SOBOTA
+1920	Izvir Ob Uncu Pri Stolpu, Planina	PLANINSP	SI		PLANINA	POSTOJNA
+1922	Cave Poltarica	POLTARIC	SI		GRADICEK	GROSUPLJE
+1923	Spring Poscane, Dolnja Paka (Crnomelj)	POSCANE	SI		DOLNJA PAKA	CRNOMELJ
+1925	Spring Pribitu, Dabarsko Polje	PRIBITU	BA		HATELJI	SERB REPUBLIC
+1926	Reznica, Grebci, Ravno	REZNICA	BA		GREBCI	RAVNO
+1927	Izvir Nad Ribnikom	RIBNIKOM	BA		GORNJI RIBNIK	KLJUC
+1928	Rio Frio	RIOFRIO	ES		RIOFRIO	GRANADA
+1929	Spring In The Village, Ripac (Bihac)	RIPACSP	BA		RIPAC	BIHAC
+1930	Rivcja Cave, Zagradec (Zuzemberk)	RIVCJACA	SI		ZAGRADEC	GROSUPLJE
+1931	Cave Rudnica	RUDNICCA	HR		KAMENICA	KARLOVAC
+1932	Sava River In Crnuce (Bou-Rouch Sampling)	SAVACRNU	SI		CRNUCE	LJUBLJANA
+1933	Sava River In Jezica (Bou-Rouch Sampling)	SAVAJEZI	SI		JEZICA	LJUBLJANA
+1935	Sava River In Kresnice 183c (Kc Sampling)	SAVAKRE1	SI		KRESNICE	LITIJA
+1936	Sava River In Kresnice 183a (Kc Sampling)	SAVAKRE2	SI		KRESNICE	LITIJA
+1937	Sava River In Kresnice 183b (Bou-Rouch Sampling)	SAVAKRE3	SI		KRESNICE	LITIJA
+1938	Sava River In Lujbljana (Bou-Rouch Sampling)	SAVALUJB	SI		LJUBLJANA	LJUBLJANA
+1939	Sava River In Sobec (Bou-Rouch Sampling)	SAVASOBE	SI		SOBEC	RADOVLJICA
+1940	Sava River In Tomacevo (Bou-Rouch Sampling)	SAVATOMA	SI		TOMACEVO	LJUBLJANA
+1942	Spring Brezicek In Sihurna, Paka (Crnomelj)	SIHURNA	SI		DOLNJA PAKA	CRNOMELJ
+1943	Studenec, Stapari, Ulzice	SKOKICI	RS		STAPARI	UZICE
+1944	Well At Kovaceva 26 In Smartno	SMARTNO	SI		SMARTNO	LJUBLJANA
+1945	Fontaine Stinjevac (Vrgorac)	STINJEV	HR		STINJEVAC	VRGORAC
+1946	Cave Susica, Dabarsko Polje	SUSICACA	BA		MILAVICI	SERB REPUBLIC
+1948	Spring Near Svibnik (Crnomelj)	SVIBNIK	SI		SVIBNIK	CRNOMELJ
+1949	Tounjcica Spring	TOUNJCIC	HR		TOUNJ	KARLOVAC
+1951	Spring Lukavac, Vrgorac	VRGORAC1	HR		VRGORAC	SPLIT DALMATIE
+1952	Ziva Voda (Lac)	VRGORAC2	HR		VRGORAC	VRGORAC
+1953	Spring Vrijeka, Dabarsko Polje	VRIJEKAS	BA		MILAVICI	SERB REPUBLIC
+1955	Well, Vrtojba, Nova Gorica	VRTOJBA	SI		VRTOJBA	NOVA GORICA
+1956	Wulfbachquellhoehle	WULFBACH	DE		MUHLHEIM AN DER DONAU	BADE WURTEMBERG
+1957	Pecina Pri Zadruznem Domu, Donji Brisnik, Duvanjsko Polje	ZADRUZCA	BA		DONJI BRISNIK	FEDERATION OF BOSNIA AND HERZEGOVINA
+1958	Izvir V Desni Dolini Pod Zmijinico	ZMIJINIC	ME		LUBNICE	BERANE
+1959	Abramoviceva 3 (Pump) (Ptuj)	ABRAMOVI	SI		PTUJ	PTUJ
+1960	Rio Alfambra	ALFAMBRA	ES		ALLEPUZ	TERUEL
+1961	Cave Baba, Cvaljina, Ravno, Popovo Polje	BABAPECI	BA		CVALJINA	FEDERATION OF BOSNIA AND HERZEGOVINA
+1962	Cave Barilovic	BARILOVI	HR		BARILOVIC	KARLOVAC
+1963	Zabita Crpalka, Karavla (Bela Crkva)	BELACRK1	RS		BELA CRKVA	VOIVODINE
+1964	Cave Nearer (?) Mlini, Gosa (Bihac)	BIHACCAV	BA		BIHAC	FEDERATION OF BOSNIA AND HERZEGOVINA
+1966	Spring, Bocac (Banja Luka)	BOCACSP	BA		BOCAC	BANJA LUKA
+1968	Spring 34 Near Bodesce (Radovljica)	BODESC34	SI		BODESCE	RADOVLJICA
+1969	Spring In Bodesce (Radovljica)	BODESCE	SI		BODESCE	RADOVLJICA
+1971	Spring 1 In Bodesce (Radovljica)	BODESCE1	SI		BODESCE	RADOVLJICA
+1972	Spring 2 In Bodesce (Radovljica)	BODESCE2	SI		BODESCE	RADOVLJICA
+1973	Spring Near Bodesce (Radovljica)	BODESCEP	SI		BODESCE	RADOVLJICA
+1974	Spring Near The Lake Of Bohinjsp	BOHINJSP	SI		STARA FUZINA	BOHINJ
+1975	Cave Miljacka	CAMILJAC	HR		KNIN	SIBENIK KNIN
+1976	Spring Near Cave Cavlinska	CAVLINSK	HR		MUSKOVCI	OBROVAC
+1977	Cave Djud, Mali Nerajec (Crnomelj)	DJUDCAVE	SI		MALI NERAJEC	CRNOMELJ
+1978	Dans Le Dobro Polje, Source Des Moulins, Zeta, Niksic	DOBROPOL	ME		NIKSIC	NIKSIC
+1979	River Dragonja At The Dam	DRAGONJA	SI		SECOVLJE	PIRAN
+1980	Well, Vumpah 17a, Duplek, Maribor	DUPLEKPT	SI		SPODNJI DUPLEK	MARIBOR
+1981	Puits A Glava Zete	GLAVAZET	ME		GLAVA ZETE	NIKSIC
+1982	Puits, Gornji Kursanec 18 (Varazdin)	GORNJIKU	HR		GORNJI KURSANEC	VARAZDIN
+1983	Pump In Gradicek (Krka)	GRADICEK	SI		GRADICEK	KRKA
+1984	Idrijca River, Phreatic Site	IDRIJCA	SI		ZELIN	CERKNO
+1985	Iska (Prod, Pumpa)	ISKAWELL	SI		ISKA	LJUBLJANA
+1986	Spring Jelsevnik, Jelsevnik (Crnomelj)	JELSEVNI	SI		JELSEVNIK	CRNOMELJ
+1987	Well In Jezica	JEZICAPT	SI		JEZICA	LJUBLJANA
+1988	Spring Near Jovina Cave	JOVINASP	HR		NOVA KRSLJA	KARLOVAC
+1989	Source Pres De La Source De Karisnica, Karin (Zadar)	KARINSP	HR		KARIN GORNJI	ZADAR
+1990	Cave Above Spring Krka	KRKACAVE	SI		GRADICEK	KRKA
+1991	Pompage Kusic (Bela Crkva)	KUSICPUM	RS		KUSIC	BELA CRKVA
+1992	Rver Nera, Kc Jame  (Kusic) Bela Crkva	KUSIKKC	RS		KUSIC	BELA CRKVA
+1993	Springs Along The Sava River  (Laze)	LAZEZP	SI		LAZE PRI DOLSKEM	LJUBLJANA
+1994	Lipska Cave	LIPSKACA	ME		LIPA	CETINJE
+1995	Cave Majdan, Lusci Palanka, Sanski Most	MAJDANCA	BA		LUSCI PALANKA	SANSKI MOST
+1996	Spring Below Cave Megara Maldenovica, Stapari, Ulzice	MALDENSP	RS		STAPARI	UZICE
+1997	Cave Markarova	MARKAROV	HR		STAJNICA	JEZERANE
+1998	Morinj (Spring)	MORINJSP	ME		MORINJ	HERCEG NOVI
+1999	Source Moscenice A Monfalcone	MOSCENIC	IT		MONFALCONE	MONFALCONE
+2000	Puits Au Moulin A Nedeljanec	NEDELJAN	HR		NEDELJANEC	VARAZDIN
+2001	Rio Noguera Ribagorzana Aren	NOGUERA2	ES		AREN	LERIDA
+2002	Well Below Parska Golobina, Parje (Pivka)	PARJEPT	SI		PARJE	POSTOJNA
+2003	Spring Podturnscica, Dragatus (Crnomelj)	PODTURNS	SI		DRAGATUS	CRNOMELJ
+2004	Poganjaca, Grebci, Ravno	POGANJAC	BA		GREBCI	RAVNO
+2005	Ponikva Sinkhole Cave, Dabarsko Polje	PONIKVAC	BA		ZASADA	SERB REPUBLIC
+2006	Spring, Potoci, Mostar	POTOCISP	BA		POTOCI	FEDERATION OF BOSNIA AND HERZEGOVINA
+2007	Source Pres De Psata	PSATASP	SI		PSATA	CERKLJE NA GORENJSKEM
+2008	Puits, Puscine 197 (Varazdin)	PUSCINE1	HR		PUSCINE	VARAZDIN
+2009	Puits, Puscine 215 (Varazdin)	PUSCINE2	HR		PUSCINE	VARAZDIN
+2010	Puits, Puscine 241 (Varazdin)	PUSCINE3	HR		PUSCINE	VARAZDIN
+2011	Puits, Puscine 208 (Varazdin-Cakovec)	PUSCINE4	HR		PUSCINE	VARAZDIN
+2012	Kopan Vodnjak In Rakovac	RAKOVAC	RS		RAKOVAC	VOIVODINE
+2013	Resnik (Potocek)	RESNIKRU	HR		SPLIT	SPLIT DALMATIE
+2014	Spring Rinza In Slovenska Vas (Kocevje)	RINZASP	SI		SLOVENSKA VAS	KOCEVJE
+2017	Spring Of Cave Rudnica	RUDNICSP	HR		KAMENICA	KARLOVAC
+2018	Spring Sanice, Zavolje, Sanski Most	SANICESP	BA		ZAVOLJE	SANSKI MOST
+2019	Sava River In Kranj (Bou-Rouch Sampling)	SAVAKRAN	SI		KRANJ	KRANJ
+2023	Sipun (Cavtat)	SIPUN	HR		CAVTAT	DUBROVNIK
+2024	Sjenica Serbia	SJENICA	RS		SJENICA	ZLATIBOR
+2025	Zabrekova Ul. (Pumpa) Smartno (Ljubljana)	SMARTNO1	SI		SMARTNO	LJUBLJANA
+2026	Spring 181a, Sobec (Radovljica)	SOBEC181	SI		SOBEC	RADOVLJICA
+2027	Jama Pod Krogom (Socerga)	SOCERGCA	SI		SOCERGA	KOPER
+2028	Cave Stambuculova, Golubinje (Derdap)	STAMBUCU	RS		GOLUBINJE	DERDAP
+2029	Veliko Stream, Strmosten, Despotovac	STRMOSTE	RS		STRMOSTEN	DESPOTOVAC
+2030	Puits, Dravska C. 179, Svibovec (Varazdin)	SVIBOVE1	HR		SVIBOVEC	VARAZDIN
+2031	Puits, Svibovec 138, Sracinec (Varazdin)	SVIBOVE2	HR		SRACINEC	VARAZDIN
+2032	River Torre (Phreatic Zone, Pump)	TORREPHR	IT		RUDA	MONFALCONE
+2033	Well, Donja Bila, Travnik	TRAVNIKF	BA		TRAVNIK	BUGOJNO
+2034	Spring, Travnik	TRAVNIKS	BA		TRAVNIK	BUGOJNO
+2035	River Trebisnjica Hyporheic Site	TREBISRI	BA		ZAVALA	FEDERATION OF BOSNIA AND HERZEGOVINA
+2036	Source Dans Le Travertin Sous Le Village De Tresonce (Montagne Bistra)	TRESONCE	MK		TRESONTCHE	MAVROVO ET ROSTOUCHA
+2037	Prod Drave (Pri Izvircku) (Varazdin)	VARAZDIN	HR		VARAZDIN	VARAZDIN
+2038	Vracev Gaj (Vodnjak S Pumpo) (Bela Crkva)	VRACEVGA	RS		VRACEV GAJ	VOIVODINE
+2039	Cave Zagorska	ZAGORSKA	HR		ZAGORJE	KARLOVAC
+2040	Source Kapitalica Pres De Zrmanja (Podhum 1669)	ZRMANJA	HR		ZRMANJA	ZADAR
+2041	Zone Hyporheique De La Lone Du Planet	LOPLANET	FR		BLYES	AIN
+2042	Zone Hyporheique De La Riviere Albarine	ALBARINE	FR		AMBERIEU EN BUGEY	AIN
+2043	Source De La Balmette - Challes	BALMETSP	FR		CHALLES LA MONTAGNE	AIN
+2044	Piezometre 3 - Balmettes	BALMETT3	FR		BETTANT	AIN
+2045	Source Boucherie - Rougemont	BOUCHERI	FR		ROUGEMONT	AIN
+2046	Source De Charvieux 1 - Charvieux	CHARVIE1	FR		CHARVIEUX	AIN
+2047	Grotte Des Combets	COMBETSG	FR		CERDON	AIN
+2048	Station Pompage - Corlier	CORLIERW	FR		CORLIER	AIN
+2049	Source De La Doye - Nantua	DOYENANT	FR		NANTUA	AIN
+2051	Source Captage  - Fetigny (Buse)	FETIGNYS	FR		FETIGNY	JURA
+2052	Source Le Flaret - Outriaz	FLARETSP	FR		OUTRIAZ	AIN
+2053	Source Du Grinand - Les Oeuvres - Blanaz	GRINANDS	FR		BLANAZ	AIN
+2054	Grotte De L Homme Ou Trou De L Homme	HOMMEGRO	FR		CHARABOTTE	AIN
+2055	Gouffre De Lepigneux Hostia	LEPIGNEU	FR		HOSTIAZ	AIN
+2056	Source Du Mont Du Cerf Maisod	MAISODSP	FR		MAISOD	JURA
+2057	Trou Des Marmites Ou Grotte Des Marmites	MARMITES	FR		CHARABOTTE	AIN
+2058	Source Du Sentier De France Meillonnas	MEILLOSP	FR		MEILLONNAS	AIN
+2059	Piezometre 1 - Montreal La Cluse	MONTREA1	FR		MONTREAL LA CLUSE	AIN
+2060	Captage De Neglia A(Grotte Du)	NEGLIAGR	FR		ARINTHOD	JURA
+2061	Source De Pinacon Jujurieux	PINACOSP	FR		MERIGNAT	AIN
+2062	Source Du Pissoir - Torcieu	PISSOIRS	FR		MONTFERRAND	AIN
+2063	Pompe Jardin 5 - St Rambert	RAMBERT5	FR		SAINT RAMBERT EN BUGEY	AIN
+2064	Source De La Tuviere - Montgriffon	TUVIERES	FR		NIVOLLET MONTGRIFFON	AIN
+2065	Rio Cares	CARESRIO	ES		CABRALES	OVIEDO
+2066	50 M. S. Del Rio Girena	GIRENAW2	ES		MONTESANO	ALICANTE
+2067	Rio Guadalmansa	GUADALMW	ES		ESTEPONA	MALAGA
+2068	Casa La Molineta	MOLINETA	ES		CANET D EN BERENGUER	VALENCIA
+2069	Riviere Ouveze Entrechaux	ENTRECHA	FR		ENTRECHAUX	DROME
+2070	Les Duyes Mallemoisson	LESDUYDO	FR		MALLEMOISSON	ALPES DE HAUTE PROVENCE
+2071	Torrent Les Duyes Entre Thumins Et Mallemoisson	LESDUYES	FR		MALLEMOISSON	ALPES DE HAUTE PROVENCE
+2072	Lez Montjoux	MONTJOUX	FR		MONTJOUX	DROME
+2073	Riviere Drome Les Fourches	DROBEAUR	FR		CHARENS	DROME
+2074	Riviere Drome Les Perbaux	DRODIE	FR		DIE	DROME
+2075	Riviere Drome La Chenal	DROLUCDI	FR		LUC EN DIOIS	DROME
+2077	Ouveze River Amont A Entrechaux Camping Aval De Plaine Upwelling	ENTRECHU	FR		ENTRECHAUX	DROME
+2078	Buech Au Pont D Eyguians	EYGUIANS	FR		EYGUIANS	HAUTES ALPES
+2079	Eygues River Aval A Les Pilles Amont De Plaine Downwelling	EYGUPILD	FR		LES PILLES	DROME
+2080	Eygues River Aval A Les Pilles Aval De Plaine Upwelling	EYGUPILU	FR		LES PILLES	DROME
+2081	Lez River Aval A Grignan  Aval De Plaine Upwelling	GRIGNANU	FR		GRIGNAN	DROME
+2082	Jabron Au Deuxieme Pont De L Aval Vers L Amont Sur La Departementale	JABRON	FR		SISTERON	ALPES DE HAUTE PROVENCE
+2083	Jabron River A Noyers Sur Jabron Amont De Plaine Downwelling	JABRONAM	FR		SISTERON	ALPES DE HAUTE PROVENCE
+2084	Buech A Lus La Croix Haute Marmottes	LUSCROIX	FR		LUS LA CROIX HAUTE	DROME
+2085	Lez River Amont De Plaine Downwelling	MONTJOAM	FR		MONTJOUX	DROME
+2086	Buech A La Carriere De Montmaur Apres Pont Voie Ferree	MONTMAUR	FR		MONTMAUR	HAUTES ALPES
+2087	Riviere Ouveze Gorges D Ubrieux	OUBUISB2	FR		BUIS LES BARONNIES	DROME
+2088	Riviere Ouveze Les Rameirols	OUVSABLE	FR		SABLET	VAUCLUSE
+2089	Ouveze Sarrians	OUVSARR	FR		SARRIANS	VAUCLUSE
+2090	Riviere Ouveze Les Mourres	OUVSTAU2	FR		SAINT AUBAN SUR L OUVEZE	DROME
+2091	Ouveze River Aval A Vaison Amont De Plaine Downwelling	OUVVAISD	FR		VAISON LA ROMAINE	VAUCLUSE
+2092	Ouveze Vaison La Romaine	OUVVAISO	FR		VAISON LA ROMAINE	VAUCLUSE
+2094	Roubion River At Pont De Manas	ROUBARRE	FR		PONT DE MANAS	DROME
+2095	Ardeche River Hyporheic Zone Labastide De Virac Ardeche France	DEVIRAHY	FR		LABASTIDE DE VIRAC	ARDECHE
+2096	Rive De L Ardeche Hyporheique	LABASTHY	FR		LABASTIDE DE VIRAC	ARDECHE
+2097	Lukina Jama-Trojama Cave System Hajducki Kukovi Sjeverni Velebit	LUKTROCA	HR		STINICA	LIKA SENJ
+2098	Source De La Pare A Mons	PARELASP	FR		MONS	VAR
+2100	Risorgive Nell Alveo Del Torrente Arda Riva Sinistra 200 M A Valle Di Vincini	STORARDA	IT		VERNASCA	PIACENZA
+2101	Pont Sur La Mimente Pour Aller A St Julien D Arpaon	ARPAON	FR		SAINT JULIEN D ARPAON	LOZERE
+2103	Cassagnas Sur La Mimente	CASSAGNA	FR		CASSAGNAS	LOZERE
+2104	Le Briancon A Cocures	COCURES	FR		COCURES	LOZERE
+2105	Ruisseau Du Goudesche	GOUDECHE	FR		PONT DE MONTVERT	LOZERE
+2108	Captage Aep Mallepique	MALLEPIQ	FR		MONTREDON LABESSONNIE	TARN
+2109	Sbr Agout. Plage Rive Gauche Du Cimetiere	AGOUTPHY	FR		BURLATS	TARN
+2110	Source C1 De La Mandre	C1MANDRE	FR		SOREZE	TARN
+2111	Sbr Dourbie Pont De Cantobre	CANTOBRE	FR		NANT	AVEYRON
+2112	Sbr Tarn. Sous Resurgence De Castelbouc	CASTELBO	FR		SAINTE ENIMIE	LOZERE
+2113	Interstitiel A Fabas	FABASHYP	FR		FABAS	HAUTE GARONNE
+2114	Sbr Mimente. Amont Florac	MIMENTEH	FR		FLORAC	LOZERE
+2115	Sbr Affl. Tarn. Croix De Berthel	TARNBERT	FR		SAINT MAURICE DE VENTALON	LOZERE
+2116	Sous Ecoulement Du Tarn	TARNMONT	FR		LE PONT DE MONTVERT	LOZERE
+2119	Agout Cimetiere Burlats	AGOUT	FR		BURLATS	TARN
+2120	Source Aep Ornac	ORNAC	FR		GIJOUNET	TARN
+2121	Fontana Tosi	FONTTOSI	IT		MOMO	NOVARE
+2122	Saint Sauveur Sur Tinee 1_abc	SAUTINEE	FR		SAINT SAUVEUR SUR TINEE	ALPES MARITIMES
+2123	Boreon Saint Nicolas	BOREO	FR		SAINT MARTIN DE VESUBIE	ALPES MARITIMES
+2124	Fontaine De Saint Martin 2 Saint Martin De Vesubie	STMART2	FR		SAINT MARTIN DE VESUBIE	ALPES MARITIMES
+2125	Riviere Vesubie A Roque Pelaou	PELAOUVE	FR		ROQUEBILLIERE VIEUX	ALPES MARITIMES
+2126	Ruisseau La Vionene Affluent De La Vesubie 20 M En Amont De La Confluence	VIONENE	FR		SAINT SAUVEUR SUR TINEE	ALPES MARITIMES
+2130	Fiume Tanaro Cantarana	CANTARA	IT		PONTE DI NAVA	CUNEO
+2131	Source Du Coulomp Grotte Des Chamois Coulomp	CHAMOIS	FR		CASTELLET LES SAUSSES	ALPES DE HAUTE PROVENCE
+2137	Dabarska Pecina	DABARSKA	BA		KIJEVCI	SANSKI MOST
+2139	Grotte Etcheverrygarray Aincille	ETCHEVE	FR		AINCILLE	PYRENNEES ATLANTIQUES
+2144	Sorgenti Del Gabriele	GABRIELE	IT		PALERMO	PALERMO
+2145	River Orco At Feletto Orco 3	HFELETTO	IT		FELETTO	VALLEE D AOSTE
+2146	Marges De La Bande Active Du Jabron Station 3	JABRONH2	FR		BEVONS	ALPES DE HAUTE PROVENCE
+2147	Hyporheique Du Verdon A L Aval De Vinon Sur Verdon Station 1_2	VINONVER	FR		VINON SUR VERDON	VAR
+2152	Source La Torraca	TORRACA	FR		SOSPEL	ALPES MARITIMES
+2153	Source De Brugia Pousse	BRUGIA	FR		SAORGE	ALPES MARITIMES
+2154	Grotta Di Rio Martino Crissolo	CRISSOLO	IT		CRISSOLO	CUNEO
+2155	Grotta Di Rio Martino (1001 Pi/Cn)	CKMAP131	IT		CRISSOLO	PIEMONTE
+2157	Miniera Superiore Di Monfieis	MONFIEIS	IT		DEMONTE	CUNEO
+2160	Roubion River At Montelimar	ROUMONTE	FR		MONTELIMAR	DROME
+2162	Aval Du Pont De Bois Sospel 3 Sed 62 1 Sed 66	SOSPEL	FR		SOSPEL	ALPES MARITIMES
+2168	Source A L Amont De La Maison De L Oncle De Bogic Sur La Commune De Spuz	SPUZONCL	ME		SPUZ	DANILOVGRAD
+2170	Suvaja Spring Ubdina Krbavsko Polje	SUVAJASP	HR		DONJI MEKINJAR	LIKA SENJ
+2171	Source De La Fouige	FOUIGE	FR		SAINT DALMAS DE TENDE	ALPES MARITIMES
+2172	Aval De Tende	TENDEAV	FR		TENDE	ALPES MARITIMES
+2173	Pont Tende Pt3	TENDE	FR		TENDE	ALPES MARITIMES
+2175	Fontaine De Vaucluse	VAUCLUS	FR		FONTAINE DE VAUCLUSE	VAUCLUSE
+2176	La Penne Sur L Ouveze	LAPENNE	FR		LA PENNE SUR OUVEZE	DROME
+2177	Pont Sur Eygues Verclause	VERCLAUS	FR		VERCLAUSE	DROME
+2179	Ouveze Saint Auban Aval	OUSTAUB	FR		SAINT AUBAN SUR L OUVEZE	VAUCLUSE
+2183	Buech Aval Sisteron	BUECHAVA	FR		SISTERON	HAUTES ALPES
+2191	Oxibar Cave (Oxibar Ko Karbia)	OXIBAR	FR		CAMOU CIHIGUE	PYRENEES ATLANTIQUES
+2192	Grotte Etxankozola Aussurucq	ETXANKO	FR		AUSSURUCQ	PYRENNEES ATLANTIQUES
+2193	Grotte Dite Gr Re7	GRRE7CA	FR		AUSSURUCQ	PYRENEES ATLANTIQUES
+2194	Grotte Uthurzeheta	UTHURZEH	FR		LARRAU	PYRENEES ATLANTIQUES
+2198	Grotte De Campagnaga Leccia	CALECCIA	FR		CAMOU CIHIGUE	PYRENEES ATLANTIQUES
+2199	Grotte D Algar Do Ladoeiro	ALGARCAV	PT		SERRA DE SANTO ANTONIO	SANTAREM
+2201	Rio Saja Mina De Lapiz	SAJA	ES		CABEZON DE LA SAL	CANTABRIA
+2202	Rio Agouza O Lador	AGOUZAST	ES		LOS TOJOS	SANTANDER
+2204	La Norges Source De La Norges	NORGES	FR		NORGES LA VILLE	COTE D OR
+2206	Source De Pont Les Moulins Pont Les Moulins	PONTMOUL	FR		PONT LES MOULINS	DOUBS
+2207	Cusancin Source Noire	SCENOIRE	FR		CUSANCE	DOUBS
+2208	Source De La Coquille Etalante	COQUILLE	FR		ETALANTE	COTE D OR
+2209	Source Lavoir Crecey Sur Tille	CRECEY	FR		CRECEY SUR TILLE	COTE D OR
+2213	Ponsonniere La Marbriere	MARBRERI	FR		PERREON	RHONE
+2214	Puits Du Petit Resto	MERLEVEN	FR		MERLEVENEZ	MORBIHAN
+2215	Source Pres Du Lieu Dit Le Vernois Griffon 2	SOURCFIN	FR		MESNAY	JURA
+2217	Fontaine Du Maine	MAINERES	FR		SCEY MAISIERES	DOUBS
+2219	Source Lavoirii Crecey Sur Tille	LAVOIR2	FR		CRECEY SUR TILLE	COTE D OR
+2220	Source De La Taverotte Guillon Les Bains	TAVEROTT	FR		GUILLON LES BAINS	DOUBS
+2221	Hyporheic Zone Of The River Doux Et Choisine In Colombier Le Vieux	COLOMBIE	FR		COLOMBIER LE VIEUX	ARDECHE
+2222	Hyporheic Zone Of The River Doux In Empurany	EMPURAHY	FR		EMPURANY	ARDECHE
+2223	Hyporheic Zone Of The River L Herbasse In Charmes Sur L Herbasse 1	CHAMPO1	FR		CHARMES SUR L HERBASSE	DROME
+2224	Hyporheic Zone Of The River Doux In Labatie D Andaure	LABATIE	FR		LABATIE D ANDAURE	ARDECHE
+2225	Hyporheic Zone Of The River Doux In Lamastre	LAMASTRE	FR		LAMASTRE	ARDECHE
+2226	Mine De Brete	BRETEMIN	FR		MONSOLS	RHONE
+2233	Nappe Parafluviale De La Besbre Et Source Pres De Jaligny Sur Besbre	BESBREAL	FR		JALIGNY SUR BESBRE	ALLIER
+2234	Resurgende De Blefond	BLEFONDS	FR		SILLEY BLEFOND	DOUBS
+2237	Puits Au Hameau De La Creuze Dans La Commune De Le Perreon	CREUZEWE	FR		LA CREUZE	RHONE
+2238	Source Captee A Crevechamps	CREVECHA	FR		CREVECHAMPS	MEURTHE ET MOSELLE
+2239	Source Du Ruisseau De Larrey	LARREYRU	FR		DIJON	COTE D OR
+2240	Puits A Dijon. Quartier De Larrey	LARREYWE	FR		DIJON	COTE D OR
+2241	Sources A Marey Sur Tille	MAREYTIL	FR		MAREY SUR TILLE	COTE D OR
+2242	Cusancin Source Des Narines Du Diable	NARDIABL	FR		GUILLON LES BAINS	DOUBS
+2244	Sous Ecoulement De L Ognon Servance	OGNONHY	FR		SERVANCE	HAUTE SAONE
+2245	Longvic Sous Ecoulement Et Nappe Alluviale De L Ouche	OUCHELON	FR		LONGVIC	COTE D OR
+2246	Source De L Ouche	OUCHESOU	FR		LUSIGNY SUR OUCHE	COTE D OR
+2247	Sous Ecoulement D Un Ruisseau Au Perreon	PERREOHY	FR		LE PERREON	RHONE
+2248	Puits Maconne Au Perreon	PERREOWE	FR		LE PERREON	RHONE
+2250	Sous Ecoulement Du Ruisseau De Raddon	RADDONRU	FR		MELISEY	HAUTE SAONE
+2251	Station 4. Ruisseau Du Rui Blanc	RUIBLA04	FR		SAINT MARTIN DU MONT	COTE D OR
+2252	Station 8. Ruisseau Du Rui Blanc	RUIBLA08	FR		SAINT MARTIN DU MONT	COTE D OR
+2253	Station 11. Ruisseau Du Rui Blanc	RUIBLA11	FR		SAINT MARTIN DU MONT	COTE D OR
+2254	Source Et Sous Ecoulement Du Ruisseau Du Rui Blanc	RUIBLANC	FR		VAL SUZON	COTE D OR
+2255	Source De La Sans Fond	SANSFOND	FR		SAULON LA RUE	COTE D OR
+2256	Nappe Alluviale De La Saone	SAONENAP	FR		RENAUCOURT	HAUTE SAONE
+2258	Fontaine Aux Seurs	SEURSFON	FR		CRIMOLOIS	COTE D OR
+2259	Source A Beze	SOUABEZE	FR		BEZE	COTE D OR
+2260	Source Bleue	SPBLEUCU	FR		CUSANCE	DOUBS
+2261	Source A St Julien	STJULIEN	FR		SAINT JULIEN	HAUTE SAONE
+2263	Douix De Terrefondree	TERREFON	FR		TERREFONDREE	COTE D OR
+2264	Tille Source De La Combe De Bezanciere	BEZANCIR	FR		MAREY SUR TILLE	COTE D OR
+2265	Tille Champ Folle	FOLLE	FR		MAREY SUR TILLE	COTE D OR
+2266	Aqueduc Romain Du Giers	AQRGIERS	FR		MORNANT	RHONE
+2267	Puits A Vert	AVERTWEL	FR		VERNOSC LES ANNONAY	ARDECHE
+2268	Source A Bligny Le Sec	BLIGNYSP	FR		BLIGNY LE SEC	COTE D OR
+2269	Gaggenau Schwarwz	GAGGENAU	DE		GAGGENAU	BADE WURTEMBERG
+2270	Phreatic Water Well Gaggenau Germany	GAGGENWE	DE		GAGGENAU	BADEN WURTTEMBERG
+2271	Well In The Servageon Farm Thizy Les Bourgs Rhone France	SERVAGEO	FR		THIZY LES BOURGS	RHONE
+2272	Salzburg	SALZBURG	AT		SALZBURG	SALZBURG
+2274	Puits Gaisberg 1 Mondsee	GAISBER	AT		MONDSEE	VOCKLABRUCK
+2276	Puits Sonnleiten 2 Mondsee	SONNLEI	AT		MONDSEE	VOCKLABRUCK
+2278	Puits Gaisberg 2 Mondsee	GAISBER2	AT		MONDSEE	VOCKLABRUCK
+2279	Nappe Du Danube	BRATISDA	SK		BRATISLAVA	BRATISLAVA
+2280	Code Station Danube04	DANUBE04	AT		INCONNU	INCONNU
+2281	Code Station Danube05	DANUBE05	AT		INCONNU	INCONNU
+2282	Code Station Danube06	DANUBE06	AT		INCONNU	INCONNU
+2283	Code Station Danube07	DANUBE07	AT		INCONNU	INCONNU
+2284	Code Station Danube08	DANUBE08	AT		INCONNU	INCONNU
+2285	Puits A Friedburg	FRIEDBWE	AT		FRIEDBURG	LENGAU
+2286	Nappe Alluviale Du Danube A Vienne	VIENNDA1	AT		VIENNE	VIENNE
+2287	Puits A Vienne 5 A 6 Km Du Danube	VIENNDA2	AT		VIENNE	VIENNE
+2288	Povodie Dunaja	DUNAJAPO	SK		BRATISLAVA	BRATISLAVA
+2291	Site Lehen043 In Lehen Bei Anthering	LEHEN043	AT		LEHEN BEI ANTHERING	SALZBURGER
+2292	Site Salzb039 In Salzburg	SALZB039	AT		SALZBURG	SALZBURGER
+2294	Site Salzb069 In Salzburg	SALZB069	AT		SALZBURG	SALZBURGER
+2296	Gapeau La Font Du Theoule	THEOULE	FR		MEOUNES LES MONTRIEUX	VAR
+2305	Asse De Blieux Pont Medieval Senez	SENEZASS	FR		SENEZ	ALPES DE HAUTE PROVENCE
+2306	Vanson A L Aval De Sourribes Niveau Retrecissement	VANSON	FR		VOLONNE	ALPES DE HAUTE PROVENCE
+2307	Source Du Var	VARSOURC	FR		ENTRAUNES	ALPES MARITIMES
+2310	Amont Camping Rioclar Le Bourget Site 1	LEBOURG1	FR		MEOLANS	ALPES DE HAUTE PROVENCE
+2311	Petit Buech Au Pont De Chabestan Dessus La Batie Montsaleon	CHABESTA	FR		CHABESTAN	HAUTES ALPES
+2312	Grand Buech A La Rochette	LAROCHET	FR		SAINT JULIEN EN BEAUCHENE	HAUTES ALPES
+2313	Argens Chateau Vert	CHATEVER	FR		CHATEAU VERT	VAR
+2315	Zone Hyporheique De La Riviere Du Verdon	PONTCLOT	FR		FONT GAILLARDE	ALPES DE HAUTE PROVENCE
+2316	Zone Hyporheique De La Riviere Du Verdon	STANDRE	FR		SAINT ANDRE LES ALPES	ALPES DE HAUTE PROVENCE
+2317	Zone Hyporheique Du Drac	HYPODRAC	FR		SAINT BONNET	HAUTES ALPES
+2319	River Ain Pres De Chazey Sur Ain	AINR29AM	FR		CHAZEY SUR AIN	AIN
+2320	River Seymard A Chateau Gaillard	CHATGAIL	FR		CHATEAU GAILLARD	AIN
+2321	Riviere L Albarine A Saint Rambert En Bugey	STRAMBER	FR		SAINT RAMBERT EN BUGEY	AIN
+2325	Land Of Emmanuel Malet In Aspremont 05 Fr	EMAMALET	FR		ASPREMONT	HAUTES ALPES
+2327	Hyporheic Zone Of The River Ain Site Ainr28av In Chazey Sur Ain	AINR28AV	FR		CHAZEY SUR AIN	AIN
+2328	Pompe De Gournier (Bord De L Ardeche)	AGOURNIE	FR		SAINT REMEZE	ARDECHE
+2329	Sous Ecoulement De L Argens Chateauvert	ARGENSCH	FR		CHATEAUVERT	VAR
+2330	Vieux Pont De Mirabeau	MIRABEAU	FR		MIRABEAU	ALPES DE HAUTE PROVENCE
+2331	Source De Le Rega (Plus)	REGAPLUS	FR		NEOULES	VAR
+2333	Puits Le Bas Route De Beausset	BEAUSSET	FR		EVENOS	VAR
+2334	Puits Tube D7 Les Iscles. Decharge Au Bord De La Durance	D7ISCLES	FR		SENAS	BOUCHES DU RHONE
+2335	Puits Au Hameau Du Logis	HALOGISW	FR		BANDOL	VAR
+2336	Puits La Pinade Au Bord Du Grand Vallat	PINADEWE	FR		SAINTE ANNE DU CASTELLET	VAR
+2338	Reseu Sabre Galerie Mercedes	SABRE	FR		MAZAUGUES	VAR
+2339	Grotte Du Regaie	REGAIECA	FR		NEOULES	VAR
+2340	Grotte Du Regaie	REGAIEGR	FR		NEOULES	VAR
+2341	Riviere Asse	BRASASSE	FR		BRAS D ASSE	ALPES DE HAUTE PROVENCE
+2342	Riviere Durance Do Pool -50	HPEYRUIS	FR		PEYRUIS	ALPES DE HAUTE PROVENCE
+2343	Sbr Le Gapeau	GAPEAUHY	FR		MEOUNES LES MONTRIEUX	VAR
+2344	Sbr La Rouviere	ROUVIESB	FR		INCONNU	VAR
+2345	Durance Aire De Service De Autoroute Arche	D1MANOSQ	FR		MANOSQUE	ALPES DE HAUTE PROVENCE
+2346	Riviere Durance Site D2	D2MANOSQ	FR		MANOSQUE	ALPES DE HAUTE PROVENCE
+2347	Riviere Les Duyes Station Amont	DUYESAMO	FR		MALLEMOISSON	ALPES DE HAUTE PROVENCE
+2350	Riviere Les Duyes Station Aval 1	DUYESAVA	FR		MALLEMOISSON	ALPES DE HAUTE PROVENCE
+2351	Marges De La Bande Active Du Jabron Stations 1 Et 2	JABRONH1	FR		BEVONS	ALPES DE HAUTE PROVENCE
+2353	Riviere Le Buech	SISTERON	FR		SISTERON	ALPES DE HAUTE PROVENCE
+2354	Riviere Eygues	VERCLAUA	FR		LA GRAND COSTE	DROME
+2357	Riviere Drome Les Ramieres	DROEURRE	FR		EURRE	DROME
+2360	Spring Of Fontfreyde Ardeche France	FONTFRSP	FR		GRAS	ARDECHE
+2361	Grotte De La Balme La Balme Les Grottes	BALME	FR		LA BALME LES GROTTES	ISERE
+2362	Jlr2 Martignat	JLR2	FR		MARTIGNAT	AIN
+2363	Source Sixt Fer A Cheval Sixt Fer A Cheval	SCESIXT	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2364	Grotte Saint Aupre	STAUPRE	FR		SAINT AUPRE	ISERE
+2367	Grotte De Saint Christophe Saint Christophe	CHRISTOP	FR		SAINT CHRISTOPHE	SAVOIE
+2368	Source Noire Saint Claude Source Du Bief Noir	CLAUDE	FR		SAINT CLAUDE	JURA
+2369	Grotte Des Cuves Sassenage	CUVES	FR		SASSENAGE	ISERE
+2370	Fardelay E Sixt Fer A Cheval	FARDELE	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2372	Fardelay W Sixt Fer A Cheval	FARDELW	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2373	Fontany Sixt Fer A Cheval	FONTAGNY	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2374	Grotte Des Foules C Saint Claude	FOULESC	FR		SAINT CLAUDE	JURA
+2376	Gorges Du Furon Amont Engins	FURON	FR		ENGINS	ISERE
+2377	Grotte Des Huguenots Bis Injoux	HUGBIS	FR		INJOUX	AIN
+2379	30m En Rive Droite A L Aval De La Source Du Doubs Griffons 1 Et 2	MOUDOUBS	FR		MOUTHE	DOUBS
+2380	La Plagne Entremont Le Vieux	PLAGNE	FR		ENTREMONT LE VIEUX	SAVOIE
+2385	Grotte De La Falconette La Burbanche	FALCON	FR		LA BURBANCHE	AIN
+2389	Grotte Des Huguenots Injoux	HUGUENO	FR		INJOUX	AIN
+2390	Cascade De La Pleureuse Sixt Fer A Cheval	PLEUREUS	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2391	Resurgence De Salles Sixt Fer A Cheval	SALLES	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2394	Trou Du Garde Dans Reseau Yakari	TROGARDE	FR		LA FECLAZ	SAVOIE
+2395	Creux De La Cavale Les Deserts	CAVALE	FR		LES DESERTS	SAVOIE
+2401	Hyporheique De La Bourne En Face De Grotte Roche	HYPOROCH	FR		RENCRUEL	ISERE
+2402	Puits Dans La Nappe Alluviale Du Rhone Station De Pompage De Arcine	ARCINE	FR		CLARAFOND	HAUTE SAVOIE
+2404	Grotte De L'abreuvoir N┬░12	ABREUCAV	CH		GSTEIG BEI GSTAAD	BERN
+2405	Source Du Ruisseau De L Aigue Noire	AIGUENOI	FR		SAINT LAURENT DU PONT	ISERE
+2407	Gouffre De Barme Froide	BAFROIDE	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2409	Grotte De Bange	BANGECA	FR		ALLEVES	HAUTE SAVOIE
+2410	Source De La Becua	BECUASP	FR		LA MOTTE EN BAUGES	SAVOIE
+2411	Gouffre De La Benoite	BENOITE	FR		ARITH	SAVOIE
+2412	Jean Bernard Samoens	BERNARD	FR		SAMOENS	HAUTE SAVOIE
+2413	Tanne Des Bioles	BIOLESTA	FR		AILLON LE VIEUX	SAVOIE
+2414	Sous Ecoulement De La Bourne La Balme De Rencure	BOURNEHY	FR		RENCUREL	ISERE
+2415	Canal Jagoz Souterrain Artificiel	CANJAGOZ	FR		BELMONT LUTHEZIEU	AIN
+2417	Grotte Du Cernois A	CERNOISA	FR		CHOUX	JURA
+2418	Systeme Karstique Le Ch├Éteau	CHATEASP	FR		VERNAS	ISERE
+2419	Gouffre Du Chevrier (Leysin. Canton De Vaud)	CHEVRIER	CH		LEYSIN	VAUD
+2421	Grotte De La Doria	DORIACA	FR		SAINT JEAN D ARVEY	SAVOIE
+2422	Grotte De La Fontaine Noire Des Echelles	ECHELLES	FR		SAINT CHRISTOPHE	SAVOIE
+2423	Grotte De L Ermoy	ERMOYCA	FR		SAMOENS	HAUTE SAVOIE
+2424	Grotte Des Fees	FEESCA	FR		ALLONZIER LA CAILLE	HAUTE SAVOIE
+2425	Grotte Resurgence De Fontaine Noire	FONOIRCA	FR		LES DESERTS	SAVOIE
+2427	Sous Ecoulement Du Furon Pres D Engins	FURONENG	FR		ENGINS	ISERE
+2428	Tanne Georges Cher	GEORGCHE	FR		AILLON LE JEUNE	SAVOIE
+2429	Gouffre Du Grand Cor	GRCORCA	CH		FULLY	MARTIGNY
+2430	Grotte De La Diau	GRODIAU	FR		THORENS GLIERES	HAUTE SAVOIE
+2431	Grotte Du Guiers Vif	GUIERSVI	FR		SAINT PIERRE D ENTREMONT	SAVOIE
+2432	Resurgences De Hieres Sur Amby	HIERESSP	FR		HIERES SUR AMBY	ISERE
+2434	Sous Ecoulement Du Guiers Vif	HYGUIERS	FR		SAINT PIERRE D ENTREMONT	SAVOIE
+2435	Grotte De La Fontaine Saint Joseph	JOSEPHGR	FR		VERNAS	ISERE
+2436	Grotte Du Jourdy	JOURDYCA	FR		MIEUSSY	HAUTE SAVOIE
+2437	Source De La Lavanche	LAVANCHE	FR		CHAVORNAY	AIN
+2438	Resurgence Des Myrtilles	MYRTILLE	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2439	Source De L Orbe (Vallorbe Canton De Vaud)	ORBESP	CH		VALLORBE	VAUD
+2441	Grotte De L Ours	OURSCAVE	FR		LESCHAUX	HAUTE SAVOIE
+2442	Source De La Plagne	PLAGNESP	FR		ENTREMONT LE VIEUX	SAVOIE
+2443	Grotte De Preoux	PREOUXCA	FR		RUFFIEU	AIN
+2444	Grotte De Prerouge	PREROUGE	FR		ARITH	SAVOIE
+2445	Fontaine De La Rave	RAVEFONT	FR		LA COMPOTE	SAVOIE
+2446	Sous Ecoulement Bief Ravinet Au Niveau Du Pissoir	RAVINETH	FR		TORCIEU	AIN
+2448	Gouffre De La Tournette 12	TOURNETT	FR		LES CLEFS	HAUTE SAVOIE
+2453	Grotte Germinal	GERMINAL	FR		LESCHAUX	HAUTE SAVOIE
+2455	Source Du Landeron	LANDERON	FR		MONTREAL LA CLUSE	AIN
+2456	Gouffre De Longirod	LONGIROD	CH		LONGIROD	VAUD
+2457	Source De La Grotte Jean	JEANSP	FR		LOCHIEU	AIN
+2458	Source Lapiaz Sud Est Refuge Alfred Wills	ALFREDWI	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2459	Source Sur La Pente Nord Ouest Lac D Anterne 2	ANTERNSP	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2460	Source De Barme Froide Bas	BARMEBAS	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2461	Source De Barme Froide Haut	BARMEHAU	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2462	Source De Barme Froide Sud	BARMESUD	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2463	Source Du Chalets Des Fonts	CHALFONT	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2464	Source Lapiaz Ouest Chapelle De Sales	CHAPSALO	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2465	Source Dechargeux Haut	DECHAHAU	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2466	Source Pont De L Eau Rouge	EAUROUSP	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2467	Source Falaise Amont Resurgences De Sales	FALSALES	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2471	Source Gouille Verte	GOUILLEV	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2472	Source Le Grand Pre Barre Rocheuse Est Sud	GRANDPRE	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2473	Source Du Centre Equestre Plan Des Lacs	PLANDELA	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2475	Source Prairie Ouest Resurgences De Sales	PRASALES	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2477	Source De La Cascade De La Sauffaz Bas	SAUFFBAS	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2478	Source De La Cascade De La Sauffaz Haut	SAUFFHAU	FR		SIXT FER A CHEVAL	HAUTE SAVOIE
+2480	Source De La Douveraine La Pesse	DOUVERA	FR		LA PESSE	JURA
+2481	Source Du Bief Chaud	BIEFCHAU	FR		LONGCHAUMOIS	JURA
+2486	Source Captee Saint-Amand-Charix	AMCHARIX	FR		CHARIX	AIN
+2487	Chaley Hyporheique Riviere Albarine	CHALEYHY	FR		CHALEY	AIN
+2488	Source Chaleyriat - Lantenay	CHALEYRI	FR		LANTENAY	AIN
+2489	Graviere Nord - Izernore	IZERNORE	FR		IZERNORE	AIN
+2491	Maillat Hyporheique Riviere Oignin	MAILLAHY	FR		MAILLAT	AIN
+2492	Pampier Hyporheique Riviere Suran	PAMPIERH	FR		DRUILLAT	AIN
+2493	Source De La Sarsouille	SARSOUIL	FR		OYONNAX	AIN
+2495	Source Du Pla Des Clayes Lompnas	SPCLAYES	FR		LOMPNAS	AIN
+2496	Source Captee De La Prairie De Poizat	SPPOIZAT	FR		LE POIZAT	AIN
+2499	Grotte Du Moulin Villard Saint Sauveur Jura France	MOULINCA	FR		VILLARD SAINT SAUVEUR	JURA
+2500	Grotte Du Potentiel Zero	POZEROCA	CH		EVIONNAZ	SAINT MAURICE
+2501	Riviere Souterraine Du Chapeau De Gendarme Licq	CHAPGEN	FR		LICQ ATHEREY	PYRENNEES ATLANTIQUES
+2502	Grotte De Lamina Chilova Chaachi Chilouaka Aussurucq	LAMINA	FR		AUSSURUCQ	PYRENNEES ATLANTIQUES
+2503	Ruisseau Souterrain D Arbouet	ARBOUETR	FR		ARBOUET SUSSAUTE	PYRENEES ATLANTIQUES
+2505	Grotte De Uthurriague	UTHURRIA	FR		VIODOS ABENSE DE BAS	PYRENNEES ATLANTIQUES
+2512	Monte Da Volta Pres D Ourique	MONTEVOL	PT		OURIQUE	ALENTEJO
+2514	Puits A Pres D Ourique	WAOURIQU	PT		OURIQUE	BEJA
+2515	Puits B Pres D Ourique	WBOURIQU	PT		OURIQUE	BEJA
+2516	Ambiente Iporreico Nel Fiume Melfa. All Altezza Del L Abitato Di Roccasecca (Frosinone Lazio)	CKMAP081	IT		ROCCASECCA	LATIUM
+2518	Manantial De Iturgoyen	ITURGOYE	ES		BUSTURIA	VIZCAYA
+2519	Pradielis	PRADIELI	IT		PRADIELIS	UDINE
+2520	Hyporheic Zone And Phreatic Water Along The Sava River Near Bericevo	BERICEVO	SI		BERICEVO	LJUBLJANA
+2522	Phreatic Water Along The Sava River Near Klece Pri Dolu	KLECEDOL	SI		KLECE PRI DOLU	LJUBLJANA
+2523	Hyporheic Zone And Phreatic Water Along The Sava River Near Medvode	MEDVODE	SI		MEDVODE	LJUBLJANA
+2524	Sorgente Mustig. Case Potcladie (Vedronza). Com. Luesevera (Ud)	CKMAP391	IT		VEDRONZA	FRIULI VENEZIA GIULIA
+2525	T. Torre (Ud/056). Ponte Di Nimis	CKMAP453	IT		NIMIS	FRIULI VENEZIA GIULIA
+2526	T. Torre. Centralina Idroelettrica A Monte Di Pradielis	CKMAP454	IT		PRADIELIS	FRIULI VENEZIA GIULIA
+2527	T. Torre. Ponte Di Nimis	CKMAP455	IT		NIMIS	FRIULI VENEZIA GIULIA
+2528	Fuzine	FUZINE	SI		LJUBLJANA	LJUBLJANA
+2529	Hudournik	HUDOURN1	SI		VELIKI LOCNIK	LJUBLJANA
+2530	Ljubljana	LJUBLJA1	SI		LAZE PRI DOLSKEM	LJUBLJANA
+2531	Rogovila	ROGOVILA	SI		PIJAVA GORICA	GROSUPLJE
+2533	Code Station Sloven50	SLOVEN50	SI		INCONNU	INCONNU
+2534	Code Station Sloven51	SLOVEN51	SI		INCONNU	INCONNU
+2535	Code Station Sloven71	SLOVEN71	SI		INCONNU	INCONNU
+2536	Code Station Sloven72	SLOVEN72	SI		INCONNU	INCONNU
+2537	Nortonbrunnen Bei Strahomer	STRAHOME	SI		STRAHOMER	LJUBLJANA
+2539	Zelimeljska Jama Bei Zelimlje (Sudrand Des Beckens Von Ljubljana)	ZELIMJAM	SI		ZELIMLJE	LJUBLJANA
+2545	Quellen Bei Laze/Sava	LAZESAVA	SI		LAZE PRI DOLSKEM	LJUBLJANA
+2546	Quelle Bei Rogovilla Bei Zelimlje	ROGOVILL	SI		ZELIMLJE	LJUBLJANA
+2547	Sava River In Snebrje (Phreatic Site)	SAVASNEB	SI		SNEBERJE	LJUBLJANA
+2550	Intersticial Of Sava River Depth 1m	HYPOSAVA	SI		DOVJEZ	LJUBLJANA
+2553	Spring V Dragi I	DRAGI1SP	SI		SARSKO	LJUBLJANA
+2554	Spring Dremavscice	DREMAVSC	SI		PIJAVA GORICA	LJUBLJANA
+2555	Iska Hypo1	ISKAHY01	SI		ISKA	LJUBLJANA
+2556	Iska Hypo2	ISKAHY02	SI		ISKA	LJUBLJANA
+2557	Iska Hypo3	ISKAHY03	SI		ISKA	LJUBLJANA
+2558	Iska Hypo4	ISKAHY04	SI		ISKA	LJUBLJANA
+2559	Iska Phreat1	ISKAPHR1	SI		ISKA	LJUBLJANA
+2560	Iska Phreat2	ISKAPHR2	SI		ISKA	LJUBLJANA
+2561	Iska Phreat4	ISKAPHR4	SI		ISKA	LJUBLJANA
+2562	Iska Phreat6	ISKAPHR6	SI		ISKA	LJUBLJANA
+2563	Iska Phreat7	ISKAPHR7	SI		ISKA VAS	LJUBLJANA
+2564	Iska Phreat9	ISKAPHR9	SI		ISKA VAS	LJUBLJANA
+2565	Spring V Podrebri	PRODREBR	SI		ZELIMLJE	LJUBLJANA
+2566	Zelimeljscica Hypo1	ZELIMHY1	SI		CETEZ PRI TURJAKU	LJUBLJANA
+2567	Zelimeljscica Hypo2	ZELIMHY2	SI		SCURKI	LJUBLJANA
+2568	Zelimeljscica Hypo8	ZELIMHY8	SI		ZELIMLJE	LJUBLJANA
+2569	Zelimeljscica Phreat1	ZELIMPH1	SI		CETEZ PRI TURJAKU	LJUBLJANA
+2570	Zelimeljscica Phreat2	ZELIMPH2	SI		SCURKI	LJUBLJANA
+2571	Ceze River Cz01ceze	CZ01CEZE	FR		THARAUX	GARD
+2572	Ceze River Cz03ceze	CZ03CEZE	FR		THARAUX	GARD
+2573	Ceze River Cz07ceze	CZ07CEZE	FR		AVEJAN	GARD
+2574	Ceze River Cz14ceze	CZ14CEZE	FR		AVEJAN	GARD
+2575	Ceze River Cz24ceze	CZ24CEZE	FR		L INDE	GARD
+2576	Ceze River Cz25ceze	CZ25CEZE	FR		L INDE	GARD
+2577	Ceze River Cz34ceze	CZ34CEZE	FR		MONTCLUS	GARD
+2578	Ceze River Cz8ceze	CZ8CEZE	FR		AVEJAN	GARD
+2579	Hyporheic Zone Of The River Ain Site Ainr07am In Priay	AINR07AM	FR		PRIAY	AIN
+2580	Hyporheic Zone Of The River Ain Site Ainr07av In Priay	AINR07AV	FR		PRIAY	AIN
+2582	Hyporheic Zone Of The River Ain Site Ainr31av In Chazey Sur Ain	AINR31AV	FR		CHAZEY SUR AIN	AIN
+2583	Hyporheic Zone Of The River Ain Site Ainr08am In Priay	AINR08AM	FR		PRIAY	AIN
+2584	Hyporheic Zone Of The River Ain Site Ainr12am In Villette Sur Ain	AINR12AM	FR		VILLETTE SUR AIN	AIN
+2585	Hyporheic Zone Of The River Ain Site Ainr12av In Villette Sur Ain	AINR12AV	FR		VILLETTE SUR AIN	AIN
+2586	Hyporheic Zone Of The River Ain Site Ainr15av In Chatillon La Palud	AINR15AV	FR		CHATILLON LA PALUD	AIN
+2587	Hyporheic Zone Of The River Ain Site Ainr16am In Chatillon La Palud	AINR16AM	FR		CHATILLON LA PALUD	AIN
+2588	Hyporheic Zone Of The River Ain Site Ainr17av In Chatillon La Palud	AINR17AV	FR		CHATILLON LA PALUD	AIN
+2589	Hyporheic Zone Of The River Ain Site Ainr22am In Villieu Loyes Mollon	AINR22AM	FR		VILLIEU LOYES MOLLON	AIN
+2590	Hyporheic Zone Of The River Ain Site Ainr22av In Villieu Loyes Mollon	AINR22AV	FR		VILLIEU LOYES MOLLON	AIN
+2591	Hyporheic Zone Of The River Ain Site Ainr25av In Chazey Sur Ain	AINR25AV	FR		CHAZEY SUR AIN	AIN
+2594	Sorgues Souspiron	SOUSPIRO	FR		ISLE SUR LA SORGUE	VAUCLUSE
+2599	Drome En Aval De La Batie Des Fonds	DROLABAT	FR		LA BATIE DES FONDS	DROME
+2600	Drome Pont Loriol Livron	DROLIVRO	FR		LIVRON SUR DROME	DROME
+2602	Roubion A L Aval Des Crupies Au Niveau Des Valentins	ROUBCRUP	FR		BOURDEAUX	DROME
+2603	Roubion Au Pont De Sauzet	ROUBSAUZ	FR		SAUZET	DROME
+2605	Collier Perreon	COLLIER	FR		PERREON	RHONE
+2607	Ouche Longvic Amont	LONGAMON	FR		LONGVIC	COTE D OR
+2613	Riviere Drome Au Pont D Aouste	DROAOUST	FR		AOUSTE SUR SYE	DROME
+2614	Drome Juste A L Amont Du Claps	DROCLAPS	FR		LUC EN DIOIS	DROME
+2615	Drome Au Pont D Espenel	DROESPIN	FR		ESPENEL	DROME
+2616	Drome Aval Claps Sortie Luc Diois	DROLUDIO	FR		LUC EN DIOIS	DROME
+2617	Drome Au Pont De Pontaix	DROPONTA	FR		PONTAIX	DROME
+2618	Drome Station Macrophytes	DROPRES	FR		LES PRES	DROME
+2619	Drome Au Pont De Quart	DROQUAR	FR		AIX EN DIOIS	DROME
+2620	Drome Aux Ramieres Duc90_3	DRORAMIE	FR		EURRE	DROME
+2621	Drome En Aval Du Pont Rive Droite	DROSTECR	FR		SAINTE CROIX	DROME
+2622	Ponsonniere La Grange Goyet	GOYET	FR		PERREON	RHONE
+2623	Loue Pont De Ounans	OUNANS	FR		OUNANS	JURA
+2624	Ponsonniere Perreon	PONSO	FR		PERREON	RHONE
+2626	Roubion A Charols	ROUBCHAR	FR		CLEON D ANDRAN	DROME
+2627	Roubion Avant Montelimar	ROUBMONT	FR		MONTELIMAR	DROME
+2628	Roubion Au Pont De Bonlieu Sur Roubion	ROUBONLI	FR		BONLIEU SUR ROUBION	DROME
+2629	Roubion Au Pont De La D136 Soyans A 4km St Martin 7km	ROUBSOYA	FR		SOYANS	DROME
+2630	Ponsonniere Le Treve	TREVE	FR		PERREON	RHONE
+2634	Drome Les Ramieres	RAMIERES	FR		LORIOL DUR DROME	DROME
+2635	Interstitial Waissbaach	WAISSBHY	LU		IMBRINGEN	GUTLAND
+2636	Hyporheic Zone Of The River Le Chassezac In Saint Alban Auriolles	GROSPIHY	FR		SAINT ALBAN AURIOLLES	ARDECHE
+2637	Hyporheic Zone Of The River Ardeche In Meyras	MEYRASHY	FR		MEYRAS	ARDECHE
+2638	Hyporheic Zone Of The River Ardeche In Sampzon	SAMPZON	FR		SAMPZON	ARDECHE
+2642	Hyporheic Zone Of The River Ouveze In Coux	COUXHY	FR		COUX	ARDECHE
+2643	Hyporheic Zone Of The River Le Duzon In Tournon Sur Rhone 1	DOUXHY1	FR		TOURNON SUR RHONE	ARDECHE
+2644	Hyporheic Zone Of The River Rhone In Grigny 1	GRIGNY1	FR		GRIGNY	RHONE
+2645	Hyporheic Zone Of The River Rhone In Nievroz	MIRIBEL	FR		NIEVROZ	AIN
+2646	Hyporheic Zone Of The River Ardeche In Saint Maurice D Ardeche 1	STMAURHY	FR		SAINT MAURICE D ARDECHE	ARDECHE
+2648	Aujac	AUJAC	FR		AUJAC	LOZERE
+2649	Hyporheic Zone Of The Ceze River At Vielvic	VIELVIC	FR		PONTEILS ET BRESIS	LOZERE
+2650	Hyporheic Zone Of The Gardon De Saint Jean	HMASCAIN	FR		LE RASET	GARD
+2651	Hyporheic Zone Of The Gardon De Saint Jean	HSAUMANE	FR		SAUMANE	GARD
+2652	Le Martinet	LEMARTIN	FR		SAINT ETIENNE VALLEE FRANCAISE	GARD
+2654	Hyporheic Zone Of The Ceze River	CEZEBAGN	FR		BAGNOLS SUR CEZE	GARD
+2660	La Ceze A Besseges	BESSEGES	FR		BESSEGES	LOZERE
+2661	Hyporheic Zone Of The Herault River	PTDIABLE	FR		SAINT JEAN DE FOS	HERAULT
+2662	Le Claron Berthezene	BERTHEZE	FR		VALLERAUGUE	GARD
+2663	Pont Du Chinier Riviere Herault	CHINIER	FR		VALLERAUGUE	GARD
+2664	Le Coularou Source Du Ruisseau	COULAROU	FR		LE VIGAN	GARD
+2665	Hyporheic Zone Of The Herault River	HASPIRAN	FR		ASPIRAN	HERAULT
+2666	Hyporheic Zone Of The Herault River	HISSENAC	FR		BRISSAC	HERAULT
+2667	Riviere L Herault Leprat	HYPOPRAT	FR		SAINT ADRE DE MAJENCOULES	GARD
+2670	Riviere De La Ceze Site Grotte Des Fees Station 3	CEZEFEES	FR		THARAUX	GARD
+2671	Interstitiel De La Ceze Au Niveau De La Source De Monteil	CEZEMONT	FR		MONTCLUS	GARD
+2688	Interstitiel De L Ain	AININTER	FR		SAINT MAURICE DE GOURDANS	AIN
+2689	Station 6 Ou Nov Confluence Ain  Rhone	AINRHOS6	FR		SAINT MAURICE DE GOURDANS	AIN
+2690	Nappe Parafluviale De L Albarine	ALBARIAL	FR		TORCIEU	AIN
+2691	Arcelot Nappes Parafluvials Et Sous Fluviale De La Tille	ARCELOTI	FR		ARCELOT	COTE D OR
+2694	Nappe Alluviale De La Birse	BIRSENAP	CH		MUNCHENSTEIN	BALE
+2695	Brognon Nappe Alluviale De La Tille Et De La Norge	BROGNOAL	FR		BROGNON	COTE D OR
+2697	Le Ruisseau De La Charriere	CHARRIER	FR		ORGEUX	COTE D OR
+2698	Nappe Alluviale Du Chassezac	CHASSEZA	FR		SAINT ALBAN AURIOLLES	ARDECHE
+2699	Sous Ecoulement De La Drome	DROMEHYD	FR		DIE	DROME
+2701	Puits Champ Captant Du Grand Gravier	GRGRAVWE	FR		GRIGNY	RHONE
+2703	Lone Du Grand Gravier	LGRAVIER	FR		BALAN	AIN
+2704	Longeault Nappe Alluviale De La Tille Et De La Norge	LONGEAAL	FR		LONGEAULT	COTE D OR
+2705	Lux Nappes Parafluvials Et Sous Fluviale De La Tille	LUXTILLE	FR		LUX	COTE D OR
+2706	Station 1 Lone Du Meant	MEANTST1	FR		ANTHON	RHONE
+2707	Station 5 Lone Du Meant	MEANTST5	FR		ANTHON	RHONE
+2708	Station 6 Lone Du Meant	MEANTST6	FR		ANTHON	RHONE
+2709	Stations 1 Ou Car Aval Canal De Miribel	MIRIBES1	FR		VILLEURBANNE	RHONE
+2710	Sous Ecoulement De L Ouveze Montauban Sur L Ouveze	MONTAOUV	FR		MONTAUBAN SUR L OUVEZE	DROME
+2712	Magny Sur Tille Nappes Parafluviales Et Sous Fluviale De La Norge	NORGESMA	FR		MAGNY SUR TILLE	COTE D OR
+2713	Orgeux Nappes Parafluviales Et Sous Fluviale De La Norge	NORGESOR	FR		ORGEUX	COTE D OR
+2714	Le Ruisseau De La Norges	NORGESRU	FR		ORGEUX	COTE D OR
+2715	Le Ruiseau De La Grande Noue Noire	NOUENOIR	FR		ORGEUX	COTE D OR
+2718	Sous Ecoulement De L Ouveze	OUVEZHYS	FR		SABLET	VAUCLUSE
+2719	Lone Des Pecheurs	PECHEURS	FR		VILLETTE D ANTHON	ISERE
+2720	Interstitiel De La Reserve Naturelle Des Ramieres Du Val De Drome	RAMIEEUR	FR		EURRE	DROME
+2721	Brunnenwasser (Bras Lateral) Dans Rhinau Au Bord D Un Quai Cimente En Face Du Numero 8 De La Rue St Amand	RHINAUZH	FR		RHINAU	BAS RHIN
+2723	Station Ia Canal De Miribel	S01AMIRI	FR		JONS	AIN
+2724	Station Ib Canal De Miribel	S01BMIRI	FR		JONS	AIN
+2725	Station Ic Canal De Miribel	S01CMIRI	FR		THIL	AIN
+2726	Station 1 Canal De Miribel	S01MIRIB	FR		JONS	RHONE
+2727	Station 3 Canal De Miribel	S03MIRIB	FR		NIEVROZ	AIN
+2728	Station 4 Canal De Miribel	S04MIRIB	FR		NIEVROZ	AIN
+2729	Station 6 Canal De Miribel	S06MIRIB	FR		JONAGE	RHONE
+2730	Station 8 Lone Du Meant	S08MEANT	FR		ANTHON	ISERE
+2731	Station 8 Canal De Miribel	S08MIRIB	FR		MIRIBEL	AIN
+2732	Station 11 Canal De Miribel	S11MIRIB	FR		MIRIBEL	AIN
+2733	Station 12 Canal De Miribel	S12MIRIB	FR		NEYRON	AIN
+2734	Station 13 Canal De Miribel	S13MIRIB	FR		RILLIEUX LA PAPE	AIN
+2735	Station 14 Secteur Donzere Mondragon	S14DONZE	FR		PONT SAINT ESPRIT	GARD
+2736	Station 16 Canal De Miribel	S16MIRIB	FR		CALUIRE ET CUIRE	RHONE
+2737	Station Iia Canal De Miribel	S2AMIRIB	FR		THIL	AIN
+2738	Station Iib Canal De Miribel	S2BMIRIB	FR		THIL	AIN
+2739	Station Iic Canal De Miribel	S2CMIRIB	FR		THIL	AIN
+2740	Station Iiia Canal De Miribel	S3AMIRIB	FR		BOURDEAU	AIN
+2741	Station Iiic Canal De Miribel	S3CMIRIB	FR		BOURDEAU	AIN
+2742	Station 7 Ou Gal Plaine De L Ain	S7GALAIN	FR		SAINT MAURICE DE GOURDANS	AIN
+2743	Sous Ecoulement De L Ouveze Buis Les Baronnies	SAINTMOU	FR		BUIS LES BARONNIES	DROME
+2746	La Source Bleue	SPBLEUMO	FR		MONTPERREUX	DOUBS
+2747	Sous Ecoulement De L Ouveze Sainte Euphemie Sur Ouveze	STEUPOUV	FR		SAINTE EUPHEMIE SUR OUVEZE	DROME
+2748	Le Ruisseau De La Fontaine St Martin	STMARTIN	FR		ORGEUX	COTE D OR
+2749	Le Ruisseau De La Fontaine St Thibault	THIBAULT	FR		ORGEUX	COTE D OR
+2750	La Riviere La Tille	TILLERIV	FR		ORGEUX	COTE D OR
+2751	Sous Ecoulement De L Ouveze Saint Marcellin Les Vaison	VAISOOUV	FR		SAINT MARCELLIN LES VAISON	VAUCLUSE
+2752	Graviere De La Valbonne	VALBONNE	FR		BALAN	AIN
+2753	Station 1 Vieux Rhone	VIERHON1	FR		MEYZIEU	RHONE
+2754	Station 2 Vieux Rhone	VIERHON2	FR		MEYZIEU	RHONE
+2755	Station 3 Vieux Rhone	VIERHON3	FR		MEYZIEU	RHONE
+2756	Station 4 Vieux Rhone	VIERHON4	FR		MEYZIEU	RHONE
+2757	Station 5 Vieux Rhone	VIERHON5	FR		MEYZIEU	RHONE
+2758	Station 6 Vieux Rhone	VIERHON6	FR		MEYZIEU	RHONE
+2759	Puits R1. Nappe Alluviale Du Rhone	WER1RHON	FR		SABLONS	ISERE
+2760	Puits R2. Nappe Alluviale Du Rhone	WER2RHON	FR		SABLONS	ISERE
+2761	Puits S6. Nappe Alluvial Du Rhone	WES6RHON	FR		VAULX EN VELIN	RHONE
+2762	Puits S7. Nappe Alluvial Du Rhone	WES7RHON	FR		VAULX EN VELIN	RHONE
+2763	Puits S8. Nappe Alluvial Du Rhone	WES8RHON	FR		VAULX EN VELIN	RHONE
+2764	Puits X2. Nappe Alluvial Du Rhone	WEX2RHON	FR		VAULX EN VELIN	RHONE
+2765	Puits Gp8. Nappe Alluviale Du Rhone	WGP8RHON	FR		GRIGNY	RHONE
+2766	Puits P15. Nappe Alluvial Du Rhone	WP15RHON	FR		VAULX EN VELIN	RHONE
+2767	Puits P7a. Nappe Alluviale De La Saone	WP7ASAON	FR		GENAY	RHONE
+2768	Puits P7b. Nappe Alluvial Du Rhone	WP7BRHON	FR		VAULX EN VELIN	RHONE
+2769	Puits P8a. Nappe Alluviale De La Saone	WP8ASAON	FR		GENAY	RHONE
+2770	Puits P8b. Nappe Alluviale Du Rhone	WP8BRHON	FR		GRIGNY	RHONE
+2771	Arceau Nappe Alluviale De La Tille Et De La Norge (Entre Brognon Et Longeault)	ARCEAUAL	FR		ARCEAU	COTE D OR
+2772	Arc Sur Tille Nappe Alluviale De La Tille Et De La Norge (Entre Brognon Et Longeault)	ARCTILAL	FR		ARC SUR TILLE	COTE D OR
+2773	Cessey Sur Tille Nappe Alluviale De La Tille Et De La Norge (Entre Brognon Et Longeault)	CESSEYAL	FR		CESSEY SUR TILLE	COTE D OR
+2774	Chevigny St Sauveur Nappes Parafluviales Et Sous Fluviale De La Norge (Entre Orgeux Et Magny Sur Tille)	CHEVIGAL	FR		CHEVIGNY SAINT SAUVEUR	COTE D OR
+2775	Couternon Nappes Parafluviales Et Sous Fluviale De La Norge (Entre Orgeux Et Magny Sur Tille)	COUTERAL	FR		COUTERNON	COTE D OR
+2776	Genlis Nappe Alluviale De La Tille Et De La Norge (Entre Brognon Et Longeault)	GENLISAL	FR		GENLIS	COTE D OR
+2777	Sondage Kc Dans La Caze	LACAZEKC	FR		AUJAC	GARD
+2780	Remilly Sur Tille Nappe Alluviale De La Tille Et De La Norge (Entre Brognon Et Longeault)	REMILLAL	FR		REMILLY SUR TILLE	COTE D OR
+2785	Riviere Herault En Amont De La Ville De Ganges	GANGESHE	FR		GANGES	HERAULT
+2786	Riviere Du Lez A Montjoux	MONJOU2	FR		MONTJOUX	DROME
+2787	Puits Dans Les Jardin De Saint Ramber En Bugey	RAMBEPT1	FR		SAINT RAMBERT EN BUGEY	AIN
+2788	Riviere Du Roubion Station 2	SAUZETRO	FR		SAUZET	DROME
+2789	Boutillon Hyporheique Riviere Suran	BOUTILLO	FR		DRUILLAT	AIN
+2793	Pont Sur Eygues Verclause	EYGUESVE	FR		VERCLAUSE	DROME
+2794	Riviere Ouveze Le Grand Thomassin	OUVBEDAR	FR		BEDARRIDES	VAUCLUSE
+2803	Riviere Drome Chaumeane	DROSAILL	FR		SAINT SAUVEUR EN DIOIS	DROME
+2805	Riviere Ouveze Stations 1 Et 2	ENTRECHB	FR		ENTRECHAUX	DROME
+2807	Riviere Ouveze Gorges D Ubrieux	OUVBUISB	FR		BUIS LES BARONNIES	DROME
+2808	Riviere Ouveze St Pierre	OUVSTAU1	FR		SAINT AUBAN SUR L OUVEZE	DROME
+2812	Roubion River At Pont Saint Gervais	ROUBGMAZ	FR		PONT SAINT GERVAIS	DROME
+2813	Roubion River At Bourdeaux	ROUBOURD	FR		BOURDEAUX	DROME
+2814	Roubion River At Les Crupies	ROUCRUPI	FR		LES CRUPIES	DROME
+2815	Roubion River At Bouvieres	ROUOUVIE	FR		BOUVIERES	DROME
+2816	Roubion River At Saou	ROUSAOU	FR		SAOU	DROME
+2817	Roubion River At Sauzet	ROUSAUZ	FR		SAUZET	DROME
+2822	Source Regourdet	REGOURSP	FR		BEAULIEU	ARDECHE
+2827	Station 1 Nappes Parafluviales Du Cris Rapide (Crisul Repede). Bratca. Roumanie	CRISUL01	RO		SUNCUIUS	BIHOR
+2828	Station 2 Nappes Parafluviales Du Cris Rapide (Crisul Repede). Bratca. Roumanie	CRISUL02	RO		SUNCUIUS	BIHOR
+2829	Station 3 Nappes Parafluviales Du Cris Rapide (Crisul Repede). Bratca. Roumanie	CRISUL03	RO		BRATCA	BIHOR
+2830	Station 4 Nappes Parafluviales Du Cris Rapide (Crisul Repede). Bratca. Roumanie	CRISUL04	RO		LORAU	BIHOR
+2831	Station 5 Nappes Parafluviales Du Cris Rapide (Crisul Repede). Bratca. Roumanie	CRISUL05	RO		NEGRENI	CLUJ
+2832	Station 6 Nappes Parafluviales Du Cris Rapide (Crisul Repede). Bratca. Roumanie	CRISUL06	RO		POIENI	CLUJ
+2833	Puits De L Hopital	CASBRANC	PT		CASTELO BRANCO	CASTELO BRANCO
+2834	Rio Cavado Bei Barcelos	BARCELOR	PT		BARCELOS	BRAGA
+2835	Station 43 Puits Vila Nunes. Sequeiro	W43SEQUE	PT		VILA NOVA	PORTO
+2836	Puits Maconne A S. Pedro De La Torre	SPEDROTO	PT		SAO PEDRO DA TORRE	VIANA DO CASTELLO
+2837	Rio Deva Narganes	DEVANARG	ES		PENAMELLERA BAJA	OVIEDO
+2838	Rio Deva Las Ilces	DEVAILCE	ES		CAMALENO	SANTANDER
+2840	La Hermida	HERMIDA	ES		LA HERMIDA	SANTANDER
+2844	Afluente Del Rio Esla	AFLRESLA	ES		VEGACERNEJA	LEON
+2845	Rio Buyon Cabezon De Liebana	RBUYONCA	ES		CABEZON DE LIEBANA	CANTABRIA
+2847	Rio Cares Las Arenas	RCARESAR	ES		LAS ARENAS	ASTURIA
+2851	Rio Deva La Hermida	RDEVALAH	ES		LA HERMIDA	CANTABRIA
+2853	Rio Deva Rivadedeva	RDEVARIV	ES		RIVADEDEVA	ASTURIA
+2856	Puits A Braganca	BRAGANCA	PT		BRAGANCA	BRAGANCA
+2857	Banc De Gravier Areinho De Valbom A Areinho	AREINHOV	PT		AREINHO	PORTO
+2858	Banc De Gravier A Entre-Os-Rios	ENTROSRI	PT		ENTRE OS RIOS	PORTO
+2859	Station 47 Puits Serzedelo. Amedos	W47AMEDO	PT		AMEDO	PORTO
+2860	Puits A Vila De Paredes	VIPAREDE	PT		VILA DE PAREDES	PORTO
+2861	Puits Des Fermes De La Borralheiro Et De Arufe	BORRALHE	PT		FAVAIOS	VILA REAL
+2862	Curalha. Chaves. Tras-Os-Montes	CURALHAC	PT		CURALHA	VILA REAL
+2863	Puits Obcur De Valbom. Gondomar. Environs De La Ville De Porto	VALBOMWE	PT		VALBOM	PORTO
+2864	Station 44 Puits Povoa De Lanhoso. Veloso Lda	W44VELOS	PT		POVOA DE LANHOSO	BRAGA
+2865	Station 45 Puits Povoa De Lanhoso. R. Capitao Tinoco	W45TINOC	PT		POVOA DE LANHOSO	BRAGA
+2866	Station 46 Puits Povoa De Lanhoso. R. Capitao Tinoco	W46TINOC	PT		POVOA DE LANHOSO	BRAGA
+2867	Hyporheic Zone Embalse De Los Asturianos	ASTURIAH	ES		ALMONASTER LA REAL	HUELVA
+2868	Well Road H521. Between Linares And Aracena	LINARESW	ES		LINARES DE LA SIERRA	HUELVA
+2869	Manantial De Ermita De Nuestra Senora De Los Angeles	MAANGELE	ES		LA PENA DE ARIAS MONTANO	HUELVA
+2870	Well Puente Pedraza	PEDRAZAW	ES		AYAMONTE	HUELVA
+2871	Well El Quejigo	QUEJIGOW	ES		JABUGO	HUELVA
+2872	Puits A Aguda	AGUDAWEL	PT		AGUDA	PORTO
+2873	Puits A Miramar	MIRAMAR	PT		MIRAMAR	PORTO
+2874	Puits Maconne A Vila Franca Das Naves	VILAFRAN	PT		VILLA FRANCA DAS NAVES	GUARDA
+2875	Puits A S. Pedro Do Sul	SPEDROSU	PT		SAO PEDRO DO SUL	VISEU
+2877	Puits A Meda	MEDAWELL	PT		MEDA	GUARDA
+2878	Trois Puits A Sabugal	SABUGAL	PT		SABUGAL	GUARDA
+2879	Puits A Leca Da Palmeira	LECPALME	PT		LECA DA PALMEIRA	PORTO
+2880	Plusieurs Puits De La Localite Vila De Paredes	VIPAREDS	PT		VILA DE PAREDES	PORTO
+2881	Station 1 Puits Villa Do Conde. Hopital	W01DOCON	PT		VILLA DO CONDE	PORTO
+2882	Station 7 Puits Arvore. Aldeia Nova	W07ARVOR	PT		ALDEIA NOVA	PORTO
+2883	Station 8 Puits Macieira De Rates. Modeste	W08MACIE	PT		MODESTE	BRAGA
+2884	Station 9 Puits Arnoso. Sta Maria. Route	W09ARNOS	PT		ARNOSO	BRAGA
+2885	Station 10 Puits Celeiroz. Ponte Das Traves	W10CELEI	PT		CELEIROZ	BRAGA
+2886	Station 11 Puits Braga. Campo Das Hortas	W11BRAGA	PT		BRAGA	BRAGA
+2887	Station 14 Puits Trofa. R. Conde S. Bento	W14TROFA	PT		TROFA	PORTO
+2888	Station 15 Puits Lousado. Gandra	W15LOUSA	PT		LOUSADO	BRAGA
+2889	Station 16 Puits Lousado. Gandra (Viz.)	W16LOUSA	PT		LOUSADO	BRAGA
+2890	Station 19 Puits S. Martino Do Vale (Aug.)	W19MARTI	PT		VALE SAO MARTINHO	BRAGA
+2891	Station 20 Puits S. Martino Do Vale. Casa Do Passal	W20SMART	PT		VALE SAO MARTINHO	BRAGA
+2892	Station 21 Puits S. Martino Do Vale (J. Oliv.)	W21SMART	PT		VALE SAO MARTINHO	BRAGA
+2893	Station 22 Puits Avidos. Ecole	W22AVIDO	PT		AVIDOS	BRAGA
+2894	Station 23 Puits Santo Tirso. Arco	W23SANTO	PT		ARCO	PORTO
+2895	Station 24 Puits Santo Tirso. Tapado. Caso Do Retiro	W24SANTO	PT		TAPADO	BRAGA
+2896	Station 25 Puits Santo Tirso. Escola Agricola	W25SANTO	PT		SANTO TIRSO	PORTO
+2897	Station 26 Puits Santo Tirso. Escola Agricola	W26SANTO	PT		SANTO TIRSO	PORTO
+2898	Station 28 Puits Burgaes. Rabada	W28BURGA	PT		RABADA	PORTO
+2899	Station 30 Puits Riba D Ave. Monte Baixo (Viz.)	W30RIBAD	PT		RIBA D AVE	BRAGA
+2900	Station 31 Puits Ronfe. Meio And Goncalves	W31RONFE	PT		RONFE	BRAGA
+2901	Station 32 Puits Silvares. Ponte Nova	W32SILVA	PT		PONTE NOVA	BRAGA
+2902	Station 33 Puits Taipas. Lameira	W33TAIPA	PT		CALDAS DAS TAIPAS	BRAGA
+2903	Station 34 Puits Taipas. L. Conde Agrolongo	W34TAIPA	PT		CALDAS DAS TAIPAS	BRAGA
+2904	Station 35 Puits Longos. Sta. Cristina	W35LONGO	PT		LONGOS	BRAGA
+2905	Station 36 Puits Santo Emiliao. S. Bento	W36STEMI	PT		SAO BENTO	BRAGA
+2906	Station 37 Puits Pevidem. Covelo	W37PEVID	PT		PEVIDEM	BRAGA
+2907	Station 41 Puits Negrelos. S. Tome	W41NEGRE	PT		NEGRELOS	PORTO
+2908	Puits De Vila Real	VILREALW	PT		VILA REAL	VILA REAL
+2911	Rio De Aller Riomanon	RALLERRI	ES		RIOMANON	ASTURIA
+2913	Rio Caleao	RICALEAO	ES		COBALLES	ASTURIA
+2914	Rio Orle	RIOORLE	ES		ORLE	ASTURIA
+2915	Rio Pas	RIOPAS	ES		CORVERA	CANTABRIA
+2916	Rio Nalon Bezane	RNALONBE	ES		BEZANES	ASTURIA
+2917	Rio Nalon Campo De Caso	RNALONCA	ES		CAMPO DE CASO	ASTURIA
+2919	Rio Ponga Amieva	RPONGAAM	ES		CIRIENO	ASTURIA
+2920	Rio Sella De Oseja De Sajambre	RSELLAOS	ES		OSEJA DE SAJAMBRE	LEON
+2921	Rio Sella Ponga	RSELLAPO	ES		PONGA	ASTURIA
+2922	Puits A Idanha A-Nova	IDANHAAN	PT		IDANHA A NOVA	CASTELO BRANCO
+2923	Puits A Curia	CURIAWEL	PT		CURIA	AVEIRO
+2924	Puits A S. Vivente	SVIVENTE	PT		ENTRE OS RIOS	PORTO
+2925	Well So De La Carretera A Espinosa De Los Monteras	MONTERAW	ES		LOMA DEMONTIJA	BURGOS
+2926	Well Loma De Montija	MONTIJAW	ES		MERINDAD DE MONTIJA	BURGOS
+2927	Well Al Lado No. De Nofuentes	W1NOFUEN	ES		NOFUENTES	BURGOS
+2928	Well Al Lado No. De Nofuentes 84-4/7	W2NOFUEN	ES		NOFUENTES	BURGOS
+2929	Puits A Gouveia	GOUVEIAW	PT		GOUVEIA	GUARDA
+2930	Station 48 Puits Pombal	W48POMBA	PT		POMBAL	BRAGA
+2931	Station 50 Puits Estradinha	W50ESTRA	PT		ESTRADINHA	PORTO
+2932	Station 51 Puits Oirado. Sta. Comba	W51OIRAD	PT		SANTA COMBA DE ROSSAS	BRAGANCA
+2933	Source Dans La Serra De Arga	SERRAARG	PT		VIANA DO CASTELO	VIANA DO CASTELLO
+2935	Rio Lima Bei Ponte Da Barca	PTBARCAR	PT		PONTE DA BARCA	VIANA DO CASTELO
+2936	Well Matallana De Torio	MATALLAN	ES		MATALLANA DE TORIO	LEON
+2937	Rio Bernesga	RBERNESG	ES		VILLANUEVA DE LA TERCIA	LEON
+2938	Rio Forma	RIOFORMA	ES		BONAR	LEON
+2939	Spring Playa Torimbia	TORIMBIA	ES		BRICIA	ASTURIA
+2947	Ribera Fonte Do Solar Barrio	BARRIO	PT		PONTE DE LIMA	NORTE
+2951	Rio Mezio Lousada	MEZIO	PT		LOUSADA	NORTE
+2952	Rio Argoza Los Tojos	TOJOS	ES		CABEZON DE LA SAL	CANTABRIA
+2954	Station 27 Puits Santo Tirso. Ponte Das Fragedas	W27STTIR	PT		SANTO TIRSO	PORTO
+2955	Station 42 Puits Vila Das Aves. Fabr. Rio Vizela	W42VILAA	PT		VILA DAS AVES	PORTO
+2956	Puits A Murca	MURCAWEL	PT		MURCA	VILA REAL
+2957	Valpacos. Tras-Os-Montes	VALPACOS	PT		VALPACOS	VILA REAL
+2958	Vidago. Tras-Os-Montes	VIDAGOTR	PT		VIDAGO	VILA REAL
+2959	Station 2 Puits Villa Do Conde	W02VILCO	PT		VILLA DO CONDE	PORTO
+2960	Station 3 Puits Villa Do Conde	W03VILCO	PT		VILLA DO CONDE	PORTO
+2961	Station 4 Puits Villa Do Conde	W04VILCO	PT		VILLA DO CONDE	PORTO
+2986	Puits Et Sources De La Region D Asenovgrad. Sud De Plovdiv. Bulgarie	ASENOVGR	BG		ASENOVGRAD	ASENOVGRAD
+2987	Hyporheic Zone Of The Vanisnik River At Vaseno	VESANOHY	SI		VASENO	KAMNIK
+2988	Nappes Phreatiques Du Bassin De La Save. Cernomerec. W De Zagreb	CERMOMER	HR		ZAGREB	ZAGREB
+2989	Klunove Toplice	BUSECAVA	SI		BUSECA VAS	BREZICE
+2990	Vaseno	VASENO	SI		VASENO	KAMNIK
+2991	Sources Froides Derebas. Pres Du Lac De Dojran	DEREBASP	MK		NIKOLIK	DOIRAN
+2992	Source Barkani A Radovis	BARKANI	MK		RADOVIS	RADOVIS
+2993	Source A Ulcinj. Montenegro	ULCINJSO	ME		ULCINJ	ULCINJ
+2994	Nappe De La Bosna A Zenica. Bosnie	BOSNANAP	BA		ZENICA	ZENICA
+2995	Nappes Phreatiques Du Vardar A Skopje	VARDARNA	MK		SKOPJE	SKOPJE
+2996	Otok Brac Skrip Spilja Rudnik Minjera	OTOKBRAC	HR		SKRIP	DALMATIE
+2997	Source Thermale Sugavac Pres De Banja Luka	SUGAVAC	BA		BANJA LUKA	KONJIC
+2999	Alluvions Sablonneuses Ie Long De La Rive Droite Du Vrbas	VRBASRIV	BA		BANJA LUKA	BANJA LUKA
+3000	Grotte Temna Dupka. Berende Izvor. Pres Village Kalotina. Canton Dragoman. Bulgarie Occidentale	TEMNADUP	BG		KALOTINA	DRAGOMAN
+3001	Bogovina (Serbie Orientale)	BOGOVINA	RS		BOGOVINA	BOR
+3002	Crnoljevica (Serbie Orientale)	CRNOLJEV	RS		CRNOLJEVICA	SVRLJIG
+3003	Grotte Ivanjicka (Serbie Occidentale)	IVANJICK	RS		IVANJICA	IVANJICA
+3004	Grottes Ravanjicka (Paracin) (Serbie Orientale)	RAVANJIC	RS		PARACIN	KRAGUJEVAC
+3005	Sisovac (Serbie Orientale)	SISOVAC	RS		SISOVAC	DESPOTOVAC
+3006	Abaligeti Cave	ABALICA	HU		ABALIGET	BARANYA
+3007	Sten 07 Abaligeti Cave	ABALIG7	HU		ABALIGET	BARANYA
+3008	Sten_02 Kolyuk Cave Of Manfa	MANFA2	HU		MANFA	KOMLO
+3009	Sten_04 Vadetetos Cave	VADETE4	HU		ABALIGET	BARANYA
+3010	Sten 05 Abaligeti Cave	ABALIG5	HU		ABALIGET	BARANYA
+3011	Sten 06 Abaligeti Cave	ABALIG6	HU		ABALIGET	BARANYA
+3012	Sten_01 Kolyuk Cave Of Manfa	MANFA1	HU		MANFA	KOMLO
+3013	Sten_03 Vadetetos Cave	VADETE3	HU		ABALIGET	BARANYA
+3014	Cave Of Manfa	MANFACA	HU		MANFA	KOMLO
+3015	Sources Thermales (18-24┬░C) Sutinska Vrela A Podsused. Pres Zagreb	SUTINSKA	HR		ZAGREB	ZAGREB
+3016	Grotte Temnata Dupka. Pres Gare De Lakatnik. Bulgarie Occidentale	TEMNATAD	BG		GARA LAKATNIK	SVOGE
+3017	Pozzo A Gonnosfanadiga. Piana Di Cagliari	GONNOSFA	IT		GONNOSFANADIGA	SARDEGNA
+3018	Grotta Pitzu E Crobisi (Margana. Corongiu De Mari)	PITZUCA	IT		IGLESIAS	SARDEGNA
+3019	Pozzo In Musei	MUSEIWEL	IT		MUSEI	SARDEGNA
+3020	Pozzo In Vallermosa	VALLERMO	IT		VALLERMOSA	SARDEGNA
+3022	Pozzo Acquedotto Rio Bonarba	BONARBAR	IT		DOLIANOVA	SARDEGNA
+3023	Pizzu E Crobis (645 Sa)	PICROBIS	IT		IGLESIAS	SARDEGNA
+3024	Hyporheic Zone Guadalquivir Env. 10 Km En Amont Du Confluent Avec Le Guadiana Menor Un Peu En Aval Du Barrage Supportant La Rte De Torreperogil O Peal-De-Becerro	GUADALQU	ES		VALDECAZORLA	JAEN
+3025	Hyporheic Zone Puente Arroya	ARROYAH	ES		LORA DEL RIO	SEVILLA
+3026	Hyporheic Zone Guillema	GUILLEMA	ES		GUILLEMA	SEVILLA
+3027	Well Los Pajares	LPAJAREW	ES		LOS PAJARES	SEVILLA
+3028	Rio Guadalquivir	MOGONGUA	ES		MOGON	JAEN
+3032	Cueva De Alli	ALLICA	ES		LARRAUN	NAVARRA
+3035	Cueva De Aitzkirri	AITZKIRR	ES		ONATE	GUIPUZCOA
+3040	Well Casa Echachocoa	ECHACHOW	ES		ONATE	GUIPUSCOA
+3043	Manantial Rekalde 3	REKALDE3	ES		ZELAIETA	VIZCAYA
+3044	Cueva De San Pedro	SAPEDROC	ES		BUSTURIA	VIZCAYA
+3045	L Horte Fonties D Audes	HORTE	FR		FONTIES D AUDES	AUDE
+3050	Source De Bagatelle	BAGATELL	FR		LEVIGAN	GARD
+3052	Source De La Caune Negre	CAUNENEG	FR		OPOUL PERILLOS	PYRENEES ORIENTALES
+3054	Source Du Couvent De Sainte Cecile	COSTCESP	FR		VINGRAU	PYRENEES ORIENTALES
+3055	Sources De Notre Dame Du Cros	DAMECROS	FR		CAUNES MINERVOIS	AUDE
+3056	Source De L Eolienne	EOLIENSP	FR		OPOUL PERILLOS	PYRENEES ORIENTALES
+3058	Source Font Du Castell	FTCASTEL	FR		OPOUL PERILLOS	PYRENEES ORIENTALES
+3059	Ruisseau De La Grotte De La Guiraudasso	GUIRAUDA	FR		SOULATGE	AUDE
+3060	Barran De La Mousque D Ase On Barrenc De La Cairotte	MOUSQUEC	FR		PAZIOLS	AUDE
+3061	Caune Negre	CAUNENG	FR		OPOUL	PYRENEES ORIENTALES
+3064	Barrenc De Paziols	PAZIOLSC	FR		PAZIOLS	AUDE
+3065	Grotte Du Presbytere. Siphon	PRESBYTE	FR		SOULATGE	AUDE
+3066	Barrenc De La Tirounere	TIROUNER	FR		PRUGNANES	PYRENEES ORIENTALES
+3068	Well Al Lado S. De Alcolea Del Rio	ALCOLEAW	ES		ALCOLEA DEL RIO	SEVILLA
+3070	Well Carretera De Brenes	BRENESWE	ES		CANTILLANA	SEVILLA
+3071	Well Urbanizacion Fuente Arocha	FAROCHAW	ES		GIBRALEON	HUELVA
+3074	Hyporheic Zone Presa De Embalse De La Minilla	MINILLAH	ES		EL RONQUILLO	SEVILLA
+3075	Well Los Pajares A85/6-52	PAJARESO	ES		LOS PAJARES	SEVILLA
+3076	Well Los Pajares A85/6-50	PAJARESP	ES		LOS PAJARES	SEVILLA
+3077	Well S. De La Carretera C 431 Sevilla-Cordoba Las Pajares	PAJARESW	ES		LAS PAJARES	SEVILLA
+3078	Well Barrio San Pedro Lope	PEDROLOW	ES		MOGON	JAEN
+3079	Well Presa De Retortillo	RETORTIW	ES		PENAFLOR	SEVILLA
+3080	Well S. De La Carretera C 431 Sevilla-Cordoba Villanueva Del Rio	VILLANUW	ES		VILLANUEVA DEL RIO	SEVILLA
+3081	Well La Zarzuela	ZARZUELA	ES		ZUFRE	HUELVA
+3082	Riviera Olivargas Embalse De La Cueva De La Mora	MORA	ES		ARACENA	SEVILLA
+3083	Puits A Lagos	LAGOSWEL	PT		LAGOS	FARO
+3084	Puits A Sao Bras De Alportel	SAOBRASW	PT		SAO BRAS DE ALPORTEL	FARO
+3085	Puits A Tavira	TAVIRAWE	PT		TAVIRA	FARO
+3086	Gruta De Mexilhoeira	MEXILHOE	PT		MEXILHOEIRA GRANDE	FARO
+3088	Cueva De Los Bermejales	BERMEJAL	ES		ARCOS DE LA FRONTERA	CADIZ
+3089	Pozzo In Decimomannu	DECIMOMA	IT		DECIMOMANNU	SARDEGNA
+3090	Grotta S. Pietro	SPIETROC	IT		FLUMINIMAGGIORE	SARDEGNA
+3091	Pozzo In Pula	PULAWELL	IT		PULA	SARDEGNA
+3092	Grotta Su Mannau	SUMANNAU	IT		IGLESIAS	SARDEGNA
+3093	Pozzo In Tertenia	TERTENIW	IT		TERTENIA	SARDEGNA
+3094	Pozzo In Villasimius	VILLASIM	IT		VILLASIMIUS	SARDEGNA
+3095	Grotta Di San Giovanni 81 Sa	GRGIOVAN	IT		DOMUSNOVAS	CARBONIA IGLESIAS
+3096	Grotta Di San Pietro (605 Sa)	PIETROCA	IT		FLUMINIMAGGIORE	SARDEGNA
+3097	Sa Crovassa De Pranu Pirastru (84 Sa)	SACROVAS	IT		DOMUSNOVAS	SARDEGNA
+3102	Fium Alto Pont D Acitaja	FIUMALTO	FR		PENTA DI CASINCA	HAUTE CORSE
+3104	Golo Pont D'albano	ALBANO	FR		VOLPAJOLA	HAUTE CORSE
+3105	Solenzara Sari Solenzara	SOLENZA	FR		SARI SOLENZARA	CORSE DU SUD
+3106	Sondage Bou Rouch Au Pont Du Fiume Albine	ALBINERI	FR		PATRIMONIO	CORSE
+3107	Riviere Asco. 500m E Maricella	ASCORIVZ	FR		ASCO	CORSE
+3108	Riviere A Braccolaccia	BRACCOLA	FR		FARINOLE	CORSE
+3109	Buca Del Danese 140 T Gr Roselle	BUDANESE	IT		GROSSETO	GROSSETO
+3114	Sorgente In Fonni	FONNISP	IT		FONNI	SARDEGNA
+3118	Riviere Golo Au Niveau De Lucciana	GOLOLUCC	FR		LUCCIANA	CORSE
+3121	Sorgente In Villanova Monteleone	MONTELEO	IT		VILLANOVA MONTELEONE	SARDEGNA
+3122	Sondage Bou Rouch Dans Une Source A Monte	MONTESP	FR		MONTE	CORSE
+3123	Porto Torres	PTTORRES	IT		PORTO TORRES	SARDEGNA
+3125	Riviere Tartagine A 2 Km En Amont Du Carrefour D247 Sous Le Pont	TARTAGIN	FR		CASTIFAO	CORSE
+3126	Tertenia	TERTENIA	IT		TERTENIA	SARDEGNA
+3127	Grotta Utopia	UTOPIACA	IT		URZULEI	SARDEGNA
+3128	Fontanile Di Cavallegeri Parc Regional De La Maremma	CAVALLEG	IT		PUNTA DEL CORVO	GROSSETO
+3129	Corsine Corse France	CORSINE	FR		SANTA LUCIA DI MORIANI	CORSE
+3130	Portoto Porto Torres Sardinia Italy	PORTOTO	IT		PORTO TORRES	SARDINIA
+3131	Sardise Porto Tramatzu Sardinia Italy	SARDISE	IT		PORTO TRAMATZU	SARDINIA
+3134	Acquedotto Vecchio Di Sasari Arrivi D Acqua Laterali Nei Calcari Mioceni	ACSASSAR	IT		SASSARI	SARDEGNA
+3135	Grotta Del Bue Marino 12 Sa	BUEMARI	IT		DORGALI	NUORO
+3137	River Lagany	LAGANY	FR		PIANA	HAUTE CORSE
+3139	Cave Raja Santa	RAJASANT	ES		SIERRA ELVIRA	GRANADA
+3143	Cave Of Lacave At Lacave In Lot	LACAVECA	FR		LACAVE	LOT
+3146	Puits Avenue De La Resistance (Pompe E4)	RESISTAW	FR		SAINT GIRONS	ARIEGE
+3147	Sbr Riviere Salat (Gravier 1 Digue - Miguet)	SALATHY	FR		SAINT LIZIER	ARIEGE
+3148	Nappe Alluviale De La Garonne	MONBEQUI	FR		MONBEQUI	TARN ET GARONNE
+3149	Cueva De Los Chorros	CHORROSC	ES		RIOPAR	ALBACETE
+3150	Cueva Palomeres	PALOMERE	ES		CUEVA	BURGOS
+3152	Well Cerca Del Transformador. Masia Torreta Gargallo	GARGALLO	ES		MORELLA	CASTELLON
+3153	Ruisseau Souterrain De Bassac Dordogne France	BASSACCA	FR		BEAUREGARD ET BASSAC	DORDOGNE
+3155	Rio Fluvia Orfes	ORFES	ES		ORFES	GIRONA
+3158	Source De La Clue De La Fou	CLUEFOU	FR		SAINT PAUL DE FENOUILLET	PYRENEES ORIENTALES
+3159	Source De Durdull	DURDULL	FR		ARLES SUR TECH	PYRENEES ORIENTALES
+3160	Riviere Souterraine De L Empereur	EMPEREUR	FR		MONTFERRER	PYRENEES ORIENTALES
+3161	Avenc De La Cabana D En Garrava	GARRAVAC	ES		TOLORIU	LERIDA
+3162	Nappe Alluviale Du Tech. Station I	TECHSTA1	FR		BROUILLA	PYRENEES ORIENTALES
+3163	Nappe Alluviale Du Tech. Station Ii	TECHSTA2	FR		BROUILLA	PYRENEES ORIENTALES
+3164	Nappe Alluviale Du Tech Station Iii	TECHSTA3	FR		BROUILLA	PYRENEES ORIENTALES
+3165	Skc Dans Gravier De La Tet A Thues-Les-Bains	TETHYTHU	FR		THUES ENTRE VALLS	PYRENEES ORIENTALES
+3166	Cave Bofia De San Janine	BOFIACA	ES		AVIA	BARCELONA
+3169	Cova De La Torre	COVATORR	ES		SAINT FELIU DE PALLAROLS	GERONA
+3170	Avenc Dels Pouetons	POUETONS	ES		MONTSERRAT	BARCELONA
+3171	Rio Fluvia	RIFLUVIA	ES		BESALU	GIRONA
+3172	Rio Muga	RIOMUGA	ES		ALBANYA	GIRONA
+3173	Cova Simanya (El Montcau)	SIMANYAC	ES		MURA	BARCELONA
+3174	Cueva De Beuda	BEUDACA	ES		BEUDA	GIRONA
+3175	Exsurgence Temporaire D Allens	ALLENSSP	FR		PADERN	AUDE
+3176	Route D612 Comelade	COMELADE	FR		MILLAS	PYRENEES ORIENTALES
+3177	Corbere Les Cabanes Puits Municipal	CORBEREW	FR		CORBERE LES CABANES	PYRENEES ORIENTALES
+3178	Exsurgence Du Mas D En Caraman	ENCARAMA	FR		PAZIOLS	AUDE
+3179	Mas Nivet Puits	MASNIVEW	FR		BROUILLA	PYRENEES ORIENTALES
+3180	Camelas Mas Del Pouil	MASPOUIL	FR		CASTELNOU	PYRENEES ORIENTALES
+3181	Source Captee Montbollo	MONTBOLL	FR		MONTBOLO	PYRENEES ORIENTALES
+3182	Salvayre Ext Vignes Puits	SALVAYRE	FR		MILAS	PYRENEES ORIENTALES
+3183	Reseau Des Ambullas	AMBULLAS	FR		SAINTE EULALIE	PYRENEES ORIENTALES
+3184	Aven Bernard Zone Insaturee	BERNARDC	FR		CORSAVY	PYRENEES ORIENTALES
+3185	Aven Bernard Siphon	BERNARDS	FR		CORSAVY	PYRENEES ORIENTALES
+3186	Puits Aux Cypres	CYPRESWE	FR		BROUILLA	PYRENEES ORIENTALES
+3187	Grotte D En Gorner Siphon	ENGORNER	FR		VILLEFRANCHE DE CONFLENT	PYRENEES ORIENTALES
+3188	Coume Escure Siphon	ESCURECA	FR		LABASTIDE EN VAL	AUDE
+3189	Font De Dotz Gours	FTDOTZCA	FR		BUGARACH	AUDE
+3190	Grotte De Serre Mitjane	MITJANEC	FR		SOULATGE	AUDE
+3191	P35 Puits	P35PUITS	FR		TUCHAN	AUDE
+3192	P47 Puits Chemin Des Cerisiers	P47PUITS	FR		LA PORTE DU VALLESPIR	PYRENEES ORIENTALES
+3193	Puits Paziols	PAZIOLSW	FR		PAZIOLS	AUDE
+3194	Pdx Puits	PDXPUITS	FR		FONTIES D AUDE	AUDE
+3195	Periac Pds Puits	PERIACWE	FR		CARCASSONNE	AUDE
+3196	Barrenc Des Trenquades. Gours	TRENQUAD	FR		THUIR	PYRENEES ORIENTALES
+3197	Well Behind House Just S Of The Road To Girona About 1.5 Km From Angles	ANGLESWE	ES		SANT MARTI SAPRESA	GIRONA
+3198	Well Parets D Empurda	EMPURDAW	ES		ORFES	GIRONA
+3199	Riu Fluvia Sant Miquel De Fluvia	FLUVIAMI	ES		SANT MIQUEL DE FLUVIA	GIRONA
+3200	Riu Fluvia Orfes	FLUVIAOR	ES		ORFES	GIRONA
+3201	Well About 2 Km From Garriguella 150 M S Of The Road To Peralada	GARRIGUW	ES		GARRIGUELLA	GIRONA
+3202	Ruisseau Du Baget. Alas. Zone Hyporheique	BAGETRUI	FR		BALAGUERES	ARIEGE
+3203	Grottes Caujolle	CAUJOLLE	FR		RIVERENERT	ARIEGE
+3204	Galerie De Couflens De Betjamou	COUFLENS	FR		SEIX	ARIEGE
+3205	Exsurgence De Fontsainte	FONTSAIN	FR		USTOU	ARIEGE
+3206	Nappe Alluviale Du Ruisseau De Lachein. Alas	LACHEINN	FR		BALAGUERES	ARIEGE
+3207	Sous Ecoulement Du Ruisseau De Lachein. Alas	LACHEINZ	FR		BALAGUERES	ARIEGE
+3208	Sous Ecoulement Du Nert	NERTHYPO	FR		SAINT GIRONS	ARIEGE
+3209	Nappe Alluviale Du Nert	NERTNAAL	FR		LACOURT	ARIEGE
+3210	Grotte Du Quer	QUERCA	FR		RIVERENERT	ARIEGE
+3211	Nappe Parafluviale Du Salat En Aval De Salau	SALATNAP	FR		COUFLENS	ARIEGE
+3212	Nappe Alluviale Du Nert	NERTNAPP	FR		LACOURT	ARIEGE
+3220	Rio Cerneja El Ribero	RIBERO	ES		MERINDAD DE MONTIJA	BURGOS
+3221	Rio Fuente Santa Fuesenta	FUESENTA	ES		NAVA	OVIEDO
+3225	Cueva Del Valle Rasines	VALLE	ES		RASINES	SANTANDER
+3228	Cueva De Altamira	ALTAMIRA	ES		SAN ESTEBAN	CANTABRIA
+3229	Cueva La Castanera	CASTANER	ES		SARON	CANTABRIA
+3230	Cueva La Clotilde	CLOTILDE	ES		QUIJAS	CANTABRIA
+3232	Cueva De La Estacion De Santa Isabel	ISABELCA	ES		QUIJAS	CANTABRIA
+3233	Cueva Del Molino	MOLINOCA	ES		ARREDONDO	CANTABRIA
+3236	Can024: Fuente De La Cascada De Ason	ASONCASP	ES		INCONNU	CANTABRIA
+3237	Can043: Rio Ason Cubera 3	ASONHY2	ES		INCONNU	CANTABRIA
+3238	Can047: Rio Ason Cubera 3	ASONHY3	ES		INCONNU	CANTABRIA
+3239	Can104: Cueva De San Bernabe	BERNABEC	ES		INCONNU	CANTABRIA
+3240	Can041: Rio Bustablado Arredondo	BUSTAHY1	ES		ARREDONDO	CANTABRIA
+3241	Can072: Surgencia 1 Del Rio Clarion	CLARIOSP	ES		INCONNU	CANTABRIA
+3242	Can079: Rio Comellante (Upstream Cave) (1)	COMELHY1	ES		INCONNU	CANTABRIA
+3243	Can171: Rio Deva La Estraguena (Point 3)	DEVAHY1	ES		INCONNU	CANTABRIA
+3244	Can183: Rio Deva La Estraguena (Point 3)	DEVAHY3	ES		INCONNU	CANTABRIA
+3245	Can006: Cueva Fresca	FRESCACA	ES		INCONNU	CANTABRIA
+3246	Can026: Rio Gandara Upstream (Point 2)	GANDAZH2	ES		INCONNU	CANTABRIA
+3247	Can038: Rio Gandara Regules (Point 3)	GANDAZH3	ES		INCONNU	CANTABRIA
+3248	Can039: Rio Gandara Casa Tablas (Point 4)	GANDAZH4	ES		INCONNU	CANTABRIA
+3249	Can103: Cueva Garcia	GARCIACA	ES		INCONNU	CANTABRIA
+3251	Can179: Rio Latarma Los Baucos (Point 3)	LATARMA3	ES		INCONNU	CANTABRIA
+3252	Can180: Rio Latarma Upwards Los Baucos (Point 4)	LATARMA4	ES		INCONNU	CANTABRIA
+3253	Can106: Cueva De Las Llanas	LLANASCA	ES		INCONNU	CANTABRIA
+3255	Can168: Fuente De La Rotura (Sobrelapena)	ROTURASP	ES		INCONNU	CANTABRIA
+3256	Can114: Fuente Salce	SALCESPR	ES		INCONNU	CANTABRIA
+3257	Can052: Cueva La Tiva (Ozana)	TIVACAVE	ES		INCONNU	CANTABRIA
+3258	Can010: Cueva Verdadero Nacimiento Ason	VERDADER	ES		SOBA	CANTABRIA
+3259	Well Al Lado S. De Barrio San Juan 84-8/12	BARRIOW1	ES		PUENTE VIESGO	CANTABRIA
+3260	Well Al Lado S. De Barrio San Juan 84-8/14	BARRIOW3	ES		PUENTE VIESGO	CANTABRIA
+3262	Manantial El Rescano O Fuente Del Pozo Cotirio	COTIRIOS	ES		MIRONES	CANTABRIA
+3263	Cave El Covaron	COVARONC	ES		LA PEREDA	ASTURIA
+3264	Cueva De Cudon	CUDONCA	ES		MIENGO	CANTABRIA
+3267	Manantial So. De Fuente-Urbel	FUEURBEL	ES		BASCONCLLOS DEL TOZO	BURGOS
+3269	Cueva Honda	HONDACA	ES		LA APARECIDA	CANTABRIA
+3271	Cueva De La Huerta. Rising Of The Rio De La Huerta	HUERTACA	ES		ALLES	ASTURIA
+3272	Cueva De La Carretera O Fuente Encalada	MONTESAN	ES		MORTESANTE	CANTABRIA
+3273	Pozo Azul	POZOAZUL	ES		COVANERA	BURGOS
+3274	Spring Puente Nuevo	PUNUEVSP	ES		MIRONES	CANTABRIA
+3275	Rio Aquanaz	RAQUANAZ	ES		ENTRAMBASAGUAS	CANTABRIA
+3276	Rio Covadonga	RCOVADON	ES		COVADONGA	ASTURIA
+3277	Cueva De Recueva	RECUEVAC	ES		HOZNAYO	CANTABRIA
+3280	Rio Ason	RIOASON	ES		ARREDONDO	CANTABRIA
+3282	Rio Sella Amieva	RSELLAAM	ES		PUENTE DE VEGA	ASTURIA
+3284	Rio Sella Ribadesella	RSELLARI	ES		RIBADESELLA	ASTURIA
+3286	Cueva Del Sapo	SAPOCA	ES		LINTO	CANTABRIA
+3287	Spring N. De La Carretera Solorzano-Riano	SOLORZSP	ES		SOLORZANO	CANTABRIA
+3292	Cueva De La Virgen	VIRGENCA	ES		LA VIRGEN	CANTABRIA
+3294	Source D Arbas Arbas	ARBAS	FR		ARBAS	HAUTE GARONNE
+3295	Captage Au Hameau D Alas	ALASWELL	FR		BALAGUERES	ARIEGE
+3296	Riviere Souterraine D Aliou	ALIOUCA	FR		CAZAVET	ARIEGE
+3297	Source D Arbosec	ARBOSEC	FR		RIVERENERT	ARIEGE
+3298	Ruisseau Souterrain D Audinac	AUDINACR	FR		MONTJOIE EN COUSERANS	ARIEGE
+3299	Ruisseau Souterrain D Aulot	AULOTCA	FR		SAINT GIRONS	ARIEGE
+3300	Source Lavoir A Aurignac	AURIGNAC	FR		AURIGNAC	HAUTE GARONNE
+3301	Exsurgence Permanente Du Baget	BAGETSP	FR		BALAGUERES	ARIEGE
+3302	Grotte De Batsere	BATSEREC	FR		BATSERE	HAUTES PYRENEES
+3303	Ruisseau Du Baup	BAUPRUI	FR		MONTJOIE EN COUSERANS	ARIEGE
+3304	Grotte Du Bedat	BEDATCA	FR		BAGNERES DE BIGORRE	HAUTES PYRENEES
+3305	Gouffre De Beguet	BEGUETCA	FR		JUZET D IZAUT	HAUTE GARONNE
+3307	Exsurgence De La Biele	BIELESP	FR		MOULIS	ARIEGE
+3308	Source Captee Pres De La Biele	BIELESPC	FR		MOULIS	ARIEGE
+3309	Source De Borde De Darre	BORDEDAR	FR		LE FRECHET	HAUTE GARONNE
+3310	Source De Boulogne Sur Gesse	BOUGESSE	FR		BOULOGNE SUR GESSE	HAUTE GARONNE
+3311	Gouffre De Bourdal	BOURDALC	FR		CASTELNAU DURBAN	ARIEGE
+3312	Source Du Bousquet	BOUSQUET	FR		MONTJOIE EN COUSERANS	ARIEGE
+3313	Source Karstique Du Campet	CAMPETSP	FR		MOULIS	ARIEGE
+3314	Grotte De Castel-Mouly	CASTELMO	FR		BAGNERES DE BIGORRE	HAUTES PYRENEES
+3315	Tute De Coumaratte	COUMARAT	FR		ALOS	ARIEGE
+3316	Gouffre Degaudez	DEGAUDEZ	FR		SAINT GIRONS	ARIEGE
+3317	Grotte Du Diable Rouge	DIABLERO	FR		BANIOS	HAUTES PYRENEES
+3318	Grotte De L Eglise	EGLISECA	FR		NISTOS	HAUTES PYRENEES
+3319	Grotte De L Espugne De Saleich	ESPUGNES	FR		SALEICH	HAUTE GARONNE
+3320	Grotte De L Estelas	ESTELASC	FR		CAZAVET	ARIEGE
+3321	Gouffre De La Coume-Ferra	FERRACA	FR		BALAGUERES	ARIEGE
+3322	Grotte Foulquier A Salege	FOULQUIE	FR		CAZAVET	ARIEGE
+3323	Ruisseau De Gamas	GAMASRUI	FR		MOULIS	ARIEGE
+3324	Grotte De Gargas	GARGASCA	FR		AVENTIGNAN	HAUTES PYRENEES
+3325	Grotte De Gourgue	GOURGUEC	FR		ARBAS	HAUTE GARONNE
+3326	Grotte De L Haiouat De Pelou	HAIOUATC	FR		NISTOS	HAUTES PYRENEES
+3327	Source Hountalayrou	HOUNTALA	FR		BOUSSAN	HAUTE GARONNE
+3328	Sources De Jouan D Arau	JOUANARA	FR		MOULIS	ARIEGE
+3329	Tute De Jovis Inferieure	JOVISINF	FR		ALOS	ARIEGE
+3330	Tute De Jovis Superieure	JOVISSUP	FR		ALOS	ARIEGE
+3331	Grotte De Labastide	LABASTID	FR		LABASTIDE	HAUTES PYRENEES
+3332	Gouffre De Lacoste	LACOSTEC	FR		ALOS	ARIEGE
+3333	Exsurgence Temporaire De La Hillere	LAHILLER	FR		BALAGUERES	ARIEGE
+3334	Grotte De Lespiougue	LESPIOUG	FR		CASTELNAU DURBAN	ARIEGE
+3335	Grotte Inferieure De Lique	LIQUEINF	FR		MOULIS	ARIEGE
+3336	Grotte De La Maouro	MAOUROCA	FR		IZAUT DE L HOTEL	HAUTE GARONNE
+3337	Puits De La Mate	MATEWELL	FR		SAINT JEAN DU CASTILLONNAIS	ARIEGE
+3338	Grotte De La Quere De Merigon	MERIGOCA	FR		SAINTE CROIX VOLVESTRE	ARIEGE
+3339	Source De Millas	MILLASSP	FR		EYCHEIL	ARIEGE
+3340	Gouffre Mille	MILLECA	FR		HERRAN	HAUTE GARONNE
+3341	Grotte Inferieure De Montagagne	MONTAINF	FR		MONTAGAGNE	ARIEGE
+3342	Gouffre Du Cap De Montardon	MONTARDO	FR		GENEREST	HAUTES PYRENEES
+3343	Grotte Superieure De Montagnagne	MONTASUP	FR		MONTAGAGNE	ARIEGE
+3344	Grotte Du Mont De Chac	MONTDECH	FR		SALEICH	HAUTE GARONNE
+3345	Grotte De Moulis	MOULISCA	FR		MOULIS	ARIEGE
+3346	Exsurgence Temporaire Du Moulo De Jaur	MOULOJAU	FR		BALAGUERES	ARIEGE
+3347	Gouffre Odon	ODONCA	FR		HERRAN	HAUTE GARONNE
+3348	Fontaine Des Oiseaux	OISEAUXF	FR		MOULIS	ARIEGE
+3349	Grotte De Peyort	PEYORTCA	FR		PRAT BONREPAUX	ARIEGE
+3350	Source Et Abreuvoir De Peyort	PEYORTSP	FR		PRAT BONREPAUX	ARIEGE
+3351	Grotte De Peyrous	PEYROUSC	FR		TAURIGNAN VIEUX	ARIEGE
+3352	Gouffre De Plagnol De La Plagne	PLAGNOLC	FR		SAINT GIRONS	ARIEGE
+3353	Gouffre Du Poudac Gran	POUDACGR	FR		ARBAS	HAUTE GARONNE
+3354	Grotte De Poudane	POUDANEC	FR		LES BORDES SUR LEZ	ARIEGE
+3355	Gouffre Raymonde	RAYMONDE	FR		HERRAN	HAUTE GARONNE
+3356	Grotte De Riusec Inferieur	RIUSECIN	FR		RAZECUEILLE	HAUTE GARONNE
+3357	Grotte De Riusec Superieur	RIUSECSU	FR		RAZECUEILLE	HAUTE GARONNE
+3358	Source De Salege	SALEGESP	FR		CAZAVET	ARIEGE
+3359	Gouffre Du Sauvajou	SAUVAJOU	FR		EYCHEIL	ARIEGE
+3360	Aven De Sainte Catherine	STCATHAV	FR		BALAGUERES	ARIEGE
+3361	Grotte De Sainte Catherine Du Milieu	STCATHCA	FR		BALAGUERES	ARIEGE
+3362	Grotte De Sainte-Helene	STHELENE	FR		FOIX	ARIEGE
+3363	Ruisseau Souterrain De Saint Paul	STPAULCA	FR		BRAX	HAUTE GARONNE
+3364	Grotte De Terreblanque	TERREBLA	FR		ASPET	HAUTE GARONNE
+3365	Cigalere Des Trinquets	TRINQUET	FR		LACOURT	ARIEGE
+3366	Grotte Des Trois Freres	TROISFRE	FR		MONTESQUIEU AVANTES	ARIEGE
+3367	Grotte Du Tuc D Audoubert	TUCAUDOU	FR		MONTESQUIEU AVANTES	ARIEGE
+3368	Aven Du Tuc Des Mandres	TUCMANDR	FR		LACOURT	ARIEGE
+3369	Gouffre Tuco	TUCOCA	FR		BAGNERES DE BIGORRE	HAUTES PYRENEES
+3370	Grotte De La Tute Du Chef	TUTECHEF	FR		NISTOS	HAUTES PYRENEES
+3371	Peyort Prat Bonrepaux Ariege France	PEYORT	FR		PRAT BONREPAUX	ARIEGE
+3372	Les Coumes	COUMES	FR		RIVERENET	ARIEGE
+3373	Ruisseau Souterrain De Saint Paul	PUJOS	FR		PUJOS	HAUTE GARONNE
+3374	Fontaine Du Pere A Audinac Les Bains	AUDINAC	FR		AUDINAC LES BAINS	ARIEGE
+3375	Grotte De La Buhadere A Couledoux	BUHADERE	FR		BOUTX	HAUTE GARONNE
+3377	Cueva Del Toro	DELTOROC	ES		ALCUDIA DE VEO	CASTELLON
+3378	Rio Mijares Aranuel	RMIJAREA	ES		ARANUEL	CASTELLON
+3379	Rio Mijares Espadilla	RMIJAREE	ES		ESPADILLA	CASTELLON
+3380	Rio Pequeno	RPEQUENO	ES		ONDA	CASTELLON
+3386	Puits Obscur. Porto	PORTOWEL	PT		FOZ DO DOURO	PORTO
+3387	Puits A Freixo De Numao	FREIXONU	PT		FREIXO DE NUMAO	GUARDA
+3388	Cueva De Albia	ALBIA	ES		LLORENGOZ	CASTILLA Y LEON
+3389	Rio Guadalope	GUADALOP	ES		MAS DE LAS MATAS	TERUEL
+3390	Rio Bergantes Ortelis	RBERGOR	ES		ORTELIS	CASTELLON
+3393	Rio Bergantes Aguaviva	RBERGAGU	ES		AGUAVIVA	TERUEL
+3394	Rio Bergantes Villores	RBERGVIL	ES		VILLORES	CASTELLON
+3395	Rio Guadelope	RGUADELO	ES		ALCANIZ	TERUEL
+3401	Rio Altura Altura	ALTURA	ES		ALTURA	CASTELLON
+3406	Rio Altura	RIALTURA	ES		SEGORBE	CASTELLON
+3411	Dourdou Promilhac	PROMILHA	FR		FAYET	AVEYRON
+3417	Puits Tube - Barriere Rte De Graulhet	ALBIWELL	FR		ALBI	TARN
+3418	Puits Tube De Mazicou (Av De Mazicou Stade)	MAZICOUP	FR		ALBI	TARN
+3419	Rio Noguera Pallaresa	NOGUERAP	ES		SOLDUGA ESPLUGUES	LERIDA
+3420	Puits 1 - Plaine Alluviale De L Ariege	W01ARIEG	FR		PAMIERS	ARIEGE
+3421	Puits 2 - Plaine Alluviale De L Ariege	W02ARIEG	FR		PAMIERS	ARIEGE
+3422	Puits 3 - Plaine Alluviale De L Ariege	W03ARIEG	FR		PAMIERS	ARIEGE
+3423	Puits 4 - Plaine Alluviale De L Ariege	W04ARIEG	FR		PAMIERS	ARIEGE
+3424	Puits 6 - Plaine Alluviale De L Ariege	W06ARIEG	FR		PAMIERS	ARIEGE
+3425	Puits 7 - Plaine Alluviale De L Ariege	W07ARIEG	FR		VILLENEUVE DU PAREAGE	ARIEGE
+3426	Puits 8 - Plaine Alluviale De L Ariege	W08ARIEG	FR		MONTAUT	ARIEGE
+3427	Puits 14 - Plaine Alluviale De L Ariege	W14ARIEG	FR		SAVERDUN	ARIEGE
+3428	Piezometre Aep De Beyne	AEPBEYNE	FR		DOUELLE	LOT
+3429	Plage Du Pont - Puits Aep	AEPPLAPT	FR		SAINT CIRGUE	TARN
+3430	Puits Tube A Albi	ALBIPTS	FR		ALBI	TARN
+3431	Puits Du College Balzac	BALZACWE	FR		ALBI	TARN
+3433	Exsurgence Du Blagour	BLAGOUR	FR		SOUILLAC	LOT
+3434	Fontaine De Bruniquel	BRUNIQUE	FR		BRUNIQUEL	TARN ET GARONNE
+3435	Dourdou Plage 500 M Avant Le Village De Brusque	BRUSQUEZ	FR		BRUSQUE	AVEYRON
+3436	Plage De Buzet	BUZETPLA	FR		SAINT CIRGUE	TARN
+3437	Captage A.e.p. - Confluent Coules -Tarn	COULESTA	FR		LESCURE D ALBIGEOIS	TARN
+3438	Puits M. Ruiz - Av. Dembourg	DEMBOURG	FR		ALBI	TARN
+3439	Nappe Alluviale Dordogne	DORDOGNE	FR		BEAULIEU SUR DORDOGNE	CORREZE
+3440	Source N 2 Durban Sur Arize	DURBA2SP	FR		DURBAN SUR ARIZE	ARIEGE
+3441	Source Temporaire A Durban	DURBATSP	FR		DURBAN SUR ARIZE	ARIEGE
+3442	Puits Maconne A Eycheil	EYCHEILW	FR		EYCHEIL	ARIEGE
+3443	Fontaine De La Gendarmerie	GENDAFON	FR		BRUNIQUEL	TARN ET GARONNE
+3444	Sbr Jaur A Mons La Trivalle	JAURHY	FR		MONS	HERAULT
+3445	Puits De La Croix De Jonquieres	JONQUIER	FR		COUFOULEUX	TARN
+3447	Piezometre Lescure D Albigeois	LESCUREW	FR		LESCURE D ALBIGEOIS	TARN
+3448	Levizac - Canpepau (Nappe Du Meandre Du Tarn)	LEVIZACW	FR		ALBI	TARN
+3449	Sondage Tube N 1 Dans L Hers	LHERS1HY	FR		BELESTA	ARIEGE
+3450	Sondage Tube N 2 Dans L Hers	LHERS2HY	FR		BELESTA	ARIEGE
+3451	Moulin Du Lombard Montvalent	LOMBARD	FR		MONTVALENT	LOT
+3452	Puits Du Lycee D Albi	LYCALBI	FR		ALBI	TARN
+3453	Riviere Dourdou - Pont De Mappen A Broquies	MAPPENZH	FR		BROQUIES	AVEYRON
+3455	Captage Aep Des Mayrieres	MAYRIERE	FR		BRUNIQUEL	TARN ET GARONNE
+3456	Riviere Dourdou - Plage Rive Gauche D 12 A Monlaur	MONLAURZ	FR		MONTLAUR	AVEYRON
+3458	Sondage Tube Dans Le Ruisseau De Nistos	NISTOSHY	FR		NISTOS	HAUTES PYRENEES
+3459	Gouffre De Padirac Aval Partie Visitable Padirac	PADISITE	FR		PADIRAC	LOT
+3460	Alluvions De La Source A Penne	PENNESP	FR		PENNE	TARN
+3461	Source N 2 A Planaires	PLANAISP	FR		DURBAN SUR ARIZE	ARIEGE
+3462	Puits Pons	PONSWELL	FR		TOULOUSE	HAUTE GARONNE
+3463	Fontaine Publique	PUBLICFT	FR		BRUNIQUEL	TARN ET GARONNE
+3464	Plage Du Tunnel De Puech Mergou	PUECHMER	FR		MARSAL	TARN
+3465	Tarn - Plage De Salueges	SALUEGES	FR		AMBIALET	TARN
+3466	Puits. 11 Bis Rue Serre De Riviere Albi	SERREWEL	FR		ALBI	TARN
+3467	Sondage Tube Dans Le Sour	SOURHY	FR		MOULIS	ARIEGE
+3468	Sbr Tarn	STCIRGU	FR		SAINT CIRGUE	TARN
+3469	Puits A Saint Girons	STGIROW	FR		SAINT GIRONS	ARIEGE
+3470	Puits De Saint Martin	STMARTIW	FR		LARROQUE	TARN
+3471	Sbr Tarn Plage Aval Usine E.d.f. Des Avalats	TARNEDFH	FR		SAINTT JUERY	TARN
+3472	Riviere Dourdou - Plage Du Pont A Vabres L Abbaye	VABRESZH	FR		VABRES L ABBAYE	AVEYRON
+3473	Puits Aep A Varilhes	VARILHES	FR		VARILHES	ARIEGE
+3474	Sondage Tube Dans Le Volp	VOLPHY	FR		MONTESQUIEU AVANTES	ARIEGE
+3475	Interstitiel Volp N 1 Amont De La Perte (Ng 1972 P.172)	VOLPINTE	FR		MONTESQUIEU AVANTES	ARIEGE
+3476	Piezometre 8 Montvalent	W08MONTV	FR		MONTVALENT	LOT
+3477	Piezometre 10 Montvalent	W10MONTV	FR		MONTVALENT	LOT
+3478	Grotte Resurgence D Alzen	ALZENCA	FR		ALZEN	ARIEGE
+3479	Le Briandt. Ruisseau Souterrain	BRIANDT	FR		CHASTEAUX	COREZE
+3480	Cueva De Can Masiet	CANMASIE	ES		LA RIBA	TARRAGONA
+3481	Cueva De Capeanes	CAPEANES	ES		CAPCANES	TARRAGONA
+3483	Cova Del Conill	CONILLCA	ES		HORTA DE SANT JOAN	TARRAGONA
+3484	Resurgence De Huete (Rio Maor - Tajo)	DEHUETSP	ES		LORANCA DEL CAMPO	CUENCA
+3486	Cova Dels Graners	GRANERSC	ES		LASPUNA	HUESCA
+3487	Spring Solencio De Morrano	MORRANSP	ES		MORRANO	HUESCA
+3488	Rio Noguera Ribagorzana	NOGUERAR	ES		AREN	HUESCA
+3489	Forat De L Or Fuente	ORFUENTE	ES		CELLERS	LERIDA
+3490	Rio Alcanadre	RALCANAD	ES		BIERGE	HUESCA
+3491	Rio Bergantes	RBERGANT	ES		FORCALL	CASTELLON
+3492	Rio Aragon	RIARAGON	ES		SANTA CILIA	HUESCA
+3494	Rio Montsant (Ebro)	RMONTSAN	ES		GARCIA	TARRAGONA
+3495	Rio Vero En Amont De Barbastro Sous Le Pont	RVEROABA	ES		BARBASTRO	HUESCA
+3496	Rio Vero En Amont D Huerta De Vero	RVEROAHU	ES		HUERTA DE VERO	HUESCA
+3497	Rio Vero A Barbastro	RVEROBAR	ES		BARBASTRO	HUESCA
+3502	Affluent De Rive Gauche Du Rio Noguera Ribagorzana	RGNOGUER	ES		EL PONT DE SUERT	LERIDA
+3503	Dourdou Le Cambon	LECAMBON	FR		SAINT AFFRIQUE	AVEYRON
+3504	Can004: La Cueva Del Agua	AGUACAVE	ES		INCONNU	CANTABRIA
+3505	Can032: Rio Ason Cubera 3	ASONHY1	ES		INCONNU	CANTABRIA
+3506	Can029: Rio Ason Near Ramales (Park)	ASONHY4	ES		RAMALES DE LA VICTORIA	CANTABRIA
+3507	Can067: Surgencia Del Comellante	COMELLSP	ES		INCONNU	CANTABRIA
+3508	Well About 1 Km E Of L Argentera Just S Of The Road To Duesaigues	ARGENTEW	ES		L ARGENTERA	TARRAGONA
+3510	Cova De La Fou	COVAFOU	ES		CAPCANES	TARRAGONA
+3511	Rio Guatizalema	GUATIZAL	ES		SIPAN	HUESCA
+3512	Fuente Lludriga	LLUDRIGA	ES		CAPAFONTS	TARRAGONA
+3514	Well Just S Of Riu Corb	RIUCORBP	ES		LLORAC	TARRAGONA
+3515	Well About 50 M S Of Riu Corb	RIUCORBW	ES		NALEC	LERIDA
+3517	Well E. De La Carretera Valderrobres-Arnes	VALDERRO	ES		VALDERROBRES	TERUEL

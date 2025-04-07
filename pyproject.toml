@@ -1,0 +1,11 @@
+[project]
+name = "darco-migration"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "nested-pandas>=0.3.8",
+    "pandas>=2.2.3",
+    "spacy>=3.8.4",
+]
