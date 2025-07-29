@@ -1,7 +1,7 @@
 library(tidyverse)
 
 
-data = read_tsv("data/Aselloidea/Aselloidea_All_Occurences_Europe_DarCo_For_Louis.tsv", col_names = T, quote = "\"", locale = locale(decimal_mark = ","))
+data = read_tsv("data/Aselloidea/Aselloidea.tsv", col_names = T, quote = "\"", locale = locale(decimal_mark = ","))
 
 
 pb_dates = data %>%
@@ -12,3 +12,10 @@ pb_dates = data %>%
   mutate(sampling_code = str_extract(biomat_code, "\\|([0-9A-Z]+_[0-9]+)") %>% str_remove("\\|"))
 
 pb_dates %>% write_tsv("res/wad/problematic_dates.tsv")
+
+# data %>%
+#   select(AssRef) %>%
+#   distinct() %>%
+#   print(n=200)
+
+# write_tsv("res/verbatim_refs.tsv")
