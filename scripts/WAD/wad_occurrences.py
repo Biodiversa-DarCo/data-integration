@@ -319,29 +319,25 @@ taxa = [
         "name": "Proasellus anophtalmus resavicae",
         "status": "Unreferenced",
         "rank": "Subspecies",
-        "code": "Proasellus_anophtalmus_resavicae",
-        "parent": "Proasellus_anophtalmus",
+        "parent": "Proasellus anophtalmus",
     },
     {
         "name": "Proasellus anophtalmus rascicus",
         "status": "Unreferenced",
         "rank": "Subspecies",
-        "code": "Proasellus_anophtalmus_rascicus",
-        "parent": "Proasellus_anophtalmus",
+        "parent": "Proasellus anophtalmus",
     },
     {
         "name": "Stenasellus virei rouchi",
         "status": "Unreferenced",
         "rank": "Subspecies",
-        "code": "Stenasellus_virei_rouchi",
-        "parent": "Stenasellus_virei",
+        "parent": "Stenasellus virei",
     },
     {
         "name": "Stenasellus virei margalefi",
         "status": "Unreferenced",
         "rank": "Subspecies",
-        "code": "Stenasellus_virei_margalefi",
-        "parent": "Stenasellus_virei",
+        "parent": "Stenasellus virei",
     },
 ]
 
