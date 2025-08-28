@@ -1,0 +1,34 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  INPUT_DATA: data/Aselloidea.tsv
+  OUTPUT_FILE: res/Aselloidea_occurrences.json
+
+tasks:
+  default:
+    cmds:
+      - uv run scripts/wad_occurrences.py {{.INPUT_DATA}} {{.OUTPUT_FILE}}
+    desc: Generate Aselloidea occurrences dataset in ready to import JSON format
+    sources:
+      - scripts/wad_occurrences.py
+      - "{{.INPUT_DATA}}"
+    generates:
+      - "{{.OUTPUT_FILE}}"
+    deps:
+      - make_res_dir
+
+  make_res_dir:
+    cmds:
+      - mkdir -p res
+    desc: Create the res directory if it doesn't exist
+    generates:
+      - res
+    silent: true
+
+  clean:
+    cmds:
+      - rm -rf res
+    desc: Clean the res directory
+    silent: true

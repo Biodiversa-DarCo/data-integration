@@ -1,0 +1,11 @@
+# https://taskfile.dev
+
+version: "3"
+
+includes:
+  asellidae:
+    taskfile: ./Asellidae/Taskfile.yml
+    dir: ./Asellidae
+  copepoda:
+    taskfile: ./Copepoda/Taskfile.yml
+    dir: ./Copepoda
