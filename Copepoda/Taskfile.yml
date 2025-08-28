@@ -1,0 +1,87 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  ORIGINAL_DATA: data/Dataset_Copepoda.csv
+  CLEANED_DATA: data/Dataset_Copepoda_cleaned.tsv
+  BROKEN_ENCODING_EXTRACT: res/Copepoda_broken_lines.tsv
+  ORIGINAL_DATA_ENCODING_FIX: res/Dataset_Copepoda_encoding_fix.csv
+  CLEANED_DATA_ENCODING_FIX: res/Dataset_Copepoda_cleaned_encoding_fix.tsv
+  PREPROCESSED_DATA: res/preprocessed.tsv
+
+tasks:
+  default:
+    cmds:
+      - uv run scripts/copepoda_occurrences.py {{.PREPROCESSED_DATA}} res/Copepoda_occurrences.json
+    desc: Generate Copepoda occurrences dataset in ready to import JSON format
+    sources:
+      - scripts/copepoda_occurrences.py
+      - "{{.PREPROCESSED_DATA}}"
+    generates:
+      - res/Copepoda_occurrences.json
+    deps:
+      - preprocess
+
+  preprocess:
+    cmds:
+      - Rscript scripts/copepoda.R {{.CLEANED_DATA_ENCODING_FIX}} {{.PREPROCESSED_DATA}}
+    desc: Preprocess the Copepoda dataset
+    sources:
+      - scripts/copepoda.R
+      - "{{.CLEANED_DATA_ENCODING_FIX}}"
+    generates:
+      - "{{.PREPROCESSED_DATA }}"
+    deps:
+      - recover_encoding
+
+  recover_encoding:
+    cmds:
+      - Rscript scripts/recover_encoding.R {{.CLEANED_DATA}} {{.ORIGINAL_DATA_ENCODING_FIX}} {{.CLEANED_DATA_ENCODING_FIX}}
+    sources:
+      - scripts/recover_encoding.R
+      - "{{.CLEANED_DATA}}"
+      - "{{.ORIGINAL_DATA_ENCODING_FIX}}"
+    generates:
+      - "{{ .CLEANED_DATA_ENCODING_FIX }}"
+    desc: Recover encoding issues in the cleaned dataset
+    deps:
+      - fix_encoding
+
+  extract_broken_lines:
+    cmds:
+      - Rscript scripts/extract_broken_lines.R {{.ORIGINAL_DATA_ENCODING_FIX}} {{.BROKEN_ENCODING_EXTRACT}}
+    desc: Extract lines with potential encoding issues
+    sources:
+      - scripts/extract_broken_lines.R
+      - "{{ .ORIGINAL_DATA_ENCODING_FIX }}"
+    generates:
+      - "{{ .BROKEN_ENCODING_EXTRACT }}"
+    deps:
+      - fix_encoding
+
+  fix_encoding:
+    cmds:
+      - uv run scripts/encoding_fix.py {{.ORIGINAL_DATA}} {{.ORIGINAL_DATA_ENCODING_FIX}}
+    desc: Fix encoding issues in the dataset
+    sources:
+      - scripts/encoding_fix.py
+      - "{{ .ORIGINAL_DATA }}"
+    generates:
+      - "{{ .ORIGINAL_DATA_ENCODING_FIX }}"
+    deps:
+      - make_res_dir
+
+  make_res_dir:
+    cmds:
+      - mkdir -p res
+    desc: Create the res directory if it doesn't exist
+    generates:
+      - res
+    silent: true
+
+  clean:
+    cmds:
+      - rm -rf res
+    desc: Clean the res directory
+    silent: true
