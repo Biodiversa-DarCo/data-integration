@@ -2,6 +2,13 @@
 
 version: "3"
 
+tasks:
+  default:
+    desc: Run all tasks in the project
+    cmds:
+      - task: asellidae
+      - task: copepoda
+
 includes:
   asellidae:
     taskfile: ./Asellidae/Taskfile.yml
