@@ -61,8 +61,9 @@ data <- read_tsv(input_file, na = c("NULL", "Unclear", "unclear", "??", "?", "Un
     specificEpithet = na_if(specificEpithet_FM, ""),
     infraspecificEpithet = infraspecificEpithet_FM,
     scientificName = str_trim(scientificName_FM) %>%
-      str_replace_all(" sp\\.$", "") %>%
-      str_replace_all(" \\([^\\)]+\\) ", " "),
+      str_replace_all(" s?sp\\.$", "") %>%
+      str_replace_all(" \\([^\\)]+\\) ", " ") %>%
+      str_replace("Nitocra", "Nitokra"),
     acceptedNameUsage = acceptedNameUsage_FM,
     Locality = ifelse(str_detect(Locality, ".*[Ss]canned from map.*"), NA, Locality)
   ) %>%
