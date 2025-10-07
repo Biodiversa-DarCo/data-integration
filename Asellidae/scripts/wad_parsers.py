@@ -2,14 +2,7 @@ import re
 import pandas as pd
 from wad_transform_maps import *
 
-UNKNOWN_DATE = {
-    "date": {
-        "year": 1,
-        "month": 1,
-        "day": 2000,
-    },
-    "precision": "Unknown",
-}
+UNKNOWN_DATE = None
 
 
 def parse_date(date_str: str | None):

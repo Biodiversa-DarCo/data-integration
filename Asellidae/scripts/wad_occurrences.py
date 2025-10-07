@@ -71,8 +71,8 @@ data = (
     .replace({np.nan: None})
 )
 
-data["event_date"].replace({None: "UNKNOWN"}, inplace=True)
-data["sampling_target"].replace({None: "UNKNOWN"}, inplace=True)
+data["event_date"] = data["event_date"].replace({None: "UNKNOWN"})
+data["sampling_target"] = data["sampling_target"].replace({None: "UNKNOWN"})
 
 print(data)
 
@@ -190,7 +190,8 @@ for site_code, group in data.reset_index().groupby("site_code"):
         "precision": parse_precision(group["precision"].iloc[0]),
     }
 
-    events = []
+    samplings = []
+    abiotics = []
     for date, ev_group in group.groupby("event_date"):
         if len(set(ev_group["sampling_program"])) > 1:
             print(set(ev_group["sampling_program"]))
@@ -207,6 +208,20 @@ for site_code, group in data.reset_index().groupby("site_code"):
             raise ValueError(
                 f"Multiple conductivities for site {site_code} at event {date}"
             )
+        event = {
+            "performed_on": parse_date(str(date)),
+            "performed_by": (
+                [p.strip() for p in ev_group["event_participants"].iloc[0].split("|")]
+                if ev_group["event_participants"].iloc[0]
+                else None
+            ),
+            "performed_by_groups": (
+                [p.strip() for p in ev_group["event_group"].iloc[0].split("|")]
+                if ev_group["event_group"].iloc[0]
+                else None
+            ),
+        }
+
         abiotic = (
             {
                 "temperature": ev_group["temperature"].iloc[0],
@@ -216,29 +231,12 @@ for site_code, group in data.reset_index().groupby("site_code"):
             or ev_group["conductivity"].iloc[0] is not None
             else None
         )
+        if abiotic:
+            abiotics.append(abiotic | event)
 
-        events.append(
-            {
-                "performed_on": parse_date(str(date)),
-                "performed_by": (
-                    [
-                        p.strip()
-                        for p in ev_group["event_participants"].iloc[0].split("|")
-                    ]
-                    if ev_group["event_participants"].iloc[0]
-                    else None
-                ),
-                "performed_by_groups": (
-                    [p.strip() for p in ev_group["event_group"].iloc[0].split("|")]
-                    if ev_group["event_group"].iloc[0]
-                    else None
-                ),
-                # "programs": parse_program(ev_group["sampling_program"].iloc[0]),
-                "abiotic_sampling": abiotic,
-                "samplings": parse_samplings(ev_group),
-                "comments": ev_group["sampling_comments"].iloc[0],
-            }
-        )
+        samplings = parse_samplings(ev_group)
+        for sampling in samplings:
+            sampling |= event
 
     result.append(
         {
@@ -249,7 +247,8 @@ for site_code, group in data.reset_index().groupby("site_code"):
                 if group["altitude"].iloc[0] is not None
                 else None
             ),
-            "events": events,
+            "samplings": samplings,
+            "abiotic_measurements": abiotics if abiotics else None,
         }
     )
 

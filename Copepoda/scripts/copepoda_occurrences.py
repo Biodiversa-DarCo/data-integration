@@ -51,42 +51,48 @@ for site_code, group in data.groupby("site_code"):
         "precision": group["coord_precision"].iloc[0],
     }
 
-    events = []
+    country = group["country"].iloc[0]
+
+    samplings = []
 
     for _, row in group.iterrows():
 
         biomat = {
             "quantity": "Unknown",
             "identification": {
-                "identified_on": {"precision": "Unknown"},
                 "qualifier": row["tax_id_qualifier"],
                 "taxon": row["scientificName"],
             },
             "quantity": "Unknown",
         }
-        sampling = {
-            "access_points": (
-                row["access_point"].split(", ")
-                if not pd.isnull(row["access_point"])
-                else None
-            ),
-            "habitats": (
-                row["habitat"].split(", ") if not pd.isnull(row["habitat"]) else None
-            ),
-            "target": {"kind": "Unknown"},
-            "external_biomats": [biomat],
-        }
 
-        events.append(
+        samplings.append(
             {
-                "performed_on": {"precision": "Unknown"},
-                "samplings": [sampling],
+                "access_points": (
+                    row["access_point"].split(", ")
+                    if not pd.isnull(row["access_point"])
+                    else None
+                ),
+                "habitats": (
+                    row["habitat"].split(", ")
+                    if not pd.isnull(row["habitat"])
+                    else None
+                ),
+                "target": {"kind": "Unknown"},
+                "external_biomats": [biomat],
                 # "programs": parse_program(ev_group["sampling_program"].iloc[0]),
                 # "comments": ev_group["sampling_comments"].iloc[0],
             }
         )
 
-    results.append({"code": site_code, "coordinates": coordinates, "events": events})
+    results.append(
+        {
+            "code": site_code,
+            "country": country,
+            "coordinates": coordinates,
+            "samplings": samplings,
+        }
+    )
 
 # %%
 with open("res/unclassified_taxa.json") as f:
