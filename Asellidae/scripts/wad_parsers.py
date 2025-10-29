@@ -195,8 +195,6 @@ def parse_specimen_quantity(
             return "Tens"
         elif specimen_count > 100:
             return "Hundred"
-    elif not quantity_str or len(quantity_str) == 0:
-        return "Unknown"
     else:
         return quantity_map.get(quantity_str, None)
 
@@ -209,15 +207,19 @@ def parse_identification(df: pd.DataFrame):
             if df["id_curator"].iloc[0] is not None
             else None
         ),
+        "confer": "cf" in (df["id_qualifier"].iloc[0] or ""),
         "taxon": re.sub(
-            r" sp\d*\.? ?(\([^\(\)]*\))?$",
+            " sp.$",
+            # r" sp\d*\.? ?(\([^\(\)]*\))?$",
             "",
-            re.sub(
-                r"\([^\(\)]*\) | aff\.| form [A-Z]$",
-                "",
-                df["id_verbatim"].iloc[0],
-            ),
-        ),
+            # re.sub(
+            #     r"\([^\(\)]*\) | aff\.| form [A-Z]$",
+            #     "",
+            # re.sub(" (Asellus) ")
+            df["id_verbatim"].str.replace(" (Asellus) ", " ").iloc[0],
+            # df["id_verbatim"].iloc[0],
+            # ),
+        ).strip(),
     }
 
 
@@ -227,9 +229,9 @@ saclier_article_verbatim = "Saclier et al. 2023. The World Asellidae database an
 def parse_bib_ref(df: pd.DataFrame):
     refs = []
     if df["references"].iloc[0] is not None:
-        refs.append({"code": df["references"].iloc[0], "original": True})
+        refs.append(df["references"].iloc[0])
     if df["data_source"].iloc[0] == "The World Asellidae Database":
-        refs.append({"code": saclier_article_verbatim, "original": False})
+        refs.append(saclier_article_verbatim)
     return refs
 
 

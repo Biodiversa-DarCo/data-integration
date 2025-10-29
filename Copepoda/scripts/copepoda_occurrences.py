@@ -3,6 +3,8 @@ import json
 import pandas as pd
 import numpy as np
 
+from copepoda_parsers import parse_article
+
 # import os
 # print(os.getcwd())
 
@@ -58,12 +60,15 @@ for site_code, group in data.groupby("site_code"):
     for _, row in group.iterrows():
 
         biomat = {
-            "quantity": "Unknown",
             "identification": {
-                "qualifier": row["tax_id_qualifier"],
+                "confer": "cf" in (row["tax_id_qualifier"] or ""),
                 "taxon": row["scientificName"],
+                "addendum": row["tax_id_addendum"],
             },
-            "quantity": "Unknown",
+            "published_in": (
+                [row["publication"]] if row["publication"] is not None else None
+            ),
+            "sources": [row["source"]] if row["source"] is not None else None,
         }
 
         samplings.append(
@@ -79,7 +84,7 @@ for site_code, group in data.groupby("site_code"):
                     else None
                 ),
                 "target": {"kind": "Unknown"},
-                "external_biomats": [biomat],
+                "external_occurrences": [biomat],
                 # "programs": parse_program(ev_group["sampling_program"].iloc[0]),
                 # "comments": ev_group["sampling_comments"].iloc[0],
             }
@@ -105,10 +110,18 @@ dataset = {
     "occurrences": results,
     "import_clades": data["family"].unique().tolist(),
     "taxa": taxa,
-    # "bibliography": {
-    #     verbatim: parse_article(verbatim)
-    #     for verbatim in data["references"].dropna().unique().tolist()
-    # },
+    "data_sources": {
+        "STOCH": {"label": "F. Stoch (2002) Collection (Rome)", "code": "STOCH"},
+        "GALASSI": {"label": "D. Galassi Personal Collection", "code": "GALASSI"},
+        "ATBI_MERCANTOUR": {
+            "label": "ATBI Mercantour Database",
+            "code": "ATBI_MERCANTOUR",
+        },
+    },
+    "bibliography": {
+        verbatim: parse_article(verbatim)
+        for verbatim in data["publication"].dropna().unique().tolist()
+    },
 }
 
 

@@ -173,11 +173,11 @@ data_sources = {
         "code": "WAD",
         "url": "https://gotit.univ-lyon1.fr/",
     },
-    "PASCALIS Database EC Project Contract Number EVK2-CT-2001-00121": {
-        "label": "PASCALIS Database",
-        "code": "PASCALIS",
-        "description": "PASCALIS Database EC Project Contract Number EVK2-CT-2001-00121",
-    },
+    # "PASCALIS Database EC Project Contract Number EVK2-CT-2001-00121": {
+    #     "label": "PASCALIS Database",
+    #     "code": "PASCALIS",
+    #     "description": "PASCALIS Database EC Project Contract Number EVK2-CT-2001-00121",
+    # },
     "CKmap Distribuzione della Fauna Italiana Checklist and distribution of 10000 species of the Italian fauna": {
         "label": "CKmap database",
         "code": "CKMAP",

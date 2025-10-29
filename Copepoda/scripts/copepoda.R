@@ -60,20 +60,38 @@ data <- read_tsv(input_file, na = c("NULL", "Unclear", "unclear", "??", "?", "Un
     subgenus = subgenus_FM,
     specificEpithet = na_if(specificEpithet_FM, ""),
     infraspecificEpithet = infraspecificEpithet_FM,
-    scientificName = str_trim(scientificName_FM) %>%
-      str_replace_all(" s?sp\\.$", "") %>%
-      str_replace_all(" \\([^\\)]+\\) ", " ") %>%
-      str_replace("Nitocra", "Nitokra"),
+    scientificName = str_trim(scientificName) %>%
+      str_replace("Nitocra", "Nitokra") %>%
+      str_replace("cf. ", "") %>%
+      str_replace("gr. hirta ", "") %>%
+      str_replace(" ?group .+$", "") %>%
+      str_replace_all(" s?sp\\.$", ""),
     acceptedNameUsage = acceptedNameUsage_FM,
-    Locality = ifelse(str_detect(Locality, ".*[Ss]canned from map.*"), NA, Locality)
+    Locality = ifelse(str_detect(Locality, ".*[Ss]canned from map.*"), NA, Locality),
+    publication = if_else(str_starts(source, "(Collection|Personal communication)"), NA, associatedReferences)
   ) %>%
-  select(id = ID, site_id, everything(), -order_FM, -family_FM, -genus_FM, -subgenus_FM, -specificEpithet_FM, -infraspecificEpithet_FM, -scientificName_FM, -namePublishedInYear_FM, -Modif_taxonomy_FM, -scientificNameAuthorship_FM, -acceptedNameUsage_FM, -subfamily_FM)
+  mutate(
+    scientificName = if_else(
+      taxon_rank == "Subgenus", scientificName, str_replace_all(scientificName, " \\([^\\)]+\\) ", " ")
+    ),
+    source = if_else(
+      str_starts(source, "Literature"),
+      NA,
+      case_when(
+        source == "Collection: F. Stoch " ~ "STOCH",
+        source == "Collection: D. Galassi" ~ "GALASSI",
+        source == "Personal communication: D. Galassi" ~ "GALASSI",
+        source == "ATBI Mercantour Database" ~ "ATBI_MERCANTOUR",
+        source == "PASCALIS Database" ~ "PASCALIS",
+        TRUE ~ source
+      )
+    )
+  ) %>%
+  select(id = ID, site_id, everything(), -order_FM, -family_FM, -genus_FM, -subgenus_FM, -specificEpithet_FM, -infraspecificEpithet_FM, -scientificName_FM, -namePublishedInYear_FM, -Modif_taxonomy_FM, -scientificNameAuthorship_FM, -acceptedNameUsage_FM, -subfamily_FM, -associatedReferences, -researchGroup)
 
 data %>%
-  select(family) %>%
-  distinct() %>%
-  pull(family)
-
+  select(source) %>%
+  distinct()
 data
 
 dir.create(dirname(output_file), recursive = TRUE, showWarnings = FALSE)

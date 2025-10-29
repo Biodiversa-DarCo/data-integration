@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import re
@@ -7,7 +8,6 @@ import numpy as np
 import pandas as pd
 from wad_parsers import *
 from wad_transform_maps import *
-import argparse
 
 parser = argparse.ArgumentParser(description="Process Aselloidea occurrence data")
 parser.add_argument("input_file", help="Input TSV file path")
@@ -39,7 +39,12 @@ colNames = {
     "DateIden": "id_date",
     "IdenBy": "id_curator",
     "IdenAttri": "id_criterion",
+    "IdenQualif": "id_qualifier",
+    "identification_addendum": "id_addendum",
     "IdenVer": "id_verbatim",
+    "TaxRank": "taxon_rank",
+    "Genus": "genus",
+    "Species": "species",
     "MOTU": "MOTU",
     "OccID": "occurrence_code",
     "BasRec": "occurrence_type",
@@ -66,6 +71,7 @@ data = (
         sep="\t",
         decimal=",",
         na_values=["INCONNU"],
+        index_col=False,
     )
     .rename(columns=colNames)[columns]
     .replace({np.nan: None})
@@ -73,11 +79,60 @@ data = (
 
 data["event_date"] = data["event_date"].replace({None: "UNKNOWN"})
 data["sampling_target"] = data["sampling_target"].replace({None: "UNKNOWN"})
+data["species"] = data["species"].str.lower()
 
 print(data)
 
+taxa = [
+    {
+        "name": row.id_verbatim,
+        "status": "Unclassified",
+        "rank": row.taxon_rank,
+        "parent": (
+            row.genus if row.taxon_rank == "Species" else f"{row.genus} {row.species}"
+        ),
+    }
+    for row in data[["id_verbatim", "genus", "species", "taxon_rank"]][
+        data["id_verbatim"].str.contains(" aff.")
+    ]
+    .drop_duplicates()
+    .itertuples()
+]
+
+taxa += [
+    {
+        "name": row.id_verbatim,
+        "status": "Unclassified",
+        "rank": row.taxon_rank,
+        "parent": row.genus,
+    }
+    for row in data[["id_verbatim", "genus", "taxon_rank"]][
+        data["id_verbatim"].str.contains(r" sp1?\. \(")
+    ]
+    .drop_duplicates()
+    .itertuples()
+]
+
 
 def parse_biomat(code, df: pd.DataFrame):
+    suffix = code.split("|")[-1]
+    sequence = None
+    if str(code).endswith(("NCBI", "PERSCOM")):
+        db_reference = (
+            {
+                "db": "NCBI",
+                "accession": df["accession_number"].iloc[0],
+            }
+            if suffix == "NCBI"
+            else None
+        )
+        sequence = {
+            "code": code,
+            "gene": df["gene"].iloc[0],
+            "referenced_in": [db_reference] if db_reference else None,
+            "specimen_identifier": df["specimen_voucher"].iloc[0],
+            "is_identifying": True,
+        }
     return {
         "code": code,
         "identification": parse_identification(df),
@@ -89,36 +144,14 @@ def parse_biomat(code, df: pd.DataFrame):
             if df["organism_count"].iloc[0]
             else None
         ),
+        "original_taxon": df["original_taxon_name"].iloc[0],
         # "comments": df["occurrence_comments"].iloc[0],
         "in_collection": df["collection"].iloc[0],
         "original_source": (
             df["data_source"].iloc[0].strip() if df["data_source"].iloc[0] else None
         ),
         "published_in": parse_bib_ref(df),
-    }
-
-
-def parse_sequence(code, df: pd.DataFrame):
-    suffix = code.split("|")[-1]
-    origin = "DB" if suffix == "NCBI" else "PersCom"
-    db_reference = (
-        {
-            "db": "NCBI",
-            "accession": df["accession_number"].iloc[0],
-            "is_origin": True,
-        }
-        if suffix == "NCBI"
-        else None
-    )
-    return {
-        "code": code,
-        "gene": df["gene"].iloc[0],
-        "origin": origin,
-        "referenced_in": [db_reference] if db_reference else None,
-        "published_in": parse_bib_ref(df),
-        "specimen_identifier": df["specimen_voucher"].iloc[0],
-        "original_taxon": df["original_taxon_name"].iloc[0],
-        "identification": parse_identification(df),
+        "sequences": [sequence] if sequence else None,
     }
 
 
@@ -142,13 +175,9 @@ def parse_samplings(df: pd.DataFrame):
         access_point = access_points_map.get(access_point, None)
 
         biomaterials = []
-        sequences = []
 
         for code, group in s_group.groupby("occurrence_code"):
-            if str(code).endswith(("NCBI", "PERSCOM")):
-                sequences.append(parse_sequence(code, group))
-            else:
-                biomaterials.append(parse_biomat(code, group))
+            biomaterials.append(parse_biomat(code, group))
 
         sampling = {
             "methods": parse_methods(method),
@@ -167,14 +196,14 @@ def parse_samplings(df: pd.DataFrame):
                 if s_group["sampling_effort"].iloc[0] is not None
                 else None
             ),
-            "external_biomats": biomaterials,
-            "sequences": sequences,
+            "external_occurrences": biomaterials,
         }
         samplings.append(sampling)
     return samplings
 
 
 result = []
+
 
 for site_code, group in data.reset_index().groupby("site_code"):
     if len(set(group["lat"])) > 1:
@@ -222,17 +251,22 @@ for site_code, group in data.reset_index().groupby("site_code"):
             ),
         }
 
-        abiotic = (
-            {
-                "temperature": ev_group["temperature"].iloc[0],
-                "conductivity": ev_group["conductivity"].iloc[0],
-            }
-            if ev_group["temperature"].iloc[0] is not None
-            or ev_group["conductivity"].iloc[0] is not None
-            else None
-        )
-        if abiotic:
-            abiotics.append(abiotic | event)
+        if ev_group["temperature"].iloc[0] is not None:
+            abiotics.append(
+                {
+                    "param": "WATER-TEMP",
+                    "value": float(ev_group["temperature"].iloc[0]),
+                }
+                | event
+            )
+        if ev_group["conductivity"].iloc[0] is not None:
+            abiotics.append(
+                {
+                    "param": "CONDUCTIVITY",
+                    "value": float(ev_group["conductivity"].iloc[0]),
+                }
+                | event
+            )
 
         samplings = parse_samplings(ev_group)
         for sampling in samplings:
@@ -320,7 +354,8 @@ organisations = {
     },
 }
 
-taxa = [
+
+taxa += [
     {
         "name": "Proasellus anophtalmus resavicae",
         "status": "Unreferenced",
@@ -346,7 +381,6 @@ taxa = [
         "parent": "Stenasellus virei",
     },
 ]
-
 
 dataset = {
     "label": "Aselloidea",

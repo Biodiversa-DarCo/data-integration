@@ -1,8 +1,7 @@
 library(tidyverse)
 
 
-data = read_tsv("data/Aselloidea/Aselloidea.tsv", col_names = T, quote = "\"", locale = locale(decimal_mark = ","))
-
+data = read_tsv("data/Aselloidea.tsv", col_names = T, quote = "\"", locale = locale(decimal_mark = ","))
 
 pb_dates = data %>%
   select(

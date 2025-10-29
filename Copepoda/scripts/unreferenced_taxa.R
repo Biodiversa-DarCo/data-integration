@@ -42,7 +42,8 @@ new_taxa = dataset %>%
   mutate(rank = "Genus", status = "Unclassified") %>%
   add_row(name = "Kieferella", parent = "Cyclopidae", rank = "Genus", status = "Unreferenced") %>%
   add_row(name = "Entzicaris", parent = "Parastenocarididae", rank = "Genus", status = "Unreferenced", authorship = "Jakobi, 1972") %>%
-  add_row(name = "Acanthocyclops stammeri", parent = "Acanthocyclops", rank = "Species", status = "Unreferenced", authorship = "Kiefer, 1930")
+  add_row(name = "Acanthocyclops stammeri", parent = "Acanthocyclops", rank = "Species", status = "Unreferenced", authorship = "Kiefer, 1930") %>%
+  add_row(name = "Graeteriella (Paragraeteriella)", parent = "Graeteriella", rank = "Subgenus", status = "Unreferenced", authorship = "Kiefer, 1930")
 )
 
 bind_rows(new_genuses, new_taxa) %>%
