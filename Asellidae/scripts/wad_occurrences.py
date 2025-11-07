@@ -181,7 +181,7 @@ def parse_samplings(df: pd.DataFrame):
 
         sampling = {
             "methods": parse_methods(method),
-            "target": parse_sampling_target(target),
+            "target_taxa": parse_sampling_target(target),
             "fixatives": parse_fixatives(fixatives),
             "access_points": [access_point],
             "habitats": list(

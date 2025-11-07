@@ -55,20 +55,15 @@ def parse_sampling_target(target: str):
     """
     target = target.strip()
     if target == "COMMUNITY":
-        return {"kind": "Community"}
+        return ["Animalia"]
     elif target in ("INCONNU", "UNKNOWN"):
-        return {
-            "kind": "Unknown",
-        }
+        return []
     else:
-        return {
-            "kind": "Taxa",
-            "taxa": [
-                re.sub(r" sp$", "", t.capitalize().replace("_", " "))
-                for t in target.strip().split("|")
-                if t != "INCONNU"
-            ],
-        }
+        return [
+            re.sub(r" sp$", "", t.capitalize().replace("_", " "))
+            for t in target.strip().split("|")
+            if t != "INCONNU"
+        ]
 
 
 def parse_person_list(persons: str | None) -> list[dict] | None:
