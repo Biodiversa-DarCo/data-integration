@@ -60,6 +60,7 @@ colNames = {
     "Collection": "collection",
     "OriginalLink": "original_link",
     "DataSource": "data_source",
+    "TypeStat": "type_status",
 }
 
 
@@ -152,6 +153,11 @@ def parse_biomat(code, df: pd.DataFrame):
         ),
         "published_in": parse_bib_ref(df),
         "sequences": [sequence] if sequence else None,
+        "type_status": (
+            "TypeLocality"
+            if df["type_status"].iloc[0] == "Specimens from type locality"
+            else None
+        ),
     }
 
 
