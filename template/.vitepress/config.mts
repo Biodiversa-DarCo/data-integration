@@ -2,6 +2,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
   srcDir: ".",
+  cleanUrls: true,
   title: "DarCo data migration",
   description: "Data migration template and docs for DarCo project",
   base: '/data-integration/',
@@ -16,7 +17,7 @@ export default withMermaid({
     sidebar: [
       {
         text: 'Guidelines',
-        link: '/README',
+        link: '/guidelines',
       }
     ],
 

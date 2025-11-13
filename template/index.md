@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Docs and guidelines
-      link: /README.md
+      link: /guidelines.md
     # - theme: alt
     #   text: Download template
     #   link: /template.xlsx
