@@ -274,9 +274,8 @@ for site_code, group in data.reset_index().groupby("site_code"):
                 | event
             )
 
-        samplings = parse_samplings(ev_group)
-        for sampling in samplings:
-            sampling |= event
+        for sampling in parse_samplings(ev_group):
+            samplings.append(sampling | event)
 
     result.append(
         {
