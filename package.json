@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@braintree/sanitize-url": "^7.1.1",
+    "dayjs": "^1.11.19",
+    "debug": "^4.4.3",
+    "mermaid": "^11.12.1",
+    "vitepress": "next",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev template",
+    "docs:build": "vitepress build template",
+    "docs:preview": "vitepress preview template"
+  },
+  "dependencies": {
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdi/js": "^7.4.47"
+  }
+}
