@@ -11,8 +11,8 @@ tasks:
 
 includes:
   asellidae:
-    taskfile: ./Asellidae/Taskfile.yml
-    dir: ./Asellidae
+    taskfile: ./datasets/Asellidae/Taskfile.yml
+    dir: ./datasets/Asellidae
   copepoda:
-    taskfile: ./Copepoda/Taskfile.yml
-    dir: ./Copepoda
+    taskfile: ./datasets/Copepoda/Taskfile.yml
+    dir: ./datasets/Copepoda
