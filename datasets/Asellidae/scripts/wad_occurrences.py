@@ -134,6 +134,11 @@ def parse_biomat(code, df: pd.DataFrame):
             "specimen_identifier": df["specimen_voucher"].iloc[0],
             "is_identifying": True,
         }
+    bibref = parse_bib_ref(df)
+    data_source = df["data_source"].iloc[0]
+    if data_source and data_source.count("Personal"):
+        bibref.append(data_source.strip())
+        data_source = None
     return {
         "code": code,
         "identification": parse_identification(df),
@@ -148,10 +153,8 @@ def parse_biomat(code, df: pd.DataFrame):
         "original_taxon": df["original_taxon_name"].iloc[0],
         # "comments": df["occurrence_comments"].iloc[0],
         "in_collection": df["collection"].iloc[0],
-        "original_source": (
-            df["data_source"].iloc[0].strip() if df["data_source"].iloc[0] else None
-        ),
-        "published_in": parse_bib_ref(df),
+        "original_source": data_source.strip() if data_source else None,
+        "published_in": bibref if bibref else None,
         "sequences": [sequence] if sequence else None,
         "type_status": (
             "TypeLocality"
@@ -291,74 +294,6 @@ for site_code, group in data.reset_index().groupby("site_code"):
         }
     )
 
-organisations = {
-    "NIB": {
-        "name": "National Institute of Biology, Slovenia",
-        "code": "NIB",
-        "kind": "Lab",
-    },
-    "Uni-Lj": {
-        "name": "University of Ljubljana, Slovenia",
-        "code": "Uni-Lj",
-        "kind": "Lab",
-    },
-    "INRAE": {
-        "name": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement, France",
-        "code": "INRAE",
-        "kind": "Lab",
-    },
-    "SPELEO CLUB DIJON": {
-        "name": "Spéléo Club de Dijon",
-        "code": "SC Dijon",
-        "kind": "Other",
-    },
-    "SPELEO GROUP JFB": {
-        "name": "Spéléo Group JFB",
-        "code": "Spéléo JFB",
-        "kind": "Other",
-    },
-    "GROUPE SPELEOLOGIQUE LURON": {
-        "name": "Groupe Spéléologique Luron",
-        "code": "GSL",
-        "kind": "Other",
-    },
-    "GBOL TEAM ZFMK": {
-        "name": "German Barcode of Life (ZFMK team)",
-        "code": "GBOL ZFMK",
-        "kind": "Lab",
-    },
-    "BRITISH GEOLOGICAL SURVEY": {
-        "name": "British Geological Survey",
-        "code": "BGS",
-        "kind": "Lab",
-    },
-    "UNION SPELEOL UNIV LONDRES": {
-        "name": "London University Speleological Union",
-        "code": "London IUS",
-        "kind": "Other",
-    },
-    "DREAL LANGUEDOC ROUSSILLON": {
-        "name": "Direction Régionale de l'Environnement, de l'Aménagement et du Logement Languedoc-Roussillon",
-        "code": "DREAL LR",
-        "kind": "Other",
-    },
-    "PARC NATIONAL DU MERCANTOUR": {
-        "name": "Parc National du Mercantour",
-        "code": "Parc Mercantour",
-        "kind": "Other",
-    },
-    "AVEN GROUPE": {
-        "name": "Aven Group",
-        "code": "AVEN",
-        "kind": "Other",
-    },
-    "GROUPE SPELEOLOGIQUE DU CCF": {
-        "name": "Groupe Spéléologique du CCF",
-        "code": "Spéléo CCF",
-        "kind": "Other",
-    },
-}
-
 
 taxa += [
     {
@@ -398,7 +333,75 @@ dataset = {
         verbatim: parse_article(verbatim)
         for verbatim in data["references"].dropna().unique().tolist()
     }
-    | {saclier_article_verbatim: parse_article(saclier_article_verbatim)},
+    | {
+        saclier_article_verbatim: parse_article(saclier_article_verbatim),
+        "Bou C. Personal Data (2002)": {
+            "authors": ["Bou C."],
+            "year": 2002,
+            "title": "Personal communication",
+            "verbatim": "Bou C. Personal Data (2002)",
+        },
+        "Magniez G. Personal Data (2002)": {
+            "authors": ["Magniez G."],
+            "year": 2002,
+            "title": "Personal communication",
+            "verbatim": "Magniez G. Personal Data (2002)",
+        },
+        "Sket B. Personal Data (2011)": {
+            "authors": ["Sket B."],
+            "year": 2011,
+            "title": "Personal communication",
+            "verbatim": "Sket B. Personal Data (2011)",
+        },
+        "Henry J.P. Personal Data (2001)": {
+            "authors": ["Henry J.P."],
+            "year": 2001,
+            "title": "Personal communication",
+            "verbatim": "Henry J.P. Personal Data (2001)",
+        },
+        "Ferreira D. Personal Data (2002)": {
+            "authors": ["Ferreira D."],
+            "year": 2002,
+            "title": "Personal communication",
+            "verbatim": "Ferreira D. Personal Data (2002)",
+        },
+        "Marmonier P. Personal Data (2002)": {
+            "authors": ["Marmonier P."],
+            "year": 2002,
+            "title": "Personal communication",
+            "verbatim": "Marmonier P. Personal Data (2002)",
+        },
+        "Dole Olivier M.J. Personal Data (2002)": {
+            "authors": ["Dole Olivier M.J."],
+            "year": 2002,
+            "title": "Personal communication",
+            "verbatim": "Dole Olivier M.J. Personal Data (2002)",
+        },
+        "Ginet R. Personal Data (2002)": {
+            "authors": ["Ginet R."],
+            "year": 2002,
+            "title": "Personal communication",
+            "verbatim": "Ginet R. Personal Data (2002)",
+        },
+        "Meyssonnier M. Personal Data (1996)": {
+            "authors": ["Meyssonnier M."],
+            "year": 1996,
+            "title": "Personal communication",
+            "verbatim": "Meyssonnier M. Personal Data (1996)",
+        },
+        "Malard F. Personal Data (2017)": {
+            "authors": ["Malard F."],
+            "year": 2017,
+            "title": "Personal communication",
+            "verbatim": "Malard F. Personal Data (2017)",
+        },
+        "Messana G. Personal Data (2012)": {
+            "authors": ["Messana G."],
+            "year": 2012,
+            "title": "Personal communication",
+            "verbatim": "Messana G. Personal Data (2012)",
+        },
+    },
     "data_sources": data_sources,
     "taxa": taxa,
 }

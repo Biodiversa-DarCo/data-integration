@@ -47,6 +47,75 @@ access_points_map = {
     "TUNNEL": "Tunnel",
 }
 
+
+organisations = {
+    "NIB": {
+        "name": "National Institute of Biology, Slovenia",
+        "code": "NIB",
+        "kind": "Lab",
+    },
+    "Uni-Lj": {
+        "name": "University of Ljubljana, Slovenia",
+        "code": "Uni-Lj",
+        "kind": "Lab",
+    },
+    "INRAE": {
+        "name": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement, France",
+        "code": "INRAE",
+        "kind": "Lab",
+    },
+    "SPELEO CLUB DIJON": {
+        "name": "Spéléo Club de Dijon",
+        "code": "SC Dijon",
+        "kind": "Other",
+    },
+    "SPELEO GROUP JFB": {
+        "name": "Spéléo Group JFB",
+        "code": "Spéléo JFB",
+        "kind": "Other",
+    },
+    "GROUPE SPELEOLOGIQUE LURON": {
+        "name": "Groupe Spéléologique Luron",
+        "code": "GSL",
+        "kind": "Other",
+    },
+    "GBOL TEAM ZFMK": {
+        "name": "German Barcode of Life (ZFMK team)",
+        "code": "GBOL ZFMK",
+        "kind": "Lab",
+    },
+    "BRITISH GEOLOGICAL SURVEY": {
+        "name": "British Geological Survey",
+        "code": "BGS",
+        "kind": "Lab",
+    },
+    "UNION SPELEOL UNIV LONDRES": {
+        "name": "London University Speleological Union",
+        "code": "London IUS",
+        "kind": "Other",
+    },
+    "DREAL LANGUEDOC ROUSSILLON": {
+        "name": "Direction Régionale de l'Environnement, de l'Aménagement et du Logement Languedoc-Roussillon",
+        "code": "DREAL LR",
+        "kind": "Other",
+    },
+    "PARC NATIONAL DU MERCANTOUR": {
+        "name": "Parc National du Mercantour",
+        "code": "Parc Mercantour",
+        "kind": "Other",
+    },
+    "AVEN GROUPE": {
+        "name": "Aven Group",
+        "code": "AVEN",
+        "kind": "Other",
+    },
+    "GROUPE SPELEOLOGIQUE DU CCF": {
+        "name": "Groupe Spéléologique du CCF",
+        "code": "Spéléo CCF",
+        "kind": "Other",
+    },
+}
+
 persons_map = {
     "ZAGMAJSTER M": {
         "first_name": "Maja",
@@ -182,50 +251,6 @@ data_sources = {
         "label": "CKmap database",
         "code": "CKMAP",
         "description": "CKmap Distribuzione della Fauna Italiana Checklist and distribution of 10000 species of the Italian fauna",
-    },
-    "Bou C. Personal Data (2002)": {
-        "label": "Bou C. Personal Data (2002)",
-        "code": "BOU_2002",
-    },
-    "Magniez G. Personal Data (2002)": {
-        "label": "Magniez G. Personal Data (2002)",
-        "code": "MAGNIEZ_2002",
-    },
-    "Sket B. Personal Data (2011)": {
-        "label": "Sket B. Personal Data (2011)",
-        "code": "SKET_2001",
-    },
-    "Henry J.P. Personal Data (2001)": {
-        "label": "Henry J.P. Personal Data (2001)",
-        "code": "HENRY_2001",
-    },
-    "Ferreira D. Personal Data (2002)": {
-        "label": "Ferreira D. Personal Data (2002)",
-        "code": "FERREIRA_2002",
-    },
-    "Marmonier P. Personal Data (2002)": {
-        "label": "Marmonier P. Personal Data (2002)",
-        "code": "MARMONIER_2002",
-    },
-    "Dole Olivier M.J. Personal Data (2002)": {
-        "label": "Dole Olivier M.J. Personal Data (2002)",
-        "code": "DOLE_OLIVIER_2002",
-    },
-    "Ginet R. Personal Data (2002)": {
-        "label": "Ginet R. Personal Data (2002)",
-        "code": "GINET_2002",
-    },
-    "Meyssonnier M. Personal Data (1996)": {
-        "label": "Meyssonnier M. Personal Data (1996)",
-        "code": "MEYSSONNIER_1996",
-    },
-    "Malard F. Personal Data (2017)": {
-        "label": "Malard F. Personal Data (2017)",
-        "code": "MALARD_2017",
-    },
-    "Messana G. Personal Data (2012)": {
-        "label": "Messana G. Personal Data (2012)",
-        "code": "MESSANA_2012",
     },
     "The Hypogean Crustacea Recording Scheme (UK)": {
         "label": "The Hypogean Crustacea Recording Scheme",
