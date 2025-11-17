@@ -12,9 +12,9 @@ hero:
     - theme: brand
       text: Docs and guidelines
       link: /guidelines.md
-    # - theme: alt
-    #   text: Download template
-    #   link: /template.xlsx
+    - theme: alt
+      text: Examples
+      link: /examples.md
 
 
 

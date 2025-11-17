@@ -18,6 +18,10 @@ export default withMermaid({
       {
         text: 'Guidelines',
         link: '/guidelines',
+      },
+      {
+        text: 'Examples',
+        link: '/examples',
       }
     ],
 
