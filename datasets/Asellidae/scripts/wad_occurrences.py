@@ -157,7 +157,7 @@ def parse_biomat(code, df: pd.DataFrame):
         "published_in": bibref if bibref else None,
         "sequences": [sequence] if sequence else None,
         "type_status": (
-            "TypeLocality"
+            "Topotype"
             if df["type_status"].iloc[0] == "Specimens from type locality"
             else None
         ),
