@@ -8,16 +8,19 @@ importers:
 
   .:
     dependencies:
-      '@jamescoyle/vue-icon':
-        specifier: ^0.1.2
-        version: 0.1.2
       '@mdi/js':
         specifier: ^7.4.47
         version: 7.4.47
+      vuetify:
+        specifier: ^3.10.11
+        version: 3.10.11(vue@3.5.24)
     devDependencies:
       '@braintree/sanitize-url':
         specifier: ^7.1.1
         version: 7.1.1
+      '@mdi/font':
+        specifier: ^7.4.47
+        version: 7.4.47
       dayjs:
         specifier: ^1.11.19
         version: 1.11.19
@@ -251,11 +254,11 @@ packages:
   '@iconify/utils@3.0.2':
     resolution: {integrity: sha512-EfJS0rLfVuRuJRn4psJHtK2A9TqVnkxPpHY6lYHiB9+8eSuudsxbwMiavocG45ujOo6FJ+CIRlRnlOGinzkaGQ==}
 
-  '@jamescoyle/vue-icon@0.1.2':
-    resolution: {integrity: sha512-KFrImXx5TKIi6iQXlnyLEBl4rNosNKbTeRnr70ucTdUaciVmd9qK9d/pZAaKt1Ob/8xNnX2GMp8LisyHdKtEgw==}
-
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
+
+  '@mdi/font@7.4.47':
+    resolution: {integrity: sha512-43MtGpd585SNzHZPcYowu/84Vz2a2g31TvPMTm9uTiCSWzaheQySUcSyUH/46fPnuPQWof2yd0pGBtzee/IQWw==}
 
   '@mdi/js@7.4.47':
     resolution: {integrity: sha512-KPnNOtm5i2pMabqZxpUz7iQf+mfrYZyKCZ8QNz85czgEt7cuHcGorWfdzUMWYA0SD+a6Hn4FmJ+YhzzzjkTZrQ==}
@@ -1248,6 +1251,21 @@ packages:
       typescript:
         optional: true
 
+  vuetify@3.10.11:
+    resolution: {integrity: sha512-hfllXT0/C3O5nZyIRalaDU7ClMIrKrKAbjH0T8xbSUb7FcJrHOqPZfEkSXwrKxajv6EA1rwEOvCZoLDhunnjrQ==}
+    peerDependencies:
+      typescript: '>=4.7'
+      vite-plugin-vuetify: '>=2.1.0'
+      vue: ^3.5.0
+      webpack-plugin-vuetify: '>=3.1.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      vite-plugin-vuetify:
+        optional: true
+      webpack-plugin-vuetify:
+        optional: true
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -1398,9 +1416,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jamescoyle/vue-icon@0.1.2': {}
-
   '@jridgewell/sourcemap-codec@1.5.5': {}
+
+  '@mdi/font@7.4.47': {}
 
   '@mdi/js@7.4.47': {}
 
@@ -2484,5 +2502,9 @@ snapshots:
       '@vue/runtime-dom': 3.5.24
       '@vue/server-renderer': 3.5.24(vue@3.5.24)
       '@vue/shared': 3.5.24
+
+  vuetify@3.10.11(vue@3.5.24):
+    dependencies:
+      vue: 3.5.24
 
   zwitch@2.0.4: {}

@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@braintree/sanitize-url": "^7.1.1",
+    "@mdi/font": "^7.4.47",
     "dayjs": "^1.11.19",
     "debug": "^4.4.3",
     "mermaid": "^11.12.1",
@@ -13,7 +14,7 @@
     "docs:preview": "vitepress preview template"
   },
   "dependencies": {
-    "@jamescoyle/vue-icon": "^0.1.2",
-    "@mdi/js": "^7.4.47"
+    "@mdi/js": "^7.4.47",
+    "vuetify": "^3.10.11"
   }
 }
