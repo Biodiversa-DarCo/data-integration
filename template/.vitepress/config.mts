@@ -7,6 +7,11 @@ export default withMermaid({
   description: "Data migration template and docs for DarCo project",
   base: '/data-integration/',
   head: [['link', { rel: 'icon', href: '/data-integration/DarCo.png' }]],
+  vite: {     // <=== insert this section
+    ssr: {
+      noExternal: ["vuetify"]
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
