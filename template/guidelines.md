@@ -136,6 +136,7 @@ This hierarchy defines semantic dependencies between terms, where top-level term
 
 - Terms in the same box are mutually exclusive by default, except in red boxes.
 - Terms belonging to disconnected diagram components can be cumulated (e.g. `Aquatic` and `Subsurface`).
+- Terms in the same dependency path can also be cumulated (child terms are refinements of parent terms), e.g. `Aquatic` and `Freshwater`.
 
 Please try to provide at least *some* description for the habitat, even if it is very minimal (i.e. pick at least one top-level term for each diagram component : `Aquatic`/`Terrestrial` and `Surface`/`Subsurface`).
 
