@@ -84,7 +84,7 @@ for site_code, group in data.groupby("site_code"):
                     else None
                 ),
                 "target": {"kind": "Unknown"},
-                "external_occurrences": [biomat],
+                "occurrences": [biomat],
                 # "programs": parse_program(ev_group["sampling_program"].iloc[0]),
                 # "comments": ev_group["sampling_comments"].iloc[0],
             }
@@ -93,6 +93,7 @@ for site_code, group in data.groupby("site_code"):
     results.append(
         {
             "code": site_code,
+            "name": group["Locality"].iloc[0] if group["Locality"].iloc[0] else None,
             "country": country,
             "coordinates": coordinates,
             "samplings": samplings,
@@ -107,7 +108,7 @@ dataset = {
     "label": "Copepoda",
     "description": "Copepods are a group of small crustaceans found in nearly every freshwater and saltwater habitat. Some species are planktonic (living in the water column), some are benthic (living on the sediments), several species have parasitic phases, and some continental species may live in limnoterrestrial habitats and other wet terrestrial places, such as swamps, under leaf fall in wet forests, bogs, springs, ephemeral ponds, puddles, damp moss, or water-filled recesses of plants (phytotelmata) such as bromeliads and pitcher plants. Many live underground in marine and freshwater caves, sinkholes, or stream beds. Copepods are sometimes used as biodiversity indicators. ",
     "maintainers": [],
-    "occurrences": results,
+    "content": results,
     "import_clades": data["family"].unique().tolist(),
     "taxa": taxa,
     "data_sources": {

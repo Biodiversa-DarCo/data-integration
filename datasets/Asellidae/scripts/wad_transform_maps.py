@@ -228,11 +228,11 @@ access_points_habitats = {
 }
 
 quantity_map = {
-    "Un seul individu": "One",
-    "Quelques individus (1-5)": "Several",
-    "Une dizaine d'individus (6-10)": "Ten",
-    "Plusierus dizaines d'individus (11-100)": "Tens",
-    "Centaine d'individus (>100)": "Hundred",
+    "Un seul individu": (1, 1),
+    "Quelques individus (1-5)": (2, 5),
+    "Une dizaine d'individus (6-10)": (6, 10),
+    "Plusierus dizaines d'individus (11-100)": (11, 100),
+    "Centaine d'individus (>100)": (101, 10000),
 }
 
 

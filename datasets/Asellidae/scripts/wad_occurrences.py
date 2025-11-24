@@ -18,6 +18,7 @@ args = parser.parse_args()
 colNames = {
     "rowID": "id",
     "LocID": "site_code",
+    "VerbLoc": "site_verbatim",
     "Lat": "lat",
     "Long": "lon",
     "LatLongP": "precision",
@@ -146,8 +147,8 @@ def parse_biomat(code, df: pd.DataFrame):
             df["organism_quantity"].iloc[0], df["organism_count"].iloc[0]
         ),
         "content_description": (
-            f"{int(df['organism_count'].iloc[0])} specimens"
-            if df["organism_count"].iloc[0]
+            df["occurrence_comments"].iloc[0]
+            if df["occurrence_comments"].iloc[0]
             else None
         ),
         "original_taxon": df["original_taxon_name"].iloc[0],
@@ -205,7 +206,7 @@ def parse_samplings(df: pd.DataFrame):
                 if s_group["sampling_effort"].iloc[0] is not None
                 else None
             ),
-            "external_occurrences": biomaterials,
+            "occurrences": biomaterials,
         }
         samplings.append(sampling)
     return samplings
@@ -283,6 +284,11 @@ for site_code, group in data.reset_index().groupby("site_code"):
     result.append(
         {
             "code": site_code,
+            "name": (
+                group["site_verbatim"].iloc[0].title()
+                if group["site_verbatim"].iloc[0]
+                else None
+            ),
             "coordinates": coordinates,
             "altitude": (
                 int(group["altitude"].iloc[0])
@@ -326,7 +332,7 @@ dataset = {
     "label": "Aselloidea",
     "description": "Asellota is an order of isopod crustaceans. They are the largest order of isopods, with about 1,000 genera and over 3,000 species. They are found in marine environments worldwide, from the intertidal zone to the deep sea. They are typically small, with the largest species reaching 50 mm (2.0 in) in length. They are often found in sediments, where they burrow or live in tubes. They are scavengers, feeding on detritus and other organic material. They are an important part of the marine food chain, serving as prey for fish, birds, and other animals. They are also important in the decomposition of organic matter, helping to recycle nutrients in marine ecosystems.",
     "maintainers": ["fmalard"],
-    "occurrences": result,
+    "content": result,
     "organisations": organisations,
     "people": parse_person_columns(data),
     "bibliography": {

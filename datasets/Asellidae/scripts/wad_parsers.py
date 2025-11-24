@@ -175,21 +175,12 @@ def parse_program(program: str) -> list[str]:
 
 def parse_specimen_quantity(
     quantity_str: str, specimen_count: int | None
-) -> str | None:
+) -> tuple[int, int] | None:
     """
     Parse a specimen quantity string into a standard format.
     """
     if specimen_count:
-        if specimen_count == 1:
-            return "One"
-        elif specimen_count <= 5:
-            return "Several"
-        elif specimen_count <= 10:
-            return "Ten"
-        elif specimen_count <= 100:
-            return "Tens"
-        elif specimen_count > 100:
-            return "Hundred"
+        return (int(specimen_count), int(specimen_count))
     else:
         return quantity_map.get(quantity_str, None)
 
