@@ -1,0 +1,41 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  ORIGINAL_DATA: data/template_spiders_db.tsv
+  PREPROCESSED_DATA: res/preprocessed.tsv
+  ISSUES_DIR: res/issues
+
+tasks:
+  preprocess:
+    cmds:
+      - Rscript scripts/preprocessing.R {{.ORIGINAL_DATA}} {{.PREPROCESSED_DATA}}
+    desc: Preprocess the Copepoda dataset
+    sources:
+      - scripts/preprocessing.R
+    generates:
+      - "{{.PREPROCESSED_DATA }}"
+    deps:
+      - make_res_dir
+
+  issues:
+    cmds:
+      - Rscript scripts/explo.R {{.ORIGINAL_DATA}} {{.ISSUES_DIR}}
+    desc: Explore the original dataset for potential issues
+    sources:
+      - scripts/explo.R
+
+  make_res_dir:
+    cmds:
+      - mkdir -p res
+    desc: Create the res directory if it doesn't exist
+    generates:
+      - res
+    silent: true
+
+  clean:
+    cmds:
+      - rm -rf res
+    desc: Clean the res directory
+    silent: true
