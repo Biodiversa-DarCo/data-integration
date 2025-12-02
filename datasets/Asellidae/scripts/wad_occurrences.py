@@ -153,7 +153,9 @@ def parse_biomat(code, df: pd.DataFrame):
         ),
         "original_taxon": df["original_taxon_name"].iloc[0],
         # "comments": df["occurrence_comments"].iloc[0],
-        "in_collection": df["collection"].iloc[0],
+        "collections": (
+            [{"name": df["collection"].iloc[0]}] if df["collection"].iloc[0] else None
+        ),
         "original_source": data_source.strip() if data_source else None,
         "published_in": bibref if bibref else None,
         "sequences": [sequence] if sequence else None,
@@ -409,6 +411,13 @@ dataset = {
         },
     },
     "data_sources": data_sources,
+    "collections": {
+        "UCBLZ collections: Zoological Collections of University Claude Bernard Lyon 1": {
+            "label": "Zoological Collections of University Claude Bernard Lyon 1",
+            "code": "UCBLZ",
+            "location": "Lyon, France",
+        }
+    },
     "taxa": taxa,
 }
 

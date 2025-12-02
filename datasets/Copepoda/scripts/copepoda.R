@@ -74,12 +74,15 @@ data <- read_tsv(input_file, na = c("NULL", "Unclear", "unclear", "??", "?", "Un
     scientificName = if_else(
       taxon_rank == "Subgenus", scientificName, str_replace_all(scientificName, " \\([^\\)]+\\) ", " ")
     ),
+    collection = case_when(
+      source == "Collection: F. Stoch " ~ "STOCH",
+      source == "Collection: D. Galassi" ~ "GALASSI",
+      TRUE ~ NA_character_
+    ),
     source = if_else(
-      str_starts(source, "Literature"),
+      str_starts(source, "(Literature|Collection:)"),
       NA,
       case_when(
-        source == "Collection: F. Stoch " ~ "STOCH",
-        source == "Collection: D. Galassi" ~ "GALASSI",
         source == "Personal communication: D. Galassi" ~ "GALASSI",
         source == "ATBI Mercantour Database" ~ "ATBI_MERCANTOUR",
         source == "PASCALIS Database" ~ "PASCALIS",

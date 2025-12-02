@@ -69,6 +69,9 @@ for site_code, group in data.groupby("site_code"):
                 [row["publication"]] if row["publication"] is not None else None
             ),
             "sources": [row["source"]] if row["source"] is not None else None,
+            "collections": (
+                [{"name": row["collection"]}] if row["collection"] is not None else None
+            ),
         }
 
         samplings.append(
@@ -111,9 +114,20 @@ dataset = {
     "content": results,
     "import_clades": data["family"].unique().tolist(),
     "taxa": taxa,
+    "collections": {
+        "STOCH": {
+            "label": "F. Stoch (2002) personal collection",
+            "location": "Rome, Italy",
+            "code": "STOCH",
+            "personal": True,
+        },
+        "GALASSI": {
+            "label": "D. Galassi personal collection",
+            "code": "GALASSI",
+            "personal": True,
+        },
+    },
     "data_sources": {
-        "STOCH": {"label": "F. Stoch (2002) Collection (Rome)", "code": "STOCH"},
-        "GALASSI": {"label": "D. Galassi Personal Collection", "code": "GALASSI"},
         "ATBI_MERCANTOUR": {
             "label": "ATBI Mercantour Database",
             "code": "ATBI_MERCANTOUR",
