@@ -189,7 +189,8 @@ def parse_samplings(df: pd.DataFrame):
         biomaterials = []
 
         for code, group in s_group.groupby("occurrence_code"):
-            biomaterials.append(parse_biomat(code, group))
+            if code not in drop_records:
+                biomaterials.append(parse_biomat(code, group))
 
         sampling = {
             "methods": parse_methods(method),
