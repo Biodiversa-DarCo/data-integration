@@ -151,7 +151,7 @@ def parse_biomat(code, df: pd.DataFrame):
             if df["occurrence_comments"].iloc[0]
             else None
         ),
-        "original_taxon": df["original_taxon_name"].iloc[0],
+        "verbatim_identification": df["original_taxon_name"].iloc[0],
         # "comments": df["occurrence_comments"].iloc[0],
         "collections": (
             [{"name": df["collection"].iloc[0]}] if df["collection"].iloc[0] else None
