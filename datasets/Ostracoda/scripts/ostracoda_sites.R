@@ -1,77 +1,37 @@
 library(tidyverse)
-library(jsonlite)
 
-countries = fromJSON("data/countries.json") %>%
-  as_tibble() %>%
-  mutate(Country = str_to_lower(name)) %>%
-  select(Country, CountryCode = code)
-
-# read_csv("data/countries.csv") %>%
-#   mutate(Country = str_to_lower(Country_Name)) %>%
-#   select(Country, CountryCode = Two_Letter_Country_Code)
-
-data = read_tsv("data/Ostracoda/Dataset_Ostracoda_Natasa_Mori.tsv", col_names = T, quote = "\"", locale = locale(decimal_mark = ",")) %>%
-  mutate(Country = str_to_lower(LocalityCountry)) %>%
-  mutate(Country = case_when(
-    Country == "russia" ~ "russian federation",
-    Country == "moldova" ~ "moldova, republic of",
-    Country == "north macedonia" ~ "macedonia",
-    TRUE ~ Country
-  )) %>%
-  left_join(countries, by = "Country")
-
-data %>%
-  filter(is.na(CountryCode)) %>%
-  select(Country)
-
-(parsed = data %>%
-  select(
-    id, VerbLoc, LocID, Lat, Long, LatLongP, ElevMin, ElevMax,
-    Country,
-    CountryCode,
-    Munici, Provin
-  ) %>%
-  mutate(
-    VerbLoc = str_to_title(VerbLoc, locale = "en")
-  ) %>%
-  rename(
-    name = VerbLoc,
-    code = LocID,
-    altitude = ElevMin
-  ) %>%
-  mutate(
-    coordinates = pmap(list(Lat, Long, LatLongP), function(x, y, z) {
-      list(
-        latitude = x,
-        longitude = y,
-        precision = (
-          switch(as.character(z),
-            "0.001" = "<100m",
-            "0.01" = "<1km",
-            "0.1" = "<10km",
-            "1" = "10-100km",
-            "Unknown"
-          )
-        )
-      )
-    })
-  ) %>%
-  distinct(code, .keep_all = T) %>%
-  select(
-    id, name, code,
-    country_code = CountryCode,
-    coordinates,
-    municipality = Munici,
-    province = Provin
-  )
+raw_data <- read_delim("datasets/Ostracoda/data/Dataset.csv", delim = ";")
+(
+  data <- read_delim("datasets/Ostracoda/data/Dataset.csv", delim = ";") %>%
+    select(-geodeticDatum, -TaxonID) %>%
+    mutate(
+      taxonRank = str_to_title(taxonRank),
+      id_confer = str_detect(verbatimIdentification, "cf"),
+      # After checking, only Typhlocypris cf. eremita is concerned with confer id
+      species = if_else(id_confer, "eremita", species),
+      scientificNameAuthorship = scientificNameAuthorship %>% stringi::stri_trans_general("Latin-ASCII") %>% str_remove_all("\\,"),
+      taxon_name = verbatimIdentification %>%
+        stringi::stri_trans_general("Latin-ASCII") %>%
+        str_remove_all("\\,") %>%
+        str_remove_all(scientificNameAuthorship) %>%
+        str_remove_all("\\(\\)") %>%
+        str_remove_all("\\(?([A-Z][a-z]+([A-Z][a-z]+\\,)* ?)*([A-Z][a-z]+ ?\\& ?)* ?[A-Z][a-z]+ [0-9]{4}\\)?") %>%
+        str_remove("((ge)?n\\. *)?sp\\.? *$") %>%
+        str_squish(),
+      taxon_name = if_else(id_confer, "Typhlocypris eremita", taxon_name),
+      unclassified = str_detect(verbatimIdentification, "gen\\.|sp\\. ?[^$ ]|aff\\."),
+    )
 )
 
-parsed %>% filter(str_length(code) < 4)
+raw_data %>%
+  filter(scientificName != verbatimIdentification)
+distinct() %>%
+  nrow()
 
-# parsed$coordinates
-# verblocs = parsed %>% select(id, VerbLoc)
-# write_tsv(verblocs, "data/Aselloidea/verblocs.tsv")
+filter(ID == 1145) %>%
+  print(n = 100)
+filter(str_detect(decimalLatitude, "CC0") | is.na(decimalLatitude))
 
-dir.create("res/wad", showWarnings = F)
-write_tsv(parsed, "res/wad/sites.tsv")
-write_json(parsed, "res/wad/sites.json", pretty = T, digits = 10, auto_unbox = T)
+select(taxon_name, unclassified, id_confer) %>%
+  distinct() %>%
+  print(n = 200)
