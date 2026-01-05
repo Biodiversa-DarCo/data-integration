@@ -16,6 +16,9 @@ includes:
   copepoda:
     taskfile: ./datasets/Copepoda/Taskfile.yml
     dir: ./datasets/Copepoda
+  ostracoda:
+    taskfile: ./datasets/Ostracoda/Taskfile.yml
+    dir: ./datasets/Ostracoda
   spiders:
     taskfile: ./datasets/Spiders/Taskfile.yml
     dir: ./datasets/Spiders

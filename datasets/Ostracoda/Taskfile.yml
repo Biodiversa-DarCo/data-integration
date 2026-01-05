@@ -1,0 +1,49 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  INPUT_DATA: data/Dataset.tsv
+  TAXONOMY_FIX: data/taxonomy_fix.tsv
+  AFF_CF_FIX: data/aff_cf.tsv
+  HABITATS: data/habitats.tsv
+  OUTPUT_FILE: res/Ostracoda.tsv
+
+tasks:
+  # default:
+  #   cmds:
+  #     - uv run scripts/wad_occurrences.py {{.INPUT_DATA}} {{.OUTPUT_FILE}}
+  #   desc: Generate Aselloidea occurrences dataset in ready to import JSON format
+  #   sources:
+  #     - scripts/*.py
+  #     - "{{.INPUT_DATA}}"
+  #   generates:
+  #     - "{{.OUTPUT_FILE}}"
+  #   deps:
+  #     - make_res_dir
+
+  preprocess:
+    cmds:
+      - Rscript scripts/ostracoda.R {{.INPUT_DATA}} {{.OUTPUT_FILE}} --taxonomy-fix {{.TAXONOMY_FIX}} --aff-cf-fix {{.AFF_CF_FIX}} --habitats {{.HABITATS}}
+    desc: Preprocess Ostracoda dataset
+    sources:
+      - scripts/ostracoda.R
+      - "{{.INPUT_DATA}}"
+    generates:
+      - "{{.OUTPUT_FILE}}"
+    deps:
+      - make_res_dir
+
+  make_res_dir:
+    cmds:
+      - mkdir -p res
+    desc: Create the res directory if it doesn't exist
+    generates:
+      - res
+    silent: true
+
+  clean:
+    cmds:
+      - rm -rf res
+    desc: Clean the res directory
+    silent: true

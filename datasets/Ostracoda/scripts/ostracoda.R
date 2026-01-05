@@ -1,7 +1,40 @@
 library(tidyverse)
+library(argparse)
+
+# Create parser
+parser <- ArgumentParser(description = "Process Ostracoda dataset")
+
+# Add positional arguments
+parser$add_argument("input",
+  default = "datasets/Ostracoda/data/Dataset.tsv",
+  help = "Input TSV file")
+parser$add_argument("output",
+  default = "datasets/Ostracoda/res/preprocessed.tsv",
+  help = "Output TSV file")
+
+# Add optional arguments
+parser$add_argument("--taxonomy-fix",
+                    default = "datasets/Ostracoda/data/taxonomy_fix.tsv",
+                    help = "Taxonomy fix TSV file [default: %(default)s]")
+parser$add_argument("--aff-cf-fix",
+                    default = "datasets/Ostracoda/data/aff_cf.tsv",
+                    help = "Aff/cf fix TSV file [default: %(default)s]")
+parser$add_argument("--habitats",
+                    default = "datasets/Ostracoda/data/habitats.tsv",
+                    help = "Habitat access TSV file [default: %(default)s]")
+
+# Parse arguments
+args <- parser$parse_args()
+
+input_file <- args$input
+output_file <- args$output
+taxonomy_fix_file <- args$taxonomy_fix
+aff_cf_fix_file <- args$aff_cf_fix
+habitats_file <- args$habitats
+
 
 (
-  taxonomy_fix = read_tsv("datasets/Ostracoda/data/taxonomy_fix.tsv") %>%
+  taxonomy_fix = read_tsv(taxonomy_fix_file) %>%
     mutate(
       unclassified = is.na(Classified) | !Classified,
       id_confer = str_detect(Lineage, "cf\\."),
@@ -11,20 +44,24 @@ library(tidyverse)
 )
 
 (
-  aff_cf_fix = read_tsv("datasets/Ostracoda/data/aff_cf.tsv") %>%
+  aff_cf_fix = read_tsv(aff_cf_fix_file) %>%
     mutate(
       id_confer = str_detect(Lineage, "cf\\."),
     ) %>%
     select(ID, family, genus, species, scientificNameAuthorship, taxonRank, Lineage, id_confer, scientificName)
 )
 
+(
+  habitats = read_tsv(habitats_file) %>%
+    select(ID, habitat, access_points)
+)
 
 
 
 
 (
   # Dataset.tsv is manually fixed version of Dataset.csv where line break in record 1469 was removed.
-  data <- read_tsv("datasets/Ostracoda/data/Dataset.tsv") %>%
+  data <- read_tsv(input_file) %>%
     select(-geodeticDatum, -TaxonID) %>%
     mutate(
       id_confer = str_detect(verbatimIdentification, "cf"),
@@ -113,26 +150,9 @@ library(tidyverse)
         str_starts(basisOfRecord, "SubBio") ~ "SubBioDB",
       )
     ) %>%
+    select(-habitat, -locationRemarks) %>%
+    left_join(habitats, by = "ID") %>%
     relocate(ID, verbatimIdentification, scientificName, taxon_name, class, order, family, genus, species, everything())
 ) %>%
-  write_tsv("datasets/Ostracoda/res/preprocessed.tsv")
+  write_tsv(output_file)
 
-
-data %>%
-  filter(ID == 676) %>%
-  select(0:10)
-
-raw_data <- read_delim("datasets/Ostracoda/data/Dataset.csv", delim = ";")
-
-raw_data %>%
-  filter(scientificName != verbatimIdentification)
-distinct() %>%
-  nrow()
-
-filter(ID == 1145) %>%
-  print(n = 100)
-filter(str_detect(decimalLatitude, "CC0") | is.na(decimalLatitude))
-
-select(taxon_name, unclassified, id_confer) %>%
-  distinct() %>%
-  print(n = 200)
