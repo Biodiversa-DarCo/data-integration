@@ -1,0 +1,61 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  ORIGINAL_DATA: data/dataset.tsv
+  PREPROCESSED_DATA: res/preprocessed.tsv
+
+tasks:
+  # default:
+  #   cmds:
+  #     - uv run scripts/copepoda_occurrences.py {{.PREPROCESSED_DATA}} res/Copepoda_occurrences.json
+  #   desc: Generate Copepoda occurrences dataset in ready to import JSON format
+  #   sources:
+  #     - scripts/copepoda_occurrences.py
+  #     - "{{.PREPROCESSED_DATA}}"
+  #     - res/unclassified_taxa.json
+  #   generates:
+  #     - res/Copepoda_occurrences.json
+  #   deps:
+  #     - preprocess
+  #     - unreferenced_taxa
+
+  # unreferenced_taxa:
+  #   cmds:
+  #     - Rscript scripts/unreferenced_taxa.R {{.PREPROCESSED_DATA}} data/unreferenced_taxa.txt res/unclassified_taxa.json
+  #   desc: Generate unreferenced and unclassified taxa JSON file
+  #   sources:
+  #     - scripts/unreferenced_taxa.R
+  #     - "{{.PREPROCESSED_DATA}}"
+  #     - data/unreferenced_taxa.txt
+  #   generates:
+  #     - res/unclassified_taxa.json
+  #   deps:
+  #     - preprocess
+
+  preprocess:
+    cmds:
+      - Rscript scripts/preprocessing.R {{.ORIGINAL_DATA}} {{.PREPROCESSED_DATA}}
+    desc: Preprocess the Copepoda dataset
+    sources:
+      - scripts/preprocessing.R
+      - "{{.ORIGINAL_DATA}}"
+    generates:
+      - "{{.PREPROCESSED_DATA }}"
+    deps:
+      - make_res_dir
+
+  make_res_dir:
+    cmds:
+      - mkdir -p res
+    desc: Create the res directory if it doesn't exist
+    generates:
+      - res
+    silent: true
+
+  clean:
+    cmds:
+      - rm -rf res
+    desc: Clean the res directory
+    silent: true

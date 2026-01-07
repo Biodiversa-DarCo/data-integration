@@ -23,3 +23,6 @@ includes:
   spiders:
     taskfile: ./datasets/Spiders/Taskfile.yml
     dir: ./datasets/Spiders
+  austria:
+    taskfile: ./datasets/Austria/Taskfile.yml
+    dir: ./datasets/Austria
