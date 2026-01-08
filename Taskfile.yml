@@ -10,6 +10,7 @@ tasks:
       - task: copepoda
       - task: ostracoda
       - task: austria
+      - task: spiders
 
 includes:
   asellidae:

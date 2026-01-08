@@ -3,14 +3,38 @@
 version: "3"
 
 vars:
-  ORIGINAL_DATA: data/template_spiders_db.tsv
+  ORIGINAL_DATA: data/spiders_db.tsv
   PREPROCESSED_DATA: res/preprocessed.tsv
   ISSUES_DIR: res/issues
+  ENCODING_FIX: data/patches/encoding_fix.tsv
+  MULTIPLE_COORDINATES_FIX: data/patches/multiple_coordinates_fix.tsv
+  MULTIPLE_SITE_NAMES_FIX: data/patches/multiple_site_names_fix.tsv
+  UNCLASSIFIED_TAXA: res/unclassified_taxa.json
 
 tasks:
+  default:
+    cmds:
+      - uv run scripts/spiders.py {{.PREPROCESSED_DATA}} --unclassified {{.UNCLASSIFIED_TAXA}} res/Spider_tmp.json
+      # Remove invisible characters from the generated JSON file
+      - tr -cd '\11\12\15\40-\176' < res/Spider_tmp.json > res/Spiders.json
+
+    desc: Generate Spiders occurrences dataset in ready to import JSON format
+    sources:
+      - scripts/spiders.py
+      - scripts/parsers.py
+      - "{{.PREPROCESSED_DATA}}"
+      - "{{.UNCLASSIFIED_TAXA}}"
+    generates:
+      - res/Spiders.json
+    deps:
+      - unclassified
+
   preprocess:
     cmds:
       - Rscript scripts/preprocessing.R {{.ORIGINAL_DATA}} {{.PREPROCESSED_DATA}}
+        --encoding-fix {{.ENCODING_FIX}}
+        --multiple-coordinates-fix {{.MULTIPLE_COORDINATES_FIX}}
+        --multiple-site-names-fix {{.MULTIPLE_SITE_NAMES_FIX}}
     desc: Preprocess the Copepoda dataset
     sources:
       - scripts/preprocessing.R
@@ -18,6 +42,17 @@ tasks:
       - "{{.PREPROCESSED_DATA }}"
     deps:
       - make_res_dir
+
+  unclassified:
+    cmds:
+      - Rscript scripts/unclassified.R {{.PREPROCESSED_DATA}} {{.UNCLASSIFIED_TAXA}}
+    desc: Identify unclassified taxa in the preprocessed dataset
+    sources:
+      - scripts/unclassified.R
+    generates:
+      - "{{.UNCLASSIFIED_TAXA}}"
+    deps:
+      - preprocess
 
   issues:
     cmds:
