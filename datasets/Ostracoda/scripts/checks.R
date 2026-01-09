@@ -2,7 +2,7 @@ library(tidyverse)
 
 output_dir <- "datasets/Ostracoda/res"
 
-raw_data <- read_delim("datasets/Ostracoda/data/Dataset.csv", delim = ";")
+raw_data <- read_tsv("datasets/Ostracoda/data/Dataset.tsv")
 raw_data %>%
   filter(!str_detect(family, "CC0")) %>%
   mutate(concat = str_squish(if_else(!is.na(genus), str_c(genus, species, sep = " "), family))) %>%

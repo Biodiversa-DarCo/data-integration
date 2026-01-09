@@ -9,30 +9,49 @@ vars:
   HABITATS: data/habitats.tsv
   GBIF: data/GBIF_censor_recovery.tsv
   MISSING_COORDS: data/coordinates_recovery.tsv
-  OUTPUT_FILE: res/Ostracoda.tsv
+  PREPROCESSED_FILE: res/Ostracoda.tsv
+  OUTPUT_FILE: res/Ostracoda.json
+  METADATA_JSON: data/metadata.json
+  METADATA_TAXONOMY: res/unclassifed_taxa.json
 
 tasks:
-  # default:
-  #   cmds:
-  #     - uv run scripts/wad_occurrences.py {{.INPUT_DATA}} {{.OUTPUT_FILE}}
-  #   desc: Generate Aselloidea occurrences dataset in ready to import JSON format
-  #   sources:
-  #     - scripts/*.py
-  #     - "{{.INPUT_DATA}}"
-  #   generates:
-  #     - "{{.OUTPUT_FILE}}"
-  #   deps:
-  #     - make_res_dir
+  default:
+    cmds:
+      - uv run scripts/ostracoda.py {{.PREPROCESSED_FILE}} {{.OUTPUT_FILE}} --metadata={{.METADATA_JSON}} --taxonomy={{.METADATA_TAXONOMY}}
+    desc: Generate Ostracoda occurrences dataset in ready to import JSON format
+    sources:
+      - scripts/*.py
+      - "{{.PREPROCESSED_FILE}}"
+      - "{{.METADATA_TAXONOMY}}"
+      - "{{.METADATA_JSON}}"
+
+    generates:
+      - "{{.OUTPUT_FILE}}"
+    deps:
+      - preprocess
+      - taxonomy
+
+  taxonomy:
+    cmds:
+      - Rscript scripts/unclassified_taxa.R {{.PREPROCESSED_FILE}} {{.METADATA_TAXONOMY}}
+    desc: Generate Ostracoda taxonomy file
+    sources:
+      - scripts/unclassified_taxa.R
+      - "{{.PREPROCESSED_FILE}}"
+    generates:
+      - res/unclassified_taxa.json
+    deps:
+      - preprocess
 
   preprocess:
     cmds:
-      - Rscript scripts/ostracoda.R {{.INPUT_DATA}} {{.OUTPUT_FILE}} --taxonomy-fix {{.TAXONOMY_FIX}} --aff-cf-fix {{.AFF_CF_FIX}} --habitats {{.HABITATS}} --gbif {{.GBIF}} --missing-coords {{.MISSING_COORDS}}
+      - Rscript scripts/ostracoda.R {{.INPUT_DATA}} {{.PREPROCESSED_FILE}} --taxonomy-fix {{.TAXONOMY_FIX}} --aff-cf-fix {{.AFF_CF_FIX}} --habitats {{.HABITATS}} --gbif {{.GBIF}} --missing-coords {{.MISSING_COORDS}}
     desc: Preprocess Ostracoda dataset
     sources:
       - scripts/ostracoda.R
       - "{{.INPUT_DATA}}"
     generates:
-      - "{{.OUTPUT_FILE}}"
+      - "{{.PREPROCESSED_FILE}}"
     deps:
       - make_res_dir
 

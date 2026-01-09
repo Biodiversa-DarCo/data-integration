@@ -1,0 +1,53 @@
+{
+  "databases": {
+    "European Groundwater Crustacea Database": {
+      "label": "European Groundwater Crustacea Database",
+      "code": "EGCD",
+      "url": "http://www.freshwatermetadata.eu/metadb/bf_mdb_view.php?entryID=BF73",
+      "contact": "Pierre Marmonier"
+    },
+    "Hazelton": {
+      "label": "BCRA Hazelton Records",
+      "code": "HAZELTON",
+      "url": "https://bcra.org.uk/biology/"
+    },
+    "Slovenian Ostracoda Database": {
+      "label": "Slovenian Ostracoda Database",
+      "code": "SI_OSTRACODA",
+      "url": "https://www.bioportal.si/",
+      "contact": "Nataša Mori - natasa.mori@nib.si"
+    },
+    "SubBioDB - Subterranean Biodiversity Database": {
+      "label": "Subterranean Biodiversity Database",
+      "code": "SubBioDB",
+      "url": "https://db.subbio.net/",
+      "contact": "Maja Zagmajster (maja.zagmajster@bg.uni-lj.si)",
+      "description": "SQL database, temporal span: 1920-2024"
+    },
+    "NODE (Nonmarine Ostracod Distribution in Europe), David J. Horne (ed.)": {
+      "label": "Nonmarine Ostracod Distribution in Europe",
+      "code": "NODE",
+      "contact": "David J. Horne"
+    },
+    "Hungarian Ostracoda Database": {
+      "label": "Hungarian Ostracoda Database",
+      "code": "HU_OSTRACODA",
+      "contact": "Gergely Balázs"
+    },
+    "Romanian Ostracoda Database": {
+      "label": "Romanian Ostracoda Database",
+      "code": "RO_OSTRACODA",
+      "contact": "Traian Brad"
+    },
+    "Scotland Ostracoda": {
+      "label": "Scotland Ostracoda Database",
+      "code": "SCOT_OSTRACODA",
+      "contact": "Lee Knight"
+    },
+    "Austrian Ostracoda": {
+      "label": "Austrian Ostracoda Database",
+      "code": "AT_OSTRACODA",
+      "contact": "Christian Griebler"
+    }
+  }
+}

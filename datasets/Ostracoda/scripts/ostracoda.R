@@ -2,7 +2,7 @@ library(tidyverse)
 library(argparse)
 
 # Create parser
-parser <- ArgumentParser(description = "Process Ostracoda dataset")
+parser <- ArgumentParser(description = "Preprocess Ostracoda dataset")
 
 # Add positional arguments
 parser$add_argument("input",
@@ -96,8 +96,10 @@ MISSING_COORDS_DELETE <- c(
   select(-Rights, -`Input.into.DB.-.name`, -SourceType) %>%
   rename(
     site_name = "LocalityName",
-    altitude = "Altitude"
-  )
+    altitude = "Altitude",
+    scientificNameAuthorship = "authorship",
+  ) %>%
+  mutate(scientificName = taxon_name)
 )
 
 missing_coords <- read_tsv(missing_coords_file)
@@ -145,12 +147,14 @@ missing_coords <- read_tsv(missing_coords_file)
     # drop .old and .new columns
     select_at(vars(-ends_with(".old"), -ends_with(".new"))) %>%
     select(-verticalDatum, -locationID, -`Input.into.DB.-.name`, -rightsHolder) %>%
+    rename(
+      site_name = locality,
+      sampling_date = dateIdentified,
+      data_repository = basisOfRecord,
+      taxon_rank = taxonRank,
+      verbatim_identification = verbatimIdentification,
+    ) %>%
     mutate(
-      references = if_else(
-        ID %in% seq(706, 717),
-        "Issartel, C., & Marmonier, P. (2025). Description of five new species of Schellencandona Meisch, 1996 (Ostracoda: Candoninae) from the southern French Alps, a highly diversified area for groundwater ostracods. European Journal of Taxonomy, 1022(1), 85–133. https://doi.org/10.5852/ejt.2025.1022.3083",
-        references
-      ),
       # After checking, only Typhlocypris cf. eremita is concerned with confer id
       scientificNameAuthorship = scientificNameAuthorship %>% stringi::stri_trans_general("Latin-ASCII") %>% str_remove_all("\\,"),
       taxon_name = scientificName %>%
@@ -161,19 +165,6 @@ missing_coords <- read_tsv(missing_coords_file)
         str_remove_all("\\(?([A-Z][a-z]+([A-Z][a-z]+\\,)* ?)*([A-Z][a-z]+ ?\\& ?)* ?[A-Z][a-z]+ [0-9]{4}\\)?") %>%
         str_remove("((ge)?n\\. *)?sp\\.? *$") %>%
         str_squish(),
-      # taxon_name = if_else(id_confer, "Typhlocypris eremita", taxon_name) %>% str_remove("Namiotko et al. 2005$"),
-      # species = if_else(id_confer, "eremita", species),
-      unclassified = if_else(unclassified, unclassified, str_detect(verbatimIdentification, "gen\\.|sp\\. ?[^$ ]|aff\\.")),
-      id_addendum = case_when(
-        str_detect(Lineage, "cf\\.") ~ NA,
-        TRUE ~ Lineage,
-      )
-    ) %>%
-    rename(
-      site_name = locality,
-      sampling_date = dateIdentified,
-      data_repository = basisOfRecord,
-      taxon_rank = taxonRank,
     ) %>%
     bind_rows(
       .,
@@ -189,13 +180,28 @@ missing_coords <- read_tsv(missing_coords_file)
           species = "n. sp. J4",
           unclassified = TRUE,
           scientificName = "Schellencandona sp. J4, 2006",
-          verbatimIdentification = "Schellencandona sp. J4, 2006",
+          verbatim_identification = "Schellencandona sp. J4, 2006",
           taxon_name = "Schellencandona n. sp. J4",
           scientificNameAuthorship = NA,
         ),
       gbif_records
     ) %>%
     mutate(
+      references = if_else(
+        ID %in% seq(706, 717),
+        "Issartel, C., & Marmonier, P. (2025). Description of five new species of Schellencandona Meisch, 1996 (Ostracoda: Candoninae) from the southern French Alps, a highly diversified area for groundwater ostracods. European Journal of Taxonomy, 1022(1), 85–133. https://doi.org/10.5852/ejt.2025.1022.3083",
+        references
+      ),
+      # taxon_name = if_else(id_confer, "Typhlocypris eremita", taxon_name) %>% str_remove("Namiotko et al. 2005$"),
+      # species = if_else(id_confer, "eremita", species),
+      unclassified = case_when(
+        taxon_name %in% c("Mixtacandona juberthieae", "Schellencandona malardi", "Schellencandona danielopoli", "Pseudolimnocythere") ~ FALSE,
+        TRUE ~ if_else(unclassified, unclassified, str_detect(verbatim_identification, "gen\\.|sp\\. ?[^$ ]|aff\\."))
+      ),
+      id_addendum = case_when(
+        str_detect(Lineage, "cf\\.") ~ NA,
+        TRUE ~ Lineage,
+      ),
       taxon_rank = str_to_title(taxon_rank),
       references = str_replace_all(references, "", "è") %>%
         str_replace_all("eè", "è") %>%
@@ -210,12 +216,34 @@ missing_coords <- read_tsv(missing_coords_file)
         str_starts(data_repository, "ATBI") ~ data_repository,
         str_starts(data_repository, "NODE") ~ "NODE (Nonmarine Ostracod Distribution in Europe), David J. Horne (ed.)",
         str_starts(data_repository, "SubBio") ~ "SubBioDB",
+        str_starts(data_repository, "Literature|River|") ~ NA,
         TRUE ~ data_repository
       ),
       # correction from Pierre cf. missing_coordinates.xlsx
       genus = case_when(
         ID == 1394 ~ "Mixtacandona",
         TRUE ~ genus
+      ),
+      sampling_date = str_replace_all(sampling_date, "\\.", "/"),
+      identifiedBy = case_when(
+        identifiedBy == "PASCALIS" ~ NA_character_,
+        identifiedBy == "FM" ~ "Marrone, F.",
+        identifiedBy == "GR" ~ "Rossetti, G.",
+        identifiedBy == "D. Taliana" ~ "Taliana, D.",
+        identifiedBy == "F. Stoch" ~ "Stoch, F.",
+        identifiedBy == "Fabio Zanicelli" ~ "Zanicelli, F.",
+        identifiedBy == "Nataša Mori" ~ "Mori, N.",
+        TRUE ~ identifiedBy
+      ) %>% str_replace_all(";", "|"),
+      datasetName = case_when(
+        # not a dataset but a paper
+        str_starts(datasetName, "Revision") ~ NA,
+        str_starts(datasetName, "Freshwater ostracods") ~ NA,
+        str_starts(datasetName, "A preliminary") ~ NA,
+        str_starts(datasetName, "An annotated") ~ NA,
+        str_starts(datasetName, "Checklist and") ~ NA,
+        str_starts(datasetName, "Diversity of") ~ NA,
+        TRUE ~ datasetName
       )
     ) %>%
     select(-habitat, -access_points, -locationRemarks, -Lineage) %>%
@@ -231,7 +259,10 @@ missing_coords <- read_tsv(missing_coords_file)
       longitude = coalesce(longitude.new, longitude.old),
     ) %>%
     select_at(vars(-ends_with(".old"), -ends_with(".new"))) %>%
-    relocate(ID, verbatimIdentification, scientificName, taxon_name, class, order, family, genus, species, id_confer, id_addendum, everything())
+    relocate(
+      ID, verbatim_identification, scientificName, taxon_name, class, order, family, genus, species, id_confer, id_addendum,
+      data_repository, everything()
+    )
 ) %>%
   write_tsv(output_file)
 
@@ -242,6 +273,10 @@ missing_coords <- read_tsv(missing_coords_file)
     filter(n > 1)
 )
 
+
+# data %>%
+#   select(data_repository, datasetName, informationWithheld) %>%
+#   distinct()
 # # transform each to a concatenated string
 # (dup_strings <- dups %>%
 #   mutate(
