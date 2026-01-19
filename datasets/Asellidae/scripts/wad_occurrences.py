@@ -255,15 +255,21 @@ for site_code, group in data.reset_index().groupby("site_code"):
         event = {
             "performed_on": parse_date(str(date)),
             "performed_by": (
-                [p.strip() for p in ev_group["event_participants"].iloc[0].split("|")]
-                if ev_group["event_participants"].iloc[0]
-                else None
-            ),
-            "performed_by_groups": (
-                [p.strip() for p in ev_group["event_group"].iloc[0].split("|")]
-                if ev_group["event_group"].iloc[0]
-                else None
-            ),
+                (
+                    [
+                        p.strip()
+                        for p in ev_group["event_participants"].iloc[0].split("|")
+                    ]
+                    if ev_group["event_participants"].iloc[0]
+                    else []
+                )
+                + (
+                    [p.strip() for p in ev_group["event_group"].iloc[0].split("|")]
+                    if ev_group["event_group"].iloc[0]
+                    else []
+                )
+            )
+            or None,
         }
 
         if ev_group["temperature"].iloc[0] is not None:
@@ -339,7 +345,6 @@ dataset = {
     "maintainers": ["fmalard"],
     "content": result,
     "organisations": organisations,
-    "people": parse_person_columns(data),
     "bibliography": {
         verbatim: parse_article(verbatim)
         for verbatim in data["references"].dropna().unique().tolist()

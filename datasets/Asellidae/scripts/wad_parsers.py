@@ -189,7 +189,7 @@ def parse_identification(df: pd.DataFrame):
     return {
         "identified_on": parse_date(df["id_date"].iloc[0]),
         "identified_by": (
-            [p.strip() for p in df["id_curator"].iloc[0].split("|")][0]
+            [p.strip() for p in df["id_curator"].iloc[0].split("|")]
             if df["id_curator"].iloc[0] is not None
             else None
         ),
