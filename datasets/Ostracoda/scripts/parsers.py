@@ -106,3 +106,34 @@ def count_alphabetic(s: str) -> int:
     Count the number of alphabetic characters in a string.
     """
     return len(re.findall(r"[A-Za-z]", s))
+
+
+def parse_article(verbatim: str):
+    """
+    Extracts author(s) and date from a verbatim string.
+    """
+    if verbatim is None:
+        return None
+    regex = re.compile(r"^([^\d]+)\s*\(?(\d{4})([\/\-]?\d{4})?\)?\.?")
+    match = regex.match(verbatim)
+    if match:
+        authors = match.group(1).strip(" -_(")
+        year = match.group(2).strip()
+        mergedAuthorsList = []
+        authorsList = re.split(r"(?:, ?| ?& ?| and |(?<=\.) (?=[A-Za-z]{2,}))", authors)
+        for author in authorsList:
+            author = author.strip().title()
+            if re.search("[A-Za-z]{2}", author):
+                mergedAuthorsList.append(author)
+            elif len(mergedAuthorsList) > 0:
+                mergedAuthorsList[-1] += ", " + author
+            else:
+                mergedAuthorsList.append(author)
+
+        return {
+            "authors": mergedAuthorsList,
+            "year": int(year),
+            "verbatim": verbatim,
+        }
+    else:
+        return None

@@ -249,7 +249,25 @@ missing_coords <- read_tsv(missing_coords_file)
     select(-habitat, -access_points, -locationRemarks, -Lineage) %>%
     left_join(habitats, by = "ID") %>%
     mutate(
-      doi = str_extract(references, "doi(\\.org\\/|:)?(10.*$)", group = 2)
+      occurrence_comments = case_when(
+        references %in% c(
+          "Unpublished Data: University of Vienna",
+          "PersonalCommunication_NationalparkGesäuse",
+          "Unpublished Data: P. Marmonier",
+          "Karanovic I. pers com to Maja Zagmajster",
+          "Unpublished Data: C. Bou et Michel Caillon: Albi: France"
+        ) ~ references,
+        TRUE ~ NA_character_
+      ),
+      doi = str_extract(references, "doi(\\.org\\/|:)?(10.*$)", group = 2),
+      references = if_else(is.na(doi) & !(references %in% c(
+        "Unpublished Data: University of Vienna",
+        "PersonalCommunication_NationalparkGesäuse",
+        "Unpublished Data: P. Marmonier",
+        "Karanovic I. pers com to Maja Zagmajster",
+        "Unpublished Data: C. Bou et Michel Caillon: Albi: France"
+      )), references, NA_character_),
+      taxon_name = str_remove(taxon_name, " \\([^\\)]+\\)$| [A-Za-z]+, [0-9]{4}$"),
     ) %>%
     filter(!ID %in% MISSING_COORDS_DELETE) %>%
     # replace missing coordinates, overwriting columns latitude and longitude

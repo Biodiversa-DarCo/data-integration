@@ -5,7 +5,13 @@ from ast import parse
 import numpy as np
 import pandas as pd
 
-from parsers import count_alphabetic, parse_biomat, parse_date, parse_precision
+from parsers import (
+    count_alphabetic,
+    parse_article,
+    parse_biomat,
+    parse_date,
+    parse_precision,
+)
 
 parser = argparse.ArgumentParser(description="Process Aselloidea occurrence data")
 parser.add_argument("input_file", help="Input TSV file path")
@@ -106,7 +112,21 @@ dataset = {
     "description": "Ostracoda occurrence data from various sources.",
     "maintainers": ["pmarmonier", "nmori"],
     "content": del_none(results),
-    "taxonomy": taxonomy,
+    "taxa": taxonomy,
+    "bibliography": {
+        verbatim: parse_article(verbatim)
+        for verbatim in data["references"].dropna().unique().tolist()
+    },
+}
+
+dataset["bibliography"][
+    "Megyeri János: Ásott kutak hidrofaunisztikai vizsgálata. In: A Szegedi Tanárképző Főiskola tudományos közleményei 2. pp. 149-175. (1963)."
+] = {
+    "authors": ["Megyeri János"],
+    "title": "Ásott kutak hidrofaunisztikai vizsgálata",
+    "journal": "A Szegedi Tanárképző Főiskola tudományos közleményei",
+    "year": 1963,
+    "verbatim": "Megyeri János: Ásott kutak hidrofaunisztikai vizsgálata. In: A Szegedi Tanárképző Főiskola tudományos közleményei 2. pp. 149-175. (1963).",
 }
 
 with open(args.metadata, "r") as f:

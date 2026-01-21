@@ -1,5 +1,5 @@
 {
-  "databases": {
+  "data_sources": {
     "European Groundwater Crustacea Database": {
       "label": "European Groundwater Crustacea Database",
       "code": "EGCD",

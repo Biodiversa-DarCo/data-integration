@@ -56,6 +56,7 @@ if (length(commandArgs(trailingOnly = T)) > 0) {
 bind_rows(data, new_genera) %>%
   arrange(taxon_rank, family, genus, species) %>%
   rename(name = taxon_name, rank = taxon_rank) %>%
+  select(-family, -genus, -species) %>%
   jsonlite::write_json(
     path = args$output,
     pretty = TRUE,
