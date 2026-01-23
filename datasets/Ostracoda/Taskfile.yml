@@ -9,27 +9,31 @@ vars:
   HABITATS: data/habitats.tsv
   GBIF: data/GBIF_censor_recovery.tsv
   MISSING_COORDS: data/coordinates_recovery.tsv
+  MISSING_TAXA_FILE: data/missing_taxa.txt
   PREPROCESSED_FILE: res/Ostracoda.tsv
   OUTPUT_FILE: res/Ostracoda.json
   METADATA_JSON: data/metadata.json
-  METADATA_TAXONOMY: res/unclassifed_taxa.json
+  METADATA_TAXONOMY: res/unclassified_taxa.json
+  METADATA_UNREFERENCED_TAXA: res/unreferenced_taxa.json
 
 tasks:
   default:
     cmds:
-      - uv run scripts/ostracoda.py {{.PREPROCESSED_FILE}} {{.OUTPUT_FILE}} --metadata={{.METADATA_JSON}} --taxonomy={{.METADATA_TAXONOMY}}
+      - uv run scripts/ostracoda.py {{.PREPROCESSED_FILE}} {{.OUTPUT_FILE}} --metadata={{.METADATA_JSON}} --taxonomy={{.METADATA_TAXONOMY}} --unreferenced_taxa={{.METADATA_UNREFERENCED_TAXA}}
     desc: Generate Ostracoda occurrences dataset in ready to import JSON format
     sources:
       - scripts/*.py
       - "{{.PREPROCESSED_FILE}}"
       - "{{.METADATA_TAXONOMY}}"
       - "{{.METADATA_JSON}}"
+      - "{{.METADATA_UNREFERENCED_TAXA}}"
 
     generates:
       - "{{.OUTPUT_FILE}}"
     deps:
       - preprocess
       - taxonomy
+      - unreferenced_taxa
 
   taxonomy:
     cmds:
@@ -40,6 +44,19 @@ tasks:
       - "{{.PREPROCESSED_FILE}}"
     generates:
       - res/unclassified_taxa.json
+    deps:
+      - preprocess
+
+  unreferenced_taxa:
+    cmds:
+      - Rscript scripts/unreferenced_taxa.R --preprocessed={{.PREPROCESSED_FILE}} {{.MISSING_TAXA_FILE}} {{.METADATA_UNREFERENCED_TAXA}}
+    desc: Generate Ostracoda unreferenced taxa file
+    sources:
+      - scripts/unreferenced_taxa.R
+      - "{{.MISSING_TAXA_FILE}}"
+      - "{{.PREPROCESSED_FILE}}"
+    generates:
+      - res/unreferenced_taxa.json
     deps:
       - preprocess
 

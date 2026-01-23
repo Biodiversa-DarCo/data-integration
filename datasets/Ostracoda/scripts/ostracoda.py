@@ -18,6 +18,7 @@ parser.add_argument("input_file", help="Input TSV file path")
 parser.add_argument("output_file", help="Output JSON file path")
 parser.add_argument("--metadata", help="Metadata JSON file path")
 parser.add_argument("--taxonomy", help="Taxonomy JSON file path")
+parser.add_argument("--unreferenced_taxa", help="Unreferenced taxa JSON file path")
 
 args = parser.parse_args(
     # ["datasets/Ostracoda/res/Ostracoda.tsv", "datasets/Ostracoda/res/Ostracoda.json"]
@@ -29,6 +30,7 @@ print(data)
 
 
 results = []
+site_id = 0
 for [site_name, latitude, longitude], group in data.reset_index().groupby(
     ["site_name", "latitude", "longitude"]
 ):
@@ -42,6 +44,7 @@ for [site_name, latitude, longitude], group in data.reset_index().groupby(
     coordinates = {
         "latitude": group["latitude"].iloc[0],
         "longitude": group["longitude"].iloc[0],
+        "precision": group["coord_precision"].iloc[0],
         # "precision": parse_precision(group["coord_precision"].iloc[0]),
     }
 
@@ -61,6 +64,7 @@ for [site_name, latitude, longitude], group in data.reset_index().groupby(
         }
         samplings.append(sampling)
 
+    site_id += 1
     results.append(
         {
             "name": (
@@ -68,6 +72,7 @@ for [site_name, latitude, longitude], group in data.reset_index().groupby(
                 if count_alphabetic(site_name) > 1
                 else f"Ostracoda_{site_name}"
             ),
+            "code": f"Ostracoda_{site_id}",
             "coordinates": coordinates,
             "comments": (
                 group["site_comments"].dropna().iloc[0]
@@ -132,6 +137,10 @@ dataset["bibliography"][
 with open(args.metadata, "r") as f:
     metadata = json.load(f)
     dataset.update(metadata)
+
+with open(args.unreferenced_taxa, "r") as f:
+    unreferenced_taxa = json.load(f)
+    dataset["taxa"] += unreferenced_taxa
 
 with open(args.output_file, "w") as f:
     json.dump(

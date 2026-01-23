@@ -24,7 +24,7 @@ if (length(commandArgs(trailingOnly = T)) > 0) {
 }
 
 (
-  data = read_tsv(args$input) %>%
+  data <- read_tsv(args$input) %>%
     filter(unclassified) %>%
     select(taxon_name, family, genus, species, taxon_rank) %>%
     distinct() %>%
@@ -36,6 +36,10 @@ if (length(commandArgs(trailingOnly = T)) > 0) {
       status = case_when(
         str_detect(taxon_name, "n\\. sp\\.") ~ "Unclassified",
         TRUE ~ "Unreferenced",
+      ),
+      authorship = case_when(
+        taxon_name %in% c("Schellencandona capderreyae", "Schellencandona claretae", "Schellencandona mercantourensis") ~ "Issartel & Marmonier, 2025",
+        TRUE ~ NA_character_
       )
     )
 )
@@ -43,7 +47,7 @@ if (length(commandArgs(trailingOnly = T)) > 0) {
 # print(data, n=100)
 
 (
-  new_genera = data %>%
+  new_genera <- data %>%
     filter(str_starts(genus, "gen\\. ")) %>%
     mutate(
       species = NA,

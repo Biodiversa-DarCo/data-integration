@@ -267,7 +267,7 @@ missing_coords <- read_tsv(missing_coords_file)
         "Karanovic I. pers com to Maja Zagmajster",
         "Unpublished Data: C. Bou et Michel Caillon: Albi: France"
       )), references, NA_character_),
-      taxon_name = str_remove(taxon_name, " \\([^\\)]+\\)$| [A-Za-z]+, [0-9]{4}$"),
+      taxon_name = str_remove(taxon_name, " \\([^\\)]+\\)$| [A-Za-z]+, [0-9]{4}$| Namiotko et al. 2005$"),
     ) %>%
     filter(!ID %in% MISSING_COORDS_DELETE) %>%
     # replace missing coordinates, overwriting columns latitude and longitude
@@ -275,8 +275,13 @@ missing_coords <- read_tsv(missing_coords_file)
     mutate(
       latitude = coalesce(latitude.new, latitude.old),
       longitude = coalesce(longitude.new, longitude.old),
+      coord_precision = coalesce(coord_precision.new, coord_precision.old),
     ) %>%
     select_at(vars(-ends_with(".old"), -ends_with(".new"))) %>%
+    mutate(
+      site_name = if_else(str_length(site_name) <= 3, str_c("Ostracoda_", site_name), site_name),
+      coord_precision = if_else(is.na(coord_precision), "Unknown", coord_precision)
+    ) %>%
     relocate(
       ID, verbatim_identification, scientificName, taxon_name, class, order, family, genus, species, id_confer, id_addendum,
       data_repository, everything()
@@ -284,12 +289,13 @@ missing_coords <- read_tsv(missing_coords_file)
 ) %>%
   write_tsv(output_file)
 
-(
-  dups <- data %>%
-    group_by(site_name, latitude, longitude, taxon_name, sampling_date) %>%
-    summarise(n = n()) %>%
-    filter(n > 1)
-)
+
+# (
+#   dups <- data %>%
+#     group_by(site_name, latitude, longitude, taxon_name, sampling_date) %>%
+#     summarise(n = n()) %>%
+#     filter(n > 1)
+# )
 
 
 # data %>%

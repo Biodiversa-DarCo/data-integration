@@ -96,7 +96,7 @@ def parse_biomat(df: pd.DataFrame):
         "identification": parse_identification(df),
         "verbatim_identification": df["verbatim_identification"].iloc[0] or None,
         "sources": data_sources,
-        "published_in": refs.tolist() if df["doi"].iloc[0] is None else [],
+        "published_in": refs.tolist() if pd.isna(df["doi"].iloc[0]) else [],
         "doi": df["doi"].dropna().unique().tolist(),
     }
 
