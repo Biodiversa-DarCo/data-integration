@@ -114,7 +114,7 @@ with open(args.taxonomy, "r") as f:
 
 dataset = {
     "label": "Ostracoda",
-    "description": "Ostracoda occurrence data from various sources.",
+    "description": "A comprehensive occurrence dataset for European Ostracoda inhabiting groundwater and groundwater-dependent ecosystems",
     "maintainers": ["pmarmonier", "nmori"],
     "content": del_none(results),
     "taxa": taxonomy,
