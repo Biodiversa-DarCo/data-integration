@@ -257,7 +257,7 @@ for site_code, group in data.reset_index().groupby("site_code"):
             "performed_by": (
                 (
                     [
-                        p.strip()
+                        p.strip().title()
                         for p in ev_group["event_participants"].iloc[0].split("|")
                     ]
                     if ev_group["event_participants"].iloc[0]
