@@ -122,18 +122,18 @@ dataset = {
         verbatim: parse_article(verbatim)
         for verbatim in data["references"].dropna().unique().tolist()
     },
-    "people": [
-        {
+    "people": {
+        "pmarmonier": {
             "first_name": "Pierre",
             "last_name": "Marmonier",
             "institutions": ["LEHNA"],
         },
-        {
+        "nmori": {
             "first_name": "Nataša",
             "last_name": "Mori",
             "institutions": ["NIB"],
         },
-    ],
+    },
 }
 
 dataset["bibliography"][
