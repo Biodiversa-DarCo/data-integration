@@ -249,6 +249,7 @@ missing_coords <- read_tsv(missing_coords_file)
     select(-habitat, -access_points, -locationRemarks, -Lineage) %>%
     left_join(habitats, by = "ID") %>%
     mutate(
+      habitat = str_replace(habitat, "Zone", "zone"),
       occurrence_comments = case_when(
         references %in% c(
           "Unpublished Data: University of Vienna",
