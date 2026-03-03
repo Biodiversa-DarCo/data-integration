@@ -106,7 +106,7 @@ merge_occurrences = function(data, ids_to_merge, quantity = NA_integer_, comment
     # All records from WAD are already in the Asellidae dataset, except for one
     filter(is.na(collection) | str_detect(collection, "PROASELLUS_SP|LAHAU_200703")) |>
     # Repair jstor records
-    filter(!str_detect(pub_DOI, "www.jstor.org")) |>
+    filter(is.na(pub_DOI) | !str_detect(pub_DOI, "www\\.jstor\\.org")) |>
     bind_rows(jstor_records)
 ) |>
   write_tsv(args$output_file)
