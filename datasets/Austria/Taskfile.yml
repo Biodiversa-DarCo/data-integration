@@ -7,19 +7,17 @@ vars:
   PREPROCESSED_DATA: res/preprocessed.tsv
 
 tasks:
-  # default:
-  #   cmds:
-  #     - uv run scripts/copepoda_occurrences.py {{.PREPROCESSED_DATA}} res/Copepoda_occurrences.json
-  #   desc: Generate Copepoda occurrences dataset in ready to import JSON format
-  #   sources:
-  #     - scripts/copepoda_occurrences.py
-  #     - "{{.PREPROCESSED_DATA}}"
-  #     - res/unclassified_taxa.json
-  #   generates:
-  #     - res/Copepoda_occurrences.json
-  #   deps:
-  #     - preprocess
-  #     - unreferenced_taxa
+  default:
+    cmds:
+      - uv run scripts/austria.py {{.PREPROCESSED_DATA}} res/Asellidae_Austria.json
+    desc: Generate Asellidae occurrences from Austria dataset in ready to import JSON format
+    sources:
+      - scripts/austria.py
+      - "{{.PREPROCESSED_DATA}}"
+    generates:
+      - res/Asellidae_Austria.json
+    deps:
+      - preprocess
 
   # unreferenced_taxa:
   #   cmds:

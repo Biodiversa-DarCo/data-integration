@@ -26,6 +26,7 @@ if (length(commandArgs(trailingOnly = T)) > 0) {
   jstor_records = data |>
     filter(str_detect(pub_DOI, "www.jstor.org")) |>
     mutate(
+      pub_DOI = NA_character_,
       pub_authors = "Strouhal, Hans",
       pub_year = 1958,
       pub_title = "Asellus (Proasellus) im nördlichen Österreich (Isopoda, Asellota)",
@@ -107,6 +108,39 @@ merge_occurrences = function(data, ids_to_merge, quantity = NA_integer_, comment
     filter(is.na(collection) | str_detect(collection, "PROASELLUS_SP|LAHAU_200703")) |>
     # Repair jstor records
     filter(is.na(pub_DOI) | !str_detect(pub_DOI, "www\\.jstor\\.org")) |>
-    bind_rows(jstor_records)
+    mutate(
+      site_comments = str_remove(site_comments, "^Precision ") |>
+        str_remove("^Precise ")
+    ) |>
+    mutate(
+      sampling_methods = case_when(
+        str_detect(sampling_comments, "phreatobiological") ~ "PHREA_NET",
+        str_detect(sampling_comments, "Bou-Rouch") ~ "BOU_ROUCH",
+        TRUE ~ sampling_methods
+      ),
+      content_description = case_when(
+        str_detect(occurrence_comments, "male|juvenile") & !str_starts(occurrence_comments, "In all watercourses") ~ occurrence_comments,
+        TRUE ~ content_description
+      ),
+      collection = str_remove(collection, "WorldAsellidaeDatabase_"),
+      data_repository = case_when(
+        str_starts(data_repository, "Literature") ~ NA_character_,
+        data_repository == "OnlineDatabase_WorldAsellidaeDatabase" ~ NA_character_,
+        TRUE ~ data_repository
+      ),
+      occurrence_comments = if_else(
+        str_detect(occurrence_comments, "male|juvenile") | is.na(occurrence_comments),
+        NA_character_,
+        occurrence_comments
+      ) |>
+        str_replace_na("") |>
+        str_c(
+          str_replace_na(data_repository, ""),
+          sep = "\n"
+        ) |> str_trim() |> na_if(""),
+      taxon_name = str_remove(taxon_name, "sp\\.$") |> str_trim()
+    ) |>
+    bind_rows(jstor_records) |>
+    select(-site_code, -altitude, -locality, -sampling_fixatives, -sampling_target, -sampling_id, -unclassified, -tax_id_confer, -tax_id_addendum, -identified_on_date, -identified_by, -verbatim_identification, -data_repository)
 ) |>
-  write_tsv(args$output_file)
+  write_tsv(args$output_file, quote = "needed")
