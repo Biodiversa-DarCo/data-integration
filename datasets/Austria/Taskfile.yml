@@ -5,15 +5,17 @@ version: "3"
 vars:
   ORIGINAL_DATA: data/dataset.tsv
   PREPROCESSED_DATA: res/preprocessed.tsv
+  OCCURRENCE_CODES_FILE: res/occurrence_codes.txt
 
 tasks:
   default:
     cmds:
-      - uv run scripts/austria.py {{.PREPROCESSED_DATA}} res/Asellidae_Austria.json
+      - uv run scripts/austria.py {{.PREPROCESSED_DATA}} res/Asellidae_Austria.json --occurrence-codes-file {{.OCCURRENCE_CODES_FILE}}
     desc: Generate Asellidae occurrences from Austria dataset in ready to import JSON format
     sources:
       - scripts/austria.py
       - "{{.PREPROCESSED_DATA}}"
+      - "{{.OCCURRENCE_CODES_FILE}}"
     generates:
       - res/Asellidae_Austria.json
     deps:
@@ -34,13 +36,14 @@ tasks:
 
   preprocess:
     cmds:
-      - Rscript scripts/preprocessing.R {{.ORIGINAL_DATA}} {{.PREPROCESSED_DATA}}
+      - Rscript scripts/preprocessing.R --occurrence-codes-file {{.OCCURRENCE_CODES_FILE}} {{.ORIGINAL_DATA}} {{.PREPROCESSED_DATA}}
     desc: Preprocess the Copepoda dataset
     sources:
       - scripts/preprocessing.R
       - "{{.ORIGINAL_DATA}}"
     generates:
       - "{{.PREPROCESSED_DATA }}"
+      - "{{.OCCURRENCE_CODES_FILE}}"
     deps:
       - make_res_dir
 

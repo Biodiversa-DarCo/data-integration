@@ -12,9 +12,11 @@ from parsers import (
 parser = argparse.ArgumentParser(description="Process Austria occurrence data")
 parser.add_argument("input_file", help="Input TSV file path")
 parser.add_argument("output_file", help="Output JSON file path")
-parser.add_argument("--metadata", help="Metadata JSON file path")
-parser.add_argument("--taxonomy", help="Taxonomy JSON file path")
-parser.add_argument("--unreferenced_taxa", help="Unreferenced taxa JSON file path")
+parser.add_argument(
+    "--occurrence-codes-file",
+    help="Path to the file containing occurrence codes to add",
+    default="datasets/Austria/res/occurrence_codes.txt",
+)
 
 args = parser.parse_args(
     # ["datasets/Austria/data/dataset.tsv", "datasets/Austria/res/Austria.json"]
@@ -128,11 +130,15 @@ for pub_verbatim, group in data.groupby("pub_verbatim"):
         "verbatim": pub_verbatim,
     }
 
+with open(args.occurrence_codes_file, "r") as f:
+    occurrence_codes = f.readlines()
+
 dataset = {
     "label": "Asellidae of Austria",
     "description": "A dataset of groundwater Asellidae occurrences in Austria",
     "content": del_none(results),
     "bibliography": bibliography,
+    "add_occurrences": [line.strip() for line in occurrence_codes if line.strip()],
 }
 
 with open(args.output_file, "w") as f:

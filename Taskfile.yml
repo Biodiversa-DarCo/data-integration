@@ -9,6 +9,7 @@ tasks:
       - task: asellidae
       - task: copepoda
       - task: ostracoda
+      - task: austria
 
 includes:
   asellidae:

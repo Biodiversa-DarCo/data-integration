@@ -1,10 +1,14 @@
 library(tidyverse)
 library(argparse)
 
-parser = ArgumentParser()
+parser <- ArgumentParser()
 
 parser$add_argument("input_file", help = "Path to the input data file")
 parser$add_argument("output_file", help = "Path to the output preprocessed data file")
+parser$add_argument("--occurrence-codes-file",
+  help = "Path to the output occurrence codes file",
+  default = "datasets/Austria/res/occurrence_codes.txt"
+)
 
 if (length(commandArgs(trailingOnly = T)) > 0) {
   args <- parser$parse_args()
@@ -13,6 +17,9 @@ if (length(commandArgs(trailingOnly = T)) > 0) {
     c("datasets/Austria/data/dataset.tsv", "datasets/Austria/res/preprocessed.tsv")
   )
 }
+
+print(args)
+
 (
   data <- read_tsv(args$input_file, locale = locale(decimal_mark = ",")) |>
     select(-"...53") |>
@@ -23,7 +30,7 @@ if (length(commandArgs(trailingOnly = T)) > 0) {
 )
 
 (
-  jstor_records = data |>
+  jstor_records <- data |>
     filter(str_detect(pub_DOI, "www.jstor.org")) |>
     mutate(
       pub_DOI = NA_character_,
@@ -34,14 +41,14 @@ if (length(commandArgs(trailingOnly = T)) > 0) {
     )
 )
 
-merge_occurrences = function(data, ids_to_merge, quantity = NA_integer_, comments = NA_character_, verbatim_id = NA_character_) {
-  to_merge = filter(data, occurrence_id %in% ids_to_merge)
-  sequence_data = to_merge |>
+merge_occurrences <- function(data, ids_to_merge, quantity = NA_integer_, comments = NA_character_, verbatim_id = NA_character_, code = NA_character_) {
+  to_merge <- filter(data, occurrence_id %in% ids_to_merge)
+  sequence_data <- to_merge |>
     filter(!is.na(seq_comments)) |>
     select(occurrence_id, seq_comments) |>
     group_by(occurrence_id) |>
     group_modify(~ {
-      seq_tibble = str_remove(.x$seq_comments, "^GenBank_Accession_") |>
+      seq_tibble <- str_remove(.x$seq_comments, "^GenBank_Accession_") |>
         str_split("_", simplify = T) |>
         as.vector() |>
         map_dfr(function(x) {
@@ -65,6 +72,7 @@ merge_occurrences = function(data, ids_to_merge, quantity = NA_integer_, comment
           specimen_quantity = if_else(is.na(quantity), sum(to_merge$specimen_quantity), quantity),
           occurrence_comments = comments,
           seq_comments = NA_character_,
+          collection = if_else(is.na(code), collection, code),
           verbatim_identification = if_else(is.na(verbatim_id), verbatim_identification, verbatim_id)
         ) |>
         uncount(nrow(sequence_data)) |>
@@ -77,7 +85,7 @@ merge_occurrences = function(data, ids_to_merge, quantity = NA_integer_, comment
 }
 
 (
-  res <- data |>
+  merged_occurrences <- data |>
     filter(!(occurrence_id %in% c("STYA1445", "STYA1442"))) |>
     merge_occurrences(c("STYA1438", "STYA1439", "STYA1440")) |>
     #     filter(occurrence_id == "STYA1438_STYA1439_STYA1440") |>
@@ -92,55 +100,67 @@ merge_occurrences = function(data, ids_to_merge, quantity = NA_integer_, comment
     merge_occurrences(c("STYA1354", "STYA1355", "STYA1356")) |>
     merge_occurrences(c("STYA1361", "STYA1451")) |>
     merge_occurrences(c("STYA1474", "STYA1475")) |>
-    merge_occurrences(c("STYA1434", "STYA1435")) |>
+    merge_occurrences(c("STYA1434", "STYA1435"), code = "Pslavus_KRITZENWE_202300_OQ538427_5|NCBI") |>
     merge_occurrences(c("STYA1357", "STYA1358", "STYA1426")) |>
     merge_occurrences(c("STYA1372", "STYA1373", "STYA1380")) |>
     merge_occurrences(c("STYA1374", "STYA1381")) |>
     merge_occurrences(c("STYA1375", "STYA1382")) |>
     merge_occurrences(c("STYA1377", "STYA1383"), verbatim_id = "P. strouhali strouhali") |>
-    merge_occurrences(c("STYA1436", "STYA1437")) |>
+    merge_occurrences(c("STYA1436", "STYA1437"), code = "Pslavus_LOBAUWET_202300_OQ538425_No53|NCBI") |>
     merge_occurrences(c("STYA1398", "STYA1399")) |>
     merge_occurrences(c("STYA1261", "STYA1452")) |>
     merge_occurrences(c("STYA1465", "STYA1487")) |>
     merge_occurrences(c("STYA1347", "STYA1362", "STYA1363"), verbatim_id = "P. strouhali") |>
-    merge_occurrences(c("STYA1348", "STYA1349", "STYA1350")) |>
-    # All records from WAD are already in the Asellidae dataset, except for one
-    filter(is.na(collection) | str_detect(collection, "PROASELLUS_SP|LAHAU_200703")) |>
-    # Repair jstor records
-    filter(is.na(pub_DOI) | !str_detect(pub_DOI, "www\\.jstor\\.org")) |>
-    mutate(
-      site_comments = str_remove(site_comments, "^Precision ") |>
-        str_remove("^Precise ")
+    merge_occurrences(c("STYA1348", "STYA1349", "STYA1350"))
+)
+(res <- merged_occurrences |>
+  # All records from WAD are already in the Asellidae dataset, except for one
+  filter(is.na(collection) | str_detect(collection, "PROASELLUS_SP|LAHAU_200703")) |>
+  # Repair jstor records
+  filter(is.na(pub_DOI) | !str_detect(pub_DOI, "www\\.jstor\\.org")) |>
+  mutate(
+    site_comments = str_remove(site_comments, "^Precision ") |>
+      str_remove("^Precise ")
+  ) |>
+  mutate(
+    sampling_methods = case_when(
+      str_detect(sampling_comments, "phreatobiological") ~ "PHREA_NET",
+      str_detect(sampling_comments, "Bou-Rouch") ~ "BOU_ROUCH",
+      TRUE ~ sampling_methods
+    ),
+    content_description = case_when(
+      str_detect(occurrence_comments, "male|juvenile") & !str_starts(occurrence_comments, "In all watercourses") ~ occurrence_comments,
+      TRUE ~ content_description
+    ),
+    collection = str_remove(collection, "WorldAsellidaeDatabase_"),
+    data_repository = case_when(
+      str_starts(data_repository, "Literature") ~ NA_character_,
+      data_repository == "OnlineDatabase_WorldAsellidaeDatabase" ~ NA_character_,
+      TRUE ~ data_repository
+    ),
+    occurrence_comments = if_else(
+      str_detect(occurrence_comments, "male|juvenile") | is.na(occurrence_comments),
+      NA_character_,
+      occurrence_comments
     ) |>
-    mutate(
-      sampling_methods = case_when(
-        str_detect(sampling_comments, "phreatobiological") ~ "PHREA_NET",
-        str_detect(sampling_comments, "Bou-Rouch") ~ "BOU_ROUCH",
-        TRUE ~ sampling_methods
-      ),
-      content_description = case_when(
-        str_detect(occurrence_comments, "male|juvenile") & !str_starts(occurrence_comments, "In all watercourses") ~ occurrence_comments,
-        TRUE ~ content_description
-      ),
-      collection = str_remove(collection, "WorldAsellidaeDatabase_"),
-      data_repository = case_when(
-        str_starts(data_repository, "Literature") ~ NA_character_,
-        data_repository == "OnlineDatabase_WorldAsellidaeDatabase" ~ NA_character_,
-        TRUE ~ data_repository
-      ),
-      occurrence_comments = if_else(
-        str_detect(occurrence_comments, "male|juvenile") | is.na(occurrence_comments),
-        NA_character_,
-        occurrence_comments
-      ) |>
-        str_replace_na("") |>
-        str_c(
-          str_replace_na(data_repository, ""),
-          sep = "\n"
-        ) |> str_trim() |> na_if(""),
-      taxon_name = str_remove(taxon_name, "sp\\.$") |> str_trim()
-    ) |>
-    bind_rows(jstor_records) |>
-    select(-site_code, -altitude, -locality, -sampling_fixatives, -sampling_target, -sampling_id, -unclassified, -tax_id_confer, -tax_id_addendum, -identified_on_date, -identified_by, -verbatim_identification, -data_repository)
+      str_replace_na("") |>
+      str_c(
+        str_replace_na(data_repository, ""),
+        sep = "\n"
+      ) |> str_trim() |> na_if(""),
+    taxon_name = str_remove(taxon_name, "sp\\.$") |> str_trim()
+  ) |>
+  bind_rows(jstor_records) |>
+  select(-site_code, -altitude, -locality, -sampling_fixatives, -sampling_target, -sampling_id, -unclassified, -tax_id_confer, -tax_id_addendum, -identified_on_date, -identified_by, -verbatim_identification, -data_repository)
 ) |>
   write_tsv(args$output_file, quote = "needed")
+
+# Extract occurrence codes for the add_occurrences field
+(
+  codes <- merged_occurrences |>
+    mutate(collection = str_remove(collection, "WorldAsellidaeDatabase_")) |>
+    filter(!is.na(collection) & collection != "PROASELLUS_SP|LAHAU_200703") |>
+    pull(collection) |>
+    unique()
+) |>
+  writeLines(args$occurrence_codes_file)
