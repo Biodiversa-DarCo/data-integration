@@ -168,6 +168,20 @@ def parse_biomat(code, df: pd.DataFrame):
         ),
     }
 
+invalid_sampling_targets = [
+    "Stenasellus n sp rajasant",
+    "Proasellus minoicus aff",
+    "Proasellus lescherae cf",
+    "Proasellus cantabricus aff",
+    "Proasellus lagari aff",
+    "Proasellus alavensis cf",
+    "Proasellus escolai aff",
+    "Macroinvertebrate",
+    "Proasellus anophtalmus dalmatinus aff",
+    "Proasellus n sp etcheberrigaray",
+    "Proasellus pavani aff",
+    "Proasellus n sp arpaon",
+]
 
 def parse_samplings(df: pd.DataFrame):
     samplings = []
@@ -196,7 +210,12 @@ def parse_samplings(df: pd.DataFrame):
 
         sampling = {
             "methods": parse_methods(method),
-            "target_taxa": parse_sampling_target(target),
+            "target_taxa": [
+                t if t not in invalid_sampling_targets \
+                else "Animalia" if t and t.startswith("Macroinvertebrate") \
+                else t.split(" ")[0]  \
+                for t in parse_sampling_target(target)
+            ],
             "fixatives": parse_fixatives(fixatives),
             "access_points": [access_point],
             "habitats": list(
