@@ -16,7 +16,7 @@ tasks:
     cmds:
       - uv run scripts/spiders.py {{.PREPROCESSED_DATA}} --unclassified {{.UNCLASSIFIED_TAXA}} res/Spider_tmp.json
       # Remove invisible characters from the generated JSON file
-      - tr -cd '\11\12\15\40-\176' < res/Spider_tmp.json > res/Spiders.json
+      - sed 's/[[:cntrl:]]//g' res/Spider_tmp.json > res/Spiders.json
 
     desc: Generate Spiders occurrences dataset in ready to import JSON format
     sources:
@@ -35,7 +35,7 @@ tasks:
         --encoding-fix {{.ENCODING_FIX}}
         --multiple-coordinates-fix {{.MULTIPLE_COORDINATES_FIX}}
         --multiple-site-names-fix {{.MULTIPLE_SITE_NAMES_FIX}}
-    desc: Preprocess the Copepoda dataset
+    desc: Preprocess the Spiders dataset
     sources:
       - scripts/preprocessing.R
     generates:

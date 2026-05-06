@@ -52,3 +52,18 @@ data %>%
   ) & !is.na(site_name)) %>%
   arrange(site_name) %>%
   write_tsv(file.path(output_dir, "sites_multiple_coordinates.tsv"))
+
+
+d = read_tsv("datasets/Spiders/res/preprocessed.tsv")
+d
+d |> group_by(site_name, latitude, longitude, sampling_date, taxon_name) |>
+  summarise(count = n()) |>
+  filter(count > 1) |>
+  write_tsv("duplicate_occurrences.tsv")
+
+
+  cat("Duplicate rows in d:", sum(duplicated(d |> select(-row_id))), "\n")
+
+
+d2 = read_tsv("datasets/Spiders/data/spiders_db.tsv")
+  cat("Duplicate rows in d2:", sum(duplicated(d2)), "\n")

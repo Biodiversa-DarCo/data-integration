@@ -31,6 +31,7 @@ print(args)
 data <- read_tsv(args$input_file, locale = locale(decimal_mark = ",")) |>
   # remove NA columns except content_description
   select(where(~ !all(is.na(.)))) |>
+  mutate(across(where(is.character), ~ str_trim(.))) |>
   mutate(
     row_id = row_number(),
     # FIXME cannot generate site codes until the site duplicates situation is resolved
@@ -237,14 +238,28 @@ data <- data |>
     pub_authors = str_replace_all(pub_authors, "\\s*\\|\\s*", "|"),
     pub_title = str_replace_all(pub_title, "\\s*\\|\\s*", "|"),
     pub_journal = str_replace_all(pub_journal, "\\s*\\|\\s*", "|")
-  )
+  ) |>
+  filter(!is.na(latitude) & !is.na(longitude) & !is.na(taxon_name) & taxon_name != "NA")
+
+
+# add coordinate-based suffix for duplicated site names with different coordinates
+data <- data |>
+  group_by(site_name) |>
+  mutate(
+    .coord_key = str_c(latitude, longitude, sep = "|"),
+    .coord_suffix = dense_rank(.coord_key),
+    .coord_count = n_distinct(.coord_key)
+  ) |>
+  ungroup() |>
+  mutate(site_name = if_else(.coord_count > 1, str_c(site_name, " [", .coord_suffix, "]"), site_name)) |>
+  select(-.coord_key, -.coord_suffix, -.coord_count)
+
+
 
 # ---------------------------------------------------------
 # Write output
 # ---------------------------------------------------------
-
 message("Writing output to file: ", args$output_file)
 data |>
-  select(-row_id) |>
   distinct() |>
   write_tsv(args$output_file, quote = "needed")

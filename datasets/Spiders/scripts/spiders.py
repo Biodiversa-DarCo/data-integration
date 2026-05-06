@@ -27,25 +27,29 @@ print(data)
 
 def split_authors(author_string):
     """Split author string by separating author names.
-    
+
     Handles formats like "Roewer, C. R., Jackson, W." correctly,
     splitting on "; ", ";", ",", ", ", or " " when followed by a new author (capital + lowercase).
     """
     if pd.isna(author_string):
         return []
-    return [re.sub(r',\s*\.\s*$', '', author.strip()) for author in re.split(r'[,;]?\s+(?=[A-Z][a-z])', author_string)]
+    return [
+        re.sub(r",\s*\.\s*$", "", author.strip())
+        for author in re.split(r"[,;]?\s+(?=[A-Z][a-z])", author_string)
+    ]
 
 
 results = []
 site_id = 0
+row_ids = set()
 for [site_name, latitude, longitude], group in data.reset_index().groupby(
-    ["site_name", "latitude", "longitude"]
+    ["site_name", "latitude", "longitude"], dropna=False
 ):
-    if len(set(group["latitude"])) > 1:
+    if len(group["latitude"].unique()) > 1:
         raise ValueError(f"Multiple latitudes for site {site_name}")
-    if len(set(group["longitude"])) > 1:
+    if len(group["longitude"].unique()) > 1:
         raise ValueError(f"Multiple longitudes for site {site_name}")
-    if len(set(group["coord_precision"])) > 1:
+    if len(group["coord_precision"].unique()) > 1:
         print(set(group["coord_precision"]))
         raise ValueError(f"Multiple precisions for site {site_name}")
     coordinates = {
@@ -58,41 +62,75 @@ for [site_name, latitude, longitude], group in data.reset_index().groupby(
         ),
         # "precision": parse_precision(group["coord_precision"].iloc[0]),
     }
+    generated_site_name = (
+        f"Spiders_{site_id}"
+        if pd.isna(site_name)
+        else (
+            site_name
+            if count_alphabetic(str(site_name)) > 1
+            else f"Spiders_{site_name}"
+        )
+    )
 
     samplings = []
     for date, ev_group in group.groupby("sampling_date", dropna=False):
+        if pd.isna(date):
+            if len(ev_group) > 1:
+                print(
+                    f"Missing sampling date for site {generated_site_name}, treating {len(ev_group)} rows as separate sampling events"
+                )
+            for _, row in ev_group.iterrows():
+                row_ids |= set([row["row_id"]])
+                occ = parse_biomat(row.to_frame().T)
+                sampling = {
+                    "performed_on": None,
+                    "access_points": (
+                        [row["access_points"]]
+                        if not pd.isna(row["access_points"])
+                        else []
+                    ),
+                    "habitats": (
+                        re.split(r", ?", row["habitat"])
+                        if not pd.isna(row["habitat"])
+                        else []
+                    ),
+                    "occurrences": [occ],
+                }
+                samplings.append(sampling)
+            continue
+
         occurrences = []
         for _, occ_row in ev_group.groupby("taxon_name"):
+            row_ids |= set(occ_row["row_id"].tolist())
             occ = parse_biomat(occ_row)
             occurrences.append(occ)
         sampling = {
             "performed_on": parse_date(date),
             "access_points": list(ev_group["access_points"].dropna().unique()),
             "habitats": list(
-                ev_group["habitat"].dropna().str.split(", ?").explode().unique()
+                ev_group["habitat"]
+                .dropna()
+                .str.split(", ?", regex=True)
+                .explode()
+                .unique()
             ),
             "occurrences": occurrences,
         }
         samplings.append(sampling)
 
     site_id += 1
-    results.append(
-        {
-            "name": (
-                site_name
-                if count_alphabetic(str(site_name)) > 1
-                else f"Spiders_{site_name}"
-            ),
-            "code": f"Spiders_{site_id}",
-            "coordinates": coordinates,
-            "locality": (
-                group["locality"].dropna().iloc[0]
-                if not group["locality"].dropna().empty
-                else None
-            ),
-            "samplings": samplings,
-        }
-    )
+    site = {
+        "name": generated_site_name,
+        "code": f"Spiders_{site_id}",
+        "coordinates": coordinates,
+        "locality": (
+            group["locality"].dropna().iloc[0]
+            if not group["locality"].dropna().empty
+            else None
+        ),
+        "samplings": samplings,
+    }
+    results.append(site)
 
 
 def del_none(d):
@@ -119,14 +157,22 @@ bibliography = {}
 for pub_verbatim, group in data.groupby("pub_verbatim"):
     if pd.isna(pub_verbatim):
         continue
-    # check that '|' is in the pub verbatim 
+    # check that '|' is in the pub verbatim
     if "|" in str(pub_verbatim):
         print("found multipart pub verbatim")
-        dois = group["pub_DOI"].iloc[0].split("|") if not pd.isna(group["pub_DOI"].iloc[0]) else []
+        dois = (
+            group["pub_DOI"].iloc[0].split("|")
+            if not pd.isna(group["pub_DOI"].iloc[0])
+            else []
+        )
         for i, ref in enumerate(pub_verbatim.split("|")):
-            if ref not in bibliography and (len(dois) < i + 1 or dois[i].strip() == "NA"):
+            if ref not in bibliography and (
+                len(dois) < i + 1 or dois[i].strip() == "NA"
+            ):
                 bibliography[ref] = {
-                    "authors": split_authors(group["pub_authors"].iloc[0].split("|")[i]),
+                    "authors": split_authors(
+                        group["pub_authors"].iloc[0].split("|")[i]
+                    ),
                     "year": (
                         int(group["pub_year"].iloc[0].split("|")[i])
                         if not pd.isna(group["pub_year"].iloc[0])
@@ -144,7 +190,7 @@ for pub_verbatim, group in data.groupby("pub_verbatim"):
                     ),
                     "verbatim": ref,
                 }
-    else: 
+    else:
         bibliography[pub_verbatim] = {
             "authors": split_authors(group["pub_authors"].iloc[0]),
             "year": (
@@ -255,3 +301,5 @@ with open(args.output_file, "w") as f:
         indent=2,
         ensure_ascii=False,
     )
+
+print(f"[{len(row_ids)}]Missing rows : {set(data['row_id']) - row_ids}")

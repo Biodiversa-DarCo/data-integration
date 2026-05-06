@@ -63,6 +63,11 @@ def parse_identification(df: pd.DataFrame):
     return {
         "taxon": df["taxon_name"].iloc[0] if df["taxon_name"].iloc[0] else None,
         "confer": True if df["tax_id_confer"].iloc[0] else False,
+        "performed_by": (
+            df["identified_by"].iloc[0].split("; ")
+            if not pd.isna(df["identified_by"].iloc[0])
+            else None
+        ),
     }
 
 def parse_biomat(df: pd.DataFrame):
@@ -71,8 +76,8 @@ def parse_biomat(df: pd.DataFrame):
     return {
         "identification": parse_identification(df),
         "specimen_quantity": (
-            int(df["specimen_quantity"].iloc[0])
-            if not pd.isna(df["specimen_quantity"].iloc[0])
+            int(df["specimen_quantity"].sum())
+            if not pd.isna(df["specimen_quantity"].sum())
             else None
         ),
         "collections": [
