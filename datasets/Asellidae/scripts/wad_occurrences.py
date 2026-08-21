@@ -137,9 +137,12 @@ def parse_biomat(code, df: pd.DataFrame):
         }
     bibref = parse_bib_ref(df)
     data_source = df["data_source"].iloc[0]
-    if data_source and data_source.count("Personal"):
-        bibref.append(data_source.strip())
-        data_source = None
+    if data_source:
+        source_label = (
+            data_sources.get(data_source.strip(), {}).get("label")
+            or data_source.strip()
+        )
+
     return {
         "code": code,
         "identification": parse_identification(df),
@@ -158,7 +161,7 @@ def parse_biomat(code, df: pd.DataFrame):
         "collections": (
             [{"name": df["collection"].iloc[0]}] if df["collection"].iloc[0] else None
         ),
-        "original_source": data_source.strip() if data_source else None,
+        "sources": ([source_label] if data_source else None),
         "published_in": bibref if bibref else None,
         "sequences": [sequence] if sequence else None,
         "type_status": (
@@ -167,6 +170,7 @@ def parse_biomat(code, df: pd.DataFrame):
             else None
         ),
     }
+
 
 invalid_sampling_targets = [
     "Stenasellus n sp rajasant",
@@ -182,6 +186,7 @@ invalid_sampling_targets = [
     "Proasellus pavani aff",
     "Proasellus n sp arpaon",
 ]
+
 
 def parse_samplings(df: pd.DataFrame):
     samplings = []
@@ -211,9 +216,15 @@ def parse_samplings(df: pd.DataFrame):
         sampling = {
             "methods": parse_methods(method),
             "target_taxa": [
-                t if t not in invalid_sampling_targets \
-                else "Animalia" if t and t.startswith("Macroinvertebrate") \
-                else t.split(" ")[0]  \
+                (
+                    t
+                    if t not in invalid_sampling_targets
+                    else (
+                        "Animalia"
+                        if t and t.startswith("Macroinvertebrate")
+                        else t.split(" ")[0]
+                    )
+                )
                 for t in parse_sampling_target(target)
             ],
             "fixatives": parse_fixatives(fixatives),
@@ -363,7 +374,6 @@ dataset = {
     "description": "Asellota is an order of isopod crustaceans. They are the largest order of isopods, with about 1,000 genera and over 3,000 species. They are found in marine environments worldwide, from the intertidal zone to the deep sea. They are typically small, with the largest species reaching 50 mm (2.0 in) in length. They are often found in sediments, where they burrow or live in tubes. They are scavengers, feeding on detritus and other organic material. They are an important part of the marine food chain, serving as prey for fish, birds, and other animals. They are also important in the decomposition of organic matter, helping to recycle nutrients in marine ecosystems.",
     "maintainers": ["fmalard"],
     "content": result,
-    "organisations": organisations,
     "bibliography": {
         verbatim: parse_article(verbatim)
         for verbatim in data["references"].dropna().unique().tolist()
@@ -436,14 +446,6 @@ dataset = {
             "title": "Personal communication",
             "verbatim": "Messana G. Personal Data (2012)",
         },
-    },
-    "data_sources": data_sources,
-    "collections": {
-        "UCBLZ collections: Zoological Collections of University Claude Bernard Lyon 1": {
-            "label": "Zoological Collections of University Claude Bernard Lyon 1",
-            "code": "UCBLZ",
-            "location": "Lyon, France",
-        }
     },
     "taxa": taxa,
 }

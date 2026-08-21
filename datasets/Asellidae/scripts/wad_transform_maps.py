@@ -47,142 +47,6 @@ access_points_map = {
     "TUNNEL": "Tunnel",
 }
 
-
-organisations = {
-    "NIB": {
-        "name": "National Institute of Biology, Slovenia",
-        "code": "NIB",
-        "kind": "Lab",
-    },
-    "Uni-Lj": {
-        "name": "University of Ljubljana, Slovenia",
-        "code": "Uni-Lj",
-        "kind": "Lab",
-    },
-    "INRAE": {
-        "name": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement, France",
-        "code": "INRAE",
-        "kind": "Lab",
-    },
-    "SPELEO CLUB DIJON": {
-        "name": "Spéléo Club de Dijon",
-        "code": "SC Dijon",
-        "kind": "Other",
-    },
-    "SPELEO GROUP JFB": {
-        "name": "Spéléo Group JFB",
-        "code": "Spéléo JFB",
-        "kind": "Other",
-    },
-    "GROUPE SPELEOLOGIQUE LURON": {
-        "name": "Groupe Spéléologique Luron",
-        "code": "GSL",
-        "kind": "Other",
-    },
-    "GBOL TEAM ZFMK": {
-        "name": "German Barcode of Life (ZFMK team)",
-        "code": "GBOL ZFMK",
-        "kind": "Lab",
-    },
-    "BRITISH GEOLOGICAL SURVEY": {
-        "name": "British Geological Survey",
-        "code": "BGS",
-        "kind": "Lab",
-    },
-    "UNION SPELEOL UNIV LONDRES": {
-        "name": "London University Speleological Union",
-        "code": "London IUS",
-        "kind": "Other",
-    },
-    "DREAL LANGUEDOC ROUSSILLON": {
-        "name": "Direction Régionale de l'Environnement, de l'Aménagement et du Logement Languedoc-Roussillon",
-        "code": "DREAL LR",
-        "kind": "Other",
-    },
-    "PARC NATIONAL DU MERCANTOUR": {
-        "name": "Parc National du Mercantour",
-        "code": "Parc Mercantour",
-        "kind": "Other",
-    },
-    "AVEN GROUPE": {
-        "name": "Aven Group",
-        "code": "AVEN",
-        "kind": "Other",
-    },
-    "GROUPE SPELEOLOGIQUE DU CCF": {
-        "name": "Groupe Spéléologique du CCF",
-        "code": "Spéléo CCF",
-        "kind": "Other",
-    },
-}
-
-persons_map = {
-    "ZAGMAJSTER M": {
-        "first_name": "Maja",
-        "last_name": "Zagmajster",
-        "organisation": "Uni-Lj",
-    },
-    "MALARD F": {
-        "first_name": "Florian",
-        "last_name": "Malard",
-        "organisation": "LEHNA",
-    },
-    "MORI N": {"first_name": "Nataša", "last_name": "Mori", "organisation": "NIB"},
-    "LEFEBURE T": {
-        "first_name": "Tristan",
-        "last_name": "Lefebure",
-        "organisation": "LEHNA",
-    },
-    "DELIC T": {"first_name": "Teo", "last_name": "Delić", "organisation": "Uni-Lj"},
-    "DOUADY C": {
-        "first_name": "Christophe",
-        "last_name": "Douady",
-        "organisation": "LEHNA",
-    },
-    "SACLIER N": {
-        "first_name": "Natanaëlle",
-        "last_name": "Saclier",
-        "organisation": "LEHNA",
-    },
-    "CREUZE DES CHATELLIERS M": {
-        "first_name": "Michel",
-        "last_name": "Creuzé des Châtelliers",
-        "organisation": "LEHNA",
-    },
-    "MERMILLOD BLONDIN F": {
-        "first_name": "Florian",
-        "last_name": "Mermillod-Blondin",
-        "organisation": "LEHNA",
-    },
-    "FRANCOIS C": {
-        "first_name": "Clémentine",
-        "last_name": "François",
-        "organisation": "LEHNA",
-    },
-    "EME D": {
-        "first_name": "David",
-        "last_name": "Eme",
-        "organisation": "INRAE",
-    },
-    "NEGREA ST": {
-        "first_name": "Ştefan",
-        "last_name": "Negrea",
-    },
-    "PEARCE A E MCR": {
-        "first_name": "A E",
-        "last_name": "Pearce",
-    },
-    "MATSAKIS J TH": {
-        "first_name": "J",
-        "last_name": "Matsakis",
-    },
-    "ISSARTEL C": {
-        "first_name": "Colin",
-        "last_name": "Issartel",
-        "organisation": "LEHNA",
-    },
-}
-
 smeth_map = {
     "0 - INCONNU": None,
     "A VUE": "Sight",
@@ -242,11 +106,11 @@ data_sources = {
         "code": "WAD",
         "url": "https://gotit.univ-lyon1.fr/",
     },
-    # "PASCALIS Database EC Project Contract Number EVK2-CT-2001-00121": {
-    #     "label": "PASCALIS Database",
-    #     "code": "PASCALIS",
-    #     "description": "PASCALIS Database EC Project Contract Number EVK2-CT-2001-00121",
-    # },
+    "PASCALIS Database EC Project Contract Number EVK2-CT-2001-00121": {
+        "label": "PASCALIS Database",
+        "code": "PASCALIS",
+        "description": "PASCALIS Database EC Project Contract Number EVK2-CT-2001-00121",
+    },
     "CKmap Distribuzione della Fauna Italiana Checklist and distribution of 10000 species of the Italian fauna": {
         "label": "CKmap database",
         "code": "CKMAP",

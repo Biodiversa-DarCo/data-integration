@@ -11,6 +11,12 @@ tasks:
       - task: ostracoda
       - task: austria
       - task: spiders
+      - mkdir -p res
+      - cp datasets/Asellidae/res/Aselloidea_occurrences.json -t res/
+      - cp datasets/Copepoda/res/Copepoda_occurrences.json -t res/
+      - cp datasets/Ostracoda/res/Ostracoda.json -t res/
+      - cp datasets/Austria/res/Asellidae_Austria.json -t res/
+      - cp datasets/Spiders/res/Spiders.json -t res/
 
 includes:
   asellidae:

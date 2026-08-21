@@ -9,21 +9,22 @@ vars:
   ORIGINAL_DATA_ENCODING_FIX: res/Dataset_Copepoda_encoding_fix.csv
   CLEANED_DATA_ENCODING_FIX: res/Dataset_Copepoda_cleaned_encoding_fix.tsv
   PREPROCESSED_DATA: res/preprocessed.tsv
+  OUTPUT_FILE: res/copepoda.tsv
 
 tasks:
-  default:
-    cmds:
-      - uv run scripts/copepoda_occurrences.py {{.PREPROCESSED_DATA}} res/Copepoda_occurrences.json
-    desc: Generate Copepoda occurrences dataset in ready to import JSON format
-    sources:
-      - scripts/copepoda_occurrences.py
-      - "{{.PREPROCESSED_DATA}}"
-      - res/unclassified_taxa.json
-    generates:
-      - res/Copepoda_occurrences.json
-    deps:
-      - preprocess
-      - unreferenced_taxa
+  # default:
+  #   cmds:
+  #     - uv run scripts/copepoda_occurrences.py {{.PREPROCESSED_DATA}} res/Copepoda_occurrences.json
+  #   desc: Generate Copepoda occurrences dataset in ready to import JSON format
+  #   sources:
+  #     - scripts/copepoda_occurrences.py
+  #     - "{{.PREPROCESSED_DATA}}"
+  #     - res/unclassified_taxa.json
+  #   generates:
+  #     - res/Copepoda_occurrences.json
+  #   deps:
+  #     - preprocess
+  #     - unreferenced_taxa
 
   unreferenced_taxa:
     cmds:
@@ -38,15 +39,15 @@ tasks:
     deps:
       - preprocess
 
-  preprocess:
+  default:
     cmds:
-      - Rscript scripts/copepoda.R {{.CLEANED_DATA_ENCODING_FIX}} {{.PREPROCESSED_DATA}}
+      - Rscript scripts/copepoda.R {{.CLEANED_DATA_ENCODING_FIX}} data/localities_encoding_fix.tsv data/references_encoding_fix.tsv {{.OUTPUT_FILE}}
     desc: Preprocess the Copepoda dataset
     sources:
       - scripts/copepoda.R
       - "{{.CLEANED_DATA_ENCODING_FIX}}"
     generates:
-      - "{{.PREPROCESSED_DATA }}"
+      - "{{.OUTPUT_FILE}}"
     deps:
       - recover_encoding
 

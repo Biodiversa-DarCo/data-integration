@@ -4,3 +4,4 @@
 __pycache__
 .task
 node_modules
+res/

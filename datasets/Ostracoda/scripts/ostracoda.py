@@ -122,18 +122,6 @@ dataset = {
         verbatim: parse_article(verbatim)
         for verbatim in data["references"].dropna().unique().tolist()
     },
-    "people": {
-        "pmarmonier": {
-            "first_name": "Pierre",
-            "last_name": "Marmonier",
-            "institutions": ["LEHNA"],
-        },
-        "nmori": {
-            "first_name": "Nataša",
-            "last_name": "Mori",
-            "institutions": ["NIB"],
-        },
-    },
 }
 
 dataset["bibliography"][
@@ -145,10 +133,6 @@ dataset["bibliography"][
     "year": 1963,
     "verbatim": "Megyeri János: Ásott kutak hidrofaunisztikai vizsgálata. In: A Szegedi Tanárképző Főiskola tudományos közleményei 2. pp. 149-175. (1963).",
 }
-
-with open(args.metadata, "r") as f:
-    metadata = json.load(f)
-    dataset.update(metadata)
 
 with open(args.unreferenced_taxa, "r") as f:
     unreferenced_taxa = json.load(f)

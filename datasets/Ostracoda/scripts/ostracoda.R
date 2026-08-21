@@ -40,7 +40,7 @@ print(commandArgs(trailingOnly = T))
 if (length(commandArgs(trailingOnly = T)) > 0) {
   args <- parser$parse_args()
 } else {
-  args <- parser$parse_args(c("datasets/Ostracoda/data/Dataset.tsv", "datasets/Ostracoda/res/preprocessed.tsv"))
+  args <- parser$parse_args(c("datasets/Ostracoda/data/Dataset.tsv", "datasets/Ostracoda/res/Ostracoda.tsv"))
 }
 
 input_file <- args$input
@@ -70,35 +70,35 @@ MISSING_COORDS_DELETE <- c(
 )
 
 (
-  taxonomy_fix <- read_tsv(taxonomy_fix_file, locale = locale(decimal_mark = ",")) %>%
+  taxonomy_fix <- read_tsv(taxonomy_fix_file, locale = locale(decimal_mark = ",")) |>
     mutate(
       unclassified = is.na(Classified) | !Classified,
       id_confer = str_detect(Lineage, "cf\\."),
       taxonRank = str_to_title(taxonRank)
-    ) %>%
+    ) |>
     select(ID, family, genus, species, scientificNameAuthorship, unclassified, taxonRank, Lineage, id_confer, scientificName)
 )
 
 (
-  aff_cf_fix <- read_tsv(aff_cf_fix_file) %>%
+  aff_cf_fix <- read_tsv(aff_cf_fix_file) |>
     mutate(
       id_confer = str_detect(Lineage, "cf\\."),
-    ) %>%
+    ) |>
     select(ID, family, genus, species, scientificNameAuthorship, taxonRank, Lineage, id_confer, scientificName)
 )
 
 (
-  habitats <- read_tsv(habitats_file) %>%
+  habitats <- read_tsv(habitats_file) |>
     select(ID, habitat, access_points)
 )
 
-(gbif_records <- read_tsv(gbif_file, locale = locale(decimal_mark = ",")) %>%
-  select(-Rights, -`Input.into.DB.-.name`, -SourceType) %>%
+(gbif_records <- read_tsv(gbif_file, locale = locale(decimal_mark = ",")) |>
+  select(-Rights, -`Input.into.DB.-.name`, -SourceType) |>
   rename(
     site_name = "LocalityName",
     altitude = "Altitude",
     scientificNameAuthorship = "authorship",
-  ) %>%
+  ) |>
   mutate(scientificName = taxon_name)
 )
 
@@ -106,21 +106,27 @@ missing_coords <- read_tsv(missing_coords_file)
 
 (
   # Dataset.tsv is manually fixed version of Dataset.csv where line break in record 1469 was removed.
-  data <- read_tsv(input_file, locale = locale(decimal_mark = ",")) %>%
+  data <- read_tsv(input_file, locale = locale(decimal_mark = ",")) |>
     # dedup strictly identical records
     # ignore ID when applying distinct
-    distinct_at(vars(-ID), .keep_all = TRUE) %>%
-    filter(!str_detect(family, "CC0")) %>% # drop censored GBIF records
+    distinct_at(vars(-ID), .keep_all = TRUE) |>
+    filter(!str_detect(family, "CC0")) |> # drop censored GBIF records
     mutate(
+      # latitude = decimalLatitude,
+      # longitude = decimalLongitude,
       latitude = round(parse_double(decimalLatitude, locale = locale(decimal_mark = ",")), 5),
       longitude = round(parse_double(decimalLongitude, locale = locale(decimal_mark = ",")), 5),
       altitude = round(parse_double(elevationInMeters, locale = locale(decimal_mark = ",")), 2),
-    ) %>%
-    select(-geodeticDatum, -TaxonID, -decimalLatitude, -decimalLongitude, -elevationInMeters) %>%
+    ) |>
+    select(
+      -geodeticDatum, -TaxonID,
+      -decimalLatitude, -decimalLongitude,
+      -elevationInMeters
+    ) |>
     mutate(
       id_confer = str_detect(verbatimIdentification, "cf"),
-    ) %>%
-    left_join(taxonomy_fix, by = "ID", suffix = c(".old", ".new")) %>%
+    ) |>
+    left_join(taxonomy_fix, by = "ID", suffix = c(".old", ".new")) |>
     mutate(
       family = coalesce(family.new, family.old),
       genus = coalesce(genus.new, genus.old),
@@ -130,10 +136,10 @@ missing_coords <- read_tsv(missing_coords_file)
       taxonRank = coalesce(taxonRank.new, taxonRank.old),
       Lineage = coalesce(Lineage.new, Lineage.old),
       id_confer = coalesce(id_confer.new, id_confer.old)
-    ) %>%
+    ) |>
     # drop .old columns
-    select_at(vars(-ends_with(".old"), -ends_with(".new"))) %>%
-    left_join(aff_cf_fix, by = "ID", suffix = c(".old", ".new")) %>%
+    select_at(vars(-ends_with(".old"), -ends_with(".new"))) |>
+    left_join(aff_cf_fix, by = "ID", suffix = c(".old", ".new")) |>
     mutate(
       family = coalesce(family.new, family.old),
       genus = coalesce(genus.new, genus.old),
@@ -143,39 +149,48 @@ missing_coords <- read_tsv(missing_coords_file)
       taxonRank = coalesce(taxonRank.new, taxonRank.old),
       Lineage = coalesce(Lineage.new, Lineage.old),
       id_confer = coalesce(id_confer.new, id_confer.old),
-    ) %>%
+      sampling_comments = NA_character_,
+    ) |>
     # drop .old and .new columns
-    select_at(vars(-ends_with(".old"), -ends_with(".new"))) %>%
-    select(-verticalDatum, -locationID, -`Input.into.DB.-.name`, -rightsHolder) %>%
+    select_at(vars(-ends_with(".old"), -ends_with(".new"))) |>
+    select(-verticalDatum, -locationID, -`Input.into.DB.-.name`, -rightsHolder) |>
     rename(
       site_name = locality,
       sampling_date = dateIdentified,
       data_repository = basisOfRecord,
       taxon_rank = taxonRank,
       verbatim_identification = verbatimIdentification,
-    ) %>%
+      # sampling_comments = site_comments,
+    ) |>
+    rows_update(tibble_row(
+      ID = 1284,
+      site_name = "Reka Bača, Tolmin",
+      sampling_comments = "20-meter river section between the house at Bača pri Modreju 59 and the railway bridge, at the upstream edge of a 100-meter gravel bar located along the right side of the riverbed; interstitial habitat—within the riverbed at a depth of 30–60 cm in the gravel, and in the gravel bar at a depth of 60–90 cm below the surface.",
+    ), by = "ID") |>
     mutate(
       # After checking, only Typhlocypris cf. eremita is concerned with confer id
-      scientificNameAuthorship = scientificNameAuthorship %>% stringi::stri_trans_general("Latin-ASCII") %>% str_remove_all("\\,"),
-      taxon_name = scientificName %>%
-        stringi::stri_trans_general("Latin-ASCII") %>%
-        str_remove_all("\\,") %>%
-        str_remove_all(scientificNameAuthorship) %>%
-        str_remove_all("\\(\\)") %>%
-        str_remove_all("\\(?([A-Z][a-z]+([A-Z][a-z]+\\,)* ?)*([A-Z][a-z]+ ?\\& ?)* ?[A-Z][a-z]+ [0-9]{4}\\)?") %>%
-        str_remove("((ge)?n\\. *)?sp\\.? *$") %>%
+      scientificNameAuthorship = scientificNameAuthorship |> stringi::stri_trans_general("Latin-ASCII") |> str_remove_all("\\,"),
+      taxon_name = scientificName |>
+        stringi::stri_trans_general("Latin-ASCII") |>
+        str_remove_all("\\,") |>
+        str_remove_all(scientificNameAuthorship) |>
+        str_remove_all("\\(\\)") |>
+        str_remove_all("\\(?([A-Z][a-z]+([A-Z][a-z]+\\,)* ?)*([A-Z][a-z]+ ?\\& ?)* ?[A-Z][a-z]+ [0-9]{4}\\)?") |>
+        str_remove("((ge)?n\\. *)?sp\\.? *$") |>
         str_squish(),
-    ) %>%
+    )
+    # magrittr pipe required here
+    %>%
     bind_rows(
       .,
-      filter(., ID == 706) %>%
+      filter(., ID == 706) |>
         mutate(
           species = "danielopoli",
           scientificName = "Schellencandona danielopoli Issartel & Marmonier, 2025",
           taxon_name = "Schellencandona danielopoli",
           scientificNameAuthorship = "Issartel & Marmonier, 2025",
         ),
-      filter(., ID == 676) %>%
+      filter(., ID == 676) |>
         mutate(
           species = "n. sp. J4",
           unclassified = TRUE,
@@ -185,14 +200,14 @@ missing_coords <- read_tsv(missing_coords_file)
           scientificNameAuthorship = NA,
         ),
       gbif_records
-    ) %>%
+    ) |>
     mutate(
       references = if_else(
         ID %in% seq(706, 717),
         "Issartel, C., & Marmonier, P. (2025). Description of five new species of Schellencandona Meisch, 1996 (Ostracoda: Candoninae) from the southern French Alps, a highly diversified area for groundwater ostracods. European Journal of Taxonomy, 1022(1), 85–133. https://doi.org/10.5852/ejt.2025.1022.3083",
         references
       ),
-      # taxon_name = if_else(id_confer, "Typhlocypris eremita", taxon_name) %>% str_remove("Namiotko et al. 2005$"),
+      # taxon_name = if_else(id_confer, "Typhlocypris eremita", taxon_name) |> str_remove("Namiotko et al. 2005$"),
       # species = if_else(id_confer, "eremita", species),
       unclassified = case_when(
         taxon_name %in% c("Mixtacandona juberthieae", "Schellencandona malardi", "Schellencandona danielopoli", "Pseudolimnocythere") ~ FALSE,
@@ -203,13 +218,13 @@ missing_coords <- read_tsv(missing_coords_file)
         TRUE ~ Lineage,
       ),
       taxon_rank = str_to_title(taxon_rank),
-      references = str_replace_all(references, "", "è") %>%
-        str_replace_all("eè", "è") %>%
-        str_replace_all("franais", "français") %>%
-        str_replace_all("dâun", "d'un") %>%
-        str_replace_all("karstiqueÊ", "karstique ") %>%
-        str_replace_all("Universityy", "University ") %>%
-        str_replace_all("\\\"\"E. Boegan\\\"\"", "\"E. Boegan\"") %>%
+      references = str_replace_all(references, "", "è") |>
+        str_replace_all("eè", "è") |>
+        str_replace_all("franais", "français") |>
+        str_replace_all("dâun", "d'un") |>
+        str_replace_all("karstiqueÊ", "karstique ") |>
+        str_replace_all("Universityy", "University ") |>
+        str_replace_all("\\\"\"E. Boegan\\\"\"", "\"E. Boegan\"") |>
         str_replace("^Unpubl. data P. ", "Unpublished Data: P. "),
       data_repository = case_when(
         str_starts(data_repository, "Pascalis") ~ "PASCALIS",
@@ -224,17 +239,17 @@ missing_coords <- read_tsv(missing_coords_file)
         ID == 1394 ~ "Mixtacandona",
         TRUE ~ genus
       ),
-      sampling_date = str_replace_all(sampling_date, "\\.", "/"),
+      sampling_date = str_replace_all(sampling_date, "\\.", "/") |>
+        str_split("/") |>
+        purrr::map_chr(
+          ~ str_c(rev(.x), collapse = "-")
+        ),
       identifiedBy = case_when(
         identifiedBy == "PASCALIS" ~ NA_character_,
         identifiedBy == "FM" ~ "Marrone, F.",
         identifiedBy == "GR" ~ "Rossetti, G.",
-        identifiedBy == "D. Taliana" ~ "Taliana, D.",
-        identifiedBy == "F. Stoch" ~ "Stoch, F.",
-        identifiedBy == "Fabio Zanicelli" ~ "Zanicelli, F.",
-        identifiedBy == "Nataša Mori" ~ "Mori, N.",
         TRUE ~ identifiedBy
-      ) %>% str_replace_all(";", "|"),
+      ) |> str_replace_all(";", "|"),
       datasetName = case_when(
         # not a dataset but a paper
         str_starts(datasetName, "Revision") ~ NA,
@@ -245,12 +260,12 @@ missing_coords <- read_tsv(missing_coords_file)
         str_starts(datasetName, "Diversity of") ~ NA,
         TRUE ~ datasetName
       )
-    ) %>%
-    select(-habitat, -access_points, -locationRemarks, -Lineage) %>%
-    left_join(habitats, by = "ID") %>%
+    ) |>
+    select(-habitat, -access_points, -locationRemarks, -Lineage) |>
+    left_join(habitats, by = "ID") |>
     mutate(
       habitat = str_replace(habitat, "Zone", "zone"),
-      occurrence_comments = case_when(
+      sources = case_when(
         references %in% c(
           "Unpublished Data: University of Vienna",
           "PersonalCommunication_NationalparkGesäuse",
@@ -269,49 +284,99 @@ missing_coords <- read_tsv(missing_coords_file)
         "Unpublished Data: C. Bou et Michel Caillon: Albi: France"
       )), references, NA_character_),
       taxon_name = str_remove(taxon_name, " \\([^\\)]+\\)$| [A-Za-z]+, [0-9]{4}$| Namiotko et al. 2005$"),
-    ) %>%
-    filter(!ID %in% MISSING_COORDS_DELETE) %>%
+    ) |>
+    filter(!ID %in% MISSING_COORDS_DELETE) |>
     # replace missing coordinates, overwriting columns latitude and longitude
-    left_join(missing_coords, by = "ID", suffix = c(".old", ".new")) %>%
+    left_join(missing_coords, by = "ID", suffix = c(".old", ".new")) |>
     mutate(
       latitude = coalesce(latitude.new, latitude.old),
       longitude = coalesce(longitude.new, longitude.old),
       coord_precision = coalesce(coord_precision.new, coord_precision.old),
-    ) %>%
-    select_at(vars(-ends_with(".old"), -ends_with(".new"))) %>%
+    ) |>
+    select_at(vars(-ends_with(".old"), -ends_with(".new"))) |>
     mutate(
       site_name = if_else(str_length(site_name) <= 3, str_c("Ostracoda_", site_name), site_name),
-      coord_precision = if_else(is.na(coord_precision), "Unknown", coord_precision)
-    ) %>%
+      coord_precision = case_when(
+        coord_precision == "<10km" ~ 10000,
+        coord_precision == "<100m" ~ 100,
+        coord_precision == "10-100km" ~ 100000,
+        TRUE ~ NA_integer_
+      ),
+      # coord_precision = if_else(is.na(coord_precision), "Unknown", coord_precision)
+    ) |>
     relocate(
       ID, verbatim_identification, scientificName, taxon_name, class, order, family, genus, species, id_confer, id_addendum,
       data_repository, everything()
-    )
-) %>%
-  write_tsv(output_file)
+    ) |>
+    # -------------------------------
+    select(-country, -scientificName) |>
+    mutate(
+      # sources = str_c(sources, data_repository, datasetName, sep = "|"),
+      region = na_if(region, stateProvince) |> na_if(municipality),
+      stateProvince = na_if(stateProvince, municipality),
+    ) |>
+    unite(
+      "sources",
+      sources,
+      data_repository,
+      datasetName,
+      informationWithheld,
+      sep = "|",
+      na.rm = TRUE,
+    ) |>
+    unite(
+      "locality",
+      municipality,
+      stateProvince,
+      region,
+      sep = ", ",
+      # remove = FALSE,
+      na.rm = TRUE
+    ) |>
+    unite("sampling_comments",
+      sampling_comments, site_comments,
+      sep = ". ", na.rm = TRUE
+    ) |>
+    mutate(
+      sampling_comments = na_if(sampling_comments, "")
+    ) |>
+    rename(
+      taxon_authorship = scientificNameAuthorship,
+      pub_verbatim = references,
+      pub_doi = doi,
+      identification_addendum = id_addendum,
+      identified_by = identifiedBy,
+      identification_confer = id_confer,
+      coordinates_precision_m = coord_precision,
+      event_date = sampling_date,
+    ) |>
+    relocate(everything(), sampling_comments)
+) |>
+  write_tsv(output_file, quote = "needed")
 
+message("Preprocessed Ostracoda dataset written to ", output_file)
 
 # (
-#   dups <- data %>%
-#     group_by(site_name, latitude, longitude, taxon_name, sampling_date) %>%
-#     summarise(n = n()) %>%
+#   dups <- data |>
+#     group_by(site_name, latitude, longitude, taxon_name, sampling_date) |>
+#     summarise(n = n()) |>
 #     filter(n > 1)
 # )
 
 
-# data %>%
-#   select(data_repository, datasetName, informationWithheld) %>%
+# data |>
+#   select(data_repository, datasetName, informationWithheld) |>
 #   distinct()
 # # transform each to a concatenated string
-# (dup_strings <- dups %>%
+# (dup_strings <- dups |>
 #   mutate(
 #     dup_string = paste(site_name, latitude, longitude, taxon_name, sampling_date, sep = " | ")
-#   ) %>%
+#   ) |>
 #   pull(dup_string)
 # )
 
-# data %>%
-#   mutate(dups = paste(site_name, latitude, longitude, taxon_name, sampling_date, sep = " | ")) %>%
-#   filter(dups %in% dup_strings) %>%
-#   arrange(dups) %>%
+# data |>
+#   mutate(dups = paste(site_name, latitude, longitude, taxon_name, sampling_date, sep = " | ")) |>
+#   filter(dups %in% dup_strings) |>
+#   arrange(dups) |>
 #   write_tsv("datasets/Ostracoda/res/duplicates.tsv")

@@ -60,8 +60,11 @@ def parse_date(date):
 
 
 def parse_identification(df: pd.DataFrame):
+    name = df["taxon_name"].iloc[0]
+    if name == "Porrhomma myops":
+        name = "Porrhomma myops Simon, 1884"
     return {
-        "taxon": df["taxon_name"].iloc[0] if df["taxon_name"].iloc[0] else None,
+        "taxon": name if name else None,
         "confer": True if df["tax_id_confer"].iloc[0] else False,
         "performed_by": (
             df["identified_by"].iloc[0].split("; ")
@@ -70,6 +73,7 @@ def parse_identification(df: pd.DataFrame):
         ),
     }
 
+
 def parse_biomat(df: pd.DataFrame):
     refs = df["pub_verbatim"].dropna().unique()
 
@@ -77,16 +81,29 @@ def parse_biomat(df: pd.DataFrame):
         "identification": parse_identification(df),
         "specimen_quantity": (
             int(df["specimen_quantity"].sum())
-            if not pd.isna(df["specimen_quantity"].sum())
+            if not pd.isna(df["specimen_quantity"]).any()
             else None
         ),
         "collections": [
             {"name": collection} for collection in df["collection"].dropna().unique()
         ],
-        "published_in": [x for ref  in refs.tolist() for x in ref.split("|")] if pd.isna(df["pub_DOI"].iloc[0]) else [],
+        "published_in": (
+            [x for ref in refs.tolist() for x in ref.split("|")]
+            if pd.isna(df["pub_DOI"].iloc[0])
+            else []
+        ),
         # split around "|" and flatten
-        "dois": [doi.strip() for doi in df["pub_DOI"].dropna().unique().tolist()[0].split("|") if not "NA" in doi] if not pd.isna(df["pub_DOI"].iloc[0]) else [],
+        "dois": (
+            [
+                doi.strip()
+                for doi in df["pub_DOI"].dropna().unique().tolist()[0].split("|")
+                if not "NA" in doi
+            ]
+            if not pd.isna(df["pub_DOI"].iloc[0])
+            else []
+        ),
     }
+
 
 def count_alphabetic(s: str) -> int:
     """

@@ -30,7 +30,8 @@ print(args)
 
 data <- read_tsv(args$input_file, locale = locale(decimal_mark = ",")) |>
   # remove NA columns except content_description
-  select(where(~ !all(is.na(.)))) |>
+  select(where(~ !all(is.na(.))), occurrence_comments) |>
+  mutate(occurrence_comments = as.character(occurrence_comments)) |>
   mutate(across(where(is.character), ~ str_trim(.))) |>
   mutate(
     row_id = row_number(),
@@ -67,92 +68,93 @@ message("Encoding fix applied")
 # Multiple coordinates fix
 # ---------------------------------------------------------
 
-coordinates_fix <- read_tsv(args$multiple_coordinates_fix, show_col_types = FALSE) |>
-  select(row_number, latitude, longitude)
+# coordinates_fix <- read_tsv(args$multiple_coordinates_fix, show_col_types = FALSE) |>
+#   select(row_number, latitude, longitude)
 
-data <- data |>
-  left_join(coordinates_fix, by = c("row_id" = "row_number")) |>
-  mutate(
-    latitude = coalesce(latitude.y, latitude.x),
-    longitude = coalesce(longitude.y, longitude.x)
-  ) |>
-  select(-latitude.x, -latitude.y, -longitude.x, -longitude.y)
+# data <- data |>
+#   left_join(coordinates_fix, by = c("row_id" = "row_number")) |>
+#   mutate(
+#     latitude = coalesce(latitude.y, latitude.x),
+#     longitude = coalesce(longitude.y, longitude.x)
+#   ) |>
+#   select(-latitude.x, -latitude.y, -longitude.x, -longitude.y)
 
-message("Multiple coordinates fix applied")
+# message("Multiple coordinates fix applied")
 
 # ---------------------------------------------------------
 # Multiple site names fix
 # ---------------------------------------------------------
 
-names_fix <- read_tsv(args$multiple_site_names_fix, show_col_types = FALSE) |>
-  select(row_number, site_name)
+# names_fix <- read_tsv(args$multiple_site_names_fix, show_col_types = FALSE) |>
+#   select(row_number, site_name)
 
-data <- data |>
-  left_join(names_fix, by = c("row_id" = "row_number")) |>
-  mutate(site_name = coalesce(site_name.y, site_name.x)) |>
-  select(-site_name.x, -site_name.y)
-
-
-data <- data |> relocate(row_id, site_name, latitude, longitude)
-
-message("Multiple site names fix applied")
+# data <- data |>
+#   left_join(names_fix, by = c("row_id" = "row_number")) |>
+#   mutate(site_name = coalesce(site_name.y, site_name.x)) |>
+#   select(-site_name.x, -site_name.y)
 
 
-data <- data |>
-  mutate(
-    coord_precision = case_when(
-      is.na(coord_precision) ~ NA_character_,
-      coord_precision <= 100 ~ "<100m",
-      coord_precision <= 1000 ~ "<1km",
-      coord_precision <= 10000 ~ "<10km",
-      TRUE ~ "10-100km"
-    )
-  )
+# data <- data |> relocate(row_id, site_name, latitude, longitude)
+
+# message("Multiple site names fix applied")
+
+
+# data <- data |>
+#   mutate(
+#     coord_precision = case_when(
+#       is.na(coord_precision) ~ NA_character_,
+#       coord_precision <= 100 ~ "<100m",
+#       coord_precision <= 1000 ~ "<1km",
+#       coord_precision <= 10000 ~ "<10km",
+#       TRUE ~ "10-100km"
+#     )
+#   )
 
 # ---------------------------------------------------------
 # General fixes
 # ---------------------------------------------------------
 
-data |>
-  group_by(site_name, latitude, longitude) |>
-  filter(length(unique(coord_precision)) > 1) |>
-  select(site_name, latitude, longitude, coord_precision) |>
-  arrange(site_name) |>
-  print(n = Inf)
+# data |>
+#   group_by(site_name, latitude, longitude) |>
+#   filter(length(unique(coord_precision)) > 1) |>
+#   select(site_name, latitude, longitude, coord_precision) |>
+#   arrange(site_name) |>
+#   print(n = Inf)
 
-message("Fix sites with multiple coordinate precision values")
-data <- data |>
-  # for each site, use the predominant coordinate precision, if there are multiple records with different precision
-  group_by(site_name, latitude, longitude) |>
-  mutate(
-    coord_precision = {
-      non_missing_precision <- na.omit(coord_precision)
+# message("Fix sites with multiple coordinate precision values")
+# data <- data |>
+#   # for each site, use the predominant coordinate precision, if there are multiple records with different precision
+#   group_by(site_name, latitude, longitude) |>
+#   mutate(
+#     coord_precision = {
+#       non_missing_precision <- na.omit(coord_precision)
 
-      if (
-        n_distinct(coord_precision, na.rm = FALSE) > 1 &&
-          length(non_missing_precision) > 0
-      ) {
-        names(sort(table(non_missing_precision), decreasing = TRUE))[1]
-      } else {
-        first(coord_precision)
-      }
-    }
-  ) |>
-  ungroup()
+#       if (
+#         n_distinct(coord_precision, na.rm = FALSE) > 1 &&
+#           length(non_missing_precision) > 0
+#       ) {
+#         names(sort(table(non_missing_precision), decreasing = TRUE))[1]
+#       } else {
+#         first(coord_precision)
+#       }
+#     }
+#   ) |>
+#   ungroup()
 
 message("Fix site names")
-omisalj_patch = tibble(
+omisalj_patch <- tibble(
   row_id = 27826,
   site_name = "Under the rock near Omišalj, Krk island a cave near Draga Bašćanska",
-  coord_precision = "<1km",
+  coord_precision = 1000,
   sampling_date = "1929-09-16",
   content_description = "1 male, 1 juvenile female",
   specimen_quantity = 2,
+  occurrence_comments = "leg. Jovan Hadži. I don't know which cave this is, we didn't find it yet, that's why I'm cautious with this species"
 )
 
 print(names(data))
 
-data = data |>
+data <- data |>
   mutate(site_name = case_when(
     str_starts(site_name, "Agios Georgios, 50m,") ~ "Agios Georgios",
     str_starts(site_name, "Exo Mouliana, along path to Richtis Waterfall") ~ "Exo Mouliana, along path to Richtis Waterfall",
@@ -160,7 +162,6 @@ data = data |>
     TRUE ~ site_name
   )) |>
   rows_update(omisalj_patch, by = "row_id")
-
 
 
 data |>
@@ -181,40 +182,40 @@ data <- data |>
     ) |> replace_na(""),
     id_confer = str_detect(taxon_name, "cf\\.") |> na_if(FALSE),
     taxon_name = (
-      str_remove(taxon_name, "sp\\.\\s*$") |> 
-      str_remove("cf\\.\\s*") |> 
-      str_remove(" ?NA *$") |> 
-      str_trim()
+      str_remove(taxon_name, "sp\\.\\s*$") |>
+        str_remove("cf\\.\\s*") |>
+        str_remove(" ?NA *$") |>
+        str_trim()
     ),
     taxon_name = case_when(
-        taxon_name == "Spermphora senoculata" ~ "Spermophora senoculata",
-        taxon_name == "Tegenaria vel Malthonica" ~ "Tegenaria",
-        taxon_name == "Hoplopholcus sululin" ~ "Hoplopholcus suluin",
-        taxon_name == "Rugathodes bellicosum" ~ "Rugathodes bellicosus",
-        taxon_name == "Centromerus corsica" ~ "Centromerus corsicus",
-        taxon_name == "Folkia subcupresa" ~ "Folkia subcupressa",
-        taxon_name == "Carpathonesticus carpathicus" ~ "Carpathonesticus carpaticus",
-        taxon_name == "Troglohyphantes brignoli" ~ "Troglohyphantes brignolii",
-        taxon_name == "Rugathodes bellicosum" ~ "Rugathodes bellicosus",
-        taxon_name == "Leptoneta cryticola" ~ "Leptoneta crypticola",
-        taxon_name == "Metallina merianae" ~ "Metellina merianae",
-        taxon_name == "Metopobractus cavernicola" ~ "Metopobactrus cavernicola",
-        taxon_name == "Meta vel Metellina" ~ "Meta",
-        taxon_name == "Clubiona cicur" ~ "Cicurina cicur",
-        taxon_name == "Palliduphantes leprosus" ~ "Lepthyphantes leprosus",
-        taxon_name == "Palliduphants spelaeorum" ~ "Palliduphantes spelaeorum",
-        taxon_name == "Robertus cardensensis" ~ "Robertus cardesensis",
-        taxon_name == "Hoplopholcus gazipasta" ~ "Hoplopholcus gazipasa",
-        taxon_name == "Coelotes jurinitschi" ~ "Inermocoelotes jurinitschi",
-        TRUE ~ taxon_name
-      )
+      taxon_name == "Spermphora senoculata" ~ "Spermophora senoculata",
+      taxon_name == "Tegenaria vel Malthonica" ~ "Tegenaria",
+      taxon_name == "Hoplopholcus sululin" ~ "Hoplopholcus suluin",
+      taxon_name == "Rugathodes bellicosum" ~ "Rugathodes bellicosus",
+      taxon_name == "Centromerus corsica" ~ "Centromerus corsicus",
+      taxon_name == "Folkia subcupresa" ~ "Folkia subcupressa",
+      taxon_name == "Carpathonesticus carpathicus" ~ "Carpathonesticus carpaticus",
+      taxon_name == "Troglohyphantes brignoli" ~ "Troglohyphantes brignolii",
+      taxon_name == "Rugathodes bellicosum" ~ "Rugathodes bellicosus",
+      taxon_name == "Leptoneta cryticola" ~ "Leptoneta crypticola",
+      taxon_name == "Metallina merianae" ~ "Metellina merianae",
+      taxon_name == "Metopobractus cavernicola" ~ "Metopobactrus cavernicola",
+      taxon_name == "Meta vel Metellina" ~ "Meta",
+      taxon_name == "Clubiona cicur" ~ "Cicurina cicur",
+      taxon_name == "Palliduphantes leprosus" ~ "Lepthyphantes leprosus",
+      taxon_name == "Palliduphants spelaeorum" ~ "Palliduphantes spelaeorum",
+      taxon_name == "Robertus cardensensis" ~ "Robertus cardesensis",
+      taxon_name == "Hoplopholcus gazipasta" ~ "Hoplopholcus gazipasa",
+      taxon_name == "Coelotes jurinitschi" ~ "Inermocoelotes jurinitschi",
+      TRUE ~ taxon_name
+    )
   ) |>
   filter(!(taxon_name %in% c("Amaurobius vel Coelotes", "NA NA"))) |>
-  # repair wrong separators for one pub verbatim 
+  # repair wrong separators for one pub verbatim
   mutate(
     pub_verbatim = case_when(
       row_id == 24755 ~ "Pavlek, M., & Ozimec, R. (2009). New cave-dwelling species of genus Troglohyphantes (Araneae, Linyphiidae) for Croatian fauna. Natura Craotica, 18(1), 29–37. | Mammola, S., Cardoso, P., Angyal, D., Balázs, G., Blick, T., Brustel, H., … Isaia, M. (2019). Continental data on cave-dwelling spider communities across Europe (Arachnida: Araneae). Biodiversity Data Journal, 7. https://doi.org/10.3897/BDJ.7.e38492 | Jalžić, B. & Rnjak, G. 2019: Glogova jama na Sniježnici. Subterranea Croatica, 17, 2, 44-50.",
-      TRUE ~ pub_verbatim    
+      TRUE ~ pub_verbatim
     ) |> str_replace_all("\\s*\\|\\s*", "|"),
     # fix missing publication years for records with multiple publications, using the years from pub_verbatim
     pub_year = case_when(
@@ -230,9 +231,9 @@ data <- data |>
       TRUE ~ as.character(pub_year)
     ) |> str_replace_all("\\s*\\|\\s*", "|"),
     pub_DOI = (
-      str_replace_all(pub_DOI, "\\s*\\|\\s*", "|") |> 
-      # fix typo in DOI
-      str_replace("10.1002/mmnz.1971047020", "10.1002/mmnz.19710470203")
+      str_replace_all(pub_DOI, "\\s*\\|\\s*", "|") |>
+        # fix typo in DOI
+        str_replace("10.1002/mmnz.1971047020", "10.1002/mmnz.19710470203")
     ),
     pub_year = str_replace_all(pub_year, "\\s*\\|\\s*", "|"),
     pub_authors = str_replace_all(pub_authors, "\\s*\\|\\s*", "|"),
@@ -243,17 +244,16 @@ data <- data |>
 
 
 # add coordinate-based suffix for duplicated site names with different coordinates
-data <- data |>
-  group_by(site_name) |>
-  mutate(
-    .coord_key = str_c(latitude, longitude, sep = "|"),
-    .coord_suffix = dense_rank(.coord_key),
-    .coord_count = n_distinct(.coord_key)
-  ) |>
-  ungroup() |>
-  mutate(site_name = if_else(.coord_count > 1, str_c(site_name, " [", .coord_suffix, "]"), site_name)) |>
-  select(-.coord_key, -.coord_suffix, -.coord_count)
-
+# data <- data |>
+#   group_by(site_name) |>
+#   mutate(
+#     .coord_key = str_c(latitude, longitude, sep = "|"),
+#     .coord_suffix = dense_rank(.coord_key),
+#     .coord_count = n_distinct(.coord_key)
+#   ) |>
+#   ungroup() |>
+#   mutate(site_name = if_else(.coord_count > 1, str_c(site_name, " [", .coord_suffix, "]"), site_name)) |>
+#   select(-.coord_key, -.coord_suffix, -.coord_count)
 
 
 # ---------------------------------------------------------

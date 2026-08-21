@@ -114,25 +114,6 @@ dataset = {
     "content": results,
     "import_clades": data["family"].unique().tolist(),
     "taxa": taxa,
-    "collections": {
-        "STOCH": {
-            "label": "F. Stoch (2002) personal collection",
-            "location": "Rome, Italy",
-            "code": "STOCH",
-            "personal": True,
-        },
-        "GALASSI": {
-            "label": "D. Galassi personal collection",
-            "code": "GALASSI",
-            "personal": True,
-        },
-    },
-    "data_sources": {
-        "ATBI_MERCANTOUR": {
-            "label": "ATBI Mercantour Database",
-            "code": "ATBI_MERCANTOUR",
-        },
-    },
     "bibliography": {
         verbatim: parse_article(verbatim)
         for verbatim in data["publication"].dropna().unique().tolist()
